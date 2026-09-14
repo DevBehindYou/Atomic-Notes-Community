@@ -39,8 +39,8 @@ export function tokenValid(token: string | undefined): boolean {
 }
 
 /** Read the admin session from the request cookies (server side). */
-export function isAdmin(): boolean {
-  return tokenValid(cookies().get(ADMIN_COOKIE)?.value);
+export async function isAdmin(): Promise<boolean> {
+  return tokenValid((await cookies()).get(ADMIN_COOKIE)?.value);
 }
 
 function constEq(input: string | undefined | null, expected: string | undefined): boolean {

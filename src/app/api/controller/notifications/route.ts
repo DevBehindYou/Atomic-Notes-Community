@@ -16,7 +16,7 @@ function errorResponse(e: unknown, fallback: string) {
 
 // List every notification (admin sees all statuses, not just active).
 export async function GET() {
-  if (!isAdmin()) return unauthorized();
+  if (!(await isAdmin())) return unauthorized();
   try {
     const { rows } = await atomicAdmin.listNotifications();
     return NextResponse.json({ rows });
@@ -29,7 +29,7 @@ export async function GET() {
 // resolution) is unchanged — the Server's /api/admin/notifications route
 // accepts exactly what supabaseAdmin() used to.
 export async function POST(req: Request) {
-  if (!isAdmin()) return unauthorized();
+  if (!(await isAdmin())) return unauthorized();
   const b = await req.json().catch(() => null);
   if (!b?.type || !b?.subject || !b?.description) {
     return NextResponse.json(
@@ -47,7 +47,7 @@ export async function POST(req: Request) {
 
 // Update fields on a notification (e.g. flip status to resolved/expired).
 export async function PATCH(req: Request) {
-  if (!isAdmin()) return unauthorized();
+  if (!(await isAdmin())) return unauthorized();
   const b = await req.json().catch(() => null);
   if (!b?.id) return NextResponse.json({ error: "id is required" }, { status: 400 });
   try {
@@ -60,7 +60,7 @@ export async function PATCH(req: Request) {
 
 // Delete a notification.
 export async function DELETE(req: Request) {
-  if (!isAdmin()) return unauthorized();
+  if (!(await isAdmin())) return unauthorized();
   const id = new URL(req.url).searchParams.get("id");
   if (!id) return NextResponse.json({ error: "id is required" }, { status: 400 });
   try {

@@ -5,7 +5,7 @@ import { atomicAdmin, AtomicServerError } from "@/lib/atomicServer";
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  if (!isAdmin()) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  if (!(await isAdmin())) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   try {
     const { stats } = await atomicAdmin.stats();
     return NextResponse.json({ stats });

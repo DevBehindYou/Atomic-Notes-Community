@@ -1,4 +1,4 @@
-name: Community typecheck
+name: Community verification
 
 on:
   push:
@@ -28,5 +28,11 @@ jobs:
           cache-dependency-path: package-lock.json
       - name: Install dependencies
         run: npm ci
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
       - name: Typecheck
         run: npx tsc --noEmit
+      - name: Build production site
+        run: npm run build
+      - name: Verify production routes and admin sessions
+        run: npm run test:smoke

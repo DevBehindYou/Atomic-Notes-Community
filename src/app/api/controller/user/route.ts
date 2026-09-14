@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 // Look up a user by email and return their current wallet + last login, so the
 // admin can see the real state before adjusting anything.
 export async function GET(req: Request) {
-  if (!isAdmin()) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  if (!(await isAdmin())) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   const email = new URL(req.url).searchParams.get("email")?.trim();
   if (!email) return NextResponse.json({ error: "email is required" }, { status: 400 });
 

@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 // (clamping, ledger write) now lives once, on the Server (routes/admin.ts +
 // lib/energy.ts) — this route is just the admin-gated pass-through.
 export async function POST(req: Request) {
-  if (!isAdmin()) {
+  if (!(await isAdmin())) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
   const b = await req.json().catch(() => null);

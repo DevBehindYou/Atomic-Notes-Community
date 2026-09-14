@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 
 // Config + DB health. Reports only booleans for secrets — never their values.
 export async function GET() {
-  if (!isAdmin()) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  if (!(await isAdmin())) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const env = {
     atomic_server_url: Boolean(process.env.ATOMIC_SERVER_URL),

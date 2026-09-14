@@ -40,6 +40,16 @@ the **Atomic Notes Server** (Node.js/MongoDB) as its backend, deployed on
 
 ## Local development
 
+Use Node.js 22. GitHub Actions runs `npm ci`, `npm audit --audit-level=high`,
+`npx tsc --noEmit`, `npm run build`, and `npm run test:smoke`.
+The smoke test starts its own localhost production server with test credentials
+and no backend connection; it checks admin authentication, blog pages, and RSS.
+Run it after building. Real Server/MongoDB/Google integration needs separate checks.
+
+The security update uses Next.js 15.5.24 and React 19. Next's nested PostCSS
+is overridden to the patched root PostCSS version because Next still pins an
+affected version. Keep the override until the upstream dependency is patched.
+
 ```bash
 npm install
 cp .env.example .env.local   # fill in real values (never commit .env.local)

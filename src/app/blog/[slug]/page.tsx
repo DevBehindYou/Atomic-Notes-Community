@@ -19,8 +19,8 @@ export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const post = await getPost(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const post = await getPost((await params).slug);
   if (!post) return { title: "Not found — Atomic Notes" };
   const url = `${BASE}/blog/${post.slug}`;
   return {
@@ -47,8 +47,8 @@ function fmtDate(d: string): string {
   return isNaN(dt.getTime()) ? d : dt.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
 }
 
-export default async function ArticlePage({ params }: { params: { slug: string } }) {
-  const post = await getPost(params.slug);
+export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
+  const post = await getPost((await params).slug);
   if (!post) notFound();
 
   const author = AUTHORS[post.author] ?? { name: post.author, role: "", url: BASE };

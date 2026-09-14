@@ -1,5 +1,8 @@
 import { getAllPosts } from "@/lib/blog";
 
+// Keep the feed static across the Next.js 15 GET-handler cache change.
+export const dynamic = "force-static";
+
 const BASE = "https://atomic-notes.vercel.app";
 
 function esc(s: string): string {
