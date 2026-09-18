@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { APK_URL } from "@/lib/site";
 
 const LINKS = [
   { id: "why", label: "Why" },
@@ -11,9 +12,7 @@ const LINKS = [
   { id: "get", label: "Get it" },
 ];
 
-const APK =
-  process.env.NEXT_PUBLIC_APK_URL ||
-  "https://github.com/DevBehindYou/Project-Atomic-Notes-New/releases/tag/ci-latest";
+const APK = APK_URL;
 
 export function SiteNav() {
   const [active, setActive] = useState("");

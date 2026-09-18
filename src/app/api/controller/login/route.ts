@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import {
+  adminLoginConfigured,
   passwordMatches,
   password2Matches,
   makeToken,
@@ -8,6 +9,7 @@ import {
 } from "@/lib/auth";
 
 export async function POST(req: Request) {
+  if (!adminLoginConfigured()) return NextResponse.json({ error: "Admin login is not configured" }, { status: 503 });
   const body = await req
     .json()
     .catch(() => ({}) as { password?: string; password2?: string });

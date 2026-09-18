@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { SITE_URL } from "@/lib/site";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -17,7 +18,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://atomic-notes.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: "Atomic Community Base",
   description:
     "Atomic Notes — local-first, privacy-first notes. Development updates, features, the Atomic Energy economy, and downloads.",

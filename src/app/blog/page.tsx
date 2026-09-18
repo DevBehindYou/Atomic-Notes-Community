@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getFeatured } from "@/lib/blog";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Blog — Atomic Notes",
   description:
     "Development updates, release notes, and technical deep dives on Atomic Notes: local-first, privacy-first notes with optional end-to-end encryption.",
-  alternates: { canonical: "https://atomic-notes.vercel.app/blog" },
+  alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
     title: "Atomic Notes Blog",
     description: "Local-first, privacy-first. Development updates and deep dives.",

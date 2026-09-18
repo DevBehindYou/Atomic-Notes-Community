@@ -7,12 +7,11 @@ import { Gallery, type Shot } from "@/components/Gallery";
 import { EnergyDemo } from "@/components/EnergyDemo";
 import { CURRENT_PHASE, FEATURES, ROADMAP, type NotificationRow } from "@/lib/content";
 import { fetchActiveNotifications } from "@/lib/atomicServer";
+import { APK_URL } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 
-const APK =
-  process.env.NEXT_PUBLIC_APK_URL ||
-  "https://github.com/DevBehindYou/Project-Atomic-Notes-New/releases/tag/ci-latest";
+const APK = APK_URL;
 
 // All 19 app mockups, ordered as a product tour.
 const SHOTS: Shot[] = [

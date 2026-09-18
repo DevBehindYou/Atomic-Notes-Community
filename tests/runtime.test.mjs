@@ -1,18 +1,31 @@
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
+import { createHmac } from 'node:crypto';
 import { once } from 'node:events';
+import { createServer as createHttpServer } from 'node:http';
 import { createServer } from 'node:net';
 import { resolve } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
 import test from 'node:test';
 
-test('production routes preserve authentication and public content', { timeout: 90000 }, async (t) => {
+const SECRET = 'test-only-session-signing-secret'; // exactly 32 bytes
+const FIRST = 'test-first-key';
+const SECOND = 'test-second-key';
+const COOKIE = 'acb_admin';
+const DAY = 24 * 60 * 60 * 1000;
+
+async function freePort() {
   const reservation = createServer();
   reservation.listen(0, '127.0.0.1');
   await once(reservation, 'listening');
-  const port = reservation.address().port;
+  const { port } = reservation.address();
   await new Promise((done) => reservation.close(done));
+  return port;
+}
 
+/** Starts the production Community server this test owns, with only the given environment. */
+async function startCommunity(t, env = {}) {
+  const port = await freePort();
   const server = spawn(process.execPath, [
     resolve('node_modules/next/dist/bin/next'), 'start',
     '--hostname', '127.0.0.1', '--port', String(port),
@@ -21,12 +34,13 @@ test('production routes preserve authentication and public content', { timeout: 
     env: {
       ...process.env,
       NODE_ENV: 'production',
-      ADMIN_PASSWORD: 'test-first-key',
-      ADMIN_PASSWORD_2: 'test-second-key',
-      SESSION_SECRET: 'test-only-session-signing-secret',
-      // Never contact a deployed backend from this smoke test.
+      ADMIN_PASSWORD: FIRST,
+      ADMIN_PASSWORD_2: SECOND,
+      SESSION_SECRET: SECRET,
+      // Never contact a deployed backend from these tests.
       ATOMIC_SERVER_URL: '',
       ADMIN_API_KEY: '',
+      ...env,
     },
     stdio: ['ignore', 'pipe', 'pipe'],
   });
@@ -41,7 +55,7 @@ test('production routes preserve authentication and public content', { timeout: 
   });
   const base = `http://127.0.0.1:${port}`;
   const request = (path, options = {}) => fetch(base + path, {
-    ...options, signal: AbortSignal.timeout(10000),
+    redirect: 'manual', ...options, signal: AbortSignal.timeout(10000),
   });
   let ready = false;
   for (let attempt = 0; attempt < 120; attempt++) {
@@ -53,6 +67,21 @@ test('production routes preserve authentication and public content', { timeout: 
     await delay(250);
   }
   assert.ok(ready, `Production server did not become ready:\n${output}`);
+  return { base, request };
+}
+
+const json = (body) => ({ method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+const sign = (timestamp, secret = SECRET) => createHmac('sha256', secret).update(timestamp).digest('hex');
+const validPassword = { password: FIRST, password2: SECOND };
+
+async function adminCookie({ request }) {
+  const response = await request('/api/controller/login', json(validPassword));
+  assert.equal(response.status, 200);
+  return { cookie: response.headers.get('set-cookie').split(';')[0] };
+}
+
+test('production routes preserve authentication and public content', { timeout: 90000 }, async (t) => {
+  const { base, request } = await startCommunity(t);
 
   await t.test('every admin operation rejects an anonymous request', async () => {
     for (const [route, method] of [
@@ -67,14 +96,12 @@ test('production routes preserve authentication and public content', { timeout: 
 
   await t.test('both passwords are required and signed cookies resolve to booleans', async () => {
     assert.deepEqual(await (await request('/api/controller/session')).json(), { admin: false });
-    const login = (body) => request('/api/controller/login', {
-      method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body),
-    });
+    const login = (body) => request('/api/controller/login', json(body));
     for (const body of [
-      { password: 'test-first-key' },
-      { password: 'wrong', password2: 'test-second-key' },
+      { password: FIRST },
+      { password: 'wrong', password2: SECOND },
     ]) assert.equal((await login(body)).status, 401);
-    const response = await login({ password: 'test-first-key', password2: 'test-second-key' });
+    const response = await login(validPassword);
     assert.equal(response.status, 200);
     const setCookie = response.headers.get('set-cookie');
     assert.match(setCookie, /HttpOnly/i);
@@ -89,13 +116,230 @@ test('production routes preserve authentication and public content', { timeout: 
     assert.match(logout.headers.get('set-cookie'), /Max-Age=0/i);
   });
 
+  await t.test('wrong-typed and malformed login bodies are rejected as 401, never a server error', async () => {
+    for (const body of [
+      JSON.stringify({ password: 123, password2: SECOND }),
+      JSON.stringify({ password: [FIRST], password2: {} }),
+      JSON.stringify({ password: FIRST, password2: null }),
+      JSON.stringify({ password: true, password2: false }),
+      JSON.stringify(null), JSON.stringify([]), JSON.stringify('text'), '{', '',
+    ]) {
+      const response = await request('/api/controller/login', {
+        method: 'POST', headers: { 'content-type': 'application/json' }, body,
+      });
+      assert.equal(response.status, 401, `body ${body}`);
+    }
+  });
+
+  await t.test('forged, malformed, future and expired session cookies are not admin', async () => {
+    const session = async (value) => (await (await request('/api/controller/session', {
+      headers: { cookie: `${COOKIE}=${value}` },
+    })).json()).admin;
+    const now = Date.now();
+    const fresh = String(now);
+    assert.equal(await session(`${fresh}.${sign(fresh)}`), true);
+    assert.equal(await session(`${now - 6 * DAY}.${sign(String(now - 6 * DAY))}`), true);
+
+    const future = String(now + 5 * 60 * 1000);
+    assert.equal(await session(`${future}.${sign(future)}`), false, 'future timestamp');
+    const expired = String(now - 8 * DAY);
+    assert.equal(await session(`${expired}.${sign(expired)}`), false, 'expired');
+    const justExpired = String(now - 7 * DAY - 1000);
+    assert.equal(await session(`${justExpired}.${sign(justExpired)}`), false, 'just past seven days');
+
+    assert.equal(await session(`${fresh}.${sign(fresh, 'another-secret-another-secret-0000')}`), false, 'wrong secret');
+    assert.equal(await session(`${fresh}.${sign(fresh).slice(0, 63)}`), false, 'short signature');
+    assert.equal(await session(`${fresh}.${sign(fresh).toUpperCase()}`), false, 'uppercase signature');
+    assert.equal(await session(`${fresh}.${'0'.repeat(64)}`), false, 'zero signature');
+    const short = String(now).slice(1);
+    assert.equal(await session(`${short}.${sign(short)}`), false, 'malformed timestamp');
+    assert.equal(await session(`${fresh}.${sign(fresh)}.extra`), false, 'extra segment');
+    assert.equal(await session(''), false);
+    assert.equal(await session(fresh), false, 'no signature');
+  });
+
+  await t.test('cross-origin controller mutations are rejected, reads and same-origin calls are not', async () => {
+    const foreign = { origin: 'https://evil.example' };
+    const post = (path, headers, body = validPassword) => request(path, {
+      method: 'POST', headers: { 'content-type': 'application/json', ...headers }, body: JSON.stringify(body),
+    });
+    assert.equal((await post('/api/controller/login', foreign)).status, 403);
+    assert.equal((await post('/api/controller/logout', foreign)).status, 403);
+    assert.equal((await post('/api/controller/login', { origin: 'null' })).status, 403);
+
+    assert.equal((await post('/api/controller/login', { origin: base })).status, 200);
+    assert.equal((await post('/api/controller/login', { origin: 'https://admin.example', 'x-forwarded-host': 'admin.example' })).status, 200, 'proxied host');
+    assert.equal((await post('/api/controller/login', { origin: base.replace(/:\d+$/, ':1') })).status, 403, 'same hostname, different port');
+    assert.equal((await post('/api/controller/login', { origin: 'not a url' })).status, 403);
+    assert.equal((await post('/api/controller/login', {})).status, 200, 'requests without Origin (non-browser) stay allowed');
+
+    // Even with a valid admin session, a foreign page cannot trigger an admin mutation.
+    const { cookie } = await adminCookie({ request });
+    for (const method of ['POST', 'PATCH', 'DELETE']) {
+      const response = await request('/api/controller/notifications?id=x', {
+        method, headers: { cookie, ...foreign, 'content-type': 'application/json' }, body: method === 'DELETE' ? undefined : '{}',
+      });
+      assert.equal(response.status, 403, method);
+    }
+    assert.equal((await request('/api/controller/energy', {
+      method: 'POST', headers: { cookie, ...foreign, 'content-type': 'application/json' }, body: '{}',
+    })).status, 403);
+    assert.deepEqual(await (await request('/api/controller/session', { headers: { ...foreign } })).json(), { admin: false });
+  });
+
   await t.test('static article, missing article and RSS feed remain available', async () => {
     const article = await request('/blog/atomic-notes-v1-18-2');
     assert.equal(article.status, 200);
-    assert.match(await article.text(), /<title>[^<]*Atomic/i);
+    const html = await article.text();
+    assert.match(html, /<title>[^<]*Atomic/i);
+    assert.match(html, /rel="canonical" href="https:\/\/atomic-notes-community\.vercel\.app\/blog\/atomic-notes-v1-18-2"/);
     assert.equal((await request('/blog/nonexistent-smoke-test-article')).status, 404);
     const feed = await request('/feed.xml');
     assert.equal(feed.status, 200);
-    assert.match(await feed.text(), /<rss[\s>]/);
+    const xml = await feed.text();
+    assert.match(xml, /<rss[\s>]/);
+    assert.match(xml, /https:\/\/atomic-notes-community\.vercel\.app\/blog\//);
+    assert.equal(xml.includes('atomic-notes.vercel.app'), false);
+    const sitemap = await (await request('/sitemap.xml')).text();
+    assert.match(sitemap, /<loc>https:\/\/atomic-notes-community\.vercel\.app<\/loc>|<loc>https:\/\/atomic-notes-community\.vercel\.app\/<\/loc>/);
+  });
+
+  await t.test('download links point at the App repository, not a tag that may not exist', async () => {
+    const home = await (await request('/')).text();
+    assert.match(home, /href="https:\/\/github\.com\/DevBehindYou\/Atomic-Notes-App\/releases\/latest"/);
+    assert.equal(home.includes('ci-latest'), false);
+  });
+});
+
+test('controller login fails closed when its configuration is missing or weak', { timeout: 90000 }, async (t) => {
+  await t.test('a session secret shorter than 32 bytes disables login and never validates cookies', async (t) => {
+    const weak = 'short-secret';
+    const { request } = await startCommunity(t, { SESSION_SECRET: weak });
+    assert.equal((await request('/api/controller/login', json(validPassword))).status, 503);
+    const stamp = String(Date.now());
+    const forged = await request('/api/controller/session', { headers: { cookie: `${COOKIE}=${stamp}.${sign(stamp, weak)}` } });
+    assert.deepEqual(await forged.json(), { admin: false });
+  });
+
+  await t.test('a missing session secret or second password disables login', async (t) => {
+    for (const env of [{ SESSION_SECRET: '' }, { ADMIN_PASSWORD_2: '' }, { ADMIN_PASSWORD: '' }]) {
+      await t.test(JSON.stringify(Object.keys(env)), async (t) => {
+        const { request } = await startCommunity(t, env);
+        assert.equal((await request('/api/controller/login', json(validPassword))).status, 503);
+        assert.deepEqual(await (await request('/api/controller/session')).json(), { admin: false });
+      });
+    }
+  });
+});
+
+/** A stand-in for the Atomic Notes Server's /api/admin/* and /api/public/* contract. */
+async function startFakeServer(t, adminKey) {
+  const seen = [];
+  const notification = {
+    id: '3f0a1c9e-6c1b-4a41-9a0f-6d2f0e7b1a11', type: 'maintenance', subject: 'Contract test subject', description: 'From the fake Server',
+    priority: 'high', status: 'active', action: null, action_url: null, icon: null, target_audience: 'all',
+    min_app_version: null, max_app_version: null, created_at: '2026-09-15T00:00:00.000Z', expires_at: null,
+  };
+  const server = createHttpServer(async (req, res) => {
+    const url = new URL(req.url, 'http://fake');
+    const chunks = []; for await (const chunk of req) chunks.push(chunk);
+    const raw = Buffer.concat(chunks).toString('utf8');
+    seen.push({ method: req.method, path: url.pathname, query: Object.fromEntries(url.searchParams), key: req.headers['x-admin-api-key'] ?? null,
+      contentType: req.headers['content-type'] ?? null, body: raw ? JSON.parse(raw) : null });
+    const send = (status, body) => { res.writeHead(status, { 'content-type': 'application/json' }); res.end(JSON.stringify(body)); };
+    if (url.pathname === '/api/public/notifications/active') return send(200, { rows: [notification] });
+    if (req.headers['x-admin-api-key'] !== adminKey) return send(401, { error: 'unauthorized' });
+    switch (`${req.method} ${url.pathname}`) {
+      case 'GET /api/admin/health': return send(200, { db: true, dbError: null, configuration: [], time: 'now' });
+      case 'GET /api/admin/stats': return send(200, { stats: { users: 3 } });
+      case 'GET /api/admin/user': return send(200, { user_id: 'u1', email: url.searchParams.get('email'), coins: 5, energy: 20, energy_cap: 120 });
+      case 'POST /api/admin/energy': return send(200, { ok: true, user_id: 'u1', coins: 6, energy: 30 });
+      case 'GET /api/admin/notifications': return send(200, { rows: [notification] });
+      case 'POST /api/admin/notifications': return send(200, { row: { ...notification, id: 'created' } });
+      case 'PATCH /api/admin/notifications': return send(200, { row: { ...notification, status: 'resolved' } });
+      case 'DELETE /api/admin/notifications': return send(200, { ok: true });
+      default: return send(404, { error: 'not_found' });
+    }
+  });
+  server.listen(0, '127.0.0.1');
+  await once(server, 'listening');
+  t.after(() => new Promise((done) => { server.close(done); server.closeAllConnections(); }));
+  return { url: `http://127.0.0.1:${server.address().port}`, seen };
+}
+
+test('Community calls the Server admin and public contract exactly as the Server defines it', { timeout: 120000 }, async (t) => {
+  const KEY = 'contract-test-admin-key-0123456789abcdef';
+  const fake = await startFakeServer(t, KEY);
+  const community = await startCommunity(t, { ATOMIC_SERVER_URL: fake.url + '/', ADMIN_API_KEY: KEY });
+  const { request } = community;
+  const headers = await adminCookie(community);
+  const post = (path, body, method = 'POST') => request(path, { method, headers: { ...headers, 'content-type': 'application/json' }, body: JSON.stringify(body) });
+  const last = () => fake.seen[fake.seen.length - 1];
+
+  await t.test('reads and mutations reach the right Server route with the shared key', async () => {
+    const health = await (await request('/api/controller/health', { headers })).json();
+    assert.deepEqual([health.db, health.dbError], [true, null]);
+    assert.deepEqual(last(), { ...last(), method: 'GET', path: '/api/admin/health', key: KEY });
+    assert.equal(JSON.stringify(health).includes(KEY), false, 'the admin key must never reach the browser');
+    assert.deepEqual(health.env, { atomic_server_url: true, admin_api_key: true, admin_password: true, session_secret: true, apk_url: false });
+
+    assert.deepEqual(await (await request('/api/controller/stats', { headers })).json(), { stats: { users: 3 } });
+    assert.equal(last().path, '/api/admin/stats');
+
+    const user = await (await request('/api/controller/user?email=a%2Bb%40example.com', { headers })).json();
+    assert.equal(user.email, 'a+b@example.com');
+    assert.deepEqual([last().path, last().query.email], ['/api/admin/user', 'a+b@example.com']);
+
+    const energy = await post('/api/controller/energy', { email: 'a@example.com', coins_delta: '1', energy_delta: 10, note: 'test' });
+    assert.equal(energy.status, 200);
+    assert.deepEqual(last().body, { email: 'a@example.com', coins_delta: 1, energy_delta: 10, note: 'test' });
+    assert.equal(last().contentType, 'application/json');
+
+    assert.equal((await request('/api/controller/notifications', { headers })).status, 200);
+    assert.deepEqual([last().method, last().path], ['GET', '/api/admin/notifications']);
+    const created = { type: 'maintenance', subject: 's', description: 'd' };
+    assert.equal((await post('/api/controller/notifications', created)).status, 200);
+    assert.deepEqual([last().method, last().body], ['POST', created]);
+    assert.equal((await post('/api/controller/notifications', { id: 'n1', status: 'resolved' }, 'PATCH')).status, 200);
+    assert.deepEqual([last().method, last().body.id], ['PATCH', 'n1']);
+    assert.equal((await request('/api/controller/notifications?id=a%20b', { method: 'DELETE', headers })).status, 200);
+    assert.deepEqual([last().method, last().query.id], ['DELETE', 'a b']);
+    assert.ok(fake.seen.filter((call) => call.path.startsWith('/api/admin/')).every((call) => call.key === KEY));
+  });
+
+  await t.test('invalid controller input never reaches the Server', async () => {
+    const before = fake.seen.length;
+    assert.equal((await request('/api/controller/user', { headers })).status, 400);
+    assert.equal((await post('/api/controller/energy', { coins_delta: 1 })).status, 400);
+    assert.equal((await post('/api/controller/notifications', { type: 'x' })).status, 400);
+    assert.equal((await post('/api/controller/notifications', { subject: 'x' }, 'PATCH')).status, 400);
+    assert.equal((await request('/api/controller/notifications', { method: 'DELETE', headers })).status, 400);
+    assert.equal(fake.seen.length, before);
+  });
+
+  await t.test('public pages render notifications fetched from the Server without an admin key', async () => {
+    const before = fake.seen.length;
+    for (const path of ['/', '/updates']) {
+      const html = await (await request(path)).text();
+      assert.match(html, /Contract test subject/, path);
+    }
+    const calls = fake.seen.slice(before);
+    assert.ok(calls.length >= 2);
+    assert.ok(calls.every((call) => call.path === '/api/public/notifications/active' && call.key === null));
+  });
+
+  await t.test('a Server rejection or outage is reported as a controller error, not success', async (t) => {
+    const wrongKey = await startCommunity(t, { ATOMIC_SERVER_URL: fake.url, ADMIN_API_KEY: 'a-different-key-a-different-key-000' });
+    const wrongKeyHeaders = await adminCookie(wrongKey);
+    const rejected = await wrongKey.request('/api/controller/stats', { headers: wrongKeyHeaders });
+    assert.equal(rejected.status, 401);
+    assert.equal((await rejected.json()).error, 'unauthorized');
+    const health = await (await wrongKey.request('/api/controller/health', { headers: wrongKeyHeaders })).json();
+    assert.equal(health.db, false);
+
+    const down = await startCommunity(t, { ATOMIC_SERVER_URL: `http://127.0.0.1:${await freePort()}`, ADMIN_API_KEY: KEY });
+    const downHeaders = await adminCookie(down);
+    assert.equal((await down.request('/api/controller/stats', { headers: downHeaders })).status, 500);
+    assert.equal((await down.request('/updates')).status, 200, 'the public page degrades instead of failing');
   });
 });

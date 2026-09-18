@@ -12,7 +12,7 @@ featured: true
 draft: false
 coverImage: "/og-banner.png"
 coverAlt: "Atomic Notes release cover with the atom mark on a paper background"
-canonical: "https://atomic-notes.vercel.app/blog/atomic-notes-v1-18-2"
+canonical: "https://atomic-notes-community.vercel.app/blog/atomic-notes-v1-18-2"
 keywords: "atomic notes, release notes, local-first notes, atomic energy, demo build"
 readingTime: "3 min read"
 ---
@@ -49,7 +49,7 @@ This is a demo build, so some parts are intentionally not live.
 
 Sideload the signed APK from GitHub Releases. On most phones, use the arm64 build.
 
-Download the latest build from [GitHub Releases](https://github.com/DevBehindYou/Project-Atomic-Notes-New/releases). For how the economy works, read the [Atomic Energy guide](/blog).
+Download the latest build from [GitHub Releases](https://github.com/DevBehindYou/Atomic-Notes-App/releases). For how the economy works, read the [Atomic Energy guide](/blog).
 
 ## What is next
 

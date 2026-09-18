@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPost, getAllSlugs, relatedPosts, type PostMeta } from "@/lib/blog";
+import { SITE_URL } from "@/lib/site";
 
 export const dynamicParams = false; // unknown slugs -> 404
 
-const BASE = "https://atomic-notes.vercel.app";
+const BASE = SITE_URL;
 
 const AUTHORS: Record<string, { name: string; role: string; url: string }> = {
   "ashutosh-sharma": {

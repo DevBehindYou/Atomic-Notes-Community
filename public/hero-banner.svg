@@ -23,5 +23,5 @@
   <line x1="60" y1="205" x2="1140" y2="205" stroke="#15171B" stroke-width="1" opacity="0.15" />
 
   <!-- Corner label -->
-  <text x="1140" y="230" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="13" fill="#15171B" opacity="0.45" text-anchor="end" letter-spacing="1">FLUTTER &#183; SUPABASE</text>
+  <text x="1140" y="230" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="13" fill="#15171B" opacity="0.45" text-anchor="end" letter-spacing="1">FLUTTER &#183; GOOGLE DRIVE</text>
 </svg>

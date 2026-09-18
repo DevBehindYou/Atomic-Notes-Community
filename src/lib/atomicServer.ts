@@ -41,6 +41,7 @@ async function request<T>(
     },
     body: init?.body !== undefined ? JSON.stringify(init.body) : undefined,
     cache: "no-store",
+    signal: AbortSignal.timeout(15000),
   });
   const body = await res.json().catch(() => ({}));
   if (!res.ok) {
@@ -75,7 +76,7 @@ export const atomicAdmin = {
 
 /** Public (unauthenticated) read, for the homepage and /updates — no admin key needed. */
 export async function fetchActiveNotifications() {
-  const res = await fetch(`${baseUrl()}/api/public/notifications/active`, { cache: "no-store" });
+  const res = await fetch(`${baseUrl()}/api/public/notifications/active`, { cache: "no-store", signal: AbortSignal.timeout(15000) });
   if (!res.ok) throw new Error(`http_${res.status}`);
   const body = (await res.json()) as { rows: unknown[] };
   return body.rows;
