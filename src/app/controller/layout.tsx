@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 // <meta name="robots" content="noindex,nofollow"> for the whole /controller
 // subtree so the secret panel never lands in a search index.
 export const metadata: Metadata = {
+  title: "Atomic Controller",
   robots: { index: false, follow: false, nocache: true },
 };
 

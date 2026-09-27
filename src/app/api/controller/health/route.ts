@@ -12,6 +12,7 @@ export async function GET() {
     atomic_server_url: Boolean(process.env.ATOMIC_SERVER_URL),
     admin_api_key: Boolean(process.env.ADMIN_API_KEY),
     admin_password: Boolean(process.env.ADMIN_PASSWORD),
+    admin_password_2: Boolean(process.env.ADMIN_PASSWORD_2),
     session_secret: Boolean(process.env.SESSION_SECRET),
     apk_url: Boolean(process.env.NEXT_PUBLIC_APK_URL),
   };

@@ -261,7 +261,7 @@ function Overview({ stats }: { stats: Stats | null }) {
         <Kpi label="NEW · 7D" value={stats.new_7d} sub="signed up this week" />
         <Kpi label="TOTAL NOTES" value={stats.total_notes} sub="live, in cloud" />
         <Kpi label="ENCRYPTED VAULTS" value={stats.vaults} sub="E2E enabled" />
-        <Kpi label="ACTIVE NOTICES" value={stats.active_notifications} sub="showing in-app" />
+        <Kpi label="ACTIVE NOTICES" value={stats.active_notifications} sub="Everyone ones show on /updates" />
       </div>
       <div className="kpis" style={{ marginTop: 14 }}>
         <Kpi label="COINS IN CIRCULATION" value={stats.coins_circulating} />
@@ -326,6 +326,7 @@ function HealthPanel({ stats, health }: { stats: Stats | null; health: Health | 
               {check(health.env.atomic_server_url, "ATOMIC_SERVER_URL")}
               {check(health.env.admin_api_key, "ADMIN_API_KEY")}
               {check(health.env.admin_password, "ADMIN_PASSWORD")}
+              {check(health.env.admin_password_2, "ADMIN_PASSWORD_2")}
               {check(health.env.session_secret, "SESSION_SECRET")}
               {check(health.env.apk_url, "NEXT_PUBLIC_APK_URL")}
               {check(health.db, `Database reachable${health.dbError ? " — " + health.dbError : ""}`)}
@@ -338,7 +339,7 @@ function HealthPanel({ stats, health }: { stats: Stats | null; health: Health | 
       <div className="module" style={{ marginTop: 14 }}>
         <p className="num">DATA</p>
         <div style={{ marginTop: 8 }}>
-          {check(Boolean(stats), `Stats RPC (controller_stats)`)}
+          {check(Boolean(stats), "Server stats (/api/admin/stats)")}
           <p className="mono" style={{ fontSize: ".68rem", color: "var(--slate)", marginTop: 10 }}>
             Web traffic (page views, sessions) is not tracked in-panel — the app
             and site ship no analytics by design. Enable Vercel Analytics on the
@@ -410,6 +411,11 @@ function NewNotification({
   return (
     <section className="module" style={{ marginBottom: 18 }}>
       <p className="num">NEW NOTIFICATION</p>
+      <p className="mono" style={{ fontSize: ".68rem", color: "var(--slate)", marginTop: 6 }}>
+        The App does not show notifications yet. Only an active notification for Everyone with no
+        email appears anywhere: on this site&apos;s home and /updates pages. Active / Inactive and
+        direct-to-user ones are stored but reach no one until the App reads them.
+      </p>
       <div className="grid g2" style={{ marginTop: 12 }}>
         <label>
           <span className="mono-label">Type</span>
@@ -573,6 +579,18 @@ function EnergyAdjust({ onMsg, onDone }: { onMsg: (m: string) => void; onDone: (
 
   async function apply() {
     if (!found) return;
+    // Whole numbers only: a fraction would leave a wallet holding part of a coin.
+    const coinsDelta = Number(coins.trim() || "0");
+    const energyDelta = Number(energy.trim() || "0");
+    if (!Number.isInteger(coinsDelta) || !Number.isInteger(energyDelta)) {
+      return onMsg("Deltas must be whole numbers.");
+    }
+    if (coinsDelta === 0 && energyDelta === 0) return onMsg("Nothing to adjust.");
+    // This changes a real wallet: say exactly what will happen first.
+    const plan = [coinsDelta && `${coinsDelta > 0 ? "+" : ""}${coinsDelta} coins`, energyDelta && `${energyDelta > 0 ? "+" : ""}${energyDelta} energy`]
+      .filter(Boolean)
+      .join(" and ");
+    if (!window.confirm(`Apply ${plan} to ${found.email}? Energy stops at ${found.energy_cap}, coins at 0.`)) return;
     setBusy(true);
     try {
       const r = await fetch("/api/controller/energy", {
@@ -580,8 +598,8 @@ function EnergyAdjust({ onMsg, onDone }: { onMsg: (m: string) => void; onDone: (
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           user_id: found.user_id,
-          coins_delta: Number(coins) || 0,
-          energy_delta: Number(energy) || 0,
+          coins_delta: coinsDelta,
+          energy_delta: energyDelta,
         }),
       });
       const d = await r.json();
