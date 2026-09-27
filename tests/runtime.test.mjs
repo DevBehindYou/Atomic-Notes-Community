@@ -103,6 +103,9 @@ test('production routes preserve authentication and public content', { timeout: 
       assert.match(response.headers.get('x-robots-tag') ?? '', /noindex/, path);
     }
     assert.match(await (await request('/controller')).text(), /<title>Atomic Controller<\/title>/);
+    const robots = await (await request('/robots.txt')).text();
+    assert.equal(robots.includes('/controller'), false, 'robots.txt must not point at the panel');
+    assert.match(robots, /Disallow: \/api\//);
   });
 
   await t.test('both passwords are required and signed cookies resolve to booleans', async () => {
@@ -246,6 +249,8 @@ test('controller login fails closed when its configuration is missing or weak', 
 /** A stand-in for the Atomic Notes Server's /api/admin/* and /api/public/* contract. */
 async function startFakeServer(t, adminKey) {
   const seen = [];
+  // Controller state the fake keeps: the session revocation time, and whether sign-in is locked.
+  const state = { revokedBefore: null, locked: false };
   const notification = {
     id: '3f0a1c9e-6c1b-4a41-9a0f-6d2f0e7b1a11', type: 'maintenance', subject: 'Contract test subject', description: 'From the fake Server',
     priority: 'high', status: 'active', action: null, action_url: null, icon: null, target_audience: 'all',
@@ -269,13 +274,19 @@ async function startFakeServer(t, adminKey) {
       case 'POST /api/admin/notifications': return send(200, { row: { ...notification, id: 'created' } });
       case 'PATCH /api/admin/notifications': return send(200, { row: { ...notification, status: 'resolved' } });
       case 'DELETE /api/admin/notifications': return send(200, { ok: true });
+      case 'GET /api/admin/controller/session-epoch': return send(200, { revoked_before: state.revokedBefore });
+      case 'POST /api/admin/controller/session-epoch':
+        state.revokedBefore = Math.max(state.revokedBefore ?? 0, JSON.parse(raw).revoked_before);
+        return send(200, { revoked_before: state.revokedBefore });
+      case 'POST /api/admin/controller/login-attempts':
+        return send(200, state.locked ? { allowed: false, retry_after_seconds: 600 } : { allowed: true, retry_after_seconds: 0 });
       default: return send(404, { error: 'not_found' });
     }
   });
   server.listen(0, '127.0.0.1');
   await once(server, 'listening');
   t.after(() => new Promise((done) => { server.close(done); server.closeAllConnections(); }));
-  return { url: `http://127.0.0.1:${server.address().port}`, seen };
+  return { url: `http://127.0.0.1:${server.address().port}`, seen, state };
 }
 
 test('Community calls the Server admin and public contract exactly as the Server defines it', { timeout: 120000 }, async (t) => {
@@ -321,13 +332,15 @@ test('Community calls the Server admin and public contract exactly as the Server
   });
 
   await t.test('invalid controller input never reaches the Server', async () => {
-    const before = fake.seen.length;
+    // The session check may read the revocation time; nothing else may go out.
+    const counted = () => fake.seen.filter((call) => !call.path.endsWith('/controller/session-epoch')).length;
+    const before = counted();
     assert.equal((await request('/api/controller/user', { headers })).status, 400);
     assert.equal((await post('/api/controller/energy', { coins_delta: 1 })).status, 400);
     assert.equal((await post('/api/controller/notifications', { type: 'x' })).status, 400);
     assert.equal((await post('/api/controller/notifications', { subject: 'x' }, 'PATCH')).status, 400);
     assert.equal((await request('/api/controller/notifications', { method: 'DELETE', headers })).status, 400);
-    assert.equal(fake.seen.length, before);
+    assert.equal(counted(), before);
   });
 
   await t.test('public pages render notifications fetched from the Server without an admin key', async () => {
@@ -341,18 +354,54 @@ test('Community calls the Server admin and public contract exactly as the Server
     assert.ok(calls.every((call) => call.path === '/api/public/notifications/active' && call.key === null));
   });
 
+  await t.test('sign-in is throttled through the Server, per client', async () => {
+    const attempts = () => fake.seen.filter((call) => call.path === '/api/admin/controller/login-attempts').map((call) => call.body.result);
+    fake.state.locked = true;
+    const locked = await request('/api/controller/login', json(validPassword));
+    assert.equal(locked.status, 429, 'even the right keys wait out a lockout');
+    assert.match((await locked.json()).error, /Try again in 10 min/);
+    assert.equal(locked.headers.get('retry-after'), '600');
+    fake.state.locked = false;
+    const before = attempts().length;
+    assert.equal((await request('/api/controller/login', json({ password: 'wrong', password2: SECOND }))).status, 401);
+    assert.equal((await request('/api/controller/login', json(validPassword))).status, 200);
+    assert.deepEqual(attempts().slice(before), ['check', 'failure', 'check', 'success']);
+    assert.ok(fake.seen.filter((call) => call.path === '/api/admin/controller/login-attempts').every((call) => typeof call.body.client === 'string'));
+  });
+
+  await t.test('log out everywhere ends a copied session cookie too', async () => {
+    const mine = await adminCookie({ request });
+    const copied = { cookie: mine.cookie };
+    assert.equal((await request('/api/controller/stats', { headers: copied })).status, 200);
+    const out = await request('/api/controller/logout', { method: 'POST', headers: mine });
+    assert.deepEqual(await out.json(), { ok: true, revoked: true });
+    assert.ok(Math.abs(fake.state.revokedBefore - Date.now()) < 10000);
+    assert.equal((await request('/api/controller/stats', { headers: copied })).status, 401);
+    assert.deepEqual(await (await request('/api/controller/session', { headers: copied })).json(), { admin: false });
+    // Signing in again works; an anonymous logout revokes nothing.
+    await delay(5);
+    const again = await adminCookie({ request });
+    assert.equal((await request('/api/controller/stats', { headers: again })).status, 200);
+    const revokedBefore = fake.state.revokedBefore;
+    assert.deepEqual(await (await request('/api/controller/logout', { method: 'POST' })).json(), { ok: true, revoked: false });
+    assert.equal(fake.state.revokedBefore, revokedBefore);
+  });
+
   await t.test('a Server rejection or outage is reported as a controller error, not success', async (t) => {
+    // Sign-in needs the Server (its throttle), so a refused key or an outage stops it and says which.
     const wrongKey = await startCommunity(t, { ATOMIC_SERVER_URL: fake.url, ADMIN_API_KEY: 'a-different-key-a-different-key-000' });
-    const wrongKeyHeaders = await adminCookie(wrongKey);
-    const rejected = await wrongKey.request('/api/controller/stats', { headers: wrongKeyHeaders });
-    assert.equal(rejected.status, 401);
-    assert.equal((await rejected.json()).error, 'unauthorized');
-    const health = await (await wrongKey.request('/api/controller/health', { headers: wrongKeyHeaders })).json();
-    assert.equal(health.db, false);
+    const refused = await wrongKey.request('/api/controller/login', json(validPassword));
+    assert.equal(refused.status, 503);
+    assert.match((await refused.json()).error, /refused this Controller's ADMIN_API_KEY/);
 
     const down = await startCommunity(t, { ATOMIC_SERVER_URL: `http://127.0.0.1:${await freePort()}`, ADMIN_API_KEY: KEY });
-    const downHeaders = await adminCookie(down);
-    assert.equal((await down.request('/api/controller/stats', { headers: downHeaders })).status, 500);
+    const unreachable = await down.request('/api/controller/login', json(validPassword));
+    assert.equal(unreachable.status, 503);
+    assert.match((await unreachable.json()).error, /Could not reach/);
+    // A session made while the Server was up still gets only errors, never success, during an outage.
+    const stamp = String(Date.now());
+    const cookie = { cookie: `${COOKIE}=${stamp}.${sign(stamp)}` };
+    assert.equal((await down.request('/api/controller/stats', { headers: cookie })).status, 500);
     assert.equal((await down.request('/updates')).status, 200, 'the public page degrades instead of failing');
   });
 });

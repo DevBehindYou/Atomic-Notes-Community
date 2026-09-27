@@ -72,6 +72,13 @@ export const atomicAdmin = {
     request<{ row: unknown }>("/notifications", { method: "PATCH", body }),
   deleteNotification: (id: string) =>
     request<{ ok: true }>(`/notifications?id=${encodeURIComponent(id)}`, { method: "DELETE" }),
+  // Controller state that needs a shared store: sessions issued before revoked_before are over,
+  // and wrong sign-ins are counted per client address (stored hashed on the Server).
+  sessionEpoch: () => request<{ revoked_before: number | null }>("/controller/session-epoch"),
+  revokeSessions: (revokedBefore: number) =>
+    request<{ revoked_before: number }>("/controller/session-epoch", { method: "POST", body: { revoked_before: revokedBefore } }),
+  loginAttempt: (client: string, result: "check" | "failure" | "success") =>
+    request<{ allowed: boolean; retry_after_seconds: number }>("/controller/login-attempts", { method: "POST", body: { client, result } }),
 };
 
 /** Public (unauthenticated) read, for the homepage and /updates — no admin key needed. */
