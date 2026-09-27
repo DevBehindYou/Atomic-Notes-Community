@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { atomicAdmin, AtomicServerError, isAtomicServerConfigured } from "@/lib/atomicServer";
 import {
-  adminLoginConfigured,
+  adminLoginProblems,
   passwordMatches,
   password2Matches,
   makeToken,
@@ -23,7 +23,9 @@ function tooMany(seconds: number) {
 }
 
 export async function POST(req: Request) {
-  if (!adminLoginConfigured()) return NextResponse.json({ error: "Admin login is not configured" }, { status: 503 });
+  // Names only, so the operator can see which Vercel variable this deployment is missing.
+  const problems = adminLoginProblems();
+  if (problems.length) return NextResponse.json({ error: "Admin login is not configured", problems }, { status: 503 });
   // Five wrong attempts from one address lock it out for 15 minutes (counted on the Server, which every
   // instance of this app shares). Without the Server there is nothing to protect, and no throttle.
   const client = clientAddress(req);

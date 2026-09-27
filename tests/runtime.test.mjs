@@ -229,7 +229,11 @@ test('controller login fails closed when its configuration is missing or weak', 
   await t.test('a session secret shorter than 32 bytes disables login and never validates cookies', async (t) => {
     const weak = 'short-secret';
     const { request } = await startCommunity(t, { SESSION_SECRET: weak });
-    assert.equal((await request('/api/controller/login', json(validPassword))).status, 503);
+    const refused = await request('/api/controller/login', json(validPassword));
+    assert.equal(refused.status, 503);
+    const body = await refused.json();
+    assert.deepEqual(body.problems, ['SESSION_SECRET is shorter than 32 bytes']);
+    assert.equal(JSON.stringify(body).includes(weak), false, 'names only, never a value');
     const stamp = String(Date.now());
     const forged = await request('/api/controller/session', { headers: { cookie: `${COOKIE}=${stamp}.${sign(stamp, weak)}` } });
     assert.deepEqual(await forged.json(), { admin: false });
