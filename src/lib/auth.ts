@@ -89,6 +89,17 @@ export function password2Matches(input: string | undefined | null): boolean {
 
 export const COOKIE_MAX_AGE_SECONDS = MAX_AGE_MS / 1000;
 
+/** What stops the sign-in from working, by variable name only (never a value). Empty when it can work. */
+export function adminLoginProblems(): string[] {
+  const problems: string[] = [];
+  if (!process.env.ADMIN_PASSWORD) problems.push("ADMIN_PASSWORD is not set");
+  if (!process.env.ADMIN_PASSWORD_2) problems.push("ADMIN_PASSWORD_2 is not set");
+  const secret = process.env.SESSION_SECRET;
+  if (!secret) problems.push("SESSION_SECRET is not set");
+  else if (Buffer.byteLength(secret) < 32) problems.push("SESSION_SECRET is shorter than 32 bytes");
+  return problems;
+}
+
 export function adminLoginConfigured(): boolean {
-  return Boolean(process.env.ADMIN_PASSWORD && process.env.ADMIN_PASSWORD_2 && process.env.SESSION_SECRET && Buffer.byteLength(process.env.SESSION_SECRET) >= 32);
+  return adminLoginProblems().length === 0;
 }
