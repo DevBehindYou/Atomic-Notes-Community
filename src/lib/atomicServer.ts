@@ -67,7 +67,7 @@ export const atomicAdmin = {
   }) => request<{ ok: true; user_id: string; coins: number; energy: number }>("/energy", { method: "POST", body }),
   listNotifications: () => request<{ rows: unknown[] }>("/notifications"),
   createNotification: (body: Record<string, unknown>) =>
-    request<{ row: unknown }>("/notifications", { method: "POST", body }),
+    request<{ row: unknown; audience_size?: number }>("/notifications", { method: "POST", body }),
   updateNotification: (body: Record<string, unknown>) =>
     request<{ row: unknown }>("/notifications", { method: "PATCH", body }),
   deleteNotification: (id: string) =>
