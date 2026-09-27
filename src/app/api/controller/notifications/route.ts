@@ -38,8 +38,9 @@ export async function POST(req: Request) {
     );
   }
   try {
-    const { row } = await atomicAdmin.createNotification(b);
-    return NextResponse.json({ row });
+    // audience_size is how many users it reached, which the form reports after publishing.
+    const { row, audience_size } = await atomicAdmin.createNotification(b);
+    return NextResponse.json({ row, audience_size: audience_size ?? null });
   } catch (e) {
     return errorResponse(e, "Failed to create notification");
   }

@@ -275,7 +275,7 @@ async function startFakeServer(t, adminKey) {
       case 'GET /api/admin/user': return send(200, { user_id: 'u1', email: url.searchParams.get('email'), coins: 5, energy: 20, energy_cap: 120 });
       case 'POST /api/admin/energy': return send(200, { ok: true, user_id: 'u1', coins: 6, energy: 30 });
       case 'GET /api/admin/notifications': return send(200, { rows: [notification] });
-      case 'POST /api/admin/notifications': return send(200, { row: { ...notification, id: 'created' } });
+      case 'POST /api/admin/notifications': return send(200, { row: { ...notification, id: 'created' }, audience_size: 7 });
       case 'PATCH /api/admin/notifications': return send(200, { row: { ...notification, status: 'resolved' } });
       case 'DELETE /api/admin/notifications': return send(200, { ok: true });
       case 'GET /api/admin/controller/session-epoch': return send(200, { revoked_before: state.revokedBefore });
@@ -326,7 +326,9 @@ test('Community calls the Server admin and public contract exactly as the Server
     assert.equal((await request('/api/controller/notifications', { headers })).status, 200);
     assert.deepEqual([last().method, last().path], ['GET', '/api/admin/notifications']);
     const created = { type: 'maintenance', subject: 's', description: 'd' };
-    assert.equal((await post('/api/controller/notifications', created)).status, 200);
+    const published = await post('/api/controller/notifications', created);
+    assert.equal(published.status, 200);
+    assert.equal((await published.json()).audience_size, 7, 'how many users it reached is passed on');
     assert.deepEqual([last().method, last().body], ['POST', created]);
     assert.equal((await post('/api/controller/notifications', { id: 'n1', status: 'resolved' }, 'PATCH')).status, 200);
     assert.deepEqual([last().method, last().body.id], ['PATCH', 'n1']);
