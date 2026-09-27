@@ -12,6 +12,10 @@ type Row = {
   status: string;
   action: string | null;
   action_url: string | null;
+  target_audience: string | null;
+  target_user_id: string | null;
+  recipients: number | null;
+  reads: number;
   created_at: string;
 };
 
@@ -98,8 +102,10 @@ function Login({ onIn }: { onIn: () => void }) {
       if (r.ok) {
         onIn();
       } else {
-        // Don't reveal which key was wrong — reset to the start.
-        setErr("Invalid credentials.");
+        // Don't reveal which key was wrong — reset to the start. A lockout or an unreachable
+        // Server says so instead.
+        const d = await r.json().catch(() => ({}));
+        setErr(r.status === 429 || r.status === 503 ? d.error ?? "Try again later." : "Invalid credentials.");
         setStep(1);
         setPw1("");
         setPw2("");
@@ -169,27 +175,34 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
   const [rows, setRows] = useState<Row[]>([]);
   const [msg, setMsg] = useState<string | null>(null);
 
+  // A 401 means this session was ended (Log out on another browser): back to the login screen.
+  const get = useCallback(async (url: string) => {
+    const r = await fetch(url);
+    if (r.status === 401) {
+      onLogout();
+      throw new Error("signed out");
+    }
+    return r.json();
+  }, [onLogout]);
+
   const loadStats = useCallback(async () => {
     try {
-      const [s, h] = await Promise.all([
-        fetch("/api/controller/stats").then((r) => r.json()),
-        fetch("/api/controller/health").then((r) => r.json()),
-      ]);
+      const [s, h] = await Promise.all([get("/api/controller/stats"), get("/api/controller/health")]);
       if (s.stats) setStats(s.stats);
       if (h.env) setHealth(h);
     } catch {
       setMsg("Could not load stats.");
     }
-  }, []);
+  }, [get]);
 
   const loadRows = useCallback(async () => {
     try {
-      const d = await fetch("/api/controller/notifications").then((r) => r.json());
+      const d = await get("/api/controller/notifications");
       setRows(d.rows ?? []);
     } catch {
       setMsg("Could not load notifications.");
     }
-  }, []);
+  }, [get]);
 
   useEffect(() => {
     loadStats();
@@ -209,8 +222,8 @@ function Dashboard({ onLogout }: { onLogout: () => void }) {
           <button onClick={() => { loadStats(); loadRows(); }} className="btn-ghost">
             Refresh
           </button>
-          <button onClick={logout} className="btn-ghost">
-            Log out
+          <button onClick={logout} className="btn-ghost" title="Ends every Controller session, on every browser">
+            Log out everywhere
           </button>
         </div>
       </div>
@@ -261,7 +274,7 @@ function Overview({ stats }: { stats: Stats | null }) {
         <Kpi label="NEW · 7D" value={stats.new_7d} sub="signed up this week" />
         <Kpi label="TOTAL NOTES" value={stats.total_notes} sub="live, in cloud" />
         <Kpi label="ENCRYPTED VAULTS" value={stats.vaults} sub="E2E enabled" />
-        <Kpi label="ACTIVE NOTICES" value={stats.active_notifications} sub="Everyone ones show on /updates" />
+        <Kpi label="ACTIVE NOTICES" value={stats.active_notifications} sub="in the App's bell" />
       </div>
       <div className="kpis" style={{ marginTop: 14 }}>
         <Kpi label="COINS IN CIRCULATION" value={stats.coins_circulating} />
@@ -399,7 +412,8 @@ function NewNotification({
       setActionUrl("");
       setTargetEmail("");
       setPinned(false);
-      onMsg("Notification published.");
+      const size = typeof d.audience_size === "number" ? d.audience_size : null;
+      onMsg(size === null ? "Notification published." : `Notification published to ${size} ${size === 1 ? "user" : "users"}.`);
       onCreated();
     } catch (e) {
       onMsg(e instanceof Error ? e.message : "Failed to create.");
@@ -412,9 +426,9 @@ function NewNotification({
     <section className="module" style={{ marginBottom: 18 }}>
       <p className="num">NEW NOTIFICATION</p>
       <p className="mono" style={{ fontSize: ".68rem", color: "var(--slate)", marginTop: 6 }}>
-        The App does not show notifications yet. Only an active notification for Everyone with no
-        email appears anywhere: on this site&apos;s home and /updates pages. Active / Inactive and
-        direct-to-user ones are stored but reach no one until the App reads them.
+        Shows in the App&apos;s bell. Everyone: every user, and also this site&apos;s home and /updates
+        pages. Active / Inactive: users who did / did not open the App in the last 7 days, decided when
+        you publish. An email sends it to that one user only.
       </p>
       <div className="grid g2" style={{ marginTop: 12 }}>
         <label>
@@ -514,7 +528,8 @@ function NotifRow({ n, onChanged, onMsg }: { n: Row; onChanged: () => void; onMs
   return (
     <div className="module">
       <div className="mono" style={{ fontSize: ".7rem", color: "var(--slate)" }}>
-        {n.type} · {n.priority} · {n.status}
+        {n.type} · {n.priority} · {n.status} · {n.target_user_id ? "one user" : n.target_audience ?? "all"}
+        {n.recipients !== null && n.recipients !== undefined ? ` (${n.recipients})` : ""} · read by {n.reads ?? 0}
       </div>
       <p style={{ fontFamily: "var(--display)", fontSize: "1.25rem", marginTop: 4 }}>{n.subject}</p>
       <p style={{ color: "var(--slate)", fontSize: ".9rem" }}>{n.description}</p>
@@ -558,6 +573,7 @@ function EnergyAdjust({ onMsg, onDone }: { onMsg: (m: string) => void; onDone: (
   const [found, setFound] = useState<FoundUser | null>(null);
   const [coins, setCoins] = useState("0");
   const [energy, setEnergy] = useState("0");
+  const [note, setNote] = useState("");
   const [looking, setLooking] = useState(false);
   const [busy, setBusy] = useState(false);
 
@@ -600,6 +616,7 @@ function EnergyAdjust({ onMsg, onDone }: { onMsg: (m: string) => void; onDone: (
           user_id: found.user_id,
           coins_delta: coinsDelta,
           energy_delta: energyDelta,
+          ...(note.trim() ? { note: note.trim() } : {}),
         }),
       });
       const d = await r.json();
@@ -607,6 +624,7 @@ function EnergyAdjust({ onMsg, onDone }: { onMsg: (m: string) => void; onDone: (
       setFound({ ...found, coins: d.coins, energy: d.energy, has_wallet: true });
       setCoins("0");
       setEnergy("0");
+      setNote("");
       onMsg("Balance adjusted.");
       onDone();
     } catch (e) {
@@ -678,6 +696,16 @@ function EnergyAdjust({ onMsg, onDone }: { onMsg: (m: string) => void; onDone: (
               <input value={energy} onChange={(e) => setEnergy(e.target.value)} className={inputCls} />
             </label>
           </div>
+          <label style={{ display: "block", marginTop: 12 }}>
+            <span className="mono-label">Message in the user&apos;s Activity list (optional)</span>
+            <input
+              value={note}
+              onChange={(e) => setNote(e.target.value)}
+              maxLength={120}
+              placeholder="Balance adjusted by Atomic Notes"
+              className={inputCls}
+            />
+          </label>
           <button onClick={apply} disabled={busy} className="btn-signal" style={{ marginTop: 14 }}>
             {busy ? "Applying…" : "Apply adjustment"}
           </button>

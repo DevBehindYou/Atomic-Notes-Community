@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 import crypto from "crypto";
+import { atomicAdmin, isAtomicServerConfigured } from "@/lib/atomicServer";
 
 // Minimal signed-cookie session for the secret Atomic-Controller panel. The
 // admin proves knowledge of ADMIN_PASSWORD once; we then set an httpOnly,
@@ -35,9 +36,39 @@ export function tokenValid(token: string | undefined): boolean {
   return crypto.timingSafeEqual(Buffer.from(sig, "hex"), Buffer.from(sign(ts), "hex"));
 }
 
+/** When a well-formed token was issued (ms since the epoch). */
+export function tokenIssuedAt(token: string): number {
+  return Number(token.split(".")[0]);
+}
+
+// "Log out" ends every session issued before it, including a copied cookie: the time lives on the
+// Server because this app keeps no state of its own. Read at most every few seconds per instance.
+const EPOCH_CACHE_MS = 5000;
+let epochCache: { value: number | null; at: number } | null = null;
+
+export function rememberRevokedBefore(value: number | null): void {
+  epochCache = { value, at: Date.now() };
+}
+
+async function revokedBefore(): Promise<number | null> {
+  if (!isAtomicServerConfigured()) return null;
+  if (epochCache && Date.now() - epochCache.at < EPOCH_CACHE_MS) return epochCache.value;
+  try {
+    rememberRevokedBefore((await atomicAdmin.sessionEpoch()).revoked_before);
+    return epochCache!.value;
+  } catch {
+    // Server unreachable: every admin action goes through that same Server, so a revoked session
+    // still cannot read or change anything; only the empty dashboard would render.
+    return null;
+  }
+}
+
 /** Read the admin session from the request cookies (server side). */
 export async function isAdmin(): Promise<boolean> {
-  return tokenValid((await cookies()).get(ADMIN_COOKIE)?.value);
+  const token = (await cookies()).get(ADMIN_COOKIE)?.value;
+  if (!token || !tokenValid(token)) return false;
+  const before = await revokedBefore();
+  return before === null || tokenIssuedAt(token) > before;
 }
 
 function constEq(input: string | undefined | null, expected: string | undefined): boolean {
