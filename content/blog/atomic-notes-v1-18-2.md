@@ -49,7 +49,7 @@ This is a demo build, so some parts are intentionally not live.
 
 Sideload the signed APK from GitHub Releases. On most phones, use the arm64 build.
 
-Download the latest build from [GitHub Releases](https://github.com/DevBehindYou/Atomic-Notes-App/releases). For how the economy works, read the [Atomic Energy guide](/blog).
+Download the latest build from [GitHub Releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases). For how the economy works, read the [Atomic Energy guide](/blog).
 
 ## What is next
 

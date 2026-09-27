@@ -236,14 +236,14 @@ export default async function Home() {
               </h2>
               <p className="lead" style={{ margin: "12px 0 22px" }}>
                 Download the latest signed APK from GitHub Releases. On most
-                phones, use <span className="mono">app-arm64-v8a-release.apk</span>.
+                phones, use the file ending in <span className="mono">arm64-v8a.apk</span>.
               </p>
               <div className="hero-actions">
                 <a href={APK} className="btn-signal">
                   Download the APK
                 </a>
                 <a
-                  href="https://github.com/DevBehindYou/Project-Atomic-Notes"
+                  href="https://github.com/DevBehindYou/Atomic-Notes-App-V0.2"
                   className="btn-ghost"
                   target="_blank"
                   rel="noreferrer"
