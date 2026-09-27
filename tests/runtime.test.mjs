@@ -94,6 +94,17 @@ test('production routes preserve authentication and public content', { timeout: 
     }
   });
 
+  await t.test('the admin surface cannot be framed, cached or indexed', async () => {
+    for (const path of ['/controller', '/api/controller/session']) {
+      const response = await request(path);
+      assert.equal(response.headers.get('x-frame-options'), 'DENY', path);
+      assert.match(response.headers.get('content-security-policy') ?? '', /frame-ancestors 'none'/, path);
+      assert.match(response.headers.get('cache-control') ?? '', /no-store/, path);
+      assert.match(response.headers.get('x-robots-tag') ?? '', /noindex/, path);
+    }
+    assert.match(await (await request('/controller')).text(), /<title>Atomic Controller<\/title>/);
+  });
+
   await t.test('both passwords are required and signed cookies resolve to booleans', async () => {
     assert.deepEqual(await (await request('/api/controller/session')).json(), { admin: false });
     const login = (body) => request('/api/controller/login', json(body));
@@ -281,7 +292,9 @@ test('Community calls the Server admin and public contract exactly as the Server
     assert.deepEqual([health.db, health.dbError], [true, null]);
     assert.deepEqual(last(), { ...last(), method: 'GET', path: '/api/admin/health', key: KEY });
     assert.equal(JSON.stringify(health).includes(KEY), false, 'the admin key must never reach the browser');
-    assert.deepEqual(health.env, { atomic_server_url: true, admin_api_key: true, admin_password: true, session_secret: true, apk_url: false });
+    // apk_url is NEXT_PUBLIC_APK_URL, fixed at build time from whatever .env the build saw, so only its type is stable here.
+    assert.deepEqual(health.env, { atomic_server_url: true, admin_api_key: true, admin_password: true, admin_password_2: true, session_secret: true, apk_url: health.env.apk_url });
+    assert.equal(typeof health.env.apk_url, 'boolean');
 
     assert.deepEqual(await (await request('/api/controller/stats', { headers })).json(), { stats: { users: 3 } });
     assert.equal(last().path, '/api/admin/stats');
