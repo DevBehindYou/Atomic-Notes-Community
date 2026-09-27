@@ -220,8 +220,12 @@ test('production routes preserve authentication and public content', { timeout: 
 
   await t.test('download links point at the App repository, not a tag that may not exist', async () => {
     const home = await (await request('/')).text();
-    assert.match(home, /href="https:\/\/github\.com\/DevBehindYou\/Atomic-Notes-App\/releases\/latest"/);
+    // Unless NEXT_PUBLIC_APK_URL was set when the site was built, the button uses the default.
+    const apkLink = /href="(https:\/\/github\.com\/DevBehindYou\/[^"]+\/releases\/latest)"/.exec(home);
+    assert.ok(apkLink, 'a GitHub releases/latest download link');
     assert.equal(home.includes('ci-latest'), false);
+    assert.equal(home.includes('Project-Atomic-Notes'), false, 'the old repository name is gone');
+    assert.match(home, /href="https:\/\/github\.com\/DevBehindYou\/Atomic-Notes-App-V0\.2"/);
   });
 });
 

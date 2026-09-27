@@ -1,7 +1,8 @@
 // Public, non-secret site settings. Only NEXT_PUBLIC_* variables belong here:
 // this module is also bundled into client components.
 const DEFAULT_SITE_URL = "https://atomic-notes-community.vercel.app";
-const DEFAULT_APK_URL = "https://github.com/DevBehindYou/Atomic-Notes-App/releases/latest";
+// The App is built from Atomic-Notes-App-V0.2 (the older Atomic-Notes-App repository has no releases).
+const DEFAULT_APK_URL = "https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/latest";
 
 function originOf(value: string | undefined, fallback: string): string {
   try {
