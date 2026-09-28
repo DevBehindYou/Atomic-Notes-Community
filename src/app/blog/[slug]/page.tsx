@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPost, getAllSlugs, relatedPosts, type PostMeta } from "@/lib/blog";
 import { SITE_URL } from "@/lib/site";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export const dynamicParams = false; // unknown slugs -> 404
 
@@ -22,10 +24,10 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const post = await getPost((await params).slug);
-  if (!post) return { title: "Not found — Atomic Notes" };
+  if (!post) return { title: "Not found" };
   const url = `${BASE}/blog/${post.slug}`;
   return {
-    title: `${post.title} — Atomic Notes`,
+    title: post.title,
     description: post.description,
     keywords: post.keywords,
     alternates: { canonical: post.canonical || url },
@@ -75,17 +77,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   return (
     <main>
-      <header className="nav">
-        <div className="wrap nav-inner">
-          <Link href="/" className="brand">ATOMIC NOTES</Link>
-          <nav className="nav-links">
-            <Link href="/">Home</Link>
-            <Link href="/blog" className="active">Blog</Link>
-          </nav>
-        </div>
-      </header>
+      <SiteNav current="blog" />
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
 
       <article className="wrap" style={{ paddingTop: 40, paddingBottom: 60, maxWidth: 760 }}>
         <Link href="/blog" className="mono-label" style={{ display: "inline-block", marginBottom: 16 }}>
@@ -142,6 +136,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           </div>
         </section>
       )}
+      <SiteFooter />
     </main>
   );
 }

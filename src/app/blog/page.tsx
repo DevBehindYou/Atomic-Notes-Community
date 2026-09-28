@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getFeatured } from "@/lib/blog";
 import { SITE_URL } from "@/lib/site";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Blog — Atomic Notes",
+  title: "Blog",
   description:
     "Development updates, release notes, and technical deep dives on Atomic Notes: local-first, privacy-first notes with optional end-to-end encryption.",
   alternates: { canonical: `${SITE_URL}/blog` },
@@ -24,20 +26,6 @@ function fmtDate(d: string): string {
     : dt.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "2-digit" });
 }
 
-function Header() {
-  return (
-    <header className="nav">
-      <div className="wrap nav-inner">
-        <Link href="/" className="brand">ATOMIC NOTES</Link>
-        <nav className="nav-links">
-          <Link href="/">Home</Link>
-          <Link href="/updates">Updates</Link>
-          <Link href="/blog" className="active">Blog</Link>
-        </nav>
-      </div>
-    </header>
-  );
-}
 
 function Card({ p, big = false }: { p: import("@/lib/blog").PostMeta; big?: boolean }) {
   return (
@@ -62,7 +50,7 @@ export default function BlogIndex() {
 
   return (
     <main>
-      <Header />
+      <SiteNav current="blog" />
       <section className="wrap" style={{ paddingTop: 42 }}>
         <p className="eyebrow">THE ATOMIC NOTES BLOG</p>
         <h1 style={{ fontSize: "clamp(2.6rem,7vw,4.4rem)" }}>
@@ -99,6 +87,7 @@ export default function BlogIndex() {
           </div>
         </section>
       )}
+      <SiteFooter />
     </main>
   );
 }

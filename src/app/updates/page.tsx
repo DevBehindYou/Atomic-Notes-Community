@@ -1,8 +1,17 @@
-import Link from "next/link";
+import type { Metadata } from "next";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 import { fetchActiveNotifications } from "@/lib/atomicServer";
 import type { NotificationRow } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Updates and status",
+  description:
+    "Live release notes, maintenance notices and service status for Atomic Notes. The same messages appear in the app's notification center.",
+  alternates: { canonical: "/updates" },
+};
 
 async function getActive(): Promise<{ rows: NotificationRow[]; error: string | null }> {
   try {
@@ -46,16 +55,7 @@ export default async function UpdatesPage() {
 
   return (
     <main className="min-h-screen">
-      <header className="border-ink border-b">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-4">
-          <Link href="/" className="font-display text-2xl tracking-wide">
-            ATOMIC NOTES
-          </Link>
-          <Link href="/" className="mono-label hover:text-ink">
-            Home
-          </Link>
-        </div>
-      </header>
+      <SiteNav current="updates" />
 
       <section className="mx-auto max-w-3xl px-5 py-10">
         <p className="mono-label text-signal">NOTIFICATION CENTER</p>
@@ -95,6 +95,7 @@ export default async function UpdatesPage() {
           ))}
         </div>
       </section>
+      <SiteFooter />
     </main>
   );
 }
