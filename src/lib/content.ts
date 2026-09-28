@@ -41,9 +41,9 @@ export const STATUSES = ["active", "resolved", "expired"] as const;
 
 /** The release the website describes. Update together with the App's pubspec.yaml. */
 export const RELEASE = {
-  version: "2.03.4",
-  build: 7,
-  date: "2026-09-27",
+  version: "2.03.5",
+  build: 8,
+  date: "2026-09-28",
   minAndroid: "Android 9 (API 28)",
   certSha256: "cc24ae5ce1dca50fcd5e5c4c252d69e4965c55a975bd0e4739e8938fad9bebeb",
   certSha1: "20:08:8F:BF:45:D7:D1:5A:4C:26:69:D6:47:84:16:E2:7F:32:85:45",
@@ -60,7 +60,7 @@ export const DEFINITION =
 
 export const FACTS: { k: string; v: string }[] = [
   { k: "Platform", v: "Android 9 or newer" },
-  { k: "Latest version", v: `${RELEASE.version}, released 27 Sep 2026` },
+  { k: "Latest version", v: `${RELEASE.version}, released 28 Sep 2026` },
   { k: "Where notes live", v: "Your phone, then your own Google Drive" },
   { k: "Encryption", v: "Optional vault: Argon2id + AES-256-GCM" },
   { k: "Price", v: "Free. 30 notes and daily sync energy" },
