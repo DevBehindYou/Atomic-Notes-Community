@@ -80,3 +80,7 @@ The Atomic Notes Server must be deployed and reachable at `ATOMIC_SERVER_URL`,
 with a matching `ADMIN_API_KEY` on both projects — that server owns the
 `notifications`, `atomic_users`, and `energy_ledger` MongoDB collections this
 panel reads and writes.
+
+## License
+
+Proprietary and source-available. The code is public to read and verify under the [Atomic Notes Source-Available License](LICENSE). All rights reserved. You may not copy, modify, redistribute, host or reuse it. Versions published before 28 September 2026 were released under the MIT License.

@@ -4,17 +4,15 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { APK_URL } from "@/lib/site";
 
+// Sections of the home page. The links start with "/" so they work from the blog and updates pages too.
 const LINKS = [
-  { id: "why", label: "Why" },
+  { id: "features", label: "Features" },
+  { id: "how-it-works", label: "How it works" },
   { id: "energy", label: "Energy" },
-  { id: "interface", label: "Interface" },
-  { id: "roadmap", label: "Roadmap" },
-  { id: "get", label: "Get it" },
+  { id: "faq", label: "FAQ" },
 ];
 
-const APK = APK_URL;
-
-export function SiteNav() {
+export function SiteNav({ current }: { current?: "blog" | "updates" }) {
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);
 
@@ -37,22 +35,28 @@ export function SiteNav() {
   return (
     <header className="nav">
       <div className="wrap nav-inner">
-        <a href="#top" className="brand">
+        <Link href="/" className="brand" aria-label="Atomic Notes home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/icon.png" alt="" width={28} height={28} className="brand-icon" />
           ATOMIC NOTES
-        </a>
-        <nav className={`nav-links ${open ? "open" : ""}`} onClick={() => setOpen(false)}>
+        </Link>
+        <nav className={`nav-links ${open ? "open" : ""}`} onClick={() => setOpen(false)} aria-label="Main">
           {LINKS.map((x) => (
-            <a key={x.id} href={`#${x.id}`} className={active === x.id ? "active" : ""}>
+            <a key={x.id} href={`/#${x.id}`} className={active === x.id ? "active" : ""}>
               {x.label}
             </a>
           ))}
-          <Link href="/blog">Blog</Link>
-          <Link href="/updates">Updates</Link>
-          <a href={APK} className="btn-signal" style={{ padding: "9px 16px" }}>
+          <Link href="/blog" className={current === "blog" ? "active" : ""}>
+            Blog
+          </Link>
+          <Link href="/updates" className={current === "updates" ? "active" : ""}>
+            Updates
+          </Link>
+          <a href={APK_URL} className="btn-signal nav-cta">
             Download
           </a>
         </nav>
-        <button className="burger" onClick={() => setOpen((o) => !o)} aria-label="Menu">
+        <button className="burger" onClick={() => setOpen((o) => !o)} aria-label="Menu" aria-expanded={open}>
           ☰
         </button>
       </div>

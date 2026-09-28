@@ -36,7 +36,6 @@ Every claim must be labeled honestly. As of the latest build:
 **PLANNED / NOT YET SHIPPED (never say these are live)**
 - Coin purchases with real money (Lemon Squeezy / Razorpay). The Buy button is a
   "coming soon" sheet; no payment backend exists yet.
-- Public source release (open source) — intended, confirm status before claiming it is done.
 - Official app-store listings (Play / App Store / Amazon).
 - A true background sync scheduler (the hourly charge happens when a sync runs, not via a
   background job).
@@ -56,3 +55,9 @@ Every claim must be labeled honestly. As of the latest build:
   operator by design until the vault is on. Say so plainly.
 - A lost recovery phrase means unrecoverable vault notes, by design. Never imply recovery.
 - Do not invent audits, certifications, penetration tests, or CVE numbers.
+
+## Licensing (since 28 September 2026)
+
+- The App (`Atomic-Notes-App-V0.2`) and this website are **source-available**: the code is public to read and verify, under the proprietary Atomic Notes Source-Available License. All rights reserved.
+- Never call Atomic Notes "open source" or "MIT licensed". Versions before 28 September 2026 were MIT, and only those old copies keep that grant.
+- The Server and the legacy App (v1) are proprietary and private. Do not link to them.
