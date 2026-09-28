@@ -413,7 +413,14 @@ function NewNotification({
       setTargetEmail("");
       setPinned(false);
       const size = typeof d.audience_size === "number" ? d.audience_size : null;
-      onMsg(size === null ? "Notification published." : `Notification published to ${size} ${size === 1 ? "user" : "users"}.`);
+      const forNewAccounts = !targetEmail.trim() && audience === "new";
+      onMsg(
+        forNewAccounts
+          ? "Notification published. Every account created from now on will see it."
+          : size === null
+            ? "Notification published."
+            : `Notification published to ${size} ${size === 1 ? "user" : "users"}.`
+      );
       onCreated();
     } catch (e) {
       onMsg(e instanceof Error ? e.message : "Failed to create.");
@@ -470,6 +477,7 @@ function NewNotification({
             <option value="all">Everyone</option>
             <option value="active">Active — opened in 7 days</option>
             <option value="inactive">Inactive — not in 7 days</option>
+            <option value="new">New accounts — created from now on</option>
           </select>
         </label>
         <label>

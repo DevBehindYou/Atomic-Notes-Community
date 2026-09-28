@@ -1658,7 +1658,7 @@ section h2 {
   .steps li:first-child {
     border-top: none;
   }
-  .steps li::after {
+  .steps li:not(:last-child)::after {
     display: none;
   }
   .lp-showcase-phones {
@@ -1699,5 +1699,60 @@ section h2 {
   .feature,
   .faq-mark {
     transition: none;
+  }
+}
+
+/* ---------- support page ---------- */
+.support-hero > * {
+  max-width: 820px;
+}
+.support-title {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  letter-spacing: 0.5px;
+}
+.support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 36px;
+  align-items: start;
+}
+.support-note {
+  background: var(--signal);
+  color: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  padding: 22px;
+  box-shadow: 6px 6px 0 var(--ink);
+}
+.support-note .num {
+  color: #d8d6ff;
+}
+.support-note h3 {
+  font-size: 1.8rem;
+  margin-top: 8px;
+}
+.support-note p:not(.num) {
+  margin: 10px 0 0;
+  line-height: 1.6;
+}
+.support-list {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+  line-height: 1.55;
+  color: #2b2e34;
+}
+.support-facts {
+  margin: 22px 0 26px;
+  max-width: 640px;
+}
+.lp-small a {
+  color: var(--signal);
+}
+@media (max-width: 820px) {
+  .support-grid {
+    grid-template-columns: 1fr;
   }
 }
