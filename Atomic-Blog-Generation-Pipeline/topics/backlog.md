@@ -7,7 +7,7 @@ verified shipped/planned against `SOURCE-OF-TRUTH.md`.
 | # | Working title | slug | category | template | angle | status |
 |---|---|---|---|---|---|---|
 | 1 | Why Atomic Notes Is Local First | why-atomic-notes-is-local-first | local-first | technical | The device is the source of truth; the cloud is optional | idea |
-| 2 | Why Atomic Notes Is Open Source | why-atomic-notes-is-open-source | open-source | blog | Building in the open + the trust argument (verify release status) | idea |
+| 2 | Why the Atomic Notes Source Is Public | why-the-atomic-notes-source-is-public | source-available | blog | Source-available, not open source: read the code to verify the privacy claims | idea |
 | 3 | How Atomic Notes Protects Your Notes | how-atomic-notes-protects-your-notes | security | technical | The real protections, stated honestly | idea |
 | 4 | T2T vs E2E in Atomic Notes | t2t-vs-e2e-in-atomic-notes | security | technical | Plaintext-to-transport vs end-to-end, when each applies | idea |
 | 5 | How Atomic Energy Works | how-atomic-energy-works | atomic-energy | technical | The renewable sync economy: cap 120, +20/24h, 1 coin = 40 | idea |

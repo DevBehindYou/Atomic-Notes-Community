@@ -2,6 +2,7 @@
   "name": "atomic-community-base",
   "version": "0.1.0",
   "private": true,
+  "license": "UNLICENSED",
   "description": "Atomic Notes community platform + secret Atomic-Controller admin panel.",
   "scripts": {
     "dev": "next dev",
