@@ -702,8 +702,8 @@ export default async function Home() {
               </h2>
               <p className="lp-lead lp-lead-dark">
                 Download the signed APK from GitHub Releases. Most phones need the file ending in{" "}
-                <span className="mono">arm64-v8a.apk</span>. Version {RELEASE.version} installs over 1.18.2 and keeps
-                your notes. Needs {RELEASE.minAndroid} or newer.
+                <span className="mono">arm64-v8a.apk</span>. Version {RELEASE.version} installs over earlier versions and
+                keeps your notes. Needs {RELEASE.minAndroid} or newer.
               </p>
               <div className="hero-actions">
                 <a href={APK_URL} className="btn-signal">

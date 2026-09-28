@@ -1,6 +1,6 @@
 # Atomic Notes
 
-> Atomic Notes is a free, local-first notes app for Android. Notes live on the phone first and sync to a private My-Atomic-Notes folder in the user's own Google Drive. An optional vault encrypts every note on the device with AES-256-GCM (key derived from a 6-word recovery phrase with Argon2id), so the sync server and Google store only ciphertext. The app has no AI features, no ads and no analytics. Current version: 2.03.4, released 2026-09-27. Android 9 or newer. The source code is public to read and verify, but proprietary (Atomic Notes Source-Available License, all rights reserved). It is not open source. Built by Ashutosh Sharma (DevBehindYou).
+> Atomic Notes is a free, local-first notes app for Android. Notes live on the phone first and sync to a private My-Atomic-Notes folder in the user's own Google Drive. An optional vault encrypts every note on the device with AES-256-GCM (key derived from a 6-word recovery phrase with Argon2id), so the sync server and Google store only ciphertext. The app has no AI features, no ads and no analytics. Current version: 2.03.5, released 2026-09-28. Android 9 or newer. The source code is public to read and verify, but proprietary (Atomic Notes Source-Available License, all rights reserved). It is not open source. Built by Ashutosh Sharma (DevBehindYou).
 
 Key facts:
 
