@@ -12,7 +12,7 @@ const LINKS = [
   { id: "faq", label: "FAQ" },
 ];
 
-export function SiteNav({ current }: { current?: "blog" | "updates" }) {
+export function SiteNav({ current }: { current?: "blog" | "updates" | "support" }) {
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);
 
@@ -51,6 +51,9 @@ export function SiteNav({ current }: { current?: "blog" | "updates" }) {
           </Link>
           <Link href="/updates" className={current === "updates" ? "active" : ""}>
             Updates
+          </Link>
+          <Link href="/support-atomic-notes" className={current === "support" ? "active" : ""}>
+            Support
           </Link>
           <a href={APK_URL} className="btn-signal nav-cta">
             Download

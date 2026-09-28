@@ -51,6 +51,9 @@ export const RELEASE = {
 
 export const REPO_URL = "https://github.com/DevBehindYou/Atomic-Notes-App-V0.2";
 
+/** Where supporters go. Early supporters get Atomic Coins by hand (see /support-atomic-notes). */
+export const PATREON_URL = "https://www.patreon.com/cw/DevBehindYou";
+
 /** The answer-first definition, used in the page and in structured data. */
 export const DEFINITION =
   "Atomic Notes is a free, source-available notes app for Android that keeps your notes on your phone first and syncs them to a private folder in your own Google Drive. It has no AI features, no ads and no analytics. An optional vault encrypts every note on the device with AES-256-GCM, so the sync server and Google only ever store ciphertext.";

@@ -22,6 +22,7 @@ export function SiteFooter() {
           <a href="/#features">Features</a>
           <a href="/#how-it-works">How it works</a>
           <a href="/#faq">FAQ</a>
+          <Link href="/support-atomic-notes">Support on Patreon</Link>
         </nav>
         <nav aria-label="Project">
           <p className="foot-head">Project</p>
