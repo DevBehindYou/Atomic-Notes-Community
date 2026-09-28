@@ -32,6 +32,8 @@ export function SiteFooter() {
           <a href={`${REPO_URL}/blob/main/TRANSPARENCY.md`} target="_blank" rel="noreferrer">
             Transparency
           </a>
+          <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/updates">Updates</Link>
           <a href="/feed.xml">RSS</a>
