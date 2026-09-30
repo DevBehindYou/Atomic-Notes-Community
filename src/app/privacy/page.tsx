@@ -13,7 +13,7 @@ const CONTACT = "https://github.com/DevBehindYou";
 
 export default function PrivacyPage() {
   return (
-    <LegalPage eyebrow="ATOMIC NOTES" title="Privacy Policy" updated="29 September 2026">
+    <LegalPage eyebrow="ATOMIC NOTES" title="Privacy Policy" updated="30 September 2026">
       <p>
         This policy explains how the Atomic Notes Android app, its sync server and this website handle your
         information. Atomic Notes is built and operated by Ashutosh Sharma, who publishes as DevBehindYou (&ldquo;we&rdquo;,
@@ -42,9 +42,19 @@ export default function PrivacyPage() {
         <li>Which in-app announcements you have read or dismissed.</li>
       </ul>
       <p>
-        We do not collect your note content, contacts, location, advertising IDs, analytics or crash reports. Our hosting
-        provider processes standard request data, such as IP addresses, to deliver the app&apos;s server and this
+        The app does not collect your note content, contacts, location, advertising IDs, analytics or crash reports. Our
+        hosting provider processes standard request data, such as IP addresses, to deliver the app&apos;s server and this
         website. This website sets no tracking or advertising cookies.
+      </p>
+
+      <h2>Website analytics</h2>
+      <p>
+        This website (not the app) uses Vercel Web Analytics to count page views. For each page you open it records the
+        page address, the referring site, your country, and your browser, operating system and device type. It sets no
+        cookies and stores no IP address. Visits are told apart by a hash of the request that Vercel resets every day,
+        so a visitor cannot be followed across days or across other websites. We only see these totals in Vercel&apos;s
+        dashboard, and we never combine them with your Atomic Notes account. A content blocker stops it without breaking
+        the site.
       </p>
 
       <h2>How we use Google user data</h2>
@@ -121,7 +131,7 @@ export default function PrivacyPage() {
       <h2>Service providers</h2>
       <ul>
         <li>Google: sign-in and Google Drive storage.</li>
-        <li>Vercel: hosting for the server and this website.</li>
+        <li>Vercel: hosting for the server and this website, and this website&apos;s page-view analytics.</li>
         <li>MongoDB Atlas: the database for account data.</li>
       </ul>
       <p>
