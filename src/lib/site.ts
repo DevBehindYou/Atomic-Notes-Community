@@ -17,3 +17,6 @@ export const SITE_URL = originOf(process.env.NEXT_PUBLIC_SITE_URL, DEFAULT_SITE_
 
 /** Where the download buttons point. */
 export const APK_URL = process.env.NEXT_PUBLIC_APK_URL || DEFAULT_APK_URL;
+
+/** Invite to the Atomic Notes Community Discord server. */
+export const DISCORD_URL = "https://discord.gg/T4Vs7P3Qs";
