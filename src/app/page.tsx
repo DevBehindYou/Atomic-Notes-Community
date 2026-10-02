@@ -573,7 +573,7 @@ export default async function Home() {
                 <p className="lp-small">
                   New accounts get 5 Atomic Coins. If a sync fails and no note gets through, its energy is refunded.
                   Coins can&apos;t be bought in the app yet, but early supporters get them:{" "}
-                  <Link href="/support-atomic-notes">support on Patreon</Link>.
+                  <Link href="/support-atomic-notes">support on Patreon or Ko-fi</Link>.
                 </p>
               </Reveal>
             </div>

@@ -1744,6 +1744,27 @@ section h2 {
   line-height: 1.55;
   color: #2b2e34;
 }
+.support-platforms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+}
+.support-platform {
+  display: flex;
+  flex-direction: column;
+}
+.support-platform h3 {
+  font-size: 2rem;
+  margin-top: 6px;
+}
+.support-platform .support-list {
+  flex: 1;
+  margin-bottom: 20px;
+}
+.support-platform .btn-signal {
+  align-self: flex-start;
+}
 .support-facts {
   margin: 22px 0 26px;
   max-width: 640px;
@@ -1752,7 +1773,8 @@ section h2 {
   color: var(--signal);
 }
 @media (max-width: 820px) {
-  .support-grid {
+  .support-grid,
+  .support-platforms {
     grid-template-columns: 1fr;
   }
 }

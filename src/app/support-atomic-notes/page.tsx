@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import { PATREON_URL } from "@/lib/content";
+import { KOFI_URL, PATREON_URL } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Support Atomic Notes, get Atomic Coins early",
   description:
-    "Support Atomic Notes on Patreon at the amount you choose. Send your Atomic Notes account email, and the developer sends you Atomic Coins as an early-supporter reward.",
+    "Support Atomic Notes on Patreon or Ko-fi at the amount you choose. Send your Atomic Notes account email, and the developer sends you Atomic Coins as an early-supporter reward.",
   alternates: { canonical: "/support-atomic-notes" },
 };
 
@@ -21,15 +21,20 @@ const STEPS: { t: string; d: React.ReactNode }[] = [
     ),
   },
   {
-    t: "Support on Patreon",
-    d: <>Open the DevBehindYou page on Patreon and support the project at the amount you choose.</>,
+    t: "Pick a platform",
+    d: (
+      <>
+        Support the DevBehindYou page on <b>Patreon</b> or <b>Ko-fi</b>, at the amount you choose. Both reach the same
+        developer and earn the same reward.
+      </>
+    ),
   },
   {
     t: "Send your email",
     d: (
       <>
-        Send the developer a Patreon message with your Atomic Notes account email. Check it letter by letter: the coins
-        go to exactly that account.
+        On Patreon, send the developer a message. On Ko-fi, write it in the message box when you pay and mark the
+        message private. Check it letter by letter: the coins go to exactly that account.
       </>
     ),
   },
@@ -41,6 +46,31 @@ const STEPS: { t: string; d: React.ReactNode }[] = [
         after the next refresh.
       </>
     ),
+  },
+];
+
+const PLATFORMS: { name: string; tag: string; url: string; label: string; points: string[] }[] = [
+  {
+    name: "Patreon",
+    tag: "MEMBERSHIP",
+    url: PATREON_URL,
+    label: "Support on Patreon",
+    points: [
+      "Usually a monthly membership",
+      "Send your account email in a Patreon message",
+      "Cancel on Patreon at any time",
+    ],
+  },
+  {
+    name: "Ko-fi",
+    tag: "ONE-TIME OR MONTHLY",
+    url: KOFI_URL,
+    label: "Support on Ko-fi",
+    points: [
+      "Good for a single payment",
+      "Put your account email in the message and mark it private",
+      "Monthly support is also available on Ko-fi",
+    ],
   },
 ];
 
@@ -57,16 +87,44 @@ export default function SupportPage() {
             </h1>
             <p className="lp-lead">
               Atomic Notes is built by one developer, with no ads and no trackers. Coins aren&apos;t sold in the app
-              yet. Support the project on Patreon, and the developer sends Atomic Coins to your account as an
+              yet. Support the project on Patreon or Ko-fi, and the developer sends Atomic Coins to your account as an
               early-supporter reward.
             </p>
             <div className="hero-actions">
               <a href={PATREON_URL} className="btn-signal" target="_blank" rel="noreferrer">
                 Support on Patreon
               </a>
+              <a href={KOFI_URL} className="btn-signal" target="_blank" rel="noreferrer">
+                Support on Ko-fi
+              </a>
               <a href="#how" className="btn-ghost">
                 How it works
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="platforms">
+          <div className="wrap">
+            <p className="eyebrow">TWO WAYS TO SUPPORT</p>
+            <h2>
+              Pick the one <span className="sig">that suits you.</span>
+            </h2>
+            <div className="support-platforms">
+              {PLATFORMS.map((p) => (
+                <div key={p.name} className="feature support-platform">
+                  <p className="num">{p.tag}</p>
+                  <h3>{p.name}</h3>
+                  <ul className="support-list">
+                    {p.points.map((pt) => (
+                      <li key={pt}>{pt}</li>
+                    ))}
+                  </ul>
+                  <a href={p.url} className="btn-signal" target="_blank" rel="noreferrer">
+                    {p.label}
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -92,16 +150,19 @@ export default function SupportPage() {
                 <p className="num">IMPORTANT</p>
                 <h3>Use the exact account email</h3>
                 <p>
-                  The reward is sent to the email you write, not to your Patreon name. A wrong or misspelled email means
-                  the coins can&apos;t reach you. If you signed in with more than one Google account, use the one that
-                  holds your notes.
+                  The reward is sent to the email you write, not to your Patreon or Ko-fi name. A wrong or misspelled
+                  email means the coins can&apos;t reach you. If you signed in with more than one Google account, use the
+                  one that holds your notes. On Ko-fi, mark the message private so your email isn&apos;t shown on the
+                  public page.
                 </p>
               </div>
               <div className="feature">
                 <p className="num">GOOD TO KNOW</p>
                 <ul className="support-list">
-                  <li>Patreon handles the payment. Atomic Notes never sees your card or bank details.</li>
-                  <li>Patreon support is usually a monthly membership. You can cancel on Patreon at any time.</li>
+                  <li>
+                    Patreon or Ko-fi handles the payment. Atomic Notes never sees your card, PayPal or bank details.
+                  </li>
+                  <li>Each platform charges its own fees, under its own terms.</li>
                   <li>The developer sends rewards by hand, so they can take a little time to arrive.</li>
                   <li>Writing notes stays free. Coins only buy sync energy and room for more notes.</li>
                 </ul>
@@ -137,6 +198,9 @@ export default function SupportPage() {
             <div className="hero-actions">
               <a href={PATREON_URL} className="btn-signal" target="_blank" rel="noreferrer">
                 Support on Patreon
+              </a>
+              <a href={KOFI_URL} className="btn-signal" target="_blank" rel="noreferrer">
+                Support on Ko-fi
               </a>
             </div>
           </div>
