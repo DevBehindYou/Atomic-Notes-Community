@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+/* The v3-style theme (colours, fonts, radius) stays in tailwind.config.ts. */
+@config "../../tailwind.config.ts";
 
 :root {
   --ink: #15171b;

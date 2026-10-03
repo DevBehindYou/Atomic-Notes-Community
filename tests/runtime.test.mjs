@@ -154,6 +154,8 @@ test('production routes preserve authentication and public content', { timeout: 
     assert.equal(await session(`${fresh}.${sign(fresh)}`), true);
     assert.equal(await session(`${now - 6 * DAY}.${sign(String(now - 6 * DAY))}`), true);
 
+    const skewed = String(now + 2000);
+    assert.equal(await session(`${skewed}.${sign(skewed)}`), true, 'a few seconds of clock skew is tolerated');
     const future = String(now + 5 * 60 * 1000);
     assert.equal(await session(`${future}.${sign(future)}`), false, 'future timestamp');
     const expired = String(now - 8 * DAY);

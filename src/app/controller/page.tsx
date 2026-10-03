@@ -723,4 +723,4 @@ function EnergyAdjust({ onMsg, onDone }: { onMsg: (m: string) => void; onDone: (
   );
 }
 
-const inputCls = "w-full rounded-std border-2 border-ink bg-white px-3 py-2 outline-none";
+const inputCls = "w-full rounded-std border-2 border-ink bg-white px-3 py-2 outline-hidden";
