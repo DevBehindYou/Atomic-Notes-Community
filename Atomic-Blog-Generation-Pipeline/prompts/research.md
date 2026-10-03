@@ -5,7 +5,7 @@ You are researching one Atomic Notes blog topic. Load `SOURCE-OF-TRUTH.md` and
 
 ## Do
 - Run at least 5 searches across distinct angles:
-  1. The technical concept (local-first, E2E encryption, CRDT/sync, Flutter, Supabase, etc.)
+  1. The technical concept (local-first, E2E encryption, CRDT/sync, Flutter, Google Drive sync, etc.)
      from primary/authoritative sources.
   2. Current stats or context (2024-2026 only), cross-checked against ≥2 independent sources.
   3. Practitioner sentiment (dev communities) — the gap between marketing and real experience.
