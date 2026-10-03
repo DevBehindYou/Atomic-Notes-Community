@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Bebas_Neue, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
+import { SiteAnalytics } from "@/components/SiteAnalytics";
+import { CommunityPopup } from "@/components/CommunityPopup";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -72,7 +74,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${bebas.variable} ${hanken.variable} ${mono.variable}`}>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">
+        {children}
+        <CommunityPopup />
+        <SiteAnalytics />
+      </body>
     </html>
   );
 }
