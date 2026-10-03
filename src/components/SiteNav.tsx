@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { APK_URL } from "@/lib/site";
+import { CoinMark } from "@/components/CoinMark";
 
 // Sections of the home page. The links start with "/" so they work from the blog and updates pages too.
 const LINKS = [
@@ -52,8 +53,13 @@ export function SiteNav({ current }: { current?: "blog" | "updates" | "support" 
           <Link href="/updates" className={current === "updates" ? "active" : ""}>
             Updates
           </Link>
-          <Link href="/support-atomic-notes" className={current === "support" ? "active" : ""}>
+          <Link
+            href="/support-atomic-notes"
+            className={"nav-support" + (current === "support" ? " active" : "")}
+          >
+            <CoinMark className="nav-support-coin" />
             Support
+            <span className="nav-support-badge">+Coins</span>
           </Link>
           <a href={APK_URL} className="btn-signal nav-cta">
             Download

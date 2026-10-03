@@ -3,6 +3,7 @@ import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Reveal } from "@/components/Reveal";
 import { Phone } from "@/components/Phone";
+import { CoinMark } from "@/components/CoinMark";
 import { Gallery, type Shot } from "@/components/Gallery";
 import { EnergyDemo } from "@/components/EnergyDemo";
 import {
@@ -572,11 +573,25 @@ export default async function Home() {
                 </dl>
                 <p className="lp-small">
                   New accounts get 5 Atomic Coins. If a sync fails and no note gets through, its energy is refunded.
-                  Coins can&apos;t be bought in the app yet, but early supporters get them:{" "}
-                  <Link href="/support-atomic-notes">support on Patreon or Ko-fi</Link>.
                 </p>
               </Reveal>
             </div>
+            <Reveal>
+              <div className="coin-callout">
+                <CoinMark size={72} className="coin-callout-mark" />
+                <div className="coin-callout-text">
+                  <p className="num">EARLY SUPPORTER REWARD</p>
+                  <h3>Get Atomic Coins before the store opens.</h3>
+                  <p>
+                    Coins aren&apos;t sold in the app yet. Support the build on Patreon or Ko-fi, at the amount you
+                    choose, and the developer adds coins to your account by hand.
+                  </p>
+                </div>
+                <Link href="/support-atomic-notes" className="coin-callout-cta">
+                  Support &amp; get coins <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </div>
+            </Reveal>
             <Reveal>
               <h3 className="lp-h3" style={{ marginTop: 44 }}>
                 Note capacity tiers
