@@ -10,6 +10,9 @@ import { atomicAdmin, isAtomicServerConfigured } from "@/lib/atomicServer";
 
 export const ADMIN_COOKIE = "acb_admin";
 const MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
+// Clocks on different instances (or processes) can disagree by a few milliseconds, so a cookie signed
+// a moment ago can look slightly "from the future". The timestamp is HMAC-signed, so nobody can forge one.
+const CLOCK_SKEW_MS = 60 * 1000;
 
 function secret(): string {
   const value = process.env.SESSION_SECRET;
@@ -32,7 +35,7 @@ export function tokenValid(token: string | undefined): boolean {
   if (!match) return false;
   const [, ts, sig] = match;
   const age = Date.now() - Number(ts);
-  if (age < 0 || age >= MAX_AGE_MS) return false;
+  if (age < -CLOCK_SKEW_MS || age >= MAX_AGE_MS) return false;
   return crypto.timingSafeEqual(Buffer.from(sig, "hex"), Buffer.from(sign(ts), "hex"));
 }
 

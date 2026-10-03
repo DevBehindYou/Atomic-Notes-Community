@@ -65,5 +65,5 @@ answers with "Great question" or "It depends".
 
 ## Atomic Notes positioning to reinforce (truthfully)
 local-first, offline-first, privacy-first, data ownership, no ads/trackers/AI-on-your-notes,
-opt-in encryption, Flutter + Supabase engineering, building in the open. Do not turn these
+opt-in encryption, sync into the user's own Google Drive, Flutter + TypeScript engineering, source-available code. Do not turn these
 into slogans; back each with a concrete mechanism from the code.
