@@ -1,0 +1,8 @@
+PATREON POST 01: Why Atomic Notes Saves Locally First ⚛️
+
+Post type: Text post. Add banner.png as the first image.
+Alt text:
+Why Atomic Notes Saves Locally First. Your notes shouldn't need permission from the cloud.
+
+Audience: Public works best for these, so new visitors can read them. Mark later behind-the-scenes posts as patron-only.
+Formatting: the Patreon editor doesn't read Markdown, so post.txt uses plain text and bullet characters.

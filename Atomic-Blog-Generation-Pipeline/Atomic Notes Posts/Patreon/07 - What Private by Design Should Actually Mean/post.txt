@@ -1,0 +1,27 @@
+"Privacy focused" is easy to write on a landing page.
+
+Architecture is harder.
+
+For Atomic Notes, privacy by design means asking the same questions again and again:
+
+• Does this data need to leave the device?
+• Does the server need the note content?
+• Can this feature work offline?
+• Can the user own the storage?
+• Can we collect less metadata?
+• Can encryption happen before sync?
+• Can the system work without ads or behavioral profiling?
+
+Not every answer can be "store nothing."
+
+Sign-in requires information.
+
+Sync requires state.
+
+Security needs sessions and operation tracking.
+
+The goal isn't pretending software can run without data.
+
+The goal is collecting and keeping only what each feature actually needs.
+
+That's the standard I want Atomic Notes to keep moving toward.

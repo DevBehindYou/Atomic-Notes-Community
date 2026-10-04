@@ -1,0 +1,34 @@
+Independent software gets weaker when it tries to copy every feature of the biggest product in its category.
+
+Atomic Notes isn't trying to become:
+
+• a team workspace
+• a project management suite
+• a database builder
+• an AI writing platform
+• a company intranet
+• an everything app
+
+It's trying to become a trustworthy notes app.
+
+That sounds less ambitious.
+
+In some ways, it's harder.
+
+A simple tool has fewer places to hide poor decisions.
+
+Speed matters.
+
+Offline reliability matters.
+
+Data ownership matters.
+
+Search matters.
+
+Sync matters.
+
+Privacy matters.
+
+The product has to do a small number of things extremely well.
+
+That's the direction I want to keep following.

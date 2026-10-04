@@ -1,0 +1,15 @@
+REDDIT POST 04
+
+Title (64/300 characters):
+Would you use a metered sync model if writing notes stayed free?
+
+Paste body.md in Markdown mode (the editor's "Markdown" toggle).
+
+Where to post: r/SideProject, r/indiehackers, r/androidapps
+Why: Business model feedback. Founders and indie devs give the most useful replies.
+
+Rules of thumb:
+- Read each subreddit's self-promotion rules before posting. Many allow one project post per week or month.
+- Reply to every comment in the first two hours.
+- Post one subreddit at a time, a few days apart, instead of cross-posting the same text everywhere.
+- No image needed: text discussions do better than banners on Reddit.

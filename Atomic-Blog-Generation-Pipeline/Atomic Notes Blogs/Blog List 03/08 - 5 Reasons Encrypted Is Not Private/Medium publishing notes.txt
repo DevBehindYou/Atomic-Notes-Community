@@ -1,0 +1,70 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+5 Reasons "Your Data Is Encrypted" Does Not Automatically Mean Your Notes Are Private
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Transport encryption, provider-held keys, visible metadata, analytics and account recovery: five ways an "encrypted" notes app can still see more than you think.
+
+Meta description (Story settings > SEO description):
+Learn 5 reasons encrypted notes may still fall short on privacy, from transport encryption and provider held keys to metadata, analytics, and account recovery.
+
+Tags (Medium allows 5):
+Encryption, Privacy, Cybersecurity, Security, Note Taking
+
+Keywords:
+  Primary: encrypted notes privacy
+  Secondary: encrypted notes app, end to end encrypted notes
+  LSI: E2EE notes, transport encryption, encryption at rest, client side encryption, zero knowledge encryption, encryption keys, metadata privacy, HTTPS encryption, server side encryption, private note taking
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources).
+A keyword also counts when a small word like "a", "the" or "your" sits inside it
+(for example "storing passwords in a notes app"), the way search engines read stop words.
+  words: 1450  (target 1400-1500)
+  primary 'encrypted notes privacy': 29 = 2.00% (exact 29)  target ~29
+    secondary 'encrypted notes app': 7 = 0.48%  target ~7
+    secondary 'end to end encrypted notes': 7 = 0.48%  target ~7
+      lsi 'E2EE notes': 1
+      lsi 'transport encryption': 2
+      lsi 'encryption at rest': 3
+      lsi 'client side encryption': 1
+      lsi 'zero knowledge encryption': 1
+      lsi 'encryption keys': 2
+      lsi 'metadata privacy': 1
+      lsi 'HTTPS encryption': 1
+      lsi 'server side encryption': 2
+      lsi 'private note taking': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0  inline links: 0
+  UK spellings: none
+
+Images, in order (banner plus four diagrams; upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: Encrypted is not the same as private.
+  02-transport-vs-e2e.png  ->  caption: Transport encryption versus end-to-end encryption.
+  03-key-spectrum.png  ->  caption: Who holds the key decides who can read your notes.
+  04-what-e2e-hides.png  ->  caption: What end-to-end encryption hides, and what it doesn't.
+  05-recovery-tradeoff.png  ->  caption: The recovery trade-off: convenience versus control.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  iCloud data security overview, Apple Support
+    https://support.apple.com/en-us/102651
+  Notice of recent security incident, LastPass, December 22, 2022
+    https://blog.lastpass.com/posts/notice-of-recent-security-incident
+  What Exodus Privacy does, Exodus Privacy
+    https://exodus-privacy.eu.org/en/page/what/
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/5-reasons-encryption-does-not-guarantee-notes-privacy
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 03/08 - 5 Reasons Encrypted Is Not Private/5-reasons-encryption-does-not-guarantee-notes-privacy.md"

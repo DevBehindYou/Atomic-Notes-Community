@@ -1,0 +1,64 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+Why Atomic Notes Uses Energy Instead of a Subscription
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Writing should never sit behind a monthly bill. Here's how Atomic Energy and Atomic Coins pay for sync, what stays free, and why the model never needs your data.
+
+Meta description (Story settings > SEO description):
+Discover why Atomic Notes uses Atomic Energy and Coins for sync convenience instead of locking basic note taking behind a recurring subscription.
+
+Tags (Medium allows 5):
+Business Model, Subscription, Privacy, Startup, Note Taking
+
+Keywords:
+  Primary: subscription free notes app
+  Secondary: Atomic Energy, Atomic Coins, notes app without subscription, privacy friendly business model
+  LSI: monthly plan, recurring, cloud sync, server bill, one time, welcome gift, daily refill
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1495  (target 1400-1500)
+  primary 'subscription free notes app': 29  = 1.94%  (target 2.0%, ~30)
+    secondary 'Atomic Energy': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'Atomic Coins': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'notes app without subscription': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'privacy friendly business model': 7  = 0.47%  (target 0.5%, ~7)
+      lsi 'monthly plan': 2
+      lsi 'recurring': 1
+      lsi 'cloud sync': 3
+      lsi 'server bill': 3
+      lsi 'one time': 2
+      lsi 'welcome gift': 2
+      lsi 'daily refill': 2
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: Energy, not a subscription.
+  02-energy-model.png  ->  caption: How energy and coins work in Atomic Notes.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  Atomic Notes support page
+    https://atomic-notes-community.vercel.app/support-atomic-notes
+  Atomic Notes 2.03.5 release notes (energy and coins changes)
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/tag/v2.03.5
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+  Atomic Notes terms
+    https://atomic-notes-community.vercel.app/terms
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/why-atomic-notes-uses-energy
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Why Atomic Notes Uses Energy Instead of a Subscription/why-atomic-notes-uses-energy.md"

@@ -1,0 +1,17 @@
+You don't need Atomic Energy to write a note.
+
+You don't need it to read your notes.
+
+It isn't meant to turn your own information into a paywall.
+
+Atomic Energy exists around cloud sync, because hosted infrastructure has a real cost. Every account gets 20 Energy a day for free, and a sync with nothing to upload costs nothing.
+
+The idea is simple:
+
+local notes stay local and usable
+
+cloud operations use shared infrastructure
+
+I'm still refining the system as Atomic Notes grows, and feedback on whether it feels fair is genuinely useful.
+
+Building in public means the business model deserves scrutiny too.

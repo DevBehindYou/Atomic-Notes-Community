@@ -1,0 +1,8 @@
+PATREON POST 10: Atomic Notes Is Becoming More Than an App
+
+Post type: Text post. Add banner.png as the first image.
+Alt text:
+More Than An App. Docs, releases, testing and a community around Atomic Notes.
+
+Audience: Public works best for these, so new visitors can read them. Mark later behind-the-scenes posts as patron-only.
+Formatting: the Patreon editor doesn't read Markdown, so post.txt uses plain text and bullet characters.

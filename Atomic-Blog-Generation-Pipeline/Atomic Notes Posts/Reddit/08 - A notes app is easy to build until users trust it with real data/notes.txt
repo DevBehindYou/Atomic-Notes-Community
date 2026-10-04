@@ -1,0 +1,15 @@
+REDDIT POST 08
+
+Title (64/300 characters):
+A notes app is easy to build until users trust it with real data
+
+Paste body.md in Markdown mode (the editor's "Markdown" toggle).
+
+Where to post: r/FlutterDev, r/androiddev, r/ExperiencedDevs (check rules)
+Why: Engineering story. Developers enjoy failure-mode threads.
+
+Rules of thumb:
+- Read each subreddit's self-promotion rules before posting. Many allow one project post per week or month.
+- Reply to every comment in the first two hours.
+- Post one subreddit at a time, a few days apart, instead of cross-posting the same text everywhere.
+- No image needed: text discussions do better than banners on Reddit.

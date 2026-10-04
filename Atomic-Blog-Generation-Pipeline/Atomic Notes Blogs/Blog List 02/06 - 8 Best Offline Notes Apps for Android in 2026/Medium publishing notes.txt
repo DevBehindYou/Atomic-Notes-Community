@@ -1,0 +1,87 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+8 Best Offline Notes Apps for Android in 2026
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Some apps work offline. Others just cache a cloud. Eight Android notes apps that keep working on a plane, in a basement, or during an outage.
+
+Meta description (Story settings > SEO description):
+Explore 8 of the best offline notes apps for Android in 2026. Compare local storage, account requirements, offline editing, cloud sync, privacy, backups, and export options.
+
+Tags (Medium allows 5):
+Android, Offline First, Note Taking, Productivity, Apps
+
+Apps in this list, in order (Atomic Notes first; no other app repeats across the seven listicles):
+  1. Atomic Notes
+  2. Material Notes
+  3. Open Notes
+  4. sNotz
+  5. Easy Notes
+  6. Orgzly Revived
+  7. Notes (by Bill Farmer)
+  8. Butterfly
+
+Keywords:
+  Primary: best offline notes app Android
+  Secondary: offline notes app, offline note taking app Android, notes app without internet, Android notes offline, local notes Android, notes app without account, offline notebook app, best notes app without internet
+  LSI: airplane mode, backup, export, WebDAV, Org mode
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1089  (target 1000-1100)
+  primary 'best offline notes app Android': 14  = 1.29%  (target 2.0%, ~22)
+    secondary 'offline notes app': 15  = 1.38%  (target 0.5%, ~5)  standalone 1 = 0.09%
+    secondary 'offline note taking app Android': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'notes app without internet': 2  = 0.18%  (target 0.5%, ~5)
+    secondary 'Android notes offline': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'local notes Android': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'notes app without account': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'offline notebook app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'best notes app without internet': 1  = 0.09%  (target 0.5%, ~5)
+      lsi 'airplane mode': 2
+      lsi 'backup': 7
+      lsi 'export': 4
+      lsi 'WebDAV': 4
+      lsi 'Org mode': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 8 best offline notes apps for Android.
+  02-scorecard.png  ->  caption: Eight offline Android notes apps, side by side.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+02-scorecard.png carries the comparison table, because Medium has no table support.
+
+Sources (listed after the article, under "Sources"):
+  Atomic Notes source code and releases
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+  Material Notes on F-Droid
+    https://f-droid.org/en/packages/com.maelchiotti.localmaterialnotes/
+  Open Notes on F-Droid
+    https://f-droid.org/en/packages/com.opennotes/
+  sNotz on F-Droid
+    https://f-droid.org/en/packages/com.sunilpaulmathew.snotz/
+  Easy Notes on F-Droid
+    https://f-droid.org/en/packages/com.kin.easynotes/
+  Orgzly Revived on F-Droid
+    https://f-droid.org/en/packages/com.orgzlyrevived/
+  Notes by Bill Farmer on F-Droid
+    https://f-droid.org/en/packages/org.billthefarmer.notes/
+  Butterfly on GitHub
+    https://github.com/LinwoodDev/Butterfly
+
+Before you publish: app features change fast. Re-check any app whose AI, encryption, sync or pricing you mention if more than a few weeks have passed since October 4, 2026.
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/best-offline-notes-apps-android
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 02/06 - 8 Best Offline Notes Apps for Android in 2026/best-offline-notes-apps-android.md"

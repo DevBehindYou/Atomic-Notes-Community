@@ -1,0 +1,17 @@
+You may notice that I describe Atomic Notes as having optional end to end encryption, instead of calling everything "encrypted."
+
+That wording is on purpose.
+
+Privacy claims should be precise.
+
+Atomic Notes works without the encrypted vault, and you can turn on stronger protection whenever you want it.
+
+With the vault on, a key made on your phone encrypts each note before it syncs.
+
+With the vault off, HTTPS and your Google account protect your notes instead.
+
+Different modes have different security properties.
+
+I'd rather explain that clearly than use one broad security word for everything.
+
+Good privacy software should help you understand what protection you actually have.

@@ -1,0 +1,12 @@
+Your notes shouldn't stop working because:
+
+• your internet is down
+• a server is unavailable
+• a subscription expired
+• a cloud provider has an outage
+
+Atomic Notes is local first. Write first, sync later. ⚛️
+
+https://atomic-notes-community.vercel.app/
+
+#AtomicNotes #LocalFirst

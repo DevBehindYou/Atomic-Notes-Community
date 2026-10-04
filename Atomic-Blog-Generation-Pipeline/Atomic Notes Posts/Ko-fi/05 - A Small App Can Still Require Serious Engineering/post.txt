@@ -1,0 +1,25 @@
+Atomic Notes looks simple from the outside.
+
+Create a note.
+
+Edit it.
+
+Search it.
+
+Sync it.
+
+But reliability lives in the edge cases.
+
+What happens if the app closes during sync?
+
+What happens if the same request is retried?
+
+What happens if two devices edit the same note?
+
+What happens after an update?
+
+What happens when the network disappears halfway through?
+
+I spend a lot of time testing exactly these problems, because you shouldn't have to think about them.
+
+Simple software should feel simple because the hard work happened underneath.

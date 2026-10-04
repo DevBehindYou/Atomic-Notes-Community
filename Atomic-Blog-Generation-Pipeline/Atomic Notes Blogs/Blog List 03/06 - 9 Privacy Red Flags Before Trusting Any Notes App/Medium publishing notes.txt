@@ -1,0 +1,70 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+9 Privacy Red Flags to Check Before Trusting Any Notes App in 2026
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+"Military grade encryption" tells you nothing. These nine red flags tell you almost everything, and you can check them in ten minutes.
+
+Meta description (Story settings > SEO description):
+Check 9 privacy red flags before trusting a notes app in 2026, including weak encryption, trackers, excessive permissions, AI processing, and poor exports.
+
+Tags (Medium allows 5):
+Privacy, Note Taking, Cybersecurity, Apps, Data Privacy
+
+Keywords:
+  Primary: private notes app
+  Secondary: privacy focused notes app, secure notes app
+  LSI: notes app encryption, notes app permissions, data ownership, third party tracking, offline notes app, notes app telemetry, cloud notes privacy, open source notes app, AI notes privacy, data export options
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources).
+A keyword also counts when a small word like "a", "the" or "your" sits inside it
+(for example "storing passwords in a notes app"), the way search engines read stop words.
+  words: 1498  (target 1400-1500)
+  primary 'private notes app': 29 = 1.94% (exact 29)  target ~30
+    secondary 'privacy focused notes app': 7 = 0.47%  target ~7
+    secondary 'secure notes app': 7 = 0.47%  target ~7
+      lsi 'notes app encryption': 1
+      lsi 'notes app permissions': 1
+      lsi 'data ownership': 1
+      lsi 'third party tracking': 1
+      lsi 'offline notes app': 1
+      lsi 'notes app telemetry': 1
+      lsi 'cloud notes privacy': 1
+      lsi 'open source notes app': 1
+      lsi 'AI notes privacy': 1
+      lsi 'data export options': 1
+  banned hits: ['open source']
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0  inline links: 0
+  UK spellings: none
+
+Images, in order (banner plus four diagrams; upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 9 privacy red flags to check before trusting a notes app.
+  02-nine-flags.png  ->  caption: Nine red flags, and the green flag to look for instead.
+  03-marketing-vs-facts.png  ->  caption: Marketing language versus the four questions that matter.
+  04-atomic-scorecard.png  ->  caption: Atomic Notes, checked against all nine red flags.
+  05-score-guide.png  ->  caption: Score any notes app in ten minutes.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  What Exodus Privacy does, Exodus Privacy
+    https://exodus-privacy.eu.org/en/page/what/
+  FTC enforcement action against GoodRx, February 2023
+    https://www.ftc.gov/news-events/news/press-releases/2023/02/ftc-enforcement-action-bar-goodrx-sharing-consumers-sensitive-health-info-advertising
+  Right to data portability, GDPR Article 20
+    https://gdpr-info.eu/art-20-gdpr/
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/9-notes-app-privacy-red-flags
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 03/06 - 9 Privacy Red Flags Before Trusting Any Notes App/9-notes-app-privacy-red-flags.md"

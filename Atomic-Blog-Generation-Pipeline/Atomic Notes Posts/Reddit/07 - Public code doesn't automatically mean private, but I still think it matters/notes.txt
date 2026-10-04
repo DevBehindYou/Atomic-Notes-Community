@@ -1,0 +1,15 @@
+REDDIT POST 07
+
+Title (76/300 characters):
+Public code doesn't automatically mean private, but I still think it matters
+
+Paste body.md in Markdown mode (the editor's "Markdown" toggle).
+
+Where to post: r/androidapps, r/privacytoolsIO (check rules first)
+Why: Honest discussion about code licensing. Do not post to r/opensource: the app is source-available, and that sub would rightly reject it.
+
+Rules of thumb:
+- Read each subreddit's self-promotion rules before posting. Many allow one project post per week or month.
+- Reply to every comment in the first two hours.
+- Post one subreddit at a time, a few days apart, instead of cross-posting the same text everywhere.
+- No image needed: text discussions do better than banners on Reddit.

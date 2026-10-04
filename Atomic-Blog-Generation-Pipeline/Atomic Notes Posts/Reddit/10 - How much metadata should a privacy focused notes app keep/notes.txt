@@ -1,0 +1,15 @@
+REDDIT POST 10
+
+Title (58/300 characters):
+How much metadata should a privacy focused notes app keep?
+
+Paste body.md in Markdown mode (the editor's "Markdown" toggle).
+
+Where to post: r/androidapps, r/SideProject
+Why: Transparency post. Listing exactly what the server keeps builds trust.
+
+Rules of thumb:
+- Read each subreddit's self-promotion rules before posting. Many allow one project post per week or month.
+- Reply to every comment in the first two hours.
+- Post one subreddit at a time, a few days apart, instead of cross-posting the same text everywhere.
+- No image needed: text discussions do better than banners on Reddit.

@@ -1,0 +1,11 @@
+Even when an app never reads your notes, metadata can say a lot:
+
+Login times.
+Device info.
+Sync activity.
+Account details.
+Edit timestamps.
+
+Encryption protects what you typed. Collecting less protects the rest. ⚛️
+
+#DigitalPrivacy #AtomicNotes

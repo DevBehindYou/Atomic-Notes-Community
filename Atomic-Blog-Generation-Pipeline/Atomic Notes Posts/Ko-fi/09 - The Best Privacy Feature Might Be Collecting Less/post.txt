@@ -1,0 +1,19 @@
+Encryption gets most of the attention in privacy software.
+
+It deserves attention.
+
+But encryption is only one part of privacy.
+
+Another question matters just as much:
+
+How much information did the app collect in the first place?
+
+Every unnecessary analytics event, identifier, behavioral profile and third-party SDK is one more thing you have to trust.
+
+Atomic Notes is built around a simpler principle:
+
+Collect what the system genuinely needs.
+
+Avoid the rest.
+
+Protecting stored data is half of privacy. Refusing unnecessary data is the other half.

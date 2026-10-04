@@ -1,0 +1,7 @@
+Most cloud notes apps ask you to trust their storage.
+
+Atomic Notes syncs your notes into a private folder in your own Google Drive. The app stays local first, and sync is a separate layer.
+
+Your notes. Your storage. Your control. ⚛️
+
+#DataOwnership #AtomicNotes

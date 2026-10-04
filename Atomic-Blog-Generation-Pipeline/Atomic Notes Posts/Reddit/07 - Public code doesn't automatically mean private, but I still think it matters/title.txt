@@ -1,0 +1,1 @@
+Public code doesn't automatically mean private, but I still think it matters

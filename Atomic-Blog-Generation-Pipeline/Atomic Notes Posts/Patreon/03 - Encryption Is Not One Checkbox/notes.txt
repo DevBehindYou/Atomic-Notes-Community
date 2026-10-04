@@ -1,0 +1,8 @@
+PATREON POST 03: Encryption Is Not One Checkbox
+
+Post type: Text post. Add banner.png as the first image.
+Alt text:
+Encryption Is Not One Checkbox. Who holds the key matters more than the word "encrypted".
+
+Audience: Public works best for these, so new visitors can read them. Mark later behind-the-scenes posts as patron-only.
+Formatting: the Patreon editor doesn't read Markdown, so post.txt uses plain text and bullet characters.

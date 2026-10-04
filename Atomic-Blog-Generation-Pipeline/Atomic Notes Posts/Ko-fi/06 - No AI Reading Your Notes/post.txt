@@ -1,0 +1,21 @@
+Atomic Notes is deliberately not built around an AI assistant.
+
+That doesn't mean AI is useless.
+
+It means people should still have places where software does less.
+
+A private notes app can be one of those places.
+
+Write something.
+
+Save it.
+
+Find it later.
+
+Sync it if you want.
+
+Encrypt it if you want.
+
+No AI needs to interpret the thought for the app to be useful.
+
+Sometimes software earns trust by knowing when not to add another layer. ⚛️

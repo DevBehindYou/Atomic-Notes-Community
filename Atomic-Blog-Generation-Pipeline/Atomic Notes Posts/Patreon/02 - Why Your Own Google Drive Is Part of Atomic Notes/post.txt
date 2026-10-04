@@ -1,0 +1,25 @@
+One question shaped a lot of the Atomic Notes architecture:
+
+Where should synced note content actually live?
+
+The easiest answer would have been: "Put everything in my own app database."
+
+That would have made many backend decisions simpler.
+
+It would also have made Atomic Notes the permanent owner of your storage.
+
+I wanted to try something different.
+
+Atomic Notes syncs your notes into a private folder in your own Google Drive. The app can only see the files it created there.
+
+The app stays local first.
+
+The Atomic Notes server coordinates sign-in, sync, versions, sessions, metadata and Atomic Energy. It never stores your note text.
+
+Optional end to end encryption can seal each note on your phone before it syncs.
+
+This isn't the only possible privacy architecture, and it isn't perfect for everyone. Self-hosting, WebDAV, Syncthing and fully offline storage all have their place.
+
+For Atomic Notes, user owned cloud storage felt like a good middle ground between convenience and ownership.
+
+Your notes. Your storage. Your control. ⚛️

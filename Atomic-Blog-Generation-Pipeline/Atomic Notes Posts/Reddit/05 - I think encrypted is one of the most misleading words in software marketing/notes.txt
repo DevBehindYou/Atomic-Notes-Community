@@ -1,0 +1,15 @@
+REDDIT POST 05
+
+Title (77/300 characters):
+I think "encrypted" is one of the most misleading words in software marketing
+
+Paste body.md in Markdown mode (the editor's "Markdown" toggle).
+
+Where to post: r/cybersecurity (discussion), r/androidapps
+Why: Security discussion. Keep links out of the body. If someone asks, share them in the comments.
+
+Rules of thumb:
+- Read each subreddit's self-promotion rules before posting. Many allow one project post per week or month.
+- Reply to every comment in the first two hours.
+- Post one subreddit at a time, a few days apart, instead of cross-posting the same text everywhere.
+- No image needed: text discussions do better than banners on Reddit.

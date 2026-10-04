@@ -1,0 +1,86 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+6 Best Local First Note Taking Apps in 2026 That Keep Your Data Yours
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Local first means more than an offline cache. Six apps that treat your device as the real copy, and what happens to your notes when their servers vanish.
+
+Meta description (Story settings > SEO description):
+Compare 6 of the best local first note taking apps in 2026. See how they handle offline access, local storage, cloud synchronization, encryption, portability, and ownership of your notes.
+
+Tags (Medium allows 5):
+Local First, Note Taking, Privacy, Productivity, Software Architecture
+
+Apps in this list, in order (Atomic Notes first; no other app repeats across the seven listicles):
+  1. Atomic Notes
+  2. Obsidian
+  3. Logseq
+  4. SiYuan
+  5. SilverBullet
+  6. Trilium Notes
+
+Keywords:
+  Primary: best local first note taking apps
+  Secondary: local first notes app, local first note taking, offline first notes app, local notes app, notes stored locally, user owned notes, privacy first note taking, local first software, offline note taking app
+  LSI: primary copy, Markdown, self-host, conflict copy, offline cache
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1095  (target 1000-1100)
+  primary 'best local first note taking apps': 14  = 1.28%  (target 2.0%, ~22)
+    secondary 'local first notes app': 2  = 0.18%  (target 0.5%, ~5)
+    secondary 'local first note taking': 15  = 1.37%  (target 0.5%, ~5)  standalone 1 = 0.09%
+    secondary 'offline first notes app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'local notes app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'notes stored locally': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'user owned notes': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'privacy first note taking': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'local first software': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'offline note taking app': 1  = 0.09%  (target 0.5%, ~5)
+      lsi 'primary copy': 8
+      lsi 'Markdown': 7
+      lsi 'self-host': 2
+      lsi 'conflict copy': 1
+      lsi 'offline cache': 2
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 6 best local first note taking apps.
+  02-scorecard.png  ->  caption: Six local first note taking apps, side by side.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+02-scorecard.png carries the comparison table, because Medium has no table support.
+
+Sources (listed after the article, under "Sources"):
+  Atomic Notes source code and releases
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+  Obsidian Sync security and privacy
+    https://obsidian.md/help/sync/security
+  Logseq on GitHub
+    https://github.com/logseq/logseq
+  SiYuan on GitHub
+    https://github.com/siyuan-note/siyuan
+  SilverBullet
+    https://silverbullet.md/
+  Trilium Notes on GitHub
+    https://github.com/TriliumNext/Trilium
+  Trilium AI documentation
+    https://github.com/TriliumNext/Trilium/blob/main/docs/User%20Guide/User%20Guide/AI.md
+  Local-first software, Ink & Switch
+    https://www.inkandswitch.com/essay/local-first/
+
+Before you publish: app features change fast. Re-check any app whose AI, encryption, sync or pricing you mention if more than a few weeks have passed since October 4, 2026.
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/best-local-first-note-taking-apps
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 02/04 - 6 Best Local First Note Taking Apps in 2026/best-local-first-note-taking-apps.md"

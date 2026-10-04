@@ -1,0 +1,61 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+Encryption Alone Does Not Make a Notes App Private
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+AES on the box is a start, not a finish. Storage, metadata, telemetry, AI and the business model decide whether a private notes app really keeps your notes private.
+
+Meta description (Story settings > SEO description):
+Encryption is important, but privacy goes beyond encryption. Learn why tracking, telemetry, architecture, and business models also determine whether notes stay private.
+
+Tags (Medium allows 5):
+Privacy, Encryption, Note Taking, Cybersecurity, Android
+
+Keywords:
+  Primary: private notes app
+  Secondary: encrypted notes app, end to end encryption, notes privacy, privacy by design
+  LSI: data minimization, AI training, local first, zero knowledge
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1492  (target 1400-1500)
+  primary 'private notes app': 29  = 1.94%  (target 2.0%, ~30)
+    secondary 'encrypted notes app': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'end to end encryption': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'notes privacy': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'privacy by design': 7  = 0.47%  (target 0.5%, ~7)
+      lsi 'data minimization': 1
+      lsi 'AI training': 2
+      lsi 'local first': 2
+      lsi 'zero knowledge': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: Encryption alone isn't privacy.
+  02-privacy-layers.png  ->  caption: Privacy has six layers, and encryption is only one of them.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  FTC enforcement action against GoodRx, February 2023
+    https://www.ftc.gov/news-events/news/press-releases/2023/02/ftc-enforcement-action-bar-goodrx-sharing-consumers-sensitive-health-info-advertising
+  Zoom's AI training terms, TechCrunch, August 8, 2023
+    https://techcrunch.com/2023/08/08/zoom-data-mining-for-ai-terms-gdpr-eprivacy/
+  Updating Adobe's Terms of Use, Adobe, June 10, 2024
+    https://blog.adobe.com/en/publish/2024/06/10/updating-adobes-terms-of-use
+  Atomic Notes source code and releases
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/encryption-alone-does-not-mean-private
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Encryption Alone Does Not Make a Notes App Private/encryption-alone-does-not-mean-private.md"

@@ -1,0 +1,9 @@
+X POST 10: Build In Public
+
+Length: 266/280 (X's weighted count: links count 23, emoji count 2).
+
+Image: attach image.png (2000x1125, 16:9).
+Alt text:
+The Invisible Work Matters. What it really takes to build a notes app you can trust. Atomic Notes, local first and private by design.
+
+Tip: post the link-free version as the main post if reach drops on link posts, and add the link as the first reply.

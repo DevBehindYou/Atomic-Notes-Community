@@ -1,0 +1,82 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+3 Best Private Notion Alternatives for Local First Notes in 2026
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Do you need another workspace, or just your notes? Three private Notion alternatives, from a full local first workspace to a fast private notebook.
+
+Meta description (Story settings > SEO description):
+Compare 3 private Notion alternatives for local first note taking in 2026. Explore offline access, local storage, encryption, open source options, cloud independence, and data ownership.
+
+Tags (Medium allows 5):
+Notion, Productivity, Privacy, Note Taking, Open Source
+
+Apps in this list, in order (Atomic Notes first; no other app repeats across the seven listicles):
+  1. Atomic Notes
+  2. Anytype
+  3. AppFlowy
+
+Keywords:
+  Primary: private Notion alternatives
+  Secondary: local first Notion alternative, private alternative to Notion, offline Notion alternative, open source Notion alternative, encrypted Notion alternative, privacy focused productivity app, local notes alternative to Notion, Notion alternative without AI
+  LSI: workspace, databases, self-hosting, source-available, peer-to-peer sync
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1053  (target 1000-1100)
+  primary 'private Notion alternatives': 15  = 1.42%  (target 2.0%, ~21)
+    secondary 'local first Notion alternative': 2  = 0.19%  (target 0.5%, ~5)
+    secondary 'private alternative to Notion': 2  = 0.19%  (target 0.5%, ~5)
+    secondary 'offline Notion alternative': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'open source Notion alternative': 3  = 0.28%  (target 0.5%, ~5)
+    secondary 'encrypted Notion alternative': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'privacy focused productivity app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'local notes alternative to Notion': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'Notion alternative without AI': 2  = 0.19%  (target 0.5%, ~5)
+      lsi 'workspace': 7
+      lsi 'databases': 8
+      lsi 'self-hosting': 1
+      lsi 'source-available': 5
+      lsi 'peer-to-peer sync': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 3 best private Notion alternatives.
+  02-scorecard.png  ->  caption: Three private Notion alternatives, side by side.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+02-scorecard.png carries the comparison table, because Medium has no table support.
+
+Sources (listed after the article, under "Sources"):
+  Atomic Notes source code and releases
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+  Anytype desktop client on GitHub
+    https://github.com/anyproto/anytype-ts
+  Anytype Android client on GitHub
+    https://github.com/anyproto/anytype-kotlin
+  any-sync protocol on GitHub
+    https://github.com/anyproto/any-sync
+  Self-host Anytype with any-sync-dockercompose
+    https://github.com/anyproto/any-sync-dockercompose
+  AppFlowy on GitHub
+    https://github.com/AppFlowy-IO/AppFlowy
+  AppFlowy documentation
+    https://docs.appflowy.io/docs/appflowy/readme/welcome-to-appflowy
+
+Before you publish: app features change fast. Re-check any app whose AI, encryption, sync or pricing you mention if more than a few weeks have passed since October 4, 2026.
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/private-local-first-notion-alternatives
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 02/07 - 3 Best Private Notion Alternatives in 2026/private-local-first-notion-alternatives.md"

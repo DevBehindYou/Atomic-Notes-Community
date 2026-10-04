@@ -1,0 +1,29 @@
+Atomic Notes is built by one developer.
+
+There's no giant company behind it.
+
+No advertising network.
+
+No growth team trying to maximize engagement.
+
+No business model based on reading what people write.
+
+That independence makes some things harder.
+
+It also gives the project room to make different decisions.
+
+Local first instead of cloud dependent.
+
+User owned storage instead of total platform ownership.
+
+Optional E2E instead of vague security claims.
+
+Public code instead of "just trust us."
+
+If you support Atomic Notes here, test the app, report a bug, share the project, or simply follow along, thank you.
+
+You're helping prove that small software can still be built around user ownership.
+
+Local first. Private by design. ⚛️
+
+https://atomic-notes-community.vercel.app/

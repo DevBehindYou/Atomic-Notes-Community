@@ -1,0 +1,7 @@
+"Offline support" and "local first" aren't the same thing.
+
+Atomic Notes saves your work on your device first. Creating, editing, reading, searching and deleting notes don't depend on the cloud. Sync comes after.
+
+That difference matters. ⚛️
+
+#LocalFirst #AtomicNotes

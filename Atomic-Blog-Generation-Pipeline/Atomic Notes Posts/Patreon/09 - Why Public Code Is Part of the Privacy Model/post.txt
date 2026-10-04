@@ -1,0 +1,28 @@
+Public code doesn't guarantee security.
+
+It doesn't guarantee privacy either.
+
+Bad architecture can still be public.
+
+Bugs can still exist.
+
+Developers can still make mistakes.
+
+So why publish the Atomic Notes code at all?
+
+Because privacy claims become easier to challenge.
+
+If I say notes are saved locally first, someone can read the implementation.
+
+If I describe the sync model, people can check it.
+
+If I say there's no AI reading notes, the architecture can be examined.
+
+Public code turns at least some promises into things you can verify.
+
+To be exact: Atomic Notes is source-available, not open source. You can read, audit and build the app to check it, but the license doesn't allow reuse in other products. As a solo developer who built it from scratch, that's the balance I chose.
+
+For privacy software, I think that accountability matters.
+
+The code is here:
+https://github.com/DevBehindYou/Atomic-Notes-App-V0.2

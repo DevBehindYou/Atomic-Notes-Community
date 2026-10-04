@@ -1,0 +1,15 @@
+REDDIT POST 06
+
+Title (65/300 characters):
+What is the biggest privacy red flag you look for in a notes app?
+
+Paste body.md in Markdown mode (the editor's "Markdown" toggle).
+
+Where to post: r/notetaking, r/androidapps
+Why: Checklist discussion. A good way to hear what users really care about.
+
+Rules of thumb:
+- Read each subreddit's self-promotion rules before posting. Many allow one project post per week or month.
+- Reply to every comment in the first two hours.
+- Post one subreddit at a time, a few days apart, instead of cross-posting the same text everywhere.
+- No image needed: text discussions do better than banners on Reddit.

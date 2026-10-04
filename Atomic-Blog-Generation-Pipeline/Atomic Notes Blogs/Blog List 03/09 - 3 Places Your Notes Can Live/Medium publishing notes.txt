@@ -1,0 +1,70 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+3 Places Your Notes Can Live and Why the Difference Matters for Privacy
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Device only, the company's cloud, or cloud storage you control. Where your notes live decides who can read them, who can lose them, and whether you can leave.
+
+Meta description (Story settings > SEO description):
+Compare 3 places your notes can live: device only, company cloud, or user controlled cloud, and learn how each affects privacy, ownership, backups, and sync.
+
+Tags (Medium allows 5):
+Privacy, Cloud Storage, Local First, Note Taking, Data Ownership
+
+Keywords:
+  Primary: where are notes stored
+  Secondary: notes storage privacy, where do notes apps store data
+  LSI: local notes storage, cloud notes storage, user owned cloud storage, notes data ownership, offline notes, cloud privacy, notes backup, notes synchronization, encrypted cloud notes, local first storage
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources).
+A keyword also counts when a small word like "a", "the" or "your" sits inside it
+(for example "storing passwords in a notes app"), the way search engines read stop words.
+  words: 1469  (target 1400-1500)
+  primary 'where are notes stored': 29 = 1.97% (exact 18)  target ~29
+    secondary 'notes storage privacy': 7 = 0.48%  target ~7
+    secondary 'where do notes apps store data': 7 = 0.48%  target ~7
+      lsi 'local notes storage': 1
+      lsi 'cloud notes storage': 1
+      lsi 'user owned cloud storage': 1
+      lsi 'notes data ownership': 1
+      lsi 'offline notes': 1
+      lsi 'cloud privacy': 1
+      lsi 'notes backup': 2
+      lsi 'notes synchronization': 1
+      lsi 'encrypted cloud notes': 1
+      lsi 'local first storage': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0  inline links: 0
+  UK spellings: none
+
+Images, in order (banner plus four diagrams; upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 3 places your notes can live.
+  02-three-places.png  ->  caption: The three places your notes can live.
+  03-comparison.png  ->  caption: Device only, company cloud and your own cloud, compared.
+  04-bad-days.png  ->  caption: Four bad days, and how each storage model handles them.
+  05-atomic-hybrid.png  ->  caption: Atomic Notes: local first, with sync into your own Drive.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  iCloud data security overview, Apple Support
+    https://support.apple.com/en-us/102651
+  Choose Google Drive API scopes (drive.file), Google for Developers
+    https://developers.google.com/workspace/drive/api/guides/api-specific-auth
+  Local-first software, Ink & Switch
+    https://www.inkandswitch.com/essay/local-first/
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/3-ways-notes-apps-store-your-data
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 03/09 - 3 Places Your Notes Can Live/3-ways-notes-apps-store-your-data.md"

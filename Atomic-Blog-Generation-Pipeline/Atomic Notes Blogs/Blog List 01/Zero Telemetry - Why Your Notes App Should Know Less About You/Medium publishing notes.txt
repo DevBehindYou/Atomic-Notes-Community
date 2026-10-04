@@ -1,0 +1,64 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+Zero Telemetry: Why Your Notes App Should Know Less About You
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Most apps quietly report how you use them. Here's what telemetry really collects, why it matters in a notes app, and what zero telemetry looks like in practice.
+
+Meta description (Story settings > SEO description):
+Learn what zero telemetry means, why analytics can matter in private software, and how Atomic Notes is designed to collect as little user data as possible.
+
+Tags (Medium allows 5):
+Privacy, Data Privacy, Tracking, Android, Apps
+
+Keywords:
+  Primary: zero telemetry
+  Secondary: privacy focused notes app, no tracking notes app, private note taking, data privacy apps
+  LSI: analytics SDK, advertising ID, Exodus Privacy, data minimization, third party
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1498  (target 1400-1500)
+  primary 'zero telemetry': 29  = 1.94%  (target 2.0%, ~30)
+    secondary 'privacy focused notes app': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'no tracking notes app': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'private note taking': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'data privacy apps': 7  = 0.47%  (target 0.5%, ~7)
+      lsi 'analytics SDK': 2
+      lsi 'advertising ID': 2
+      lsi 'Exodus Privacy': 2
+      lsi 'data minimization': 1
+      lsi 'third party': 2
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: Zero telemetry.
+  02-what-leaves.png  ->  caption: What leaves your phone in Atomic Notes, and what never does.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  FTC enforcement action against GoodRx, February 2023
+    https://www.ftc.gov/news-events/news/press-releases/2023/02/ftc-enforcement-action-bar-goodrx-sharing-consumers-sensitive-health-info-advertising
+  Latanya Sweeney, "Simple Demographics Often Identify People Uniquely", Carnegie Mellon University, 2000
+    https://dataprivacylab.org/projects/identifiability/
+  What Exodus Privacy does, Exodus Privacy
+    https://exodus-privacy.eu.org/en/page/what/
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+  Atomic Notes source code, including the Android manifest and dependency list
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/zero-telemetry-notes-app
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Zero Telemetry - Why Your Notes App Should Know Less About You/zero-telemetry-notes-app.md"

@@ -1,0 +1,9 @@
+X POST 04: Optional E2E
+
+Length: 270/280 (X's weighted count: links count 23, emoji count 2).
+
+Image: attach image.png (2000x1125, 16:9).
+Alt text:
+Optional End To End. Vault on: each note is sealed on your phone before it syncs. Atomic Notes, local first and private by design.
+
+Tip: post the link-free version as the main post if reach drops on link posts, and add the link as the first reply.

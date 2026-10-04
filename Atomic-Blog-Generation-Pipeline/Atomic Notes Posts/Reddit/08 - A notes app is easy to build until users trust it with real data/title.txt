@@ -1,0 +1,1 @@
+A notes app is easy to build until users trust it with real data

@@ -1,0 +1,17 @@
+A notes app shouldn't become useless the moment your connection disappears.
+
+Atomic Notes saves your notes locally first.
+
+That means the core experience is built around your device, not around waiting for a server to answer.
+
+You keep writing and working with your notes, then sync later when the connection comes back.
+
+That sounds obvious.
+
+But many modern apps work the other way around: the cloud sits at the center, and your device is just a temporary window into it.
+
+Atomic Notes keeps the device important.
+
+Local first isn't a backup feature. It's the foundation.
+
+Thank you to everyone following and supporting the project. ⚛️

@@ -1,0 +1,68 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+8 Pieces of Data a Notes App May Know About You Even Without Reading Your Notes
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Your notes can be encrypted and your app can still know your email, your phone, your sleep schedule and your busiest days. Here's what metadata reveals.
+
+Meta description (Story settings > SEO description):
+Discover 8 types of metadata a notes app may know without reading your notes, including email, IP address, device details, login times, and sync activity.
+
+Tags (Medium allows 5):
+Privacy, Metadata, Data Privacy, Note Taking, Tracking
+
+Keywords:
+  Primary: notes app data collection
+  Secondary: notes app metadata, notes app tracking
+  LSI: metadata privacy, IP address tracking, device fingerprinting, login activity, sync metadata, usage analytics, device information, account metadata, data minimization, privacy telemetry
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources).
+A keyword also counts when a small word like "a", "the" or "your" sits inside it
+(for example "storing passwords in a notes app"), the way search engines read stop words.
+  words: 1483  (target 1400-1500)
+  primary 'notes app data collection': 29 = 1.96% (exact 29)  target ~30
+    secondary 'notes app metadata': 7 = 0.47%  target ~7
+    secondary 'notes app tracking': 7 = 0.47%  target ~7
+      lsi 'metadata privacy': 2
+      lsi 'IP address tracking': 1
+      lsi 'device fingerprinting': 2
+      lsi 'login activity': 1
+      lsi 'sync metadata': 1
+      lsi 'usage analytics': 1
+      lsi 'device information': 1
+      lsi 'account metadata': 1
+      lsi 'data minimization': 2
+      lsi 'privacy telemetry': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0  inline links: 0
+  UK spellings: none
+
+Images, in order (banner plus four diagrams; upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 8 things a notes app knows without reading your notes.
+  02-content-vs-metadata.png  ->  caption: Content versus metadata: the letter and the envelope.
+  03-eight-data-points.png  ->  caption: Eight data points, sorted by how necessary they are.
+  04-week-pattern.png  ->  caption: A week of edit timestamps, and the routine they reveal.
+  05-atomic-keeps.png  ->  caption: What Atomic Notes keeps, and what it never collects.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  Why metadata matters, Electronic Frontier Foundation
+    https://ssd.eff.org/module/why-metadata-matters
+  Simple demographics often identify people uniquely, Latanya Sweeney, Carnegie Mellon University, 2000
+    https://dataprivacylab.org/projects/identifiability/
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/8-types-of-data-notes-apps-may-collect
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 03/04 - 8 Pieces of Data a Notes App May Know About You/8-types-of-data-notes-apps-may-collect.md"
