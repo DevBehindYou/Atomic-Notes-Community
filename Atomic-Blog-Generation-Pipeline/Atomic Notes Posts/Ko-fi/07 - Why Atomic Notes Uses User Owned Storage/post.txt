@@ -1,0 +1,17 @@
+One question behind Atomic Notes was:
+
+If your notes are yours, why should the app's cloud permanently own the files?
+
+Atomic Notes syncs your notes into your own Google Drive.
+
+The backend still does the necessary work: sign-in, sync coordination, version tracking and Atomic Energy. It never stores your note text.
+
+But the storage model gives you a direct relationship with your synced note files.
+
+It isn't full self-hosting.
+
+It isn't device-only storage.
+
+It's a middle path between convenience and ownership.
+
+I think that's worth exploring.

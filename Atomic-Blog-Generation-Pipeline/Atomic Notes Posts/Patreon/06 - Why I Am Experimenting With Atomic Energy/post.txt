@@ -1,0 +1,38 @@
+Independent software has a hard sustainability problem.
+
+Servers cost money.
+
+Domains cost money.
+
+Databases cost money.
+
+Testing costs money.
+
+Distribution costs money.
+
+Security work costs time.
+
+The common answers are:
+
+• subscriptions
+• advertising
+• aggressive upselling
+• selling data
+
+I wanted to try another model.
+
+In Atomic Notes, writing and reading your notes never use Atomic Energy. Energy covers cloud sync only, because sync is what creates ongoing infrastructure costs. Every account gets 20 Energy a day for free.
+
+The idea is to separate:
+
+using your own notes
+
+from
+
+using hosted sync infrastructure.
+
+I don't know yet whether Atomic Energy will be the final long-term model.
+
+But I'd rather experiment in the open than quietly turn privacy into another subscription wall.
+
+That's part of building Atomic Notes in public.

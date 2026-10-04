@@ -1,0 +1,7 @@
+Cloud servers cost money. Local note taking shouldn't.
+
+So Atomic Notes uses Atomic Energy for cloud sync only. Writing and reading on your phone never touch it, and every account gets 20 Energy a day free.
+
+No subscription wall on your notes. ⚛️
+
+#BuildInPublic #IndieDev

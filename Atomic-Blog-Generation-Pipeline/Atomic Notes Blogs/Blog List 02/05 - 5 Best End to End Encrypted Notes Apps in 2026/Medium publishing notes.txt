@@ -1,0 +1,86 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+5 Best End to End Encrypted Notes Apps in 2026 for Private Notes
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+"Encrypted" can mean five different things. Here's how to tell real end to end encryption apart, and five apps that put the key in your hands.
+
+Meta description (Story settings > SEO description):
+Compare 5 of the best end to end encrypted notes apps in 2026. Learn how each app handles encryption keys, zero knowledge architecture, offline access, cloud sync, recovery, and data ownership.
+
+Tags (Medium allows 5):
+Encryption, Privacy, Cybersecurity, Note Taking, Security
+
+Apps in this list, in order (Atomic Notes first; no other app repeats across the seven listicles):
+  1. Atomic Notes
+  2. Notesnook
+  3. Standard Notes
+  4. Cryptee
+  5. Joplin
+
+Keywords:
+  Primary: best encrypted notes apps
+  Secondary: end to end encrypted notes, encrypted notes app, E2EE notes app, private encrypted notes, secure note taking app, zero knowledge notes app, encrypted notes Android, private notes app
+  LSI: Argon2, XChaCha20-Poly1305, AES-256-GCM, recovery phrase, metadata
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1071  (target 1000-1100)
+  primary 'best encrypted notes apps': 14  = 1.31%  (target 2.0%, ~21)
+    secondary 'end to end encrypted notes': 2  = 0.19%  (target 0.5%, ~5)
+    secondary 'encrypted notes app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'E2EE notes app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'private encrypted notes': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'secure note taking app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'zero knowledge notes app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'encrypted notes Android': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'private notes app': 1  = 0.09%  (target 0.5%, ~5)
+      lsi 'Argon2': 2
+      lsi 'XChaCha20-Poly1305': 2
+      lsi 'AES-256-GCM': 1
+      lsi 'recovery phrase': 1
+      lsi 'metadata': 2
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 5 best end to end encrypted notes apps.
+  02-scorecard.png  ->  caption: Five end to end encrypted notes apps, side by side.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+02-scorecard.png carries the comparison table, because Medium has no table support.
+
+Sources (listed after the article, under "Sources"):
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+  Atomic Notes source code and releases
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+  How Notesnook encrypts your data
+    https://notesnook.com/help/how-is-my-data-encrypted
+  Standard Notes encryption whitepaper
+    https://standardnotes.com/help/security/encryption
+  Proton and Standard Notes join forces, April 2024
+    https://proton.me/blog/proton-standard-notes-join-forces
+  Cryptee press kit
+    https://beta.crypt.ee/press-kit
+  Cryptee web client on GitHub
+    https://github.com/cryptee/web-client
+  Joplin end-to-end encryption
+    https://joplinapp.org/help/apps/sync/e2ee/
+  Joplin AI chat
+    https://github.com/laurent22/joplin/blob/dev/readme/apps/ai_chat.md
+
+Before you publish: app features change fast. Re-check any app whose AI, encryption, sync or pricing you mention if more than a few weeks have passed since October 4, 2026.
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/best-end-to-end-encrypted-notes-apps
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 02/05 - 5 Best End to End Encrypted Notes Apps in 2026/best-end-to-end-encrypted-notes-apps.md"

@@ -1,0 +1,8 @@
+PATREON POST 06: Why I Am Experimenting With Atomic Energy
+
+Post type: Text post. Add banner.png as the first image.
+Alt text:
+Why I Am Experimenting With Atomic Energy. Separate using your notes from using the servers.
+
+Audience: Public works best for these, so new visitors can read them. Mark later behind-the-scenes posts as patron-only.
+Formatting: the Patreon editor doesn't read Markdown, so post.txt uses plain text and bullet characters.

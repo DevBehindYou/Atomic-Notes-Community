@@ -1,0 +1,74 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+10 Privacy Mistakes People Make With Notes Apps in 2026
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Passwords in plain notes, recovery phrases in the cloud, permissions nobody reads. Ten common mistakes, why they matter, and the quick fix for each.
+
+Meta description (Story settings > SEO description):
+Avoid 10 common notes app privacy mistakes in 2026, from storing passwords and recovery phrases to ignoring permissions, backups, AI settings, and ownership.
+
+Tags (Medium allows 5):
+Privacy, Note Taking, Cybersecurity, Data Privacy, Productivity
+
+Keywords:
+  Primary: notes app privacy mistakes
+  Secondary: notes app security mistakes, note taking privacy
+  LSI: private notes security, password storage risk, recovery phrase security, notes app permissions, AI notes privacy, data backup, end to end encryption, APK security, data ownership, cloud notes privacy
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources).
+A keyword also counts when a small word like "a", "the" or "your" sits inside it
+(for example "storing passwords in a notes app"), the way search engines read stop words.
+  words: 1495  (target 1400-1500)
+  primary 'notes app privacy mistakes': 29 = 1.94% (exact 29)  target ~30
+    secondary 'notes app security mistakes': 7 = 0.47%  target ~7
+    secondary 'note taking privacy': 7 = 0.47%  target ~7
+      lsi 'private notes security': 1
+      lsi 'password storage risk': 1
+      lsi 'recovery phrase security': 1
+      lsi 'notes app permissions': 2
+      lsi 'AI notes privacy': 1
+      lsi 'data backup': 1
+      lsi 'end to end encryption': 2
+      lsi 'APK security': 1
+      lsi 'data ownership': 1
+      lsi 'cloud notes privacy': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0  inline links: 0
+  UK spellings: none
+
+Images, in order (banner plus four diagrams; upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 10 privacy mistakes people make with notes apps.
+  02-mistakes-map.png  ->  caption: The ten notes app privacy mistakes at a glance.
+  03-where-secrets-belong.png  ->  caption: Where each kind of secret belongs.
+  04-https-vs-e2e.png  ->  caption: HTTPS protects the trip. End-to-end encryption protects the note.
+  05-permissions.png  ->  caption: What a notes app should ask for, and what deserves a second look.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  Use strong passwords, CISA
+    https://www.cisa.gov/secure-our-world/use-strong-passwords
+  Credential stuffing, OWASP
+    https://community.owasp.org/attacks/Credential_stuffing
+  AI (and other) companies: quietly changing your terms of service could be unfair or deceptive, FTC, February 13, 2024
+    https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/02/ai-other-companies-quietly-changing-your-terms-service-could-be-unfair-or-deceptive
+  Install unknown apps, Android Developers
+    https://developer.android.com/distribute/marketing-tools/alternative-distribution
+  apksigner, Android Developers
+    https://developer.android.com/tools/apksigner
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/10-notes-app-privacy-mistakes-2026
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 03/01 - 10 Privacy Mistakes People Make With Notes Apps in 2026/10-notes-app-privacy-mistakes-2026.md"

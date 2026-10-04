@@ -1,0 +1,21 @@
+One thing I want Atomic Notes to avoid is vague security language.
+
+Software companies often write: "Your data is encrypted."
+
+That sounds reassuring. It doesn't tell you enough.
+
+Encryption can mean data moving over HTTPS.
+
+It can mean encrypted server disks.
+
+It can mean a database encrypted with a key the provider controls.
+
+Or it can mean content is encrypted on your device before the provider ever receives it.
+
+Those are different threat models.
+
+Atomic Notes offers optional end to end encryption for people who want the stronger model. When the vault is on, a key made on your phone from six words encrypts each note before sync. The vault is off by default, and I say so plainly.
+
+I'd rather explain this distinction again and again than hide behind a simple "encrypted" badge.
+
+Privacy software shouldn't make you guess what its security claims mean.

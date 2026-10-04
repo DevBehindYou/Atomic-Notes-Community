@@ -1,0 +1,27 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+Best Private Notes Apps in 2026: 5 Picks Compared
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Five privacy-first notes apps scored on storage, encryption, sync, telemetry and license. Atomic Notes is first, and I say exactly where it falls short.
+
+Tags (Medium allows 5):
+Privacy, Note Taking, Apps, Encryption, Productivity
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: Best Private Notes Apps in 2026
+  02-scorecard.png  ->  caption: Private notes apps compared side by side, October 2026. Atomic Notes is listed first.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the code block and the bullet lists survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/best-private-notes-apps-2026
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Best Private Notes Apps in 2026/best-private-notes-apps-2026.md"

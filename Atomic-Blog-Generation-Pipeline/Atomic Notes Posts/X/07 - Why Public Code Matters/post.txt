@@ -1,0 +1,10 @@
+If a notes app says it respects your privacy, you should be able to check:
+
+What leaves my device?
+Where is it stored?
+How does encryption work?
+What happens during sync?
+
+That's why Atomic Notes publishes its app code. ⚛️
+
+https://github.com/DevBehindYou/Atomic-Notes-App-V0.2

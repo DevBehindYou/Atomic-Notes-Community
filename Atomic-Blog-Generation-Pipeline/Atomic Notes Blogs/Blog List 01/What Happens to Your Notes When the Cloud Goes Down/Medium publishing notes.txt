@@ -1,0 +1,64 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+What Happens to Your Notes When the Cloud Goes Down?
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Cloud outages hit even the biggest providers. Here is what happens to your notes when the servers go dark, and why a local first app keeps working.
+
+Meta description (Story settings > SEO description):
+What happens when a notes service goes offline? Explore cloud dependency, local first architecture, and why Atomic Notes keeps the device as the primary copy.
+
+Tags (Medium allows 5):
+Cloud Computing, Offline First, Local First, Productivity, Software Architecture
+
+Keywords:
+  Primary: cloud outage notes
+  Secondary: offline first apps, local first software, offline notes, cloud dependency
+  LSI: AWS, Cloudflare, airplane mode, request id, single point of failure, status page, data center
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1486  (target 1400-1500)
+  primary 'cloud outage notes': 29  = 1.95%  (target 2.0%, ~30)
+    secondary 'offline first apps': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'local first software': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'offline notes': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'cloud dependency': 7  = 0.47%  (target 0.5%, ~7)
+      lsi 'AWS': 2
+      lsi 'Cloudflare': 1
+      lsi 'airplane mode': 2
+      lsi 'request id': 1
+      lsi 'single point of failure': 1
+      lsi 'status page': 1
+      lsi 'data center': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: When the cloud goes down.
+  02-outage.png  ->  caption: What still works when the cloud goes down: a cloud-first app versus Atomic Notes.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  AWS us-east-1 outage, October 20, 2025, ThousandEyes analysis
+    https://www.thousandeyes.com/blog/aws-outage-analysis-october-20-2025
+  Cloudflare outage on November 18, 2025, Cloudflare blog
+    https://blog.cloudflare.com/18-november-2025-outage/
+  Local-first software, Ink & Switch
+    https://www.inkandswitch.com/essay/local-first/
+  Atomic Notes source code and releases
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/what-happens-when-the-cloud-goes-down
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/What Happens to Your Notes When the Cloud Goes Down/what-happens-when-the-cloud-goes-down.md"

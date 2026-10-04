@@ -1,0 +1,341 @@
+I researched the current 2026 search landscape around note-taking software. The recurring search themes are **local-first notes, open-source notes, privacy, encrypted notes, offline access, and data ownership**. Recent articles and app listings are targeting exactly these ideas, so they are good topical clusters for Atomic Notes. ([recal][1])
+
+I would publish these **five in this order**. I’m not claiming exact search volumes here; these are based on current SERP language, search intent, relevance to Atomic Notes, and competitive content patterns.
+
+### 1. Local-first pillar article
+
+**Title:**
+**What Is a Local First Notes App and Why Does It Matter?**
+
+**Primary keyword:**
+`local first notes app`
+
+**Secondary keywords:**
+`local first note taking`
+`offline notes app`
+`data ownership notes`
+`privacy first notes app`
+
+**Meta description:**
+Learn what a local first notes app is, how offline storage works, and why local ownership gives you more control over your notes and privacy.
+
+**Slug URL:**
+`/blog/what-is-a-local-first-notes-app`
+
+**Purpose:** This should become one of your main evergreen articles. “Local-first” is actively being used in 2026 note-app comparisons, often alongside offline access and data ownership. ([recal][1])
+
+---
+
+### 2. Open-source comparison article
+
+**Title:**
+**Best Open Source Notes Apps for Privacy in 2026**
+
+**Primary keyword:**
+`open source notes apps`
+
+**Secondary keywords:**
+`open source note taking app`
+`private notes app`
+`offline note taking app`
+`encrypted notes app`
+
+**Meta description:**
+Compare open source notes apps for privacy, offline access, encryption, and data ownership, and see where Atomic Notes fits for privacy focused users.
+
+**Slug URL:**
+`/blog/best-open-source-notes-apps-privacy`
+
+**Purpose:** This is likely your strongest **discovery article**. Current 2026 results already show substantial comparison content around open-source and local-first note apps. ([Lychee][2])
+
+Don't make this an advertisement disguised as a comparison. Include Joplin, Standard Notes, Logseq, Anytype and similar tools, explain their strengths honestly, then show where Atomic Notes differs.
+
+---
+
+### 3. Offline-first article
+
+**Title:**
+**Offline Notes Apps: Why Your Notes Should Work Without Internet**
+
+**Primary keyword:**
+`offline notes app`
+
+**Secondary keywords:**
+`offline note taking app`
+`notes app without internet`
+`local notes app`
+`offline notes Android`
+
+**Meta description:**
+Discover why offline notes apps are faster, more resilient, and less dependent on cloud services, plus how Atomic Notes keeps local access first.
+
+**Slug URL:**
+`/blog/why-notes-should-work-offline`
+
+**Purpose:** Excellent place to explain the Atomic Notes principle:
+
+**Local save first → cloud synchronization second.**
+
+Several current privacy-focused note apps explicitly market offline operation as a major privacy and reliability feature. ([Google Play][3])
+
+---
+
+### 4. Encryption/security article
+
+**Title:**
+**Encrypted Notes Explained: T2T vs End to End Encryption**
+
+**Primary keyword:**
+`encrypted notes`
+
+**Secondary keywords:**
+`end to end encrypted notes`
+`encrypted notes app`
+`private note taking app`
+`secure notes app`
+
+**Meta description:**
+Understand T2T and end to end encrypted notes, what each model protects, and how Atomic Notes approaches private cloud synchronization.
+
+**Slug URL:**
+`/blog/t2t-vs-end-to-end-encrypted-notes`
+
+**Purpose:** This could be extremely valuable for Atomic Notes because you already have a real story around **T2T versus E2E**, rather than generic marketing claims.
+
+Current encrypted-note content distinguishes between local-only encryption, cloud E2EE, and local-first encrypted synchronization, so an educational article explaining the differences has strong topical relevance. ([Snoq][4])
+
+This article should be very precise about which Atomic Notes release supports which security model.
+
+---
+
+### 5. Atomic Notes brand / conversion article
+
+**Title:**
+**Atomic Notes: Open Source, Local First and Private by Design**
+
+**Primary keyword:**
+`Atomic Notes`
+
+**Secondary keywords:**
+`open source notes app`
+`local first notes app`
+`privacy first notes app`
+`offline notes app`
+
+**Meta description:**
+Meet Atomic Notes, an open source local first notes app built for offline access, optional encrypted sync, transparency, and user controlled data.
+
+**Slug URL:**
+`/blog/atomic-notes-open-source-local-first`
+
+**Purpose:** This is the article that converts people who discover the other four.
+
+It should tell the complete Atomic Notes story:
+
+**Why it exists → open source → local first → offline → privacy → encryption → Atomic Energy → development → GitHub → download → support.**
+
+---
+
+### Recommended publishing order
+
+I’d publish them as a small SEO cluster:
+
+**1. What Is a Local First Notes App?**
+↓ links to
+
+**2. Best Open Source Notes Apps for Privacy**
+↓ links to
+
+**3. Why Notes Should Work Offline**
+↓ links to
+
+**4. T2T vs End to End Encryption**
+↓ links to
+
+**5. Atomic Notes: Open Source, Local First and Private by Design**
+
+And all four informational articles should naturally link back to the Atomic Notes article.
+
+That gives `/blog` a coherent topic cluster instead of five unrelated promotional posts, while covering the same language people are currently using to discover private and open-source note-taking software. ([recal][1])
+
+**My priority:** publish **#1 and #2 first**. They have the broadest non-branded discovery potential; #5 should be ready before them so they have a strong Atomic Notes page to link into.
+
+[1]: https://www.recal.so/blog/best-local-first-note-taking-apps-2026?utm_source=chatgpt.com "The best local-first note-taking apps in 2026 · recal"
+[2]: https://www.lycheenote.com/?utm_source=chatgpt.com "Lychee: Free Local-First Notes App for Mac, Windows & Linux"
+[3]: https://play.google.com/store/apps/details?hl=en&id=com.beeswaxpat.jot&utm_source=chatgpt.com "Scrib: Encrypted Offline Notes - Apps on Google Play"
+[4]: https://snoq.io/compare/best-encrypted-notes-apps?utm_source=chatgpt.com "Best Encrypted Notes Apps 2026 - Honestly Compared"
+
+____________________________________
+
+Here are **5 more unique blog ideas** that connect naturally with Atomic Notes without repeating the obvious “best notes app” topics.
+
+### 1. Why Zero Telemetry Matters in a Notes App
+
+**Title:**
+**Zero Telemetry: Why Your Notes App Should Know Less About You**
+
+**Primary keyword:**
+`zero telemetry`
+
+**Secondary keywords:**
+`privacy focused notes app`
+`no tracking notes app`
+`private note taking`
+`data privacy apps`
+
+**Meta description:**
+Learn what zero telemetry means, why analytics can matter in private software, and how Atomic Notes is designed to collect as little user data as possible.
+
+**Slug URL:**
+`/blog/zero-telemetry-notes-app`
+
+**Atomic Notes connection:**
+Perfect for explaining the philosophy behind having no analytics, trackers, behavioral profiling, or unnecessary data collection.
+
+---
+
+### 2. Why Local First Apps Survive Server Outages
+
+**Title:**
+**What Happens to Your Notes When the Cloud Goes Down?**
+
+**Primary keyword:**
+`cloud outage notes`
+
+**Secondary keywords:**
+`offline first apps`
+`local first software`
+`offline notes`
+`cloud dependency`
+
+**Meta description:**
+What happens when a notes service goes offline? Explore cloud dependency, local first architecture, and why Atomic Notes keeps the device as the primary copy.
+
+**Slug URL:**
+`/blog/what-happens-when-the-cloud-goes-down`
+
+**Atomic Notes connection:**
+This gives you a compelling real-world angle:
+
+**Cloud unavailable → Atomic Notes still opens → notes still save locally → sync can happen later.**
+
+This is more interesting than simply saying “works offline.”
+
+---
+
+### 3. Why Encryption Cannot Fix a Bad Privacy Model
+
+**Title:**
+**Encryption Alone Does Not Make a Notes App Private**
+
+**Primary keyword:**
+`private notes app`
+
+**Secondary keywords:**
+`encrypted notes app`
+`end to end encryption`
+`notes privacy`
+`privacy by design`
+
+**Meta description:**
+Encryption is important, but privacy goes beyond encryption. Learn why tracking, telemetry, architecture, and business models also determine whether notes stay private.
+
+**Slug URL:**
+`/blog/encryption-alone-does-not-mean-private`
+
+**Atomic Notes connection:**
+This is a strong thought-leadership piece.
+
+You can explain that privacy isn't just:
+
+> “We use AES.”
+
+It's the combination of:
+
+**local first + E2E + minimal collection + no trackers + no AI reading notes + open source + aligned incentives.**
+
+---
+
+### 4. The Economics Behind Atomic Energy
+
+**Title:**
+**Why Atomic Notes Uses Energy Instead of a Subscription**
+
+**Primary keyword:**
+`subscription free notes app`
+
+**Secondary keywords:**
+`Atomic Energy`
+`Atomic Coins`
+`notes app without subscription`
+`privacy friendly business model`
+
+**Meta description:**
+Discover why Atomic Notes uses Atomic Energy and Coins for sync convenience instead of locking basic note taking behind a recurring subscription.
+
+**Slug URL:**
+`/blog/why-atomic-notes-uses-energy`
+
+**Atomic Notes connection:**
+This gives Atomic Energy a story instead of making it look like a random gamification system.
+
+You can explain:
+
+**Local notes → always available**
+**Energy → cloud sync convenience**
+**Coins → replenish Energy**
+**Payment → infrastructure, not ownership of your notes**
+
+This could become one of the most distinctive pieces on your blog.
+
+---
+
+### 5. Why Open Source Matters More for Privacy Software
+
+**Title:**
+**Why Privacy Software Should Be Open Source**
+
+**Primary keyword:**
+`open source privacy software`
+
+**Secondary keywords:**
+`open source security`
+`privacy software`
+`open source notes app`
+`software transparency`
+
+**Meta description:**
+Privacy promises are difficult to verify from marketing alone. Learn why open source software gives users a stronger way to inspect how their data is handled.
+
+**Slug URL:**
+`/blog/why-privacy-software-should-be-open-source`
+
+**Atomic Notes connection:**
+This lets you introduce one of Atomic Notes' strongest ideas:
+
+> **Verify, don't just trust.**
+
+Then connect readers directly to the GitHub repository.
+
+---
+
+## Best publishing order
+
+I would publish these as:
+
+**1. Encryption Alone Does Not Make a Notes App Private**
+Great headline and shareability.
+
+**2. What Happens to Your Notes When the Cloud Goes Down?**
+Relatable problem with a natural local-first solution.
+
+**3. Why Privacy Software Should Be Open Source**
+Builds credibility for the project.
+
+**4. Zero Telemetry: Why Your Notes App Should Know Less About You**
+Strengthens the privacy topic cluster.
+
+**5. Why Atomic Notes Uses Energy Instead of a Subscription**
+Turns interested readers into people who understand the project's economic model.
+
+These five are especially useful because they aren't just **“Atomic Notes is great”** articles. Each starts with a broader technology/privacy question and naturally brings Atomic Notes into the discussion as a concrete implementation.

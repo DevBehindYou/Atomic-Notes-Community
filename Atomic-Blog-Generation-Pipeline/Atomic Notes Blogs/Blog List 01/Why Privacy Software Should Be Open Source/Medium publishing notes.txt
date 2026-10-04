@@ -1,0 +1,69 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+Why Privacy Software Should Be Open Source
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+A privacy promise you can't check is just marketing. Here's why open code matters, where it falls short, and where Atomic Notes honestly stands.
+
+Meta description (Story settings > SEO description):
+Privacy promises are difficult to verify from marketing alone. Learn why open source software gives users a stronger way to inspect how their data is handled.
+
+Tags (Medium allows 5):
+Open Source, Privacy, Cybersecurity, Software Development, Transparency
+
+Keywords:
+  Primary: open source privacy software
+  Secondary: open source security, privacy software, open source notes app, software transparency
+  LSI: Kerckhoffs, Heartbleed, xz, reproducible builds, apksigner, Open Source Initiative
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1495  (target 1400-1500)
+  primary 'open source privacy software': 29  = 1.94%  (target 2.0%, ~30)
+    secondary 'open source security': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'privacy software': 36  = 2.41%  (target 0.5%, ~7)  standalone 7 = 0.47%
+    secondary 'open source notes app': 7  = 0.47%  (target 0.5%, ~7)
+    secondary 'software transparency': 7  = 0.47%  (target 0.5%, ~7)
+      lsi 'Kerckhoffs': 1
+      lsi 'Heartbleed': 1
+      lsi 'xz': 2
+      lsi 'reproducible builds': 1
+      lsi 'apksigner': 2
+      lsi 'Open Source Initiative': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: Privacy software should show its code.
+  02-verify.png  ->  caption: From public code to your phone: how to verify what you install.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  Auguste Kerckhoffs, "La cryptographie militaire" (1883), via Fabien Petitcolas
+    https://www.petitcolas.net/kerckhoffs/
+  The Heartbleed Bug (CVE-2014-0160)
+    https://heartbleed.com/
+  CVE-2024-3094 (xz Utils backdoor), NIST National Vulnerability Database
+    https://nvd.nist.gov/vuln/detail/CVE-2024-3094
+  Andres Freund's original xz report, oss-security, March 29, 2024
+    https://www.openwall.com/lists/oss-security/2024/03/29/4
+  The Open Source Definition, Open Source Initiative
+    https://opensource.org/osd
+  apksigner, Android Developers
+    https://developer.android.com/tools/apksigner
+  Atomic Notes source code, license and releases
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/why-privacy-software-should-be-open-source
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Why Privacy Software Should Be Open Source/why-privacy-software-should-be-open-source.md"

@@ -1,0 +1,13 @@
+Building a notes app sounds simple until you hit:
+
+• offline queues
+• sync conflicts
+• retries
+• encryption
+• sessions
+• migrations
+• partial failures
+
+I'm building Atomic Notes in public, because the invisible work matters too. ⚛️
+
+#BuildInPublic #FlutterDev

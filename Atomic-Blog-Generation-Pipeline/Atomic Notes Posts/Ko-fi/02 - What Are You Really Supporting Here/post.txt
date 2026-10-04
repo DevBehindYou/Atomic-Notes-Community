@@ -1,0 +1,20 @@
+When someone supports Atomic Notes on Ko-fi, the money isn't buying access to their own notes.
+
+Local note taking stays useful because the app is installed on your device, not because a recurring payment granted permission.
+
+Support helps with everything around the project:
+
+• development
+• infrastructure
+• testing
+• domains
+• security work
+• releases
+• maintenance
+• community tools
+
+I want Atomic Notes to have a sustainable future without ads, trackers, or selling anyone's attention.
+
+That's what support here makes possible.
+
+Every Electron Helps. ⚛️

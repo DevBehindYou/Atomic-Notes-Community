@@ -1,0 +1,26 @@
+A button labeled Sync Now looks simple.
+
+Behind it, the app may need to answer dozens of questions.
+
+What happens if:
+
+• the connection disappears halfway through?
+• the app is killed right after the upload?
+• the same request is retried twice?
+• another device edited the same note?
+• a note was deleted remotely?
+• the cloud file disappeared?
+• the Energy charge went through but the upload failed?
+• you update the app in the middle of an unfinished sync?
+
+Most people should never have to think about any of that.
+
+That's the point.
+
+A reliable product hides complexity by handling it correctly, not by pretending it doesn't exist.
+
+A lot of my work on Atomic Notes happens in those failure paths. Every push carries a request id, so a retried sync runs once. Failed syncs refund their Energy. Colliding edits become a conflict copy instead of a silent overwrite.
+
+None of it is visually exciting.
+
+All of it matters.

@@ -1,0 +1,72 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+7 Ways Your Notes App Could Expose More About You Than You Realize
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Nobody has to read your notes for your notes app to leak. Cloud storage, trackers, weak sign-ins, backups, AI and permissions all open doors of their own.
+
+Meta description (Story settings > SEO description):
+Learn 7 ways a notes app can expose your data through cloud storage, telemetry, weak security, AI processing, backups, trackers, and third party SDKs.
+
+Tags (Medium allows 5):
+Privacy, Cybersecurity, Note Taking, Data Privacy, Security
+
+Keywords:
+  Primary: notes app privacy
+  Secondary: private notes app, note taking app security
+  LSI: notes app data privacy, secure note taking, cloud notes security, third party trackers, app telemetry, notes app analytics, AI data processing, unencrypted backups, personal data exposure, digital privacy risks
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources).
+A keyword also counts when a small word like "a", "the" or "your" sits inside it
+(for example "storing passwords in a notes app"), the way search engines read stop words.
+  words: 1450  (target 1400-1500)
+  primary 'notes app privacy': 29 = 2.00% (exact 29)  target ~29
+    secondary 'private notes app': 7 = 0.48%  target ~7
+    secondary 'note taking app security': 7 = 0.48%  target ~7
+      lsi 'notes app data privacy': 1
+      lsi 'secure note taking': 1
+      lsi 'cloud notes security': 1
+      lsi 'third party trackers': 2
+      lsi 'app telemetry': 1
+      lsi 'notes app analytics': 1
+      lsi 'AI data processing': 1
+      lsi 'unencrypted backups': 2
+      lsi 'personal data exposure': 1
+      lsi 'digital privacy risks': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0  inline links: 0
+  UK spellings: none
+
+Images, in order (banner plus four diagrams; upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 7 ways your notes app could expose you.
+  02-exposure-map.png  ->  caption: Seven paths out of your notes app.
+  03-sdk-chain.png  ->  caption: How third party SDKs carry data out of an app.
+  04-account-security.png  ->  caption: Weak versus strong account protection for a notes app.
+  05-where-copies-hide.png  ->  caption: Where copies of your notes can hide.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  FTC enforcement action against GoodRx, February 2023
+    https://www.ftc.gov/news-events/news/press-releases/2023/02/ftc-enforcement-action-bar-goodrx-sharing-consumers-sensitive-health-info-advertising
+  What Exodus Privacy does, Exodus Privacy
+    https://exodus-privacy.eu.org/en/page/what/
+  iCloud data security overview, Apple Support
+    https://support.apple.com/en-us/102651
+  Why metadata matters, Electronic Frontier Foundation
+    https://ssd.eff.org/module/why-metadata-matters
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/7-ways-notes-apps-can-expose-your-data
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 03/07 - 7 Ways Your Notes App Could Expose You/7-ways-notes-apps-can-expose-your-data.md"

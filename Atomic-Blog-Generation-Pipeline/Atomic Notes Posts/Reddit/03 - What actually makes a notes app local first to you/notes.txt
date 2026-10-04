@@ -1,0 +1,15 @@
+REDDIT POST 03
+
+Title (53/300 characters):
+What actually makes a notes app "local first" to you?
+
+Paste body.md in Markdown mode (the editor's "Markdown" toggle).
+
+Where to post: r/localfirst (if active), r/notetaking, r/androidapps
+Why: Definition question that invites experienced local-first people to weigh in.
+
+Rules of thumb:
+- Read each subreddit's self-promotion rules before posting. Many allow one project post per week or month.
+- Reply to every comment in the first two hours.
+- Post one subreddit at a time, a few days apart, instead of cross-posting the same text everywhere.
+- No image needed: text discussions do better than banners on Reddit.

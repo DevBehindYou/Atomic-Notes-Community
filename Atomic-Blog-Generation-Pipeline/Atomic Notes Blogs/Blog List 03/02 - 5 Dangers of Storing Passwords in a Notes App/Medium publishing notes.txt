@@ -1,0 +1,70 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+5 Dangerous Consequences of Storing Passwords in an Insecure Notes App
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+That "temporary" logins note can turn one leak into five. Here's how the chain reaction works, and where your passwords should live instead.
+
+Meta description (Story settings > SEO description):
+Discover 5 serious risks of storing passwords in an insecure notes app, including account takeover, identity theft, financial loss, and credential abuse.
+
+Tags (Medium allows 5):
+Passwords, Cybersecurity, Privacy, Password Manager, Security
+
+Keywords:
+  Primary: storing passwords in notes app
+  Secondary: is it safe to store passwords in notes, secure password storage
+  LSI: password security, notes app security, credential theft, account takeover, identity theft, password manager, credential reuse attack, financial account security, recovery email compromise, plaintext passwords
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources).
+A keyword also counts when a small word like "a", "the" or "your" sits inside it
+(for example "storing passwords in a notes app"), the way search engines read stop words.
+  words: 1495  (target 1400-1500)
+  primary 'storing passwords in notes app': 29 = 1.94% (exact 1)  target ~30
+    secondary 'is it safe to store passwords in notes': 7 = 0.47%  target ~7
+    secondary 'secure password storage': 7 = 0.47%  target ~7
+      lsi 'password security': 1
+      lsi 'notes app security': 1
+      lsi 'credential theft': 1
+      lsi 'account takeover': 2
+      lsi 'identity theft': 2
+      lsi 'password manager': 2
+      lsi 'credential reuse attack': 1
+      lsi 'financial account security': 1
+      lsi 'recovery email compromise': 2
+      lsi 'plaintext passwords': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0  inline links: 0
+  UK spellings: none
+
+Images, in order (banner plus four diagrams; upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 5 dangers of storing passwords in a notes app.
+  02-chain-reaction.png  ->  caption: One logins note, many doors: how a single leak spreads.
+  03-escalation.png  ->  caption: How the five consequences escalate, from bad to worst.
+  04-notes-vs-vault.png  ->  caption: Notes app versus credential vault, feature by feature.
+  05-move-out.png  ->  caption: Move your passwords out of your notes in five steps.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+
+Sources (listed after the article, under "Sources"):
+  Use strong passwords, CISA
+    https://www.cisa.gov/secure-our-world/use-strong-passwords
+  Credential stuffing, OWASP
+    https://community.owasp.org/attacks/Credential_stuffing
+  Notice of recent security incident, LastPass, December 22, 2022
+    https://blog.lastpass.com/posts/notice-of-recent-security-incident
+  Atomic Notes privacy policy
+    https://atomic-notes-community.vercel.app/privacy
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/5-risks-storing-passwords-in-notes-app
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 03/02 - 5 Dangers of Storing Passwords in a Notes App/5-risks-storing-passwords-in-notes-app.md"

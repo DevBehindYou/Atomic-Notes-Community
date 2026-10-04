@@ -1,0 +1,7 @@
+KO-FI POST 05: A Small App Can Still Require Serious Engineering
+
+Post type: Ko-fi "Post" with banner.png as the cover image.
+Alt text:
+Small App, Serious Engineering. Reliability lives in the edge cases.
+
+Note: the Atomic Notes website currently links support to Patreon only. Publish these on Ko-fi only if you keep a Ko-fi page, and consider adding it to the support page.

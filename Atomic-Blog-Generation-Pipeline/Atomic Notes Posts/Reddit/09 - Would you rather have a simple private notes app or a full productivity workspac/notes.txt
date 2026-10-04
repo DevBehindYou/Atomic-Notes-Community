@@ -1,0 +1,15 @@
+REDDIT POST 09
+
+Title (82/300 characters):
+Would you rather have a simple private notes app or a full productivity workspace?
+
+Paste body.md in Markdown mode (the editor's "Markdown" toggle).
+
+Where to post: r/productivity, r/notetaking
+Why: Product direction discussion.
+
+Rules of thumb:
+- Read each subreddit's self-promotion rules before posting. Many allow one project post per week or month.
+- Reply to every comment in the first two hours.
+- Post one subreddit at a time, a few days apart, instead of cross-posting the same text everywhere.
+- No image needed: text discussions do better than banners on Reddit.

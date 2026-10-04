@@ -1,0 +1,8 @@
+PATREON POST 09: Why Public Code Is Part of the Privacy Model
+
+Post type: Text post. Add banner.png as the first image.
+Alt text:
+Why Public Code Is Part Of Privacy. Promises you can verify. Source-available, not open source.
+
+Audience: Public works best for these, so new visitors can read them. Mark later behind-the-scenes posts as patron-only.
+Formatting: the Patreon editor doesn't read Markdown, so post.txt uses plain text and bullet characters.

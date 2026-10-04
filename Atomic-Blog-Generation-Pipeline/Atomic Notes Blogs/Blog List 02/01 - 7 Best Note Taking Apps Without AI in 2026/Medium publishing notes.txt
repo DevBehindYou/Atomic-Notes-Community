@@ -1,0 +1,88 @@
+MEDIUM PUBLISHING NOTES
+
+Title (paste as the story title):
+7 Best Note Taking Apps Without AI in 2026
+
+Subtitle (paste as the second line, then press Ctrl+Alt+2 or use the small "T"):
+Some people want an AI assistant everywhere. Others want a notebook that stays a notebook. Here are seven apps that skip the assistant, checked in October 2026.
+
+Meta description (Story settings > SEO description):
+Looking for a notes app without AI? Compare 7 AI free note taking apps in 2026 based on privacy, offline access, local storage, encryption, simplicity, and data ownership.
+
+Tags (Medium allows 5):
+Note Taking, Privacy, Productivity, Artificial Intelligence, Apps
+
+Apps in this list, in order (Atomic Notes first; no other app repeats across the seven listicles):
+  1. Atomic Notes
+  2. Markor
+  3. TiddlyWiki
+  4. Zim
+  5. Saber
+  6. Dynalist
+  7. CherryTree
+
+Keywords:
+  Primary: note taking app without AI
+  Secondary: notes app without AI, no AI notes app, AI free note taking app, simple notes app, private notes app, no AI productivity app, offline notes app, privacy focused note taking
+  LSI: AI assistant, release notes, Markdown, handwriting, open code
+
+Keyword check (body only: no frontmatter, image lines, byline or Sources):
+  words: 1093  (target 1000-1100)
+  primary 'note taking app without AI': 16  = 1.46%  (target 2.0%, ~22)
+    secondary 'notes app without AI': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'no AI notes app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'AI free note taking app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'simple notes app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'private notes app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'no AI productivity app': 2  = 0.18%  (target 0.5%, ~5)
+    secondary 'offline notes app': 1  = 0.09%  (target 0.5%, ~5)
+    secondary 'privacy focused note taking': 1  = 0.09%  (target 0.5%, ~5)
+      lsi 'AI assistant': 1
+      lsi 'release notes': 2
+      lsi 'Markdown': 1
+      lsi 'handwriting': 2
+      lsi 'open code': 1
+  banned hits: none
+  starts with 'In the': False
+  em dashes: 0  semicolons: 0
+  inline links in content: 0
+
+Images, in order (upload each where its caption sits in the .docx):
+  01-banner.png  ->  caption: 7 best note taking apps without AI.
+  02-scorecard.png  ->  caption: Seven note taking apps without AI, side by side.
+
+Cover image: 01-banner.png (Medium uses the first image as the preview).
+02-scorecard.png carries the comparison table, because Medium has no table support.
+
+Sources (listed after the article, under "Sources"):
+  Atomic Notes source code and releases
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+  Markor on GitHub
+    https://github.com/gsantner/markor
+  TiddlyWiki encryption documentation
+    https://tiddlywiki.com/static/Encryption.html
+  Zim desktop wiki
+    https://zim-wiki.org/manual/About.html
+  Saber on GitHub
+    https://github.com/saber-notes/saber
+  Saber privacy policy
+    https://github.com/saber-notes/saber/blob/main/privacy_policy.md
+  Dynalist full feature list
+    https://dynalist.io/features/full
+  CherryTree on GitHub
+    https://github.com/giuspen/cherrytree
+  CherryTree changelog
+    https://github.com/giuspen/cherrytree/blob/master/changelog.txt
+
+Before you publish: app features change fast. Re-check any app whose AI, encryption, sync or pricing you mention if more than a few weeks have passed since October 4, 2026.
+
+How to publish:
+1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
+2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
+3. Check that the bullet lists and the Sources links survived the paste.
+4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
+   https://atomic-notes-community.vercel.app/blog/best-note-taking-apps-without-ai
+   Otherwise leave the canonical link empty.
+
+The .md file is the source of truth. It passes the blog pipeline validator:
+  node scripts/validate.mjs "Atomic Notes Blogs/Blog List 02/01 - 7 Best Note Taking Apps Without AI in 2026/best-note-taking-apps-without-ai.md"

@@ -1,0 +1,38 @@
+A notes app should still be useful when everything around it goes wrong.
+
+Your internet can disappear.
+
+A cloud provider can have an outage.
+
+A backend can go down for a while.
+
+Your phone can bounce between unstable connections.
+
+None of that should stop you from writing down a thought.
+
+That's why Atomic Notes starts on your device.
+
+When you create or edit a note, the local copy isn't an afterthought. It's the foundation of the experience.
+
+Cloud sync comes afterward.
+
+That sounds like a small architectural decision, but it changes how the whole app has to be built. I have to think about:
+
+• unsynced changes
+• retries
+• conflicting edits
+• app restarts
+• interrupted uploads
+• deletion states
+• version tracking
+• multiple devices
+
+It's more work than sending every edit straight to a server.
+
+But it supports one of the principles I care about most:
+
+Your ability to use your notes shouldn't depend on permission from the cloud.
+
+That's the kind of software I want Atomic Notes to become.
+
+Local first. Private by design. ⚛️

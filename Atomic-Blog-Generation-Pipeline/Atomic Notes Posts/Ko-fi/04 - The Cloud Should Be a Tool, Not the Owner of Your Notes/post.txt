@@ -1,0 +1,17 @@
+Cloud sync is useful.
+
+Cloud dependency is something different.
+
+Atomic Notes tries to keep the two apart.
+
+Your notes live on your phone first.
+
+If you choose to sync them, they go to a private folder in your own Google Drive.
+
+The cloud helps move your notes between devices.
+
+It doesn't need to be the reason your notes exist.
+
+That distinction sits at the center of the project.
+
+Your notes. Your storage. Your control. ⚛️
