@@ -162,7 +162,7 @@ export default function SupportPage() {
                 <p className="num">GOOD TO KNOW</p>
                 <ul className="support-list">
                   <li>
-                    Patreon or Ko-fi handles the payment. Atomic Notes never sees your card, PayPal or bank details.
+                    Patreon or Ko-fi handles the payment. Atomic Notes never sees your card, PayPal, or bank details.
                   </li>
                   <li>Each platform charges its own fees, under its own terms.</li>
                   <li>The developer sends rewards by hand, so they can take a little time to arrive.</li>

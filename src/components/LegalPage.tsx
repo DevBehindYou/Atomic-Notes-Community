@@ -5,7 +5,7 @@ function longDate(iso: string): string {
   const d = new Date(`${iso}T00:00:00Z`);
   return isNaN(d.getTime())
     ? iso
-    : d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+    : d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
 }
 
 /** Shared frame for the privacy policy and the terms: site chrome, a title block and readable prose. */

@@ -80,7 +80,7 @@ function jsonLd() {
           "Sync to a folder in your own Google Drive",
           "Optional end-to-end vault: Argon2id and AES-256-GCM",
           "No AI, no ads, no analytics",
-          "Biometric lock, two-step codes and blocked screenshots",
+          "Biometric lock, two-step codes, and blocked screenshots",
         ],
         author: { "@id": `${SITE_URL}/#author` },
         sameAs: [REPO_URL],
@@ -104,6 +104,7 @@ function jsonLd() {
         "@id": `${SITE_URL}/#website`,
         url: SITE_URL,
         name: "Atomic Notes",
+        inLanguage: "en-US",
         publisher: { "@id": `${SITE_URL}/#author` },
       },
       {
@@ -181,13 +182,13 @@ const FEATURES: { icon: IconName; k: string; t: string; d: string; points: strin
     k: "LOCAL-FIRST",
     t: "Notes that save as you type",
     d: "Text notes and checklists are one kind of object, saved to your phone on every keystroke. No spinner, no lost work, no waiting on the network.",
-    points: ["Pin, filter and multi-select", "Recycle Bin for deleted notes", "Works the same offline"],
+    points: ["Pin, filter, and multi-select", "Recycle Bin for deleted notes", "Works the same offline"],
   },
   {
     icon: "drive",
     k: "YOUR DRIVE",
     t: "Sync to your own Google Drive",
-    d: "Each note becomes one .atomic file in a My-Atomic-Notes folder in your Drive. The server keeps ids, flags and timestamps, never your titles or text.",
+    d: "Each note becomes one .atomic file in a My-Atomic-Notes folder in your Drive. The server keeps IDs, flags, and timestamps, never your titles or text.",
     points: ["drive.file scope: sees only its own files", "Syncs after you stop typing", "Conflict copies instead of overwrites"],
   },
   {
@@ -208,7 +209,7 @@ const FEATURES: { icon: IconName; k: string; t: string; d: string; points: strin
     icon: "bell",
     k: "NOTIFICATIONS",
     t: "Straight from the team",
-    d: "The bell collects release news, maintenance notices and feature updates. Tap one to mark it read, or dismiss it. Pinned notices stay until they're resolved.",
+    d: "The bell collects release news, maintenance notices, and feature updates. Tap one to mark it read, or dismiss it. Pinned notices stay until they're resolved.",
     points: ["Read and dismiss per message", "Filtered to your app version", "Refreshes when you open the app"],
   },
   {
@@ -312,7 +313,7 @@ export default async function Home() {
                   The developer used a mainstream notes app the way most people do. Ideas, mostly. Also a few account
                   passwords and private notes he never should have typed there. Then one ordinary day the emails
                   started: <em>&ldquo;New sign-in from a location you don&apos;t usually use.&rdquo;</em> One
-                  account, then another. What followed was a frantic afternoon of password resets, token revocations
+                  account, then another. What followed was a frantic afternoon of password resets, token revocations,
                   and locked-out services.
                 </p>
                 <p>
@@ -324,7 +325,7 @@ export default async function Home() {
                 <p>
                   <b>The revival.</b> Atomic Notes was first built about three years ago and shelved on purpose,
                   because the tooling couldn&apos;t yet do it justice. It can now. The rebuild brought a new design
-                  system, a sync engine that writes to your Drive, a full performance pass and an end-to-end vault.
+                  system, a sync engine that writes to your Drive, a full performance pass, and an end-to-end vault.
                 </p>
               </Reveal>
               <Reveal>
@@ -349,12 +350,12 @@ export default async function Home() {
               </h2>
               <p className="lp-lead lp-lead-dark">
                 Across mainstream productivity apps, &ldquo;free&rdquo; now tends to mean your content is the product.
-                The terms can change after you&apos;ve written your notes. In August 2023 Zoom faced a backlash over
+                The terms can change after you&apos;ve written your notes. In August 2023, Zoom faced a backlash over
                 terms that appeared to allow AI training on customer data (
                 <a href="https://techcrunch.com/2023/08/08/zoom-data-mining-for-ai-terms-gdpr-eprivacy/" target="_blank" rel="noreferrer">
                   TechCrunch
                 </a>
-                ). In June 2024 Adobe rewrote its terms after users revolted over wording about accessing their content
+                ). In June 2024, Adobe rewrote its terms after users revolted over wording about accessing their content{" "}
                 (
                 <a href="https://blog.adobe.com/en/publish/2024/06/10/updating-adobes-terms-of-use" target="_blank" rel="noreferrer">
                   Adobe
@@ -410,7 +411,7 @@ export default async function Home() {
                 <p>
                   Every change lands in on-device storage as you type. Closing the app or losing signal can&apos;t
                   lose your work, and the app opens just as fast in airplane mode. A checklist is a note, so both
-                  share one editor, one list and one limit.
+                  share one editor, one list, and one limit.
                 </p>
               </div>
               <div className="lp-showcase-phones">
@@ -477,7 +478,7 @@ export default async function Home() {
                 Phone first. <span className="sig">Drive second.</span> Server in between.
               </h2>
               <p className="lp-lead">
-                The phone is the source of truth. The server checks your energy, keeps the sync in order and writes
+                The phone is the source of truth. The server checks your energy, keeps the sync in order, and writes
                 files to your Drive. It never stores note text.
               </p>
             </Reveal>
@@ -533,8 +534,8 @@ export default async function Home() {
                 <h3 className="lp-h3">Built to survive bad networks</h3>
                 <ul className="lp-list">
                   <li>A sync cut off by a closed app finishes on the next launch, with no second charge.</li>
-                  <li>A dropped connection is retried after 5, 15 and 45 seconds.</li>
-                  <li>If the same note changed on two phones, you get a &ldquo;(conflict copy)&rdquo;, not a loss.</li>
+                  <li>A dropped connection is retried after 5, 15, and 45 seconds.</li>
+                  <li>If the same note changed on two phones, you get a &ldquo;(conflict copy),&rdquo; not a loss.</li>
                 </ul>
                 <dl className="facts facts-compact">
                   {PERFORMANCE.map((p) => (
@@ -544,7 +545,7 @@ export default async function Home() {
                     </div>
                   ))}
                 </dl>
-                <p className="lp-small">Measured on a real phone against production, 27 September 2026.</p>
+                <p className="lp-small">Measured on a real phone against production on September 27, 2026.</p>
               </Reveal>
             </div>
           </div>

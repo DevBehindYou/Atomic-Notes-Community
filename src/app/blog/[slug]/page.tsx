@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 function fmtDate(d: string): string {
   if (!d) return "";
   const dt = new Date(d);
-  return isNaN(dt.getTime()) ? d : dt.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+  return isNaN(dt.getTime()) ? d : dt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -86,7 +86,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         author: { "@type": "Person", name: author.name, url: author.url },
         datePublished: post.publishedAt,
         dateModified: post.updatedAt || post.publishedAt,
-        inLanguage: "en",
+        inLanguage: "en-US",
         articleSection: post.category,
         keywords: post.keywords || post.tags.join(", "),
         publisher: {

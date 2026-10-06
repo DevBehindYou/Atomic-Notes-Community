@@ -44,7 +44,7 @@ function toMeta(data: Record<string, unknown>, fallbackSlug: string): PostMeta {
     featured: data.featured === true,
     draft: data.draft === true,
     coverImage: s("coverImage", "/og-banner.png"),
-    coverAlt: s("coverAlt", "Atomic Notes banner with three phone screens: the encryption vault, the notes grid and Atomic Energy"),
+    coverAlt: s("coverAlt", "Atomic Notes banner with three phone screens: the encryption vault, the notes grid, and Atomic Energy"),
     canonical: s("canonical"),
     keywords: s("keywords"),
     readingTime: s("readingTime", ""),

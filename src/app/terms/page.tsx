@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
   title: "Terms of Service",
-  description: "The terms for using the Atomic Notes app, its sync service, Atomic Energy and Atomic Coins.",
+  description: "The terms for using the Atomic Notes app, its sync service, Atomic Energy, and Atomic Coins.",
   path: "/terms",
 });
 
@@ -14,7 +14,7 @@ export default function TermsPage() {
   return (
     <LegalPage eyebrow="ATOMIC NOTES" title="Terms of Service" updated={LEGAL_UPDATED.terms}>
       <p>
-        These terms apply to the Atomic Notes Android app, its sync service and this website (together, &ldquo;the
+        These terms apply to the Atomic Notes Android app, its sync service, and this website (together, &ldquo;the
         service&rdquo;), operated by Ashutosh Sharma, who publishes as DevBehindYou (&ldquo;we&rdquo;). By using the
         service, you agree to them. How we handle your data is described in the{" "}
         <Link href="/privacy">Privacy Policy</Link>.
@@ -58,7 +58,7 @@ export default function TermsPage() {
       <h2>4. Acceptable use</h2>
       <p>You agree not to:</p>
       <ul>
-        <li>attack, overload or try to get unauthorized access to the service or other people&apos;s accounts;</li>
+        <li>attack, overload, or try to get unauthorized access to the service or other people&apos;s accounts;</li>
         <li>use automated means to create accounts, earn energy or coins, or send excessive requests;</li>
         <li>use the service to break the law.</li>
       </ul>
@@ -75,20 +75,20 @@ export default function TermsPage() {
       <h2>6. Availability and changes</h2>
       <p>
         We try to keep the service running, but we do not guarantee it will always be available or error-free. We may
-        change, suspend or end any part of it. If we end cloud sync, the notes on your phone and the files in your Drive
+        change, suspend, or end any part of it. If we end cloud sync, the notes on your phone and the files in your Drive
         stay yours.
       </p>
 
       <h2>7. No warranty</h2>
       <p>
-        The service is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;, without warranties of any kind, to
+        The service is provided &ldquo;as is&rdquo; and &ldquo;as available,&rdquo; without warranties of any kind, to
         the fullest extent the law allows.
       </p>
 
       <h2>8. Limitation of liability</h2>
       <p>
         To the fullest extent the law allows, we are not liable for any indirect or consequential loss, or for any loss
-        of data, profits or goodwill, arising from your use of the service.
+        of data, profits, or goodwill, arising from your use of the service.
       </p>
 
       <h2>9. Ending your use</h2>

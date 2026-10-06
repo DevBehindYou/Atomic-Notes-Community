@@ -42,7 +42,7 @@ export async function GET() {
     <link>${BASE}/blog</link>
     <atom:link href="${BASE}/feed.xml" rel="self" type="application/rss+xml" />
     <description>Development updates, releases, and deep dives on local-first, privacy-first Atomic Notes.</description>
-    <language>en</language>
+    <language>en-us</language>
 ${built ? `    <lastBuildDate>${built}</lastBuildDate>\n` : ""}${items}
   </channel>
 </rss>`;

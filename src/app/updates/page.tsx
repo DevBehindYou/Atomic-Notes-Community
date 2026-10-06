@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = pageMetadata({
   title: "Updates and status",
   description:
-    "Live release notes, maintenance notices and service status for Atomic Notes. The same messages appear in the app's notification center.",
+    "Live release notes, maintenance notices, and service status for Atomic Notes. The same messages appear in the app's notification center.",
   path: "/updates",
 });
 
@@ -42,12 +42,14 @@ function priorityBorder(p: NotificationRow["priority"]): string {
 
 function fmt(d: string): string {
   const dt = new Date(d);
-  return dt.toLocaleString(undefined, {
+  return dt.toLocaleString("en-US", {
     year: "numeric",
     month: "short",
-    day: "2-digit",
-    hour: "2-digit",
+    day: "numeric",
+    hour: "numeric",
     minute: "2-digit",
+    timeZone: "UTC",
+    timeZoneName: "short",
   });
 }
 

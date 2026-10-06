@@ -18,7 +18,7 @@ function fmtDate(d: string): string {
   const dt = new Date(d);
   return isNaN(dt.getTime())
     ? d
-    : dt.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "2-digit" });
+    : dt.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
 }
 
 

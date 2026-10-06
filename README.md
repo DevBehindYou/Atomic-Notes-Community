@@ -1,6 +1,6 @@
 # Atomic Community Base
 
-The public website for **Atomic Notes** — features, FAQ, live updates, the blog and
+The public website for **Atomic Notes** — features, FAQ, live updates, the blog, and
 app downloads — plus the secret **Atomic-Controller** admin panel for managing
 notifications and user Energy/Coins.
 
@@ -24,7 +24,7 @@ the **Atomic Notes Server** (Node.js/MongoDB) as its backend, deployed on
   HMAC-signed httpOnly session cookie, then call the Atomic Notes Server's
   `/api/admin/*` endpoints (server-only) to read or write.
 
-## Domain, SEO and AI discovery
+## Domain, SEO, and AI discovery
 
 The canonical address is `https://atomic-notes.devbehindyou.com`. It is set once, in
 `SITE_URL` (`src/lib/site.ts`), from `NEXT_PUBLIC_SITE_URL` with that domain as the
@@ -43,7 +43,7 @@ redeploy for it to take effect.
 | `/robots.txt` | `src/app/robots.ts` (blocks `/api/`, points at the sitemap) |
 | `/feed.xml` | `src/app/feed.xml/route.ts` (RSS 2.0) |
 | `/llms.txt` | `public/llms.txt` (summary for AI assistants; update with each release) |
-| Page metadata | `src/lib/seo.ts` (`pageMetadata`: canonical, Open Graph and X cards per page) |
+| Page metadata | `src/lib/seo.ts` (`pageMetadata`: canonical, Open Graph, and X cards per page) |
 
 Requests to the old `atomic-notes-community.vercel.app` host get a permanent redirect
 to the same path on the new domain (`next.config.mjs`).
@@ -115,4 +115,4 @@ panel reads and writes.
 
 ## License
 
-Proprietary and source-available. The code is public to read and verify under the [Atomic Notes Source-Available License](LICENSE). All rights reserved. You may not copy, modify, redistribute, host or reuse it. Versions published before 28 September 2026 were released under the MIT License.
+Proprietary and source-available. The code is public to read and verify under the [Atomic Notes Source-Available License](LICENSE). All rights reserved. You may not copy, modify, redistribute, host, or reuse it. Versions published before September 28, 2026 were released under the MIT License.

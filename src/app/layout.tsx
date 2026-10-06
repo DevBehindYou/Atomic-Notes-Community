@@ -77,7 +77,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${bebas.variable} ${hanken.variable} ${mono.variable}`}>
+    <html lang="en-US" className={`${bebas.variable} ${hanken.variable} ${mono.variable}`}>
       <body className="font-body antialiased">
         {children}
         <CommunityPopup />
