@@ -3,15 +3,16 @@ import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { fetchActiveNotifications } from "@/lib/atomicServer";
 import type { NotificationRow } from "@/lib/content";
+import { pageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Updates and status",
   description:
     "Live release notes, maintenance notices and service status for Atomic Notes. The same messages appear in the app's notification center.",
-  alternates: { canonical: "/updates" },
-};
+  path: "/updates",
+});
 
 async function getActive(): Promise<{ rows: NotificationRow[]; error: string | null }> {
   try {

@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getFeatured } from "@/lib/blog";
-import { SITE_URL } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Blog",
   description:
     "Development updates, release notes, and technical deep dives on Atomic Notes: local-first, privacy-first notes with optional end-to-end encryption.",
-  alternates: { canonical: `${SITE_URL}/blog` },
-  openGraph: {
-    title: "Atomic Notes Blog",
-    description: "Local-first, privacy-first. Development updates and deep dives.",
-    images: ["/og-banner.png"],
-    type: "website",
-  },
-};
+  path: "/blog",
+  socialTitle: "Atomic Notes Blog",
+});
 
 function fmtDate(d: string): string {
   if (!d) return "";

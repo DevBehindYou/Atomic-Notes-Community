@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { createHmac } from 'node:crypto';
 import { once } from 'node:events';
-import { createServer as createHttpServer } from 'node:http';
+import { createServer as createHttpServer, get as httpGet } from 'node:http';
 import { createServer } from 'node:net';
 import { resolve } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
@@ -218,6 +218,30 @@ test('production routes preserve authentication and public content', { timeout: 
     assert.equal(xml.includes('atomic-notes.vercel.app'), false);
     const sitemap = await (await request('/sitemap.xml')).text();
     assert.match(sitemap, /<loc>https:\/\/atomic-notes\.devbehindyou\.com<\/loc>|<loc>https:\/\/atomic-notes\.devbehindyou\.com\/<\/loc>/);
+  });
+
+  await t.test('every public page carries its own canonical and share card', async () => {
+    for (const path of ['/blog', '/updates', '/support-atomic-notes', '/privacy', '/terms']) {
+      const html = await (await request(path)).text();
+      const url = `https://atomic-notes.devbehindyou.com${path}`;
+      assert.ok(html.includes(`<link rel="canonical" href="${url}"/>`), path);
+      assert.ok(html.includes(`<meta property="og:url" content="${url}"/>`), path);
+      assert.ok(html.includes('type="application/rss+xml"'), path);
+    }
+    const robots = await (await request('/robots.txt')).text();
+    assert.match(robots, /Sitemap: https:\/\/atomic-notes\.devbehindyou\.com\/sitemap\.xml/);
+  });
+
+  await t.test('the retired Vercel address redirects permanently to the new domain', async () => {
+    // fetch() always sends the real Host, so this request is made with node:http.
+    const moved = await new Promise((done, fail) => {
+      httpGet(`${base}/blog?x=1`, { headers: { host: 'atomic-notes-community.vercel.app' } }, (res) => {
+        res.resume();
+        done(res);
+      }).on('error', fail);
+    });
+    assert.equal(moved.statusCode, 308);
+    assert.equal(moved.headers.location, 'https://atomic-notes.devbehindyou.com/blog?x=1');
   });
 
   await t.test('download links point at the App repository, not a tag that may not exist', async () => {

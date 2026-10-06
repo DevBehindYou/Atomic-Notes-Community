@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { KOFI_URL, PATREON_URL } from "@/lib/content";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Support Atomic Notes, get Atomic Coins early",
   description:
     "Support Atomic Notes on Patreon or Ko-fi at the amount you choose. Send your Atomic Notes account email, and the developer sends you Atomic Coins as an early-supporter reward.",
-  alternates: { canonical: "/support-atomic-notes" },
-};
+  path: "/support-atomic-notes",
+  socialTitle: "Support Atomic Notes, get Atomic Coins early",
+});
 
 const STEPS: { t: string; d: React.ReactNode }[] = [
   {

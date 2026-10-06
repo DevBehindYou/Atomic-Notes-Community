@@ -5,6 +5,18 @@ const nextConfig = {
   // This project is a standalone repository even inside a shared checkout folder.
   outputFileTracingRoot: fileURLToPath(new URL(".", import.meta.url)),
   reactStrictMode: true,
+  async redirects() {
+    // The site moved to atomic-notes.devbehindyou.com. A permanent redirect from the old
+    // Vercel address moves its search rankings and backlinks onto the new domain.
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "atomic-notes-community.vercel.app" }],
+        destination: "https://atomic-notes.devbehindyou.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     // Keep the secret admin surface out of search engines even if a URL leaks, out of other sites'
     // frames (no clickjacking of the login or the adjust buttons), and out of every cache.

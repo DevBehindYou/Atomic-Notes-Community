@@ -17,6 +17,13 @@ Key facts:
 - [Updates](https://atomic-notes.devbehindyou.com/updates): live release notes and service status
 - [Blog](https://atomic-notes.devbehindyou.com/blog): development updates and technical write-ups
 - [Support](https://atomic-notes.devbehindyou.com/support-atomic-notes): support on Patreon or Ko-fi and get Atomic Coins early
+- [Privacy Policy](https://atomic-notes.devbehindyou.com/privacy): what the app and server keep, Google user data, the vault, retention
+- [Terms of Service](https://atomic-notes.devbehindyou.com/terms): terms for the app, sync service, Atomic Energy and Atomic Coins
+
+## Blog posts
+
+- [Atomic Notes v1.18.2 Demo Build](https://atomic-notes.devbehindyou.com/blog/atomic-notes-v1-18-2): Atomic Energy, in-app email flows, notification center, offline launch fix
+- [RSS feed](https://atomic-notes.devbehindyou.com/feed.xml) and [sitemap](https://atomic-notes.devbehindyou.com/sitemap.xml): every published page and post
 
 ## Source and downloads
 

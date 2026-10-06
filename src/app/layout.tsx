@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Bebas_Neue, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SITE_URL } from "@/lib/site";
+import { FEED_ALTERNATE } from "@/lib/seo";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
 import { CommunityPopup } from "@/components/CommunityPopup";
 
@@ -42,7 +43,10 @@ export const metadata: Metadata = {
     "offline notes app",
     "privacy-first notes app",
   ],
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: FEED_ALTERNATE,
+  },
   icons: { icon: "/icon.png", apple: "/icon.png" },
   openGraph: {
     type: "website",

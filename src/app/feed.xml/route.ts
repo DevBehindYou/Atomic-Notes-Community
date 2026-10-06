@@ -17,6 +17,8 @@ function esc(s: string): string {
 
 export async function GET() {
   const posts = getAllPosts();
+  const newest = new Date(posts[0]?.updatedAt || posts[0]?.publishedAt || "");
+  const built = isNaN(newest.getTime()) ? "" : newest.toUTCString();
   const items = posts
     .map((p) => {
       const link = `${BASE}/blog/${p.slug}`;
@@ -34,13 +36,14 @@ export async function GET() {
     .join("\n");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Atomic Notes Blog</title>
     <link>${BASE}/blog</link>
+    <atom:link href="${BASE}/feed.xml" rel="self" type="application/rss+xml" />
     <description>Development updates, releases, and deep dives on local-first, privacy-first Atomic Notes.</description>
     <language>en</language>
-${items}
+${built ? `    <lastBuildDate>${built}</lastBuildDate>\n` : ""}${items}
   </channel>
 </rss>`;
 
