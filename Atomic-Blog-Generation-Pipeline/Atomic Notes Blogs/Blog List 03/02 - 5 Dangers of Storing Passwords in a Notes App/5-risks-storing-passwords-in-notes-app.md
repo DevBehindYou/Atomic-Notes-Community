@@ -12,7 +12,7 @@ tags: ["passwords", "security", "notes-app", "privacy", "password-manager"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 5 Dangers of Storing Passwords in Notes, with one note connected to five account icons"
-canonical: "https://atomic-notes-community.vercel.app/blog/5-risks-storing-passwords-in-notes-app"
+canonical: "https://atomic-notes.devbehindyou.com/blog/5-risks-storing-passwords-in-notes-app"
 keywords: "storing passwords in notes app, is it safe to store passwords in notes, secure password storage, password security, notes app security, credential theft, account takeover, identity theft, password manager, credential reuse attack, financial account security, recovery email compromise, plaintext passwords"
 readingTime: "7 min read"
 ---
@@ -160,4 +160,4 @@ If you must, keep it short-lived. Use end-to-end encryption and an app lock, nev
 - [Use strong passwords, CISA](https://www.cisa.gov/secure-our-world/use-strong-passwords)
 - [Credential stuffing, OWASP](https://community.owasp.org/attacks/Credential_stuffing)
 - [Notice of recent security incident, LastPass, December 22, 2022](https://blog.lastpass.com/posts/notice-of-recent-security-incident)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)

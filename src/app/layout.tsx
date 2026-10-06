@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Bebas_Neue, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { SITE_URL } from "@/lib/site";
+import { DEVELOPER_URL, SITE_URL } from "@/lib/site";
+import { FEED_ALTERNATE } from "@/lib/seo";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
 import { CommunityPopup } from "@/components/CommunityPopup";
 
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   },
   description: DESCRIPTION,
   applicationName: "Atomic Notes",
-  authors: [{ name: "Ashutosh Sharma (DevBehindYou)", url: "https://devbehindyou.vercel.app" }],
+  authors: [{ name: "Ashutosh Sharma (DevBehindYou)", url: DEVELOPER_URL }],
   creator: "DevBehindYou",
   keywords: [
     "Atomic Notes",
@@ -42,7 +43,10 @@ export const metadata: Metadata = {
     "offline notes app",
     "privacy-first notes app",
   ],
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: FEED_ALTERNATE,
+  },
   icons: { icon: "/icon.png", apple: "/icon.png" },
   openGraph: {
     type: "website",
@@ -73,7 +77,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${bebas.variable} ${hanken.variable} ${mono.variable}`}>
+    <html lang="en-US" className={`${bebas.variable} ${hanken.variable} ${mono.variable}`}>
       <body className="font-body antialiased">
         {children}
         <CommunityPopup />

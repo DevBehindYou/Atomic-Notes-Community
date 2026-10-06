@@ -54,7 +54,7 @@ Sources (listed after the article, under "Sources"):
   Atomic Notes source code and releases
     https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
   Atomic Notes privacy policy
-    https://atomic-notes-community.vercel.app/privacy
+    https://atomic-notes.devbehindyou.com/privacy
   Anytype desktop client on GitHub
     https://github.com/anyproto/anytype-ts
   Anytype Android client on GitHub
@@ -75,7 +75,7 @@ How to publish:
 2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
 3. Check that the bullet lists and the Sources links survived the paste.
 4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
-   https://atomic-notes-community.vercel.app/blog/private-local-first-notion-alternatives
+   https://atomic-notes.devbehindyou.com/blog/private-local-first-notion-alternatives
    Otherwise leave the canonical link empty.
 
 The .md file is the source of truth. It passes the blog pipeline validator:

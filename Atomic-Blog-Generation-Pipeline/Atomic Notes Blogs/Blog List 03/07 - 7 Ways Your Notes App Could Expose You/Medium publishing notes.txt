@@ -58,14 +58,14 @@ Sources (listed after the article, under "Sources"):
   Why metadata matters, Electronic Frontier Foundation
     https://ssd.eff.org/module/why-metadata-matters
   Atomic Notes privacy policy
-    https://atomic-notes-community.vercel.app/privacy
+    https://atomic-notes.devbehindyou.com/privacy
 
 How to publish:
 1. Open "Medium article.docx", select all and copy, then paste into a new Medium story.
 2. Re-upload each image from this folder at its place (Medium does not keep pasted Word images reliably).
 3. Check that the bullet lists and the Sources links survived the paste.
 4. Story settings > Advanced: if this article is also published on the Atomic Notes website, set the canonical link to:
-   https://atomic-notes-community.vercel.app/blog/7-ways-notes-apps-can-expose-your-data
+   https://atomic-notes.devbehindyou.com/blog/7-ways-notes-apps-can-expose-your-data
    Otherwise leave the canonical link empty.
 
 The .md file is the source of truth. It passes the blog pipeline validator:

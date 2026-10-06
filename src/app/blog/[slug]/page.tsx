@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPost, getAllSlugs, relatedPosts, type PostMeta } from "@/lib/blog";
-import { SITE_URL } from "@/lib/site";
+import { DEVELOPER_URL, SITE_URL } from "@/lib/site";
+import { FEED_ALTERNATE, SITE_NAME, TWITTER_HANDLE, absoluteUrl, canonicalUrl } from "@/lib/seo";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -14,7 +15,7 @@ const AUTHORS: Record<string, { name: string; role: string; url: string }> = {
   "ashutosh-sharma": {
     name: "Ashutosh Sharma",
     role: "Founder & Solo Developer, Atomic Notes",
-    url: "https://devbehindyou.vercel.app",
+    url: DEVELOPER_URL,
   },
 };
 
@@ -26,28 +27,42 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = await getPost((await params).slug);
   if (!post) return { title: "Not found" };
   const url = `${BASE}/blog/${post.slug}`;
+  const image = { url: absoluteUrl(post.coverImage), alt: post.coverAlt };
+  const author = AUTHORS[post.author];
   return {
     title: post.title,
     description: post.description,
     keywords: post.keywords,
-    alternates: { canonical: post.canonical || url },
+    alternates: { canonical: canonicalUrl(post.canonical, url), types: FEED_ALTERNATE },
     openGraph: {
       type: "article",
+      siteName: SITE_NAME,
+      locale: "en_US",
       title: post.title,
       description: post.description,
       url,
-      images: [post.coverImage],
+      images: [image],
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt || post.publishedAt,
+      section: post.category,
+      tags: post.tags,
+      authors: author ? [author.url] : undefined,
     },
-    twitter: { card: "summary_large_image", title: post.title, description: post.description, images: [post.coverImage] },
+    twitter: {
+      card: "summary_large_image",
+      site: TWITTER_HANDLE,
+      creator: TWITTER_HANDLE,
+      title: post.title,
+      description: post.description,
+      images: [image],
+    },
   };
 }
 
 function fmtDate(d: string): string {
   if (!d) return "";
   const dt = new Date(d);
-  return isNaN(dt.getTime()) ? d : dt.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+  return isNaN(dt.getTime()) ? d : dt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -60,19 +75,38 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.description,
-    image: `${BASE}${post.coverImage}`,
-    author: { "@type": "Person", name: author.name, url: author.url },
-    datePublished: post.publishedAt,
-    dateModified: post.updatedAt || post.publishedAt,
-    publisher: {
-      "@type": "Organization",
-      name: "Atomic Notes",
-      logo: { "@type": "ImageObject", url: `${BASE}/icon.png` },
-    },
-    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": `${url}#article`,
+        url,
+        headline: post.title,
+        description: post.description,
+        image: absoluteUrl(post.coverImage),
+        author: { "@type": "Person", name: author.name, url: author.url },
+        datePublished: post.publishedAt,
+        dateModified: post.updatedAt || post.publishedAt,
+        inLanguage: "en-US",
+        articleSection: post.category,
+        keywords: post.keywords || post.tags.join(", "),
+        publisher: {
+          "@type": "Organization",
+          name: SITE_NAME,
+          url: BASE,
+          logo: { "@type": "ImageObject", url: `${BASE}/icon.png` },
+        },
+        isPartOf: { "@id": `${BASE}/#website` },
+        mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: BASE },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE}/blog` },
+          { "@type": "ListItem", position: 3, name: post.title, item: url },
+        ],
+      },
+    ],
   };
 
   return (
@@ -126,7 +160,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             {related.map((p: PostMeta) => (
               <Link key={p.slug} href={`/blog/${p.slug}`} className="post-card">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.coverImage} alt={p.coverAlt} loading="lazy" className="post-cover" />
+                <img src={p.coverImage} alt="" loading="lazy" className="post-cover" />
                 <div className="post-body">
                   <p className="mono-label"><span className="sig">{p.category}</span> · {p.readingTime}</p>
                   <h3 className="post-title">{p.title}</h3>

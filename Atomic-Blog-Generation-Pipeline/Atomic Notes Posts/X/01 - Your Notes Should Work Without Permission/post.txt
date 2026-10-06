@@ -7,6 +7,6 @@ Your notes shouldn't stop working because:
 
 Atomic Notes is local first. Write first, sync later. ⚛️
 
-https://atomic-notes-community.vercel.app/
+https://atomic-notes.devbehindyou.com/
 
 #AtomicNotes #LocalFirst

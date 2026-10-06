@@ -12,7 +12,7 @@ tags: ["privacy", "notes-app", "security", "checklist", "data-ownership"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 10 Privacy Mistakes People Make With Notes Apps, with ten numbered warning tiles"
-canonical: "https://atomic-notes-community.vercel.app/blog/10-notes-app-privacy-mistakes-2026"
+canonical: "https://atomic-notes.devbehindyou.com/blog/10-notes-app-privacy-mistakes-2026"
 keywords: "notes app privacy mistakes, notes app security mistakes, note taking privacy, private notes security, password storage risk, recovery phrase security, notes app permissions, AI notes privacy, data backup, end to end encryption, APK security, data ownership, cloud notes privacy"
 readingTime: "7 min read"
 ---
@@ -167,4 +167,4 @@ Slightly. Notes app security mistakes let someone break in, like reused password
 - [AI (and other) companies: quietly changing your terms of service could be unfair or deceptive, FTC, February 13, 2024](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/02/ai-other-companies-quietly-changing-your-terms-service-could-be-unfair-or-deceptive)
 - [Install unknown apps, Android Developers](https://developer.android.com/distribute/marketing-tools/alternative-distribution)
 - [apksigner, Android Developers](https://developer.android.com/tools/apksigner)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)

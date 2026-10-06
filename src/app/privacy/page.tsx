@@ -1,37 +1,38 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
-import { REPO_URL } from "@/lib/content";
+import { LEGAL_UPDATED, REPO_URL } from "@/lib/content";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Privacy Policy",
   description:
     "How Atomic Notes handles your data: what the app and server keep, how Google user data is used, the end-to-end vault, retention, and your choices.",
-  alternates: { canonical: "/privacy" },
-};
+  path: "/privacy",
+});
 
 const CONTACT = "https://github.com/DevBehindYou";
 
 export default function PrivacyPage() {
   return (
-    <LegalPage eyebrow="ATOMIC NOTES" title="Privacy Policy" updated="30 September 2026">
+    <LegalPage eyebrow="ATOMIC NOTES" title="Privacy Policy" updated={LEGAL_UPDATED.privacy}>
       <p>
-        This policy explains how the Atomic Notes Android app, its sync server and this website handle your
-        information. Atomic Notes is built and operated by Ashutosh Sharma, who publishes as DevBehindYou (&ldquo;we&rdquo;,
+        This policy explains how the Atomic Notes Android app, its sync server, and this website handle your
+        information. Atomic Notes is built and operated by Ashutosh Sharma, who publishes as DevBehindYou (&ldquo;we,&rdquo;
         &ldquo;us&rdquo;).
       </p>
 
       <h2>The short version</h2>
       <ul>
         <li>Your notes are saved on your phone first. When you sync, they go to a folder in your own Google Drive.</li>
-        <li>Our server never stores your note titles, text or checklist items.</li>
-        <li>There is no analytics, no crash reporting, no advertising and no AI in the app.</li>
+        <li>Our server never stores your note titles, text, or checklist items.</li>
+        <li>There is no analytics, no crash reporting, no advertising, and no AI in the app.</li>
         <li>We never sell your data, and we never use it to train AI models.</li>
       </ul>
 
       <h2>Information we collect</h2>
       <p>To run your account and sync, our server keeps:</p>
       <ul>
-        <li>Your Google account ID, email address and name, from Google sign-in, and the username you choose.</li>
+        <li>Your Google account ID, email address, and name, from Google sign-in, and the username you choose.</li>
         <li>Your Atomic Energy and Atomic Coin balances, and a record of how they changed.</li>
         <li>
           Metadata for each note: its ID, whether it is a note or a checklist, the pinned and deleted flags, timestamps,
@@ -42,15 +43,15 @@ export default function PrivacyPage() {
         <li>Which in-app announcements you have read or dismissed.</li>
       </ul>
       <p>
-        The app does not collect your note content, contacts, location, advertising IDs, analytics or crash reports. Our
+        The app does not collect your note content, contacts, location, advertising IDs, analytics, or crash reports. Our
         hosting provider processes standard request data, such as IP addresses, to deliver the app&apos;s server and this
         website. This website sets no tracking or advertising cookies.
       </p>
 
       <h2>Website analytics</h2>
       <p>
-        This website (not the app) uses Vercel Web Analytics to count page views. For each page you open it records the
-        page address, the referring site, your country, and your browser, operating system and device type. It sets no
+        This website (not the app) uses Vercel Web Analytics to count page views. For each page you open, it records the
+        page address, the referring site, your country, and your browser, operating system, and device type. It sets no
         cookies and stores no IP address. Visits are told apart by a hash of the request that Vercel resets every day,
         so a visitor cannot be followed across days or across other websites. We only see these totals in Vercel&apos;s
         dashboard, and we never combine them with your Atomic Notes account. A content blocker stops it without breaking
@@ -61,11 +62,11 @@ export default function PrivacyPage() {
       <p>Atomic Notes asks Google for these permissions, and uses each one only as described:</p>
       <ul>
         <li>
-          <b>openid, email and profile:</b> to sign you in, create your account, and show your name and email in the app.
+          <b>openid, email, and profile:</b> to sign you in, create your account, and show your name and email in the app.
         </li>
         <li>
           <b>drive.file:</b> to create a <code>My-Atomic-Notes</code> folder in your Google Drive, and to create, read,
-          update and delete the note files Atomic Notes makes there, so your notes sync between your devices. This
+          update, and delete the note files Atomic Notes makes there, so your notes sync between your devices. This
           permission only covers files the app created. Atomic Notes cannot see any other file in your Drive.
         </li>
       </ul>

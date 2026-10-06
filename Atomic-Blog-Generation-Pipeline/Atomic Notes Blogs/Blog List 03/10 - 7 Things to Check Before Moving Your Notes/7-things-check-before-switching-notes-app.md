@@ -12,7 +12,7 @@ tags: ["migration", "privacy", "notes-app", "backup", "data-portability"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 7 Things to Check Before Moving Your Notes, with an arrow carrying notes from an old app to a new one"
-canonical: "https://atomic-notes-community.vercel.app/blog/7-things-check-before-switching-notes-app"
+canonical: "https://atomic-notes.devbehindyou.com/blog/7-things-check-before-switching-notes-app"
 keywords: "secure notes app, switch notes app securely, private note taking app, notes migration, notes backup, data export, end to end encryption, offline notes, cloud storage provider, account recovery, data portability, notes ownership, secure data migration"
 readingTime: "7 min read"
 ---
@@ -161,4 +161,4 @@ It shouldn't be. A private note taking app should export in open formats and kee
 
 - [Right to data portability, GDPR Article 20](https://gdpr-info.eu/art-20-gdpr/)
 - [Atomic Notes 2.03.5 release notes](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/tag/v2.03.5)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)

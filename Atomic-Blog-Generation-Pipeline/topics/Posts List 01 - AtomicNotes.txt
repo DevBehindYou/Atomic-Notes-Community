@@ -32,7 +32,7 @@ Write first. Sync later.
 
 Your notes stay usable on your device. ⚛️
 
-https://atomic-notes-community.vercel.app/
+https://atomic-notes.devbehindyou.com/
 
 #AtomicNotes #LocalFirst #OpenSource
 
@@ -217,7 +217,7 @@ I am curious how people here think about this model.
 Would user owned cloud storage make you trust a notes app more, or would you still prefer fully self hosted storage, WebDAV, Syncthing, or device only notes?
 
 Project:
-https://atomic-notes-community.vercel.app/
+https://atomic-notes.devbehindyou.com/
 
 Source:
 https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
@@ -867,7 +867,7 @@ If you are following the project here, testing releases, reporting bugs, sharing
 
 Thank you. ⚛️
 
-https://atomic-notes-community.vercel.app/
+https://atomic-notes.devbehindyou.com/
 
 ---
 
@@ -1150,4 +1150,4 @@ You are helping prove that smaller software can still be built around user owner
 
 **Open source. Local first. Private by design. ⚛️**
 
-https://atomic-notes-community.vercel.app/
+https://atomic-notes.devbehindyou.com/

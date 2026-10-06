@@ -10,7 +10,7 @@ I'm curious how people here think about this model.
 
 Would user owned cloud storage make you trust a notes app more? Or would you still prefer self-hosting, WebDAV, Syncthing or device-only notes?
 
-Project: https://atomic-notes-community.vercel.app/
+Project: https://atomic-notes.devbehindyou.com/
 Code: https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
 
 Negative feedback is welcome. I'm trying to learn where this design is strong and where it adds complexity for no good reason.

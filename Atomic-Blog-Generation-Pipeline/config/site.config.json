@@ -2,7 +2,7 @@
   "site": {
     "name": "Atomic Notes",
     "brand": "DevBehindYou",
-    "baseUrl": "https://atomic-notes-community.vercel.app",
+    "baseUrl": "https://atomic-notes.devbehindyou.com",
     "blogBasePath": "/blog",
     "contentDir": "../content/blog",
     "publicImageDir": "../public/blog"

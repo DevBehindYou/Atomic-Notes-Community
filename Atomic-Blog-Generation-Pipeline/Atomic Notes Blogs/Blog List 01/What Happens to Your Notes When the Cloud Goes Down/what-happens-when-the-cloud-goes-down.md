@@ -12,7 +12,7 @@ tags: ["local-first", "offline-first", "cloud-outage", "notes-app", "reliability
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading When the Cloud Goes Down, with a 503 error card and an Atomic Notes card that says still opens, still saves"
-canonical: "https://atomic-notes-community.vercel.app/blog/what-happens-when-the-cloud-goes-down"
+canonical: "https://atomic-notes.devbehindyou.com/blog/what-happens-when-the-cloud-goes-down"
 keywords: "cloud outage notes, offline first apps, local first software, offline notes, cloud dependency"
 readingTime: "7 min read"
 ---

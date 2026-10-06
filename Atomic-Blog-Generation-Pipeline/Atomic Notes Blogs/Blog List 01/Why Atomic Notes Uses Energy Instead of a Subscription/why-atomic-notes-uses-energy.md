@@ -12,7 +12,7 @@ tags: ["notes-app", "subscription-free", "business-model", "privacy", "atomic-no
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading Energy, Not a Subscription, with a full 120 energy meter and a crossed-out monthly fee"
-canonical: "https://atomic-notes-community.vercel.app/blog/why-atomic-notes-uses-energy"
+canonical: "https://atomic-notes.devbehindyou.com/blog/why-atomic-notes-uses-energy"
 keywords: "subscription free notes app, Atomic Energy, Atomic Coins, notes app without subscription, privacy friendly business model"
 readingTime: "7 min read"
 ---
@@ -140,7 +140,7 @@ Sync runs on real servers that cost money every month. A subscription free notes
 
 ## Sources
 
-- [Atomic Notes support page](https://atomic-notes-community.vercel.app/support-atomic-notes)
+- [Atomic Notes support page](https://atomic-notes.devbehindyou.com/support-atomic-notes)
 - [Atomic Notes 2.03.5 release notes (energy and coins changes)](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/tag/v2.03.5)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
-- [Atomic Notes terms](https://atomic-notes-community.vercel.app/terms)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)
+- [Atomic Notes terms](https://atomic-notes.devbehindyou.com/terms)

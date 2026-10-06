@@ -33,7 +33,7 @@ export function Gallery({ shots }: { shots: Shot[] }) {
         {shots.map((s, i) => (
           <figure className="shot" key={s.src} onClick={() => show(i)}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={s.src} alt={s.label} loading="lazy" />
+            <img src={s.src} alt={`Atomic Notes app screen: ${s.label}`} loading="lazy" />
             <figcaption className="cap">
               <span>{s.label}</span>
               <span className="sig">{String(i + 1).padStart(2, "0")}</span>
@@ -59,7 +59,7 @@ export function Gallery({ shots }: { shots: Shot[] }) {
         </button>
         {open && (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={shots[cur].src} alt={shots[cur].label} />
+          <img src={shots[cur].src} alt={`Atomic Notes app screen: ${shots[cur].label}`} />
         )}
         <div className="cap">
           {shots[cur]?.label} · {cur + 1} / {n}

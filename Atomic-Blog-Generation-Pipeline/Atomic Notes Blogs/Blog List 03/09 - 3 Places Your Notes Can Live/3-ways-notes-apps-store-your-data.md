@@ -12,7 +12,7 @@ tags: ["storage", "privacy", "notes-app", "local-first", "data-ownership"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 3 Places Your Notes Can Live, with icons for a phone, a company cloud and your own cloud"
-canonical: "https://atomic-notes-community.vercel.app/blog/3-ways-notes-apps-store-your-data"
+canonical: "https://atomic-notes.devbehindyou.com/blog/3-ways-notes-apps-store-your-data"
 keywords: "where are notes stored, notes storage privacy, where do notes apps store data, local notes storage, cloud notes storage, user owned cloud storage, notes data ownership, offline notes, cloud privacy, notes backup, notes synchronization, encrypted cloud notes, local first storage"
 readingTime: "7 min read"
 ---
@@ -170,4 +170,4 @@ It can, because data laws differ by country. Where are notes stored geographical
 - [iCloud data security overview, Apple Support](https://support.apple.com/en-us/102651)
 - [Choose Google Drive API scopes (drive.file), Google for Developers](https://developers.google.com/workspace/drive/api/guides/api-specific-auth)
 - [Local-first software, Ink & Switch](https://www.inkandswitch.com/essay/local-first/)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)

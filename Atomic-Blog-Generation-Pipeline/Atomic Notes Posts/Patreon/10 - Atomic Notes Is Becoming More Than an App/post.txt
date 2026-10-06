@@ -25,4 +25,4 @@ If you follow the project here, test releases, report bugs, share feedback, or s
 
 Thank you. ⚛️
 
-https://atomic-notes-community.vercel.app/
+https://atomic-notes.devbehindyou.com/

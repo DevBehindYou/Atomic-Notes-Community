@@ -12,7 +12,7 @@ tags: ["encryption", "privacy", "security", "notes-app", "end-to-end-encryption"
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading Encrypted Notes: T2T vs End-to-End, with a padlock and a ciphertext string"
-canonical: "https://atomic-notes-community.vercel.app/blog/encrypted-notes-t2t-vs-end-to-end"
+canonical: "https://atomic-notes.devbehindyou.com/blog/encrypted-notes-t2t-vs-end-to-end"
 keywords: "encrypted notes app, end-to-end encrypted notes, t2t vs e2e, argon2id aes-256-gcm, zero-knowledge notes"
 readingTime: "8 min read"
 ---

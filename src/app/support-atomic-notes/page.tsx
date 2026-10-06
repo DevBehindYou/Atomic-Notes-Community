@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { KOFI_URL, PATREON_URL } from "@/lib/content";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Support Atomic Notes, get Atomic Coins early",
   description:
     "Support Atomic Notes on Patreon or Ko-fi at the amount you choose. Send your Atomic Notes account email, and the developer sends you Atomic Coins as an early-supporter reward.",
-  alternates: { canonical: "/support-atomic-notes" },
-};
+  path: "/support-atomic-notes",
+  socialTitle: "Support Atomic Notes, get Atomic Coins early",
+});
 
 const STEPS: { t: string; d: React.ReactNode }[] = [
   {
@@ -160,7 +162,7 @@ export default function SupportPage() {
                 <p className="num">GOOD TO KNOW</p>
                 <ul className="support-list">
                   <li>
-                    Patreon or Ko-fi handles the payment. Atomic Notes never sees your card, PayPal or bank details.
+                    Patreon or Ko-fi handles the payment. Atomic Notes never sees your card, PayPal, or bank details.
                   </li>
                   <li>Each platform charges its own fees, under its own terms.</li>
                   <li>The developer sends rewards by hand, so they can take a little time to arrive.</li>

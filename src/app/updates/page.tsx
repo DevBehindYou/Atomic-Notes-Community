@@ -3,15 +3,16 @@ import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { fetchActiveNotifications } from "@/lib/atomicServer";
 import type { NotificationRow } from "@/lib/content";
+import { pageMetadata } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Updates and status",
   description:
-    "Live release notes, maintenance notices and service status for Atomic Notes. The same messages appear in the app's notification center.",
-  alternates: { canonical: "/updates" },
-};
+    "Live release notes, maintenance notices, and service status for Atomic Notes. The same messages appear in the app's notification center.",
+  path: "/updates",
+});
 
 async function getActive(): Promise<{ rows: NotificationRow[]; error: string | null }> {
   try {
@@ -41,12 +42,14 @@ function priorityBorder(p: NotificationRow["priority"]): string {
 
 function fmt(d: string): string {
   const dt = new Date(d);
-  return dt.toLocaleString(undefined, {
+  return dt.toLocaleString("en-US", {
     year: "numeric",
     month: "short",
-    day: "2-digit",
-    hour: "2-digit",
+    day: "numeric",
+    hour: "numeric",
     minute: "2-digit",
+    timeZone: "UTC",
+    timeZoneName: "short",
   });
 }
 

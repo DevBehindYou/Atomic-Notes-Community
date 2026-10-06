@@ -12,7 +12,7 @@ tags: ["encryption", "e2ee", "privacy", "notes-app", "comparison"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 5 Best End to End Encrypted Notes Apps, with a ranked list led by Atomic Notes"
-canonical: "https://atomic-notes-community.vercel.app/blog/best-end-to-end-encrypted-notes-apps"
+canonical: "https://atomic-notes.devbehindyou.com/blog/best-end-to-end-encrypted-notes-apps"
 keywords: "best encrypted notes apps, end to end encrypted notes, encrypted notes app, E2EE notes app, private encrypted notes, secure note taking app, zero knowledge notes app, encrypted notes Android, private notes app"
 readingTime: "6 min read"
 ---
@@ -147,7 +147,7 @@ Barely. Modern phones encrypt a note in a blink. The real cost shows up in setup
 
 ## Sources
 
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)
 - [Atomic Notes source code and releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2)
 - [How Notesnook encrypts your data](https://notesnook.com/help/how-is-my-data-encrypted)
 - [Standard Notes encryption whitepaper](https://standardnotes.com/help/security/encryption)

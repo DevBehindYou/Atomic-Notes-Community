@@ -49,6 +49,9 @@ export const RELEASE = {
   certSha1: "20:08:8F:BF:45:D7:D1:5A:4C:26:69:D6:47:84:16:E2:7F:32:85:45",
 };
 
+/** When the legal pages last changed (ISO dates). Shown on the pages and used as sitemap lastmod. */
+export const LEGAL_UPDATED = { privacy: "2026-09-30", terms: "2026-09-29" };
+
 export const REPO_URL = "https://github.com/DevBehindYou/Atomic-Notes-App-V0.2";
 
 /** Where supporters go. Early supporters get Atomic Coins by hand (see /support-atomic-notes). */
@@ -57,15 +60,15 @@ export const KOFI_URL = "https://ko-fi.com/devbehindyou";
 
 /** The answer-first definition, used in the page and in structured data. */
 export const DEFINITION =
-  "Atomic Notes is a free, source-available notes app for Android that keeps your notes on your phone first and syncs them to a private folder in your own Google Drive. It has no AI features, no ads and no analytics. An optional vault encrypts every note on the device with AES-256-GCM, so the sync server and Google only ever store ciphertext.";
+  "Atomic Notes is a free, source-available notes app for Android that keeps your notes on your phone first and syncs them to a private folder in your own Google Drive. It has no AI features, no ads, and no analytics. An optional vault encrypts every note on the device with AES-256-GCM, so the sync server and Google only ever store ciphertext.";
 
 export const FACTS: { k: string; v: string }[] = [
   { k: "Platform", v: "Android 9 or newer" },
-  { k: "Latest version", v: `${RELEASE.version}, released 28 Sep 2026` },
+  { k: "Latest version", v: `${RELEASE.version}, released Sep 28, 2026` },
   { k: "Where notes live", v: "Your phone, then your own Google Drive" },
   { k: "Encryption", v: "Optional vault: Argon2id + AES-256-GCM" },
   { k: "Price", v: "Free. 30 notes and daily sync energy" },
-  { k: "Tracking", v: "None. No analytics, crash or ad SDKs" },
+  { k: "Tracking", v: "None. No analytics, crash, or ad SDKs" },
   { k: "Source", v: "Public to read and verify. All rights reserved" },
 ];
 
@@ -113,8 +116,8 @@ export const ROADMAP: { phase: string; title: string; state: "done" | "now" | "n
   { phase: "01", title: "Local-first notes and checklists, offline by default", state: "done" },
   { phase: "02", title: "Sync to your own Google Drive, replay-safe", state: "done" },
   { phase: "03", title: "End-to-end vault with a 6-word recovery phrase", state: "done" },
-  { phase: "04", title: "Atomic Energy, Atomic Coins and capacity tiers", state: "done" },
-  { phase: "05", title: "Notification center, biometric lock and two-step codes", state: "done" },
+  { phase: "04", title: "Atomic Energy, Atomic Coins, and capacity tiers", state: "done" },
+  { phase: "05", title: "Notification center, biometric lock, and two-step codes", state: "done" },
   { phase: "06", title: "Open Google sign-in to everyone", state: "now" },
   { phase: "07", title: "Coin packs you can buy", state: "next" },
   { phase: "08", title: "Background sync while the app is closed", state: "next" },
@@ -128,7 +131,7 @@ export const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "Where does Atomic Notes store my notes?",
-    a: "On your phone first, in on-device storage. When you sync, each note is saved as its own .atomic file in a My-Atomic-Notes folder in your Google Drive. The Atomic Notes server stores only metadata such as note ids, timestamps and flags. It never stores your note titles or text.",
+    a: "On your phone first, in on-device storage. When you sync, each note is saved as its own .atomic file in a My-Atomic-Notes folder in your Google Drive. The Atomic Notes server stores only metadata such as note IDs, timestamps, and flags. It never stores your note titles or text.",
   },
   {
     q: "Can the developer read my notes?",
@@ -136,7 +139,7 @@ export const FAQ: { q: string; a: string }[] = [
   },
   {
     q: "Does Atomic Notes use AI or train models on my notes?",
-    a: "No. Atomic Notes has no AI features, and your notes are never sent to a model or used as training data. The app ships no analytics, crash-reporting or advertising SDKs. You can check this in the public source code, where pubspec.yaml lists every library the app uses.",
+    a: "No. Atomic Notes has no AI features, and your notes are never sent to a model or used as training data. The app ships no analytics, crash-reporting, or advertising SDKs. You can check this in the public source code, where pubspec.yaml lists every library the app uses.",
   },
   {
     q: "Does Atomic Notes work offline?",

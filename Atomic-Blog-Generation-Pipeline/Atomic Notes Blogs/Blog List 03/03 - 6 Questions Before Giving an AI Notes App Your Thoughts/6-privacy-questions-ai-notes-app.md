@@ -12,7 +12,7 @@ tags: ["ai", "privacy", "notes-app", "data-retention", "no-ai"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 6 Questions Before an AI Reads Your Notes, with six question cards"
-canonical: "https://atomic-notes-community.vercel.app/blog/6-privacy-questions-ai-notes-app"
+canonical: "https://atomic-notes.devbehindyou.com/blog/6-privacy-questions-ai-notes-app"
 keywords: "AI notes app privacy, AI note taking privacy, AI data privacy, AI notes security, AI data processing, private notes AI, generative AI privacy, AI training data, note content processing, AI data retention, third party AI provider, AI privacy settings, notes without AI"
 readingTime: "7 min read"
 ---
@@ -144,4 +144,4 @@ Five things: when AI runs, where notes go, which providers receive them, how lon
 
 - [AI (and other) companies: quietly changing your terms of service could be unfair or deceptive, FTC, February 13, 2024](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/02/ai-other-companies-quietly-changing-your-terms-service-could-be-unfair-or-deceptive)
 - [AI chat (off by default, remote providers blocked by default), Joplin documentation](https://github.com/laurent22/joplin/blob/dev/readme/apps/ai_chat.md)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)

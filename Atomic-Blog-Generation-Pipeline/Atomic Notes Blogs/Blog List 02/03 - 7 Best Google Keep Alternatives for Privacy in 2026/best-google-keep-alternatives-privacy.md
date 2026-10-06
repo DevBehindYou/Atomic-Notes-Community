@@ -12,7 +12,7 @@ tags: ["google-keep", "privacy", "notes-app", "android", "comparison"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 7 Best Google Keep Alternatives for Privacy, with a ranked list led by Atomic Notes"
-canonical: "https://atomic-notes-community.vercel.app/blog/best-google-keep-alternatives-privacy"
+canonical: "https://atomic-notes.devbehindyou.com/blog/best-google-keep-alternatives-privacy"
 keywords: "Google Keep alternatives, private Google Keep alternative, Google Keep alternative Android, open source Google Keep alternative, encrypted Google Keep alternative, offline Google Keep alternative, privacy focused notes app, Google Keep replacement, self hosted Google Keep alternative"
 readingTime: "6 min read"
 ---
@@ -157,7 +157,7 @@ Yes. Export your notes with Google Takeout, then import the archive into Notally
 
 ## Sources
 
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)
 - [Atomic Notes source code and releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2)
 - [NotallyX on GitHub](https://github.com/Crustack/NotallyX)
 - [NotallyX FAQ](https://github.com/Crustack/NotallyX/blob/main/documentation/docs/faq.md)

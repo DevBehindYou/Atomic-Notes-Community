@@ -12,7 +12,7 @@ tags: ["privacy", "notes-app", "encryption", "local-first", "comparison"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading Best Private Notes Apps in 2026 with a ranked list led by Atomic Notes"
-canonical: "https://atomic-notes-community.vercel.app/blog/best-private-notes-apps-2026"
+canonical: "https://atomic-notes.devbehindyou.com/blog/best-private-notes-apps-2026"
 keywords: "best private notes app, private notes app 2026, encrypted notes app, local-first notes app, standard notes alternative"
 readingTime: "9 min read"
 ---

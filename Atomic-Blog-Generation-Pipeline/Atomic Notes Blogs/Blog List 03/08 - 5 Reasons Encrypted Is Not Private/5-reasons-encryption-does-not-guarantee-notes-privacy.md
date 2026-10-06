@@ -12,7 +12,7 @@ tags: ["encryption", "e2ee", "privacy", "notes-app", "metadata"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading Encrypted Is Not the Same as Private, with a padlock and five warning labels"
-canonical: "https://atomic-notes-community.vercel.app/blog/5-reasons-encryption-does-not-guarantee-notes-privacy"
+canonical: "https://atomic-notes.devbehindyou.com/blog/5-reasons-encryption-does-not-guarantee-notes-privacy"
 keywords: "encrypted notes privacy, encrypted notes app, end to end encrypted notes, E2EE notes, transport encryption, encryption at rest, client side encryption, zero knowledge encryption, encryption keys, metadata privacy, HTTPS encryption, server side encryption, private note taking"
 readingTime: "7 min read"
 ---
@@ -153,4 +153,4 @@ Not automatically. Phone backups and exports often sit outside the app's encrypt
 - [iCloud data security overview, Apple Support](https://support.apple.com/en-us/102651)
 - [Notice of recent security incident, LastPass, December 22, 2022](https://blog.lastpass.com/posts/notice-of-recent-security-incident)
 - [What Exodus Privacy does, Exodus Privacy](https://exodus-privacy.eu.org/en/page/what/)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)

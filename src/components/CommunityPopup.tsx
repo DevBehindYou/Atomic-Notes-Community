@@ -53,8 +53,8 @@ export function CommunityPopup() {
           We just opened our <span className="sig">Discord.</span>
         </p>
         <p className="community-pop-copy">
-          <strong>The Atomic Notes Community Server is live.</strong> Join for feature discussions, app updates and
-          release news, straight from the developer.
+          <strong>The Atomic Notes Community Server is live.</strong> Join for feature discussions, app updates,
+          and release news, straight from the developer.
         </p>
         <a className="community-pop-cta" href={DISCORD_URL} target="_blank" rel="noopener noreferrer">
           <span className="community-pop-cta-text">

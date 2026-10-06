@@ -12,7 +12,7 @@ tags: ["privacy", "encryption", "notes-app", "privacy-by-design", "security"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading Encryption Alone Isn't Privacy, with six privacy layers and encryption highlighted as one of them"
-canonical: "https://atomic-notes-community.vercel.app/blog/encryption-alone-does-not-mean-private"
+canonical: "https://atomic-notes.devbehindyou.com/blog/encryption-alone-does-not-mean-private"
 keywords: "private notes app, encrypted notes app, end to end encryption, notes privacy, privacy by design"
 readingTime: "7 min read"
 ---

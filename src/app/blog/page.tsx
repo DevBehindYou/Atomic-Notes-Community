@@ -1,29 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getFeatured } from "@/lib/blog";
-import { SITE_URL } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Blog",
   description:
     "Development updates, release notes, and technical deep dives on Atomic Notes: local-first, privacy-first notes with optional end-to-end encryption.",
-  alternates: { canonical: `${SITE_URL}/blog` },
-  openGraph: {
-    title: "Atomic Notes Blog",
-    description: "Local-first, privacy-first. Development updates and deep dives.",
-    images: ["/og-banner.png"],
-    type: "website",
-  },
-};
+  path: "/blog",
+  socialTitle: "Atomic Notes Blog",
+});
 
 function fmtDate(d: string): string {
   if (!d) return "";
   const dt = new Date(d);
   return isNaN(dt.getTime())
     ? d
-    : dt.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "2-digit" });
+    : dt.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
 }
 
 
@@ -31,7 +26,7 @@ function Card({ p, big = false }: { p: import("@/lib/blog").PostMeta; big?: bool
   return (
     <Link href={`/blog/${p.slug}`} className={"post-card" + (big ? " post-card-big" : "")}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={p.coverImage} alt={p.coverAlt} loading="lazy" className="post-cover" />
+      <img src={p.coverImage} alt="" loading="lazy" className="post-cover" />
       <div className="post-body">
         <p className="mono-label">
           <span className="sig">{p.category}</span> · {fmtDate(p.publishedAt)} · {p.readingTime}

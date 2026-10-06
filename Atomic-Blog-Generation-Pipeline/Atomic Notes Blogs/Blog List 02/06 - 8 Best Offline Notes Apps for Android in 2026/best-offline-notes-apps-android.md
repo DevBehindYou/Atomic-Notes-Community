@@ -12,7 +12,7 @@ tags: ["android", "offline", "notes-app", "local-first", "comparison"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 8 Best Offline Notes Apps for Android, with a ranked list led by Atomic Notes"
-canonical: "https://atomic-notes-community.vercel.app/blog/best-offline-notes-apps-android"
+canonical: "https://atomic-notes.devbehindyou.com/blog/best-offline-notes-apps-android"
 keywords: "best offline notes app Android, offline notes app, offline note taking app Android, notes app without internet, Android notes offline, local notes Android, notes app without account, offline notebook app, best notes app without internet"
 readingTime: "6 min read"
 ---
