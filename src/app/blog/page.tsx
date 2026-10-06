@@ -26,7 +26,7 @@ function Card({ p, big = false }: { p: import("@/lib/blog").PostMeta; big?: bool
   return (
     <Link href={`/blog/${p.slug}`} className={"post-card" + (big ? " post-card-big" : "")}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={p.coverImage} alt={p.coverAlt} loading="lazy" className="post-cover" />
+      <img src={p.coverImage} alt="" loading="lazy" className="post-cover" />
       <div className="post-body">
         <p className="mono-label">
           <span className="sig">{p.category}</span> · {fmtDate(p.publishedAt)} · {p.readingTime}

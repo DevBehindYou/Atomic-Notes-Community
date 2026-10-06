@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Bebas_Neue, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { SITE_URL } from "@/lib/site";
+import { DEVELOPER_URL, SITE_URL } from "@/lib/site";
 import { FEED_ALTERNATE } from "@/lib/seo";
 import { SiteAnalytics } from "@/components/SiteAnalytics";
 import { CommunityPopup } from "@/components/CommunityPopup";
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   description: DESCRIPTION,
   applicationName: "Atomic Notes",
-  authors: [{ name: "Ashutosh Sharma (DevBehindYou)", url: "https://devbehindyou.vercel.app" }],
+  authors: [{ name: "Ashutosh Sharma (DevBehindYou)", url: DEVELOPER_URL }],
   creator: "DevBehindYou",
   keywords: [
     "Atomic Notes",

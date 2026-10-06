@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
-import { REPO_URL } from "@/lib/content";
+import { LEGAL_UPDATED, REPO_URL } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -14,7 +14,7 @@ const CONTACT = "https://github.com/DevBehindYou";
 
 export default function PrivacyPage() {
   return (
-    <LegalPage eyebrow="ATOMIC NOTES" title="Privacy Policy" updated="30 September 2026">
+    <LegalPage eyebrow="ATOMIC NOTES" title="Privacy Policy" updated={LEGAL_UPDATED.privacy}>
       <p>
         This policy explains how the Atomic Notes Android app, its sync server and this website handle your
         information. Atomic Notes is built and operated by Ashutosh Sharma, who publishes as DevBehindYou (&ldquo;we&rdquo;,

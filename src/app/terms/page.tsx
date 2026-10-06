@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPage } from "@/components/LegalPage";
-import { REPO_URL } from "@/lib/content";
+import { LEGAL_UPDATED, REPO_URL } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
@@ -12,7 +12,7 @@ export const metadata: Metadata = pageMetadata({
 
 export default function TermsPage() {
   return (
-    <LegalPage eyebrow="ATOMIC NOTES" title="Terms of Service" updated="29 September 2026">
+    <LegalPage eyebrow="ATOMIC NOTES" title="Terms of Service" updated={LEGAL_UPDATED.terms}>
       <p>
         These terms apply to the Atomic Notes Android app, its sync service and this website (together, &ldquo;the
         service&rdquo;), operated by Ashutosh Sharma, who publishes as DevBehindYou (&ldquo;we&rdquo;). By using the

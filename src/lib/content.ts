@@ -49,6 +49,9 @@ export const RELEASE = {
   certSha1: "20:08:8F:BF:45:D7:D1:5A:4C:26:69:D6:47:84:16:E2:7F:32:85:45",
 };
 
+/** When the legal pages last changed (ISO dates). Shown on the pages and used as sitemap lastmod. */
+export const LEGAL_UPDATED = { privacy: "2026-09-30", terms: "2026-09-29" };
+
 export const REPO_URL = "https://github.com/DevBehindYou/Atomic-Notes-App-V0.2";
 
 /** Where supporters go. Early supporters get Atomic Coins by hand (see /support-atomic-notes). */

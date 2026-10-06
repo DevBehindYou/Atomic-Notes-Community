@@ -1,23 +1,52 @@
 # Atomic Community Base
 
-The community platform for **Atomic Notes** — development updates, features, and
+The public website for **Atomic Notes** — features, FAQ, live updates, the blog and
 app downloads — plus the secret **Atomic-Controller** admin panel for managing
 notifications and user Energy/Coins.
 
-Built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and
+**Live site: [atomic-notes.devbehindyou.com](https://atomic-notes.devbehindyou.com)**
+
+Built with **Next.js 15 (App Router)**, **React 19**, **TypeScript**, **Tailwind CSS**, and
 the **Atomic Notes Server** (Node.js/MongoDB) as its backend, deployed on
 **Vercel**. Brand-matched to the app's Technical Editorial system (ink
 `#15171B`, paper `#F4F5F1`, signal `#3A2FF0`).
 
 ## Structure
 
-- `/` — public community home: hero, current dev phase, features, roadmap, download.
+- `/` — public home: hero, features, how sync works, Atomic Energy, roadmap, FAQ, download.
 - `/updates` — public Notification Center feed (active announcements).
+- `/blog`, `/blog/[slug]` — blog index and articles, built from `content/blog/*.md`.
+- `/support-atomic-notes` — Patreon / Ko-fi support and early Atomic Coins.
+- `/privacy`, `/terms` — legal pages.
 - `/controller` — **secret** admin panel (password-gated). CRUD notifications and
   adjust a user's Atomic Coins / Energy.
 - `/api/controller/*` — server route handlers. All admin routes check an
   HMAC-signed httpOnly session cookie, then call the Atomic Notes Server's
   `/api/admin/*` endpoints (server-only) to read or write.
+
+## Domain, SEO and AI discovery
+
+The canonical address is `https://atomic-notes.devbehindyou.com`. It is set once, in
+`SITE_URL` (`src/lib/site.ts`), from `NEXT_PUBLIC_SITE_URL` with that domain as the
+default. Every canonical tag, Open Graph URL, JSON-LD `@id`, the sitemap, robots.txt
+and the RSS feed derive from it. A configured value on the retired
+`atomic-notes-community.vercel.app` host or any `*.vercel.app` deployment URL is
+ignored, so a stale environment variable can never leak a preview address into
+canonical links.
+
+`NEXT_PUBLIC_*` values are baked in at build time: after changing one in Vercel,
+redeploy for it to take effect.
+
+| Endpoint | Source |
+|---|---|
+| `/sitemap.xml` | `src/app/sitemap.ts` (pages + published blog posts, real `lastmod` dates) |
+| `/robots.txt` | `src/app/robots.ts` (blocks `/api/`, points at the sitemap) |
+| `/feed.xml` | `src/app/feed.xml/route.ts` (RSS 2.0) |
+| `/llms.txt` | `public/llms.txt` (summary for AI assistants; update with each release) |
+| Page metadata | `src/lib/seo.ts` (`pageMetadata`: canonical, Open Graph and X cards per page) |
+
+Requests to the old `atomic-notes-community.vercel.app` host get a permanent redirect
+to the same path on the new domain (`next.config.mjs`).
 
 ## Security model
 
@@ -62,16 +91,19 @@ Environment variables (see `.env.example`):
 |---|---|---|
 | `ATOMIC_SERVER_URL` | server | base URL of the Atomic Notes Server |
 | `ADMIN_API_KEY` | server | must match the Server's own `ADMIN_API_KEY` |
-| `ADMIN_PASSWORD` | server | Controller gate |
+| `ADMIN_PASSWORD`, `ADMIN_PASSWORD_2` | server | the two Controller login keys |
 | `SESSION_SECRET` | server | signs the admin session cookie |
 | `NEXT_PUBLIC_APK_URL` | public | download link on the home page |
+| `NEXT_PUBLIC_SITE_URL` | public | canonical origin, `https://atomic-notes.devbehindyou.com` |
 
 ## Deploy on Vercel
 
 1. Import this repo in Vercel (framework auto-detected as Next.js).
 2. Add the environment variables above in Project Settings → Environment
    Variables (mark the admin key + admin secrets for Production/Preview only).
-3. Deploy. The public site is static/dynamic as needed; the Controller and its
+3. Under Settings → Domains, add `atomic-notes.devbehindyou.com` as the production
+   domain.
+4. Deploy. The public site is static/dynamic as needed; the Controller and its
    APIs run as serverless functions.
 
 ## Prerequisite

@@ -11,7 +11,7 @@ tags: ["release-notes", "atomic-energy", "demo-build"]
 featured: true
 draft: false
 coverImage: "/og-banner.png"
-coverAlt: "Atomic Notes release cover with the atom mark on a paper background"
+coverAlt: "Atomic Notes banner with three phone screens: the encryption vault, the notes grid and Atomic Energy"
 canonical: "https://atomic-notes.devbehindyou.com/blog/atomic-notes-v1-18-2"
 keywords: "atomic notes, release notes, local-first notes, atomic energy, demo build"
 readingTime: "3 min read"

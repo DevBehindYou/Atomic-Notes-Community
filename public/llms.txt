@@ -30,3 +30,7 @@ Key facts:
 - [Source code (GitHub)](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2): Flutter app, source-available (read and verify only)
 - [Latest release](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/latest): APKs with SHA-256 checksums
 - [Transparency](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/blob/main/TRANSPARENCY.md): what the app collects and what is protected
+
+## Developer
+
+- [Ashutosh Sharma (DevBehindYou)](https://devbehindyou.com): solo developer of Atomic Notes

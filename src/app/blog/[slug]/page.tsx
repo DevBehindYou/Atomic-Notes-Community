@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPost, getAllSlugs, relatedPosts, type PostMeta } from "@/lib/blog";
-import { SITE_URL } from "@/lib/site";
+import { DEVELOPER_URL, SITE_URL } from "@/lib/site";
 import { FEED_ALTERNATE, SITE_NAME, TWITTER_HANDLE, absoluteUrl, canonicalUrl } from "@/lib/seo";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -15,7 +15,7 @@ const AUTHORS: Record<string, { name: string; role: string; url: string }> = {
   "ashutosh-sharma": {
     name: "Ashutosh Sharma",
     role: "Founder & Solo Developer, Atomic Notes",
-    url: "https://devbehindyou.vercel.app",
+    url: DEVELOPER_URL,
   },
 };
 
@@ -160,7 +160,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             {related.map((p: PostMeta) => (
               <Link key={p.slug} href={`/blog/${p.slug}`} className="post-card">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={p.coverImage} alt={p.coverAlt} loading="lazy" className="post-cover" />
+                <img src={p.coverImage} alt="" loading="lazy" className="post-cover" />
                 <div className="post-body">
                   <p className="mono-label"><span className="sig">{p.category}</span> · {p.readingTime}</p>
                   <h3 className="post-title">{p.title}</h3>

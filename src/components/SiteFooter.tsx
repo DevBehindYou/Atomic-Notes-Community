@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { APK_URL } from "@/lib/site";
+import { APK_URL, DEVELOPER_URL } from "@/lib/site";
 import { RELEASE, REPO_URL } from "@/lib/content";
 
 export function SiteFooter() {
@@ -11,7 +11,7 @@ export function SiteFooter() {
           <p className="foot-tag">Your Notes, Your Drive, Local First.</p>
           <p className="foot-small">
             Version {RELEASE.version} · All rights reserved · Built by{" "}
-            <a href="https://devbehindyou.vercel.app" target="_blank" rel="noreferrer">
+            <a href={DEVELOPER_URL} target="_blank" rel="noreferrer">
               DevBehindYou
             </a>
           </p>

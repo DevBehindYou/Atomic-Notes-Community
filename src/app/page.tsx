@@ -20,7 +20,7 @@ import {
   type NotificationRow,
 } from "@/lib/content";
 import { fetchActiveNotifications } from "@/lib/atomicServer";
-import { APK_URL, SITE_URL } from "@/lib/site";
+import { APK_URL, DEVELOPER_URL, SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 
@@ -90,8 +90,14 @@ function jsonLd() {
         "@id": `${SITE_URL}/#author`,
         name: "Ashutosh Sharma",
         alternateName: "DevBehindYou",
-        url: "https://devbehindyou.vercel.app",
-        sameAs: ["https://github.com/DevBehindYou", "https://medium.com/@devbehindyou", "https://x.com/devbehindyou"],
+        url: DEVELOPER_URL,
+        sameAs: [
+          "https://github.com/DevBehindYou",
+          "https://www.linkedin.com/in/devbehindyou/",
+          "https://medium.com/@devbehindyou",
+          "https://x.com/devbehindyou",
+          "https://youtube.com/@devbehindyou",
+        ],
       },
       {
         "@type": "WebSite",
