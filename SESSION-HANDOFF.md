@@ -4,7 +4,7 @@ This repository has **uncommitted** changes. Nothing was committed, pushed or
 deployed; no live integration or production deployment is verified. Resume only
 on a new user request.
 
-Intended site: `https://atomic-notes-community.vercel.app`. Its Server origin is
+Intended site: `https://atomic-notes.devbehindyou.com`. Its Server origin is
 `https://atomic-notes-server-gde2e.vercel.app` (no `/api` suffix in
 `ATOMIC_SERVER_URL`). Atlas and Google Cloud are not configured yet.
 

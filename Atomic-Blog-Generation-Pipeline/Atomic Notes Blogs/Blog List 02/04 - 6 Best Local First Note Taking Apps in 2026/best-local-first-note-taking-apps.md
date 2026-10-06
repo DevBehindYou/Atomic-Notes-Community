@@ -12,7 +12,7 @@ tags: ["local-first", "notes-app", "offline", "privacy", "comparison"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 6 Best Local First Note Taking Apps, with a ranked list led by Atomic Notes"
-canonical: "https://atomic-notes-community.vercel.app/blog/best-local-first-note-taking-apps"
+canonical: "https://atomic-notes.devbehindyou.com/blog/best-local-first-note-taking-apps"
 keywords: "best local first note taking apps, local first notes app, local first note taking, offline first notes app, local notes app, notes stored locally, user owned notes, privacy first note taking, local first software, offline note taking app"
 readingTime: "6 min read"
 ---

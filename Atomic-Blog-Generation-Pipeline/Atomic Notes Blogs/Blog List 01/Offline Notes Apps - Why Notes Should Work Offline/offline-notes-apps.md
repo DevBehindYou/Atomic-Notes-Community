@@ -12,7 +12,7 @@ tags: ["offline-first", "local-first", "android", "notes-app", "sync"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading Your Notes Should Work Without Internet, with a phone in airplane mode"
-canonical: "https://atomic-notes-community.vercel.app/blog/offline-notes-apps"
+canonical: "https://atomic-notes.devbehindyou.com/blog/offline-notes-apps"
 keywords: "offline notes app, offline notes app android, offline-first notes, notes app without internet, local-first notes"
 readingTime: "7 min read"
 ---
@@ -76,7 +76,7 @@ Offline-first does not mean "never online". Moving notes between a phone and a l
 
 Atomic Notes has honest limits here. It syncs while the app is open or on the next launch, with no background sync while the app is closed yet. Automatic sync runs at most once an hour on a free daily energy allowance, and Sync now works any time. And it is Android only for now, from version 2.03.5 on [GitHub Releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/latest).
 
-Run the airplane-mode test on whatever you use today. If your notes app saves without a flicker, it is offline-first. If it stalls, the next outage will show you whose server your notes really live on. For the theory behind this design, read *What Is a Local-First Notes App and Why Does It Matter?*, and for the details of Atomic Notes, visit the [Atomic Notes website](https://atomic-notes-community.vercel.app).
+Run the airplane-mode test on whatever you use today. If your notes app saves without a flicker, it is offline-first. If it stalls, the next outage will show you whose server your notes really live on. For the theory behind this design, read *What Is a Local-First Notes App and Why Does It Matter?*, and for the details of Atomic Notes, visit the [Atomic Notes website](https://atomic-notes.devbehindyou.com).
 
 ## FAQ
 

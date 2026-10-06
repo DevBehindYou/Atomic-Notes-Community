@@ -12,7 +12,7 @@ featured: true
 draft: false
 coverImage: "/og-banner.png"
 coverAlt: "Atomic Notes release cover with the atom mark on a paper background"
-canonical: "https://atomic-notes-community.vercel.app/blog/atomic-notes-v1-18-2"
+canonical: "https://atomic-notes.devbehindyou.com/blog/atomic-notes-v1-18-2"
 keywords: "atomic notes, release notes, local-first notes, atomic energy, demo build"
 readingTime: "3 min read"
 ---

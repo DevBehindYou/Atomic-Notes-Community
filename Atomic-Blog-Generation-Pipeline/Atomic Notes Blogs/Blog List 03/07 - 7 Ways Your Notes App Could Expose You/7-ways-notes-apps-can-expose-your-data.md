@@ -12,7 +12,7 @@ tags: ["privacy", "notes-app", "security", "tracking", "backups"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 7 Ways Your Notes App Could Expose You, with a note at the center and seven paths leading out"
-canonical: "https://atomic-notes-community.vercel.app/blog/7-ways-notes-apps-can-expose-your-data"
+canonical: "https://atomic-notes.devbehindyou.com/blog/7-ways-notes-apps-can-expose-your-data"
 keywords: "notes app privacy, private notes app, note taking app security, notes app data privacy, secure note taking, cloud notes security, third party trackers, app telemetry, notes app analytics, AI data processing, unencrypted backups, personal data exposure, digital privacy risks"
 readingTime: "7 min read"
 ---
@@ -151,4 +151,4 @@ Only part of it. End-to-end encryption protects note content, but telemetry, tra
 - [What Exodus Privacy does, Exodus Privacy](https://exodus-privacy.eu.org/en/page/what/)
 - [iCloud data security overview, Apple Support](https://support.apple.com/en-us/102651)
 - [Why metadata matters, Electronic Frontier Foundation](https://ssd.eff.org/module/why-metadata-matters)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)

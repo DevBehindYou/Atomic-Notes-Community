@@ -12,7 +12,7 @@ tags: ["no-ai", "notes-app", "privacy", "offline", "comparison"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 7 Best Note Taking Apps Without AI, with a ranked list led by Atomic Notes"
-canonical: "https://atomic-notes-community.vercel.app/blog/best-note-taking-apps-without-ai"
+canonical: "https://atomic-notes.devbehindyou.com/blog/best-note-taking-apps-without-ai"
 keywords: "note taking app without AI, notes app without AI, no AI notes app, AI free note taking app, simple notes app, private notes app, no AI productivity app, offline notes app, privacy focused note taking"
 readingTime: "6 min read"
 ---

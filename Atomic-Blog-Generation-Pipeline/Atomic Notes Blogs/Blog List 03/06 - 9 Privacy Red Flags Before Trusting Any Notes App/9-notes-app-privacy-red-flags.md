@@ -12,7 +12,7 @@ tags: ["privacy", "notes-app", "checklist", "encryption", "tracking"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 9 Privacy Red Flags Before Trusting a Notes App, with nine red flag markers"
-canonical: "https://atomic-notes-community.vercel.app/blog/9-notes-app-privacy-red-flags"
+canonical: "https://atomic-notes.devbehindyou.com/blog/9-notes-app-privacy-red-flags"
 keywords: "private notes app, privacy focused notes app, secure notes app, notes app encryption, notes app permissions, data ownership, third party tracking, offline notes app, notes app telemetry, cloud notes privacy, open source notes app, AI notes privacy, data export options"
 readingTime: "7 min read"
 ---
@@ -179,4 +179,4 @@ Yes. Privacy depends on who holds the key and what the server can see. A private
 - [What Exodus Privacy does, Exodus Privacy](https://exodus-privacy.eu.org/en/page/what/)
 - [FTC enforcement action against GoodRx, February 2023](https://www.ftc.gov/news-events/news/press-releases/2023/02/ftc-enforcement-action-bar-goodrx-sharing-consumers-sensitive-health-info-advertising)
 - [Right to data portability, GDPR Article 20](https://gdpr-info.eu/art-20-gdpr/)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)

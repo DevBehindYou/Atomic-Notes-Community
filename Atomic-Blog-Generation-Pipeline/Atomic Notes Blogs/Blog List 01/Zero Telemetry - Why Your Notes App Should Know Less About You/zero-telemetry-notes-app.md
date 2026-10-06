@@ -12,7 +12,7 @@ tags: ["privacy", "telemetry", "notes-app", "tracking", "data-privacy"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading Zero Telemetry, with analytics events, crash reports, advertising ID and tracker SDKs crossed out"
-canonical: "https://atomic-notes-community.vercel.app/blog/zero-telemetry-notes-app"
+canonical: "https://atomic-notes.devbehindyou.com/blog/zero-telemetry-notes-app"
 keywords: "zero telemetry, privacy focused notes app, no tracking notes app, private note taking, data privacy apps"
 readingTime: "7 min read"
 ---
@@ -149,5 +149,5 @@ The server keeps your account email, note ids, timestamps, flags, energy balance
 - [FTC enforcement action against GoodRx, February 2023](https://www.ftc.gov/news-events/news/press-releases/2023/02/ftc-enforcement-action-bar-goodrx-sharing-consumers-sensitive-health-info-advertising)
 - [Latanya Sweeney, "Simple Demographics Often Identify People Uniquely", Carnegie Mellon University, 2000](https://dataprivacylab.org/projects/identifiability/)
 - [What Exodus Privacy does, Exodus Privacy](https://exodus-privacy.eu.org/en/page/what/)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)
 - [Atomic Notes source code, including the Android manifest and dependency list](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2)

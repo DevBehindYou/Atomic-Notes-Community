@@ -12,7 +12,7 @@ tags: ["open-source", "privacy", "security", "software-transparency", "notes-app
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading Privacy Software Should Show Its Code, with a code window labeled Verify, Don't Just Trust"
-canonical: "https://atomic-notes-community.vercel.app/blog/why-privacy-software-should-be-open-source"
+canonical: "https://atomic-notes.devbehindyou.com/blog/why-privacy-software-should-be-open-source"
 keywords: "open source privacy software, open source security, privacy software, open source notes app, software transparency"
 readingTime: "7 min read"
 ---

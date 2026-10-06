@@ -208,16 +208,16 @@ test('production routes preserve authentication and public content', { timeout: 
     assert.equal(article.status, 200);
     const html = await article.text();
     assert.match(html, /<title>[^<]*Atomic/i);
-    assert.match(html, /rel="canonical" href="https:\/\/atomic-notes-community\.vercel\.app\/blog\/atomic-notes-v1-18-2"/);
+    assert.match(html, /rel="canonical" href="https:\/\/atomic-notes\.devbehindyou\.com\/blog\/atomic-notes-v1-18-2"/);
     assert.equal((await request('/blog/nonexistent-smoke-test-article')).status, 404);
     const feed = await request('/feed.xml');
     assert.equal(feed.status, 200);
     const xml = await feed.text();
     assert.match(xml, /<rss[\s>]/);
-    assert.match(xml, /https:\/\/atomic-notes-community\.vercel\.app\/blog\//);
+    assert.match(xml, /https:\/\/atomic-notes\.devbehindyou\.com\/blog\//);
     assert.equal(xml.includes('atomic-notes.vercel.app'), false);
     const sitemap = await (await request('/sitemap.xml')).text();
-    assert.match(sitemap, /<loc>https:\/\/atomic-notes-community\.vercel\.app<\/loc>|<loc>https:\/\/atomic-notes-community\.vercel\.app\/<\/loc>/);
+    assert.match(sitemap, /<loc>https:\/\/atomic-notes\.devbehindyou\.com<\/loc>|<loc>https:\/\/atomic-notes\.devbehindyou\.com\/<\/loc>/);
   });
 
   await t.test('download links point at the App repository, not a tag that may not exist', async () => {

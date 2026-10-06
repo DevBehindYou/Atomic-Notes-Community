@@ -26,4 +26,4 @@ You're helping prove that small software can still be built around user ownershi
 
 Local first. Private by design. ⚛️
 
-https://atomic-notes-community.vercel.app/
+https://atomic-notes.devbehindyou.com/

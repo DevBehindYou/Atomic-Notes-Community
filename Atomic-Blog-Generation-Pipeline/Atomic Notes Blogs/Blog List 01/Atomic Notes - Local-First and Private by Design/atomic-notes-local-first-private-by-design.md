@@ -12,7 +12,7 @@ tags: ["local-first", "privacy", "android", "encryption", "notes-app"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Atomic Notes banner reading Your Notes, Your Drive, Always Yours, with two phone screens"
-canonical: "https://atomic-notes-community.vercel.app/blog/atomic-notes-local-first-private-by-design"
+canonical: "https://atomic-notes.devbehindyou.com/blog/atomic-notes-local-first-private-by-design"
 keywords: "atomic notes, local-first notes app, private notes app android, google drive notes app, end-to-end encrypted notes"
 readingTime: "8 min read"
 ---
@@ -79,7 +79,7 @@ You get +20 energy every day, up to 120. An automatic sync costs 5 and runs at m
 
 An honest bug story here. The first version granted energy on a rolling 24 hours that restarted at every grant. Open the app a bit later each day and the next grant slid back, so whole days went missing. Since September 28, 2026, every account has a fixed daily grant time, and days you skip are added the next time you open the app.
 
-Every account holds 30 notes and starts with 5 Atomic Coins. Coins buy bigger tiers, up to 100 notes. Coins are not sold in the app yet. People who support the project on the [support page](https://atomic-notes-community.vercel.app/support-atomic-notes) get them early.
+Every account holds 30 notes and starts with 5 Atomic Coins. Coins buy bigger tiers, up to 100 notes. Coins are not sold in the app yet. People who support the project on the [support page](https://atomic-notes.devbehindyou.com/support-atomic-notes) get them early.
 
 ## What Atomic Notes does not do yet
 
@@ -93,7 +93,7 @@ Atomic Notes is young, built by one developer, and these limits are real. Read t
 
 ## Where to get it
 
-Atomic Notes is for people who want their notes fast, offline and theirs. It is a focused notes and checklist app, not a knowledge-management suite, and that is on purpose. Get the latest APK from [GitHub Releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/latest), check its signature, and read exactly what the app collects on the [privacy page](https://atomic-notes-community.vercel.app/privacy). The rest of the story lives on the [Atomic Notes website](https://atomic-notes-community.vercel.app).
+Atomic Notes is for people who want their notes fast, offline and theirs. It is a focused notes and checklist app, not a knowledge-management suite, and that is on purpose. Get the latest APK from [GitHub Releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/latest), check its signature, and read exactly what the app collects on the [privacy page](https://atomic-notes.devbehindyou.com/privacy). The rest of the story lives on the [Atomic Notes website](https://atomic-notes.devbehindyou.com).
 
 ## FAQ
 

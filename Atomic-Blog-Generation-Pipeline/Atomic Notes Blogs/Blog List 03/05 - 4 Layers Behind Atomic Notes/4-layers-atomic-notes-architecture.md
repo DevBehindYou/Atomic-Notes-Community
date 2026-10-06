@@ -12,7 +12,7 @@ tags: ["architecture", "local-first", "encryption", "google-drive", "flutter"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 4 Layers Behind Atomic Notes, with a stacked diagram of phone, vault, server and Google Drive"
-canonical: "https://atomic-notes-community.vercel.app/blog/4-layers-atomic-notes-architecture"
+canonical: "https://atomic-notes.devbehindyou.com/blog/4-layers-atomic-notes-architecture"
 keywords: "local first notes architecture, Atomic Notes architecture, local first app architecture, Flutter notes app, Hive local storage, Google Drive notes sync, MongoDB metadata, client side encryption, local first software, offline first architecture, end to end encrypted notes, notes synchronization architecture, user owned cloud storage"
 readingTime: "7 min read"
 ---
@@ -144,6 +144,6 @@ A cloud notes app keeps the primary copy on company servers. The Atomic Notes ar
 ## Sources
 
 - [Atomic Notes source code and releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)
 - [Choose Google Drive API scopes (drive.file), Google for Developers](https://developers.google.com/workspace/drive/api/guides/api-specific-auth)
 - [Local-first software, Ink & Switch](https://www.inkandswitch.com/essay/local-first/)

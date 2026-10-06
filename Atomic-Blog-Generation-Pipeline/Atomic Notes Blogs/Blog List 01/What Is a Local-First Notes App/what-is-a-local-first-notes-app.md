@@ -12,7 +12,7 @@ tags: ["local-first", "notes-app", "privacy", "sync", "architecture"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading What Is a Local-First Notes App, with your phone as the primary copy and your Drive as a secondary copy"
-canonical: "https://atomic-notes-community.vercel.app/blog/what-is-a-local-first-notes-app"
+canonical: "https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app"
 keywords: "local-first notes app, what is local-first software, local-first vs cloud-first, offline-first notes, own your notes"
 readingTime: "8 min read"
 ---
@@ -79,7 +79,7 @@ Atomic Notes builds the rest on that foundation: no analytics, crash or ad SDKs,
 
 There are honest limits too. The vault is off by default. Sync needs a Google sign-in for now, with email and password login planned. There is no background sync while the app is closed. And real-time co-editing by several people, which the essay's CRDTs solve, is not something Atomic Notes does. It is built for one person across their own devices.
 
-Local-first is the difference between notes that visit your phone and notes that live there. If you want to see it in practice, the airplane-mode test takes ten seconds: open your notes app cold with no connection and write a line. Atomic Notes 2.03.5 for Android is on [GitHub Releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/latest), and the [Atomic Notes website](https://atomic-notes-community.vercel.app) explains how it works.
+Local-first is the difference between notes that visit your phone and notes that live there. If you want to see it in practice, the airplane-mode test takes ten seconds: open your notes app cold with no connection and write a line. Atomic Notes 2.03.5 for Android is on [GitHub Releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2/releases/latest), and the [Atomic Notes website](https://atomic-notes.devbehindyou.com) explains how it works.
 
 ## FAQ
 

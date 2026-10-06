@@ -12,7 +12,7 @@ tags: ["android", "privacy", "notes-app", "encryption", "comparison"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 7 Best Privacy First Notes Apps for Android, with a ranked list led by Atomic Notes"
-canonical: "https://atomic-notes-community.vercel.app/blog/best-privacy-first-notes-apps-android"
+canonical: "https://atomic-notes.devbehindyou.com/blog/best-privacy-first-notes-apps-android"
 keywords: "private notes app Android, privacy first notes app, private note taking app Android, secure notes app Android, encrypted notes Android, privacy focused notes app, best private notes app, no tracking notes app, open source notes app Android"
 readingTime: "6 min read"
 ---
@@ -157,7 +157,7 @@ Not always. If notes never leave the phone, the app lock and Android's own devic
 
 ## Sources
 
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)
 - [Atomic Notes source code and releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2)
 - [SilentNotes on GitHub](https://github.com/martinstoeckli/SilentNotes)
 - [CypherLeaf on F-Droid](https://f-droid.org/en/packages/io.gitlab.jrock902.cypherleaf/)

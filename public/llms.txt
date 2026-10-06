@@ -13,10 +13,10 @@ Key facts:
 
 ## Main pages
 
-- [Home](https://atomic-notes-community.vercel.app/): features, how sync works, what each party can see, Atomic Energy, FAQ
-- [Updates](https://atomic-notes-community.vercel.app/updates): live release notes and service status
-- [Blog](https://atomic-notes-community.vercel.app/blog): development updates and technical write-ups
-- [Support](https://atomic-notes-community.vercel.app/support-atomic-notes): support on Patreon or Ko-fi and get Atomic Coins early
+- [Home](https://atomic-notes.devbehindyou.com/): features, how sync works, what each party can see, Atomic Energy, FAQ
+- [Updates](https://atomic-notes.devbehindyou.com/updates): live release notes and service status
+- [Blog](https://atomic-notes.devbehindyou.com/blog): development updates and technical write-ups
+- [Support](https://atomic-notes.devbehindyou.com/support-atomic-notes): support on Patreon or Ko-fi and get Atomic Coins early
 
 ## Source and downloads
 

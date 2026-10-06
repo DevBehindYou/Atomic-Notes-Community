@@ -12,7 +12,7 @@ tags: ["notion-alternative", "local-first", "privacy", "productivity", "comparis
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 3 Best Private Notion Alternatives, with a ranked list led by Atomic Notes"
-canonical: "https://atomic-notes-community.vercel.app/blog/private-local-first-notion-alternatives"
+canonical: "https://atomic-notes.devbehindyou.com/blog/private-local-first-notion-alternatives"
 keywords: "private Notion alternatives, local first Notion alternative, private alternative to Notion, offline Notion alternative, open source Notion alternative, encrypted Notion alternative, privacy focused productivity app, local notes alternative to Notion, Notion alternative without AI"
 readingTime: "6 min read"
 ---
@@ -129,7 +129,7 @@ Some are. AppFlowy and Anytype both support shared workspaces. Atomic Notes is p
 ## Sources
 
 - [Atomic Notes source code and releases](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)
 - [Anytype desktop client on GitHub](https://github.com/anyproto/anytype-ts)
 - [Anytype Android client on GitHub](https://github.com/anyproto/anytype-kotlin)
 - [any-sync protocol on GitHub](https://github.com/anyproto/any-sync)

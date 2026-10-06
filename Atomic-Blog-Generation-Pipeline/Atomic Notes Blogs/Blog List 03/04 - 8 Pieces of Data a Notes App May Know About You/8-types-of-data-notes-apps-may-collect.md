@@ -12,7 +12,7 @@ tags: ["metadata", "privacy", "notes-app", "data-minimization", "tracking"]
 draft: false
 coverImage: "01-banner.png"
 coverAlt: "Banner reading 8 Things a Notes App Knows Without Reading Your Notes, with an envelope showing metadata labels"
-canonical: "https://atomic-notes-community.vercel.app/blog/8-types-of-data-notes-apps-may-collect"
+canonical: "https://atomic-notes.devbehindyou.com/blog/8-types-of-data-notes-apps-may-collect"
 keywords: "notes app data collection, notes app metadata, notes app tracking, metadata privacy, IP address tracking, device fingerprinting, login activity, sync metadata, usage analytics, device information, account metadata, data minimization, privacy telemetry"
 readingTime: "7 min read"
 ---
@@ -163,4 +163,4 @@ Anything that builds a profile over time: behavior analytics, device fingerprint
 
 - [Why metadata matters, Electronic Frontier Foundation](https://ssd.eff.org/module/why-metadata-matters)
 - [Simple demographics often identify people uniquely, Latanya Sweeney, Carnegie Mellon University, 2000](https://dataprivacylab.org/projects/identifiability/)
-- [Atomic Notes privacy policy](https://atomic-notes-community.vercel.app/privacy)
+- [Atomic Notes privacy policy](https://atomic-notes.devbehindyou.com/privacy)
