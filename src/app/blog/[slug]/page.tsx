@@ -6,6 +6,8 @@ import { DEVELOPER_URL, SITE_URL } from "@/lib/site";
 import { FEED_ALTERNATE, SITE_NAME, TWITTER_HANDLE, absoluteUrl, canonicalUrl } from "@/lib/seo";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
+import { BlogWidget } from "@/components/blog/BlogWidget";
+import { ReadingProgress } from "@/components/blog/ReadingProgress";
 
 export const dynamicParams = false; // unknown slugs -> 404
 
@@ -112,6 +114,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   return (
     <main>
       <SiteNav current="blog" />
+      <ReadingProgress targetId="article-body" />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
 
@@ -124,15 +127,32 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </p>
         <h1 style={{ fontSize: "clamp(2.2rem,6vw,3.6rem)", marginTop: 8 }}>{post.title}</h1>
         <p className="lead" style={{ marginTop: 12 }}>{post.description}</p>
-        <p className="mono" style={{ fontSize: ".72rem", color: "var(--slate)", marginTop: 10 }}>
-          By {author.name}{author.role ? ` · ${author.role}` : ""}
-          {post.updatedAt && post.updatedAt !== post.publishedAt ? ` · Updated ${fmtDate(post.updatedAt)}` : ""}
+        <p className="mono" style={{ fontSize: ".75rem", color: "var(--slate)", marginTop: 10 }}>
+          By <a href={author.url} rel="author" style={{ color: "inherit" }}>{author.name}</a>{author.role ? ` · ${author.role}` : ""}
+          {" · "}Last updated <time dateTime={post.updatedAt || post.publishedAt}>{fmtDate(post.updatedAt || post.publishedAt)}</time>
         </p>
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={post.coverImage} alt={post.coverAlt} className="article-cover" />
 
-        <div className="prose" dangerouslySetInnerHTML={{ __html: post.html }} />
+        {post.toc.length >= 3 && (
+          <nav className="toc" aria-label="In this article">
+            <p className="mono-label">IN THIS ARTICLE</p>
+            <ol>
+              {post.toc.map((t) => (
+                <li key={t.id}><a href={`#${t.id}`}>{t.text}</a></li>
+              ))}
+            </ol>
+          </nav>
+        )}
+
+        <div className="prose" id="article-body">
+          {post.segments.map((s, i) =>
+            s.kind === "html"
+              ? <div key={i} dangerouslySetInnerHTML={{ __html: s.html }} />
+              : <BlogWidget key={i} name={s.name} />
+          )}
+        </div>
 
         <div className="hairline" style={{ margin: "34px 0 14px" }} />
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
