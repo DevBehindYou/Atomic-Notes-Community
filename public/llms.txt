@@ -24,6 +24,11 @@ Key facts:
 
 - [What Is a Local First Notes App and Why Does It Matter?](https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app): local-first software defined, offline first vs local first, the seven Ink & Switch ideals, how Atomic Notes syncs, and the tradeoffs
 - [Notes App Privacy in 2026: 9 Red Flags to Check First](https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-red-flags): nine checks for any notes app (accounts, export, encryption keys, permissions, ads, trackers, AI, formats, storage) and how Atomic Notes scores
+- [Encrypted Notes Explained: T2T vs End to End Encryption](https://atomic-notes.devbehindyou.com/blog/encrypted-notes-explained): HTTPS vs at rest vs end-to-end, the Atomic Notes vault (Argon2id, AES-256-GCM), what encryption can't hide, and the recovery trade-off
+- [Notes App Without Internet: Why Offline Should Be the Default](https://atomic-notes.devbehindyou.com/blog/why-notes-should-work-offline): what works offline in cloud-first vs local-first apps, an airplane-mode test, and how sync catches up
+- [Notes App Metadata: 8 Things It Knows Without Reading Notes](https://atomic-notes.devbehindyou.com/blog/notes-app-data-collection): the metadata a notes app can collect, what it reveals, data minimization, and exactly what the Atomic Notes server keeps
+- [Local First Architecture: 4 Layers Behind Atomic Notes](https://atomic-notes.devbehindyou.com/blog/atomic-notes-architecture): the device, metadata-only sync server, user-owned Google Drive, and optional vault, with failure modes and the tech stack
+- [7 Best Private Notes Apps for Android in 2026](https://atomic-notes.devbehindyou.com/blog/best-privacy-first-notes-apps-android): Atomic Notes, SilentNotes, CypherLeaf, NoteSR, Quillpad, Fossify Notes, and Privacy Friendly Notes, checked October 7, 2026
 - [Atomic Notes v1.18.2 Demo Build](https://atomic-notes.devbehindyou.com/blog/atomic-notes-v1-18-2): Atomic Energy, in-app email flows, notification center, offline launch fix
 - [RSS feed](https://atomic-notes.devbehindyou.com/feed.xml) and [sitemap](https://atomic-notes.devbehindyou.com/sitemap.xml): every published page and post
 

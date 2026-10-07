@@ -62,7 +62,7 @@ If you can't export, you don't own your notes. You rent them. Good data export o
 
 ### 3. "Encrypted" with no word on the key
 
-"Your data is encrypted in transit and at rest" sounds reassuring. It usually means HTTPS on the wire and encrypted disks on the server, while the company keeps the keys. Good notes app encryption says plainly whether it's end-to-end, and who can decrypt.
+"Your data is encrypted in transit and at rest" sounds reassuring. It usually means HTTPS on the wire and encrypted disks on the server, while the company keeps the keys. Good notes app encryption says plainly whether it's end-to-end, and who can decrypt. If those terms are new, start with [encrypted notes explained](/blog/encrypted-notes-explained).
 
 **Check:** find the security page and look for the words "end-to-end" and "only you hold the key." **Better:** a one-page explanation in plain English, including what happens if you lose your key. This one flag tells you more about notes app privacy than any marketing page.
 
@@ -94,7 +94,7 @@ Every ad slot runs on a profile of the person looking at it. The FTC's 2023 case
 
 ### 6. Third party trackers and analytics
 
-Third party trackers send your behavior to companies you've never heard of: which screens you open, when you write, how long you stay. Even with encrypted notes, that pattern reveals your routine, which is why trackers matter so much for notes app privacy.
+Third party trackers send your behavior to companies you've never heard of: which screens you open, when you write, how long you stay. Even with encrypted notes, that pattern reveals your routine, which is why trackers matter so much for notes app privacy. The [notes app metadata guide](/blog/notes-app-data-collection) shows how much a week of timestamps gives away.
 
 **Check:** search the app on Exodus Privacy, a free service that lists the trackers and permissions inside Android apps. **Better:** zero trackers and a privacy policy that says so in one line.
 
@@ -191,8 +191,9 @@ That's why the third question, who pays, matters as much as encryption. A privac
 
 ## Keep reading
 
+- [7 best private notes apps for Android in 2026](/blog/best-privacy-first-notes-apps-android)
+- [Notes app metadata: 8 things it knows without reading notes](/blog/notes-app-data-collection)
 - [What is a local first notes app, and why does it matter?](/blog/what-is-a-local-first-notes-app)
-- [The Atomic Notes privacy policy](/privacy), in plain English
 - [Read the Atomic Notes code on GitHub](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2) and check every claim on this page
 
 <div class="callout ink">

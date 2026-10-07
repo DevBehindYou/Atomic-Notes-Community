@@ -4,6 +4,13 @@ import { OfflineSimulator } from "./OfflineSimulator";
 import { LocalFirstScorecard } from "./LocalFirstScorecard";
 import { RedFlagChecker } from "./RedFlagChecker";
 import { PolicyDecoder } from "./PolicyDecoder";
+import { EncryptionPlayground } from "./EncryptionPlayground";
+import { WhoCanRead } from "./WhoCanRead";
+import { AirplaneTest } from "./AirplaneTest";
+import { WaitCalculator } from "./WaitCalculator";
+import { MetadataInference } from "./MetadataInference";
+import { SyncStepper } from "./SyncStepper";
+import { AppFinder } from "./AppFinder";
 
 // Interactive components a post can place with `:::widget <name>` on its own line.
 const WIDGETS: Record<string, () => React.ReactElement> = {
@@ -11,6 +18,13 @@ const WIDGETS: Record<string, () => React.ReactElement> = {
   "local-first-scorecard": LocalFirstScorecard,
   "red-flag-checker": RedFlagChecker,
   "policy-decoder": PolicyDecoder,
+  "encryption-playground": EncryptionPlayground,
+  "who-can-read": WhoCanRead,
+  "airplane-test": AirplaneTest,
+  "wait-calculator": WaitCalculator,
+  "metadata-inference": MetadataInference,
+  "sync-stepper": SyncStepper,
+  "app-finder": AppFinder,
 };
 
 export const WIDGET_NAMES = Object.keys(WIDGETS);

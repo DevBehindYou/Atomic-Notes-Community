@@ -665,7 +665,7 @@ section h2 {
 .kpis {
   display: grid;
   gap: 14px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(122px, 1fr));
 }
 .stat {
   font-family: var(--mono);
@@ -1420,6 +1420,227 @@ section h2 {
   text-transform: uppercase;
   font-size: 1.5rem;
   line-height: 1;
+}
+.bw-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.bw-chips button {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 9px 14px;
+  min-height: 40px;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  cursor: pointer;
+}
+.bw-chips button.on {
+  background: var(--ink);
+  color: var(--paper);
+}
+.bw .bw-code {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  word-break: break-all;
+  background: #0b0c0e;
+  color: #d8d6ff;
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin-top: 8px;
+  min-height: 3em;
+}
+.bw .bw-code.plain {
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+.bw .bw-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(122px, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.bw-grid li {
+  border-radius: 4px;
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+.bw-grid li b {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+}
+.bw-grid li.can {
+  background: #ffdad6;
+  color: #93000a;
+  border: 1.5px solid var(--error);
+}
+.bw-grid li.cant {
+  background: #fff;
+  border: 1.5px solid var(--ink);
+}
+.bw-grid li.cant b {
+  color: var(--signal);
+}
+.bw-grid li.self {
+  background: var(--signal);
+  color: #fff;
+  border: 1.5px solid var(--ink);
+}
+.bw-grid li.self b {
+  color: #d8d6ff;
+}
+.bw .bw-big {
+  font-family: var(--display);
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-top: 6px;
+}
+.bw .bw-big.ok {
+  color: var(--signal);
+}
+.bw input[type="range"] {
+  accent-color: var(--signal);
+  min-height: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  grid-column: 1 / -1;
+  width: 100%;
+}
+.bw-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  min-width: 480px;
+}
+.bw-table th {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  text-align: left;
+  background: var(--surface);
+  padding: 8px 10px;
+}
+.bw-table td {
+  padding: 8px 10px;
+  border-top: 1px solid var(--line);
+}
+.bw-table td.mono {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.bw .bw-infer {
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  counter-reset: inf;
+}
+.bw-infer li {
+  counter-increment: inf;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 4px;
+  padding: 10px 12px 10px 44px;
+  position: relative;
+  font-size: 0.95rem;
+}
+.bw-infer li::before {
+  content: counter(inf, decimal-leading-zero);
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: #8f88ff;
+}
+.bw .bw-track {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 14px;
+}
+.bw-track button {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  min-height: 38px;
+  border: 1.5px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--slate);
+  cursor: pointer;
+}
+.bw-track li.done button {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.bw-track li.now button {
+  background: var(--signal);
+  border-color: var(--signal);
+  color: #fff;
+}
+.bw-track li.now .bw-num,
+.bw-panel .bw-num {
+  color: inherit;
+}
+.bw-panel.warn {
+  box-shadow: inset 4px 0 0 var(--error);
+}
+.bw .bw-results {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+.bw-results a {
+  display: grid;
+  gap: 2px;
+  background: #fff;
+  border: 1.5px solid var(--ink);
+  border-radius: 4px;
+  padding: 10px 12px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.bw-results a:hover {
+  box-shadow: 3px 3px 0 var(--signal);
+}
+.bw-results b {
+  font-family: var(--display);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+.bw-results span {
+  font-size: 0.9rem;
+  color: var(--slate);
+}
+.bw .btn-signal:disabled,
+.bw .btn-ghost:disabled {
+  opacity: 0.4;
+  box-shadow: none;
+  cursor: not-allowed;
 }
 .bw button:focus-visible,
 .bw input:focus-visible,

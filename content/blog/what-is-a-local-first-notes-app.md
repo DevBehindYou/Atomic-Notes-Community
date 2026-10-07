@@ -50,7 +50,7 @@ The difference looks small on a diagram. In daily use, it decides whether your n
 
 That distinction shows up the moment something goes wrong. In a cache-based app, a new note written offline often sits in a temporary queue. If the app crashes or the cache clears, that note can vanish. In a local first notes app, the note is already saved. Sync is the only thing waiting.
 
-There's a middle ground called offline first. Writes queue on the device, but the server's copy still wins any disagreement when you reconnect. It's a big step up from a plain cache, yet the server remains the source of truth.
+For a hands-on test of your own app, see [why notes should work without internet](/blog/why-notes-should-work-offline). There's a middle ground called offline first. Writes queue on the device, but the server's copy still wins any disagreement when you reconnect. It's a big step up from a plain cache, yet the server remains the source of truth.
 
 ![A four-step spectrum from the server owning your data to you owning it: cloud only, offline cache, offline first, and local first.](/blog/what-is-a-local-first-notes-app/03-source-of-truth-spectrum.png "Fig 2. Where the real copy lives decides who owns the experience.")
 
@@ -101,7 +101,7 @@ Score the app you use today against what a local first notes app should do. You 
 
 ## How a local first notes app actually works
 
-**Three parts do the work: on-device storage, a sync engine, and a cloud copy.** The interesting engineering is in how they talk to each other when the network is unreliable.
+**Three parts do the work: on-device storage, a sync engine, and a cloud copy.** The interesting engineering is in how they talk to each other when the network is unreliable. The [full architecture guide](/blog/atomic-notes-architecture) goes layer by layer.
 
 Here's how Atomic Notes splits those jobs:
 
@@ -184,8 +184,9 @@ Local first is also one of the strongest privacy signals a notes app can send. F
 
 ## Keep reading
 
+- [Notes app without internet: why offline should be the default](/blog/why-notes-should-work-offline)
+- [Local first architecture: the 4 layers behind Atomic Notes](/blog/atomic-notes-architecture)
 - [Notes app privacy: 9 red flags to check before you trust one](/blog/notes-app-privacy-red-flags)
-- [How Atomic Notes works, on the home page](/)
 - [The Atomic Notes source code on GitHub](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2), public to read and verify
 
 <div class="callout ink">
