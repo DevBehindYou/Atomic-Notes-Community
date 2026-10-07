@@ -22,6 +22,8 @@ Key facts:
 
 ## Blog posts
 
+- [What Is a Local First Notes App and Why Does It Matter?](https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app): local-first software defined, offline first vs local first, the seven Ink & Switch ideals, how Atomic Notes syncs, and the tradeoffs
+- [Notes App Privacy in 2026: 9 Red Flags to Check First](https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-red-flags): nine checks for any notes app (accounts, export, encryption keys, permissions, ads, trackers, AI, formats, storage) and how Atomic Notes scores
 - [Atomic Notes v1.18.2 Demo Build](https://atomic-notes.devbehindyou.com/blog/atomic-notes-v1-18-2): Atomic Energy, in-app email flows, notification center, offline launch fix
 - [RSS feed](https://atomic-notes.devbehindyou.com/feed.xml) and [sitemap](https://atomic-notes.devbehindyou.com/sitemap.xml): every published page and post
 
