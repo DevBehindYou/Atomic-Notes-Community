@@ -187,6 +187,7 @@ Local first is also one of the strongest privacy signals a notes app can send. F
 - [Notes app without internet: why offline should be the default](/blog/why-notes-should-work-offline)
 - [Local first architecture: the 4 layers behind Atomic Notes](/blog/atomic-notes-architecture)
 - [Notes app privacy: 9 red flags to check before you trust one](/blog/notes-app-privacy-red-flags)
+- [6 best local first note taking apps, compared](/blog/best-local-first-note-taking-apps)
 - [The Atomic Notes source code on GitHub](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2), public to read and verify
 
 <div class="callout ink">

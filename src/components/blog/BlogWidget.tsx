@@ -11,6 +11,16 @@ import { WaitCalculator } from "./WaitCalculator";
 import { MetadataInference } from "./MetadataInference";
 import { SyncStepper } from "./SyncStepper";
 import { AppFinder } from "./AppFinder";
+import { LocalFirstMatcher } from "./LocalFirstMatcher";
+import { ShutdownTest } from "./ShutdownTest";
+import { RecoveryCheck } from "./RecoveryCheck";
+import { GuessTime } from "./GuessTime";
+import { OfflineFinder } from "./OfflineFinder";
+import { PermissionReader } from "./PermissionReader";
+import { AiScanner } from "./AiScanner";
+import { AiPath } from "./AiPath";
+import { HabitAudit } from "./HabitAudit";
+import { ApkChecker } from "./ApkChecker";
 
 // Interactive components a post can place with `:::widget <name>` on its own line.
 const WIDGETS: Record<string, () => React.ReactElement> = {
@@ -25,6 +35,16 @@ const WIDGETS: Record<string, () => React.ReactElement> = {
   "metadata-inference": MetadataInference,
   "sync-stepper": SyncStepper,
   "app-finder": AppFinder,
+  "local-first-matcher": LocalFirstMatcher,
+  "shutdown-test": ShutdownTest,
+  "recovery-check": RecoveryCheck,
+  "guess-time": GuessTime,
+  "offline-finder": OfflineFinder,
+  "permission-reader": PermissionReader,
+  "ai-scanner": AiScanner,
+  "ai-path": AiPath,
+  "habit-audit": HabitAudit,
+  "apk-checker": ApkChecker,
 };
 
 export const WIDGET_NAMES = Object.keys(WIDGETS);
