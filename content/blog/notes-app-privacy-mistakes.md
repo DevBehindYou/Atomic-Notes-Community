@@ -71,7 +71,7 @@ This is the mistake from the scene above. Plenty of notes apps offer a fingerpri
 
 Each login you add makes that note a bigger prize, and makes one stolen phone or one breached cloud account more costly. CISA's advice is short: use a password manager, and let it generate and remember unique passwords.
 
-**Fix:** move passwords into a password manager. If a note must hold something sensitive, put it behind end to end encryption. I'll cover this one in depth in a separate guide.
+**Fix:** move passwords into a password manager. If a note must hold something sensitive, put it behind end to end encryption. My guide to [storing passwords in a notes app](/blog/storing-passwords-in-notes-app) covers this one in depth.
 
 ## Mistake 4: A recovery phrase in a note that syncs
 
@@ -203,6 +203,7 @@ My take: most notes app privacy mistakes come from treating one tool as three. A
 - [Notes app privacy: 9 red flags to check](/blog/notes-app-privacy-red-flags)
 - [Encrypted notes explained: T2T vs end to end encryption](/blog/encrypted-notes-explained)
 - [5 best end to end encrypted notes apps](/blog/best-end-to-end-encrypted-notes-apps)
+- [Storing passwords in a notes app: 5 real dangers](/blog/storing-passwords-in-notes-app)
 
 <div class="callout ink">
 <p class="callout-label">Atomic Notes by DevBehindYou</p>

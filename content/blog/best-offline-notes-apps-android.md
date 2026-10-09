@@ -247,6 +247,7 @@ My take: the best offline notes app Android owners can install is the one they n
 - [Notes app without internet: why offline should be the default](/blog/why-notes-should-work-offline)
 - [6 best local first note taking apps](/blog/best-local-first-note-taking-apps)
 - [7 best private notes apps for Android](/blog/best-privacy-first-notes-apps-android)
+- [Moving apps? 7 checks before you switch](/blog/switch-notes-app)
 
 <div class="callout ink">
 <p class="callout-label">Atomic Notes by DevBehindYou</p>

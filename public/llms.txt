@@ -34,6 +34,9 @@ Key facts:
 - [8 Best Offline Notes Apps for Android in 2026](https://atomic-notes.devbehindyou.com/blog/best-offline-notes-apps-android): Atomic Notes, Material Notes, Open Notes, sNotz, Easy Notes, Orgzly Revived, Notes, and Butterfly, checked for internet permission, account, sync, and backups
 - [7 Best Note Taking Apps Without AI in 2026](https://atomic-notes.devbehindyou.com/blog/best-note-taking-apps-without-ai): Atomic Notes, Markor, TiddlyWiki, Zim, Saber, Dynalist, and CherryTree, plus Notion alternatives without AI and how to check an app for AI
 - [Notes App Security: 10 Privacy Mistakes to Fix in 2026](https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-mistakes): ten everyday habits that weaken notes app security (locks, secrets, share links, cloud accounts, exports, APKs) and a fix for each
+- [Storing Passwords in Notes App: 5 Real Dangers](https://atomic-notes.devbehindyou.com/blog/storing-passwords-in-notes-app): why a notes app is not a password manager, Google Keep and Samsung Notes for passwords, a breach check, and how to move passwords out
+- [How Does Encryption Protect Privacy? 5 Gaps in Your Notes](https://atomic-notes.devbehindyou.com/blog/encrypted-notes-privacy): transport encryption, key custody (iCloud Advanced Data Protection, Google Keep, Atomic Notes), metadata, analytics, and account recovery
+- [Switch Notes App Safely: 7 Checks Before You Move](https://atomic-notes.devbehindyou.com/blog/switch-notes-app): export formats of popular notes apps, a migration plan with a rollback copy, and how to get notes out of Atomic Notes today
 - [Atomic Notes v1.18.2 Demo Build](https://atomic-notes.devbehindyou.com/blog/atomic-notes-v1-18-2): Atomic Energy, in-app email flows, notification center, offline launch fix
 - [RSS feed](https://atomic-notes.devbehindyou.com/feed.xml) and [sitemap](https://atomic-notes.devbehindyou.com/sitemap.xml): every published page and post
 

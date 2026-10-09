@@ -202,6 +202,7 @@ My take: there's no single most secure notes app. There's the one whose key you 
 - [Encrypted notes explained: T2T vs end to end encryption](/blog/encrypted-notes-explained)
 - [7 best private notes apps for Android](/blog/best-privacy-first-notes-apps-android)
 - [Notes app metadata: 8 things it knows without reading notes](/blog/notes-app-data-collection)
+- [Encrypted is not private: 5 gaps to check](/blog/encrypted-notes-privacy)
 
 <div class="callout ink">
 <p class="callout-label">Atomic Notes by DevBehindYou</p>

@@ -195,6 +195,7 @@ My take after building both modes: most notes don't need the vault, and some enc
 - [Notes app metadata: 8 things it knows without reading notes](/blog/notes-app-data-collection)
 - [Notes app privacy: 9 red flags to check](/blog/notes-app-privacy-red-flags)
 - [5 best end to end encrypted notes apps, compared](/blog/best-end-to-end-encrypted-notes-apps)
+- [How does encryption protect privacy? 5 gaps](/blog/encrypted-notes-privacy)
 
 <div class="callout ink">
 <p class="callout-label">Atomic Notes by DevBehindYou</p>
