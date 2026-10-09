@@ -21,6 +21,12 @@ import { AiScanner } from "./AiScanner";
 import { AiPath } from "./AiPath";
 import { HabitAudit } from "./HabitAudit";
 import { ApkChecker } from "./ApkChecker";
+import { BlastRadius } from "./BlastRadius";
+import { SecretScanner } from "./SecretScanner";
+import { ThreatMatrix } from "./ThreatMatrix";
+import { KeyCustody } from "./KeyCustody";
+import { SwitchCheck } from "./SwitchCheck";
+import { CountCheck } from "./CountCheck";
 
 // Interactive components a post can place with `:::widget <name>` on its own line.
 const WIDGETS: Record<string, () => React.ReactElement> = {
@@ -45,6 +51,12 @@ const WIDGETS: Record<string, () => React.ReactElement> = {
   "ai-path": AiPath,
   "habit-audit": HabitAudit,
   "apk-checker": ApkChecker,
+  "blast-radius": BlastRadius,
+  "secret-scanner": SecretScanner,
+  "threat-matrix": ThreatMatrix,
+  "key-custody": KeyCustody,
+  "switch-check": SwitchCheck,
+  "count-check": CountCheck,
 };
 
 export const WIDGET_NAMES = Object.keys(WIDGETS);

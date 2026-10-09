@@ -238,6 +238,7 @@ I also left out apps that call themselves offline-friendly but keep the primary 
 - [What is a local first notes app?](/blog/what-is-a-local-first-notes-app)
 - [Local first architecture: the 4 layers behind Atomic Notes](/blog/atomic-notes-architecture)
 - [Notes app without internet: why offline should be the default](/blog/why-notes-should-work-offline)
+- [Switch notes app safely: 7 checks before you move](/blog/switch-notes-app)
 
 <div class="callout ink">
 <p class="callout-label">Atomic Notes by DevBehindYou</p>
