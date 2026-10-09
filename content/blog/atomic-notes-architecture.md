@@ -183,6 +183,7 @@ My view after building it: this local first architecture costs more engineering 
 - [What is a local first notes app, and why does it matter?](/blog/what-is-a-local-first-notes-app)
 - [Encrypted notes explained: T2T vs end to end encryption](/blog/encrypted-notes-explained)
 - [Notes app metadata: 8 things it knows without reading notes](/blog/notes-app-data-collection)
+- [How 6 local first note taking apps compare](/blog/best-local-first-note-taking-apps)
 
 <div class="callout ink">
 <p class="callout-label">Atomic Notes by DevBehindYou</p>

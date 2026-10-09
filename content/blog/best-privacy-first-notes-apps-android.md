@@ -187,7 +187,7 @@ The trade is the same every time: no internet means no sync and no cloud backup.
 
 **Google Keep** fails the rules: notes live in your Google account, readable by Google, with no end-to-end encryption. It's convenient, not private by design.
 
-**Notesnook, Standard Notes, and Joplin** are excellent encrypted apps with encrypted sync. They're cross-platform first rather than Android-first, and I'm covering them in a separate guide to end-to-end encrypted notes apps, so this list stays unique.
+**Notesnook, Standard Notes, and Joplin** are excellent encrypted apps with encrypted sync. They're cross-platform first rather than Android-first, and they have their own spot in my [guide to end-to-end encrypted notes apps](/blog/best-end-to-end-encrypted-notes-apps), so this list stays unique.
 
 ## FAQ
 
@@ -223,6 +223,7 @@ The trade is the same every time: no internet means no sync and no cloud backup.
 - [Notes app privacy: 9 red flags to check](/blog/notes-app-privacy-red-flags)
 - [Encrypted notes explained: T2T vs end to end encryption](/blog/encrypted-notes-explained)
 - [What is a local first notes app?](/blog/what-is-a-local-first-notes-app)
+- [8 best offline notes apps for Android](/blog/best-offline-notes-apps-android)
 
 <div class="callout ink">
 <p class="callout-label">Atomic Notes by DevBehindYou</p>

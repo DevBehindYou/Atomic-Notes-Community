@@ -192,6 +192,7 @@ The catch is the same one every time: no sync means no backup and no second devi
 - [Notes app privacy: 9 red flags to check](/blog/notes-app-privacy-red-flags)
 - [Encrypted notes explained: T2T vs end to end encryption](/blog/encrypted-notes-explained)
 - [Local first architecture: the 4 layers behind Atomic Notes](/blog/atomic-notes-architecture)
+- [7 note taking apps with no AI reading your notes](/blog/best-note-taking-apps-without-ai)
 
 <div class="callout ink">
 <p class="callout-label">Atomic Notes by DevBehindYou</p>

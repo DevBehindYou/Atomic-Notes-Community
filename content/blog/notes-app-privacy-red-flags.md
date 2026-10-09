@@ -194,6 +194,8 @@ That's why the third question, who pays, matters as much as encryption. A privac
 - [7 best private notes apps for Android in 2026](/blog/best-privacy-first-notes-apps-android)
 - [Notes app metadata: 8 things it knows without reading notes](/blog/notes-app-data-collection)
 - [What is a local first notes app, and why does it matter?](/blog/what-is-a-local-first-notes-app)
+- [Notes app security: 10 privacy mistakes to fix](/blog/notes-app-privacy-mistakes)
+- [7 best note taking apps without AI](/blog/best-note-taking-apps-without-ai)
 - [Read the Atomic Notes code on GitHub](https://github.com/DevBehindYou/Atomic-Notes-App-V0.2) and check every claim on this page
 
 <div class="callout ink">

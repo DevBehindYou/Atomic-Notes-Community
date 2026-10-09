@@ -174,6 +174,7 @@ My opinion, after building one: a notes app that needs a network to save is real
 - [What is a local first notes app, and why does it matter?](/blog/what-is-a-local-first-notes-app)
 - [Local first architecture: the 4 layers behind Atomic Notes](/blog/atomic-notes-architecture)
 - [Encrypted notes explained: T2T vs end to end encryption](/blog/encrypted-notes-explained)
+- [8 best offline notes apps for Android, checked](/blog/best-offline-notes-apps-android)
 
 <div class="callout ink">
 <p class="callout-label">Atomic Notes by DevBehindYou</p>
