@@ -1,0 +1,6 @@
+"It's open source, so it's secure."
+
+Not quite. Heartbleed lived in public code for over two years. Open code makes bugs findable, not absent.
+
+6 things public source code lets you verify, and 4 it can't prove:
+{LINK}?utm_source=threads&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S3

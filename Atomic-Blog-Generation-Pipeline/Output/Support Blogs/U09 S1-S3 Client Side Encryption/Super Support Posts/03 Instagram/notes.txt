@@ -1,0 +1,17 @@
+Instagram carousel (1080 x 1350): slide-01.png to slide-07.png in this folder, in order.
+Put the Support Blog link in your bio or link sticker: {LINK}?utm_source=instagram&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S3
+Post within 48 hours of the Support Blog launch.
+
+Alt text (Advanced settings > Accessibility):
+slide-01.png: Cover slide reading Client-Side Encryption, what happens before a note reaches the cloud.
+slide-02.png: Slide 1, Server-side: the cloud encrypts your data after it arrives, with keys it controls.
+slide-03.png: Slide 2, Client-side: your device encrypts first, the cloud only ever stores ciphertext.
+slide-04.png: Slide 3, The boundary: the last point where your data is readable decides who can read it.
+slide-05.png: Slide 4, In the browser: Web Crypto does PBKDF2 and AES-GCM in about 40 lines, HTTPS or localhost only.
+slide-06.png: Slide 5, The common mistakes: logging plaintext, reusing the IV, uploading the key, and leaving titles unencrypted.
+slide-07.png: Final slide reading Put the line on your device, runnable Web Crypto code and the four mistakes to avoid.
+
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: client side encryption
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

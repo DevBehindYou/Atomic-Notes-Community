@@ -1,0 +1,61 @@
+MEDIUM PUBLISHING NOTES · U01 L1-S1 Local vs Cloud Storage
+
+Title:
+Local Storage vs Cloud Storage for Notes: 3 Places Your Notes Can Live
+
+Subtitle:
+On your phone, on a company's servers, or in cloud storage you already own. Each one decides who can read your notes and what happens on a bad day.
+
+SEO description:
+Local storage vs cloud storage for notes, explained. Where notes are stored on Android, where Google Keep notes are stored, and which mix protects you best.
+
+Tags (Medium allows 5):
+Cloud Storage, Local First, Privacy, Android, Note Taking
+
+Keywords (from keyword-registry.json):
+  Primary: local storage vs cloud storage
+  Secondary: where are notes stored on android, where are google keep notes stored, cloud storage vs local storage for personal use, local storage and cloud storage difference
+  LSI: device storage, company cloud, own cloud, Google Drive, iCloud, encryption keys, backups, account lock, shutdown risk, sync
+
+Keyword check (body only, exact phrase): words 1311
+  'local storage vs cloud storage': 7
+  'where are notes stored on android': 3
+  'where are google keep notes stored': 2
+  'cloud storage vs local storage for personal use': 2
+  'local storage and cloud storage difference': 1
+
+Links inside the article (each one points to a live page):
+  what a local first notes app is and why it matters -> https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app
+  Rule: link only to live Main Blogs and to Support Blogs uploaded before U01.
+
+Images, in order (upload each one where its caption sits):
+  01-banner.png  ->  Local storage vs cloud storage: three places your notes can live.
+  02-three-places.png  ->  Three cards. Device only: on your phone, nobody else can reach it, gone if the phone is. Company cloud: on the...
+  03-bad-days.png  ->  A table of five bad days: lost phone, account locked, service shuts down, server breach, and no signal. Device...
+  04-hybrid.png  ->  A diagram of the hybrid model: the phone holds the real copy and saves offline, then syncs one file per note t...
+
+Cover image: 01-banner.png
+
+Sources (keep them at the end, under Sources):
+  Data and file storage overview. Android Developers
+    https://developer.android.com/training/data-storage
+  How to download your Google data. Google Account Help
+    https://support.google.com/accounts/answer/3024190?hl=en
+  iCloud data security overview. Apple Support
+    https://support.apple.com/en-us/102651
+  Pocket is saying goodbye. Mozilla Support
+    https://support.mozilla.org/en-US/kb/future-of-pocket
+  Local-first software. Ink & Switch
+    https://www.inkandswitch.com/essay/local-first/
+  Atomic Notes privacy policy
+    https://atomic-notes.devbehindyou.com/privacy
+
+How to publish on Medium:
+1. Open "Medium article.docx", select all, copy, and paste into a new story.
+2. Re-upload each image from this folder at its caption (Medium drops pasted Word images unreliably).
+3. Check that lists, bold text, and the links survived the paste.
+4. Story settings > SEO: paste the SEO description above. Add the 5 tags.
+5. Canonical link: leave it EMPTY. This is a unique article, not a copy of the site post.
+6. After publishing, copy the story URL into Output/README.md and into the social posts' {LINK}.
+
+Validated with: node scripts/validate.mjs and node scripts/cluster-check.mjs --draft (both PASSED).

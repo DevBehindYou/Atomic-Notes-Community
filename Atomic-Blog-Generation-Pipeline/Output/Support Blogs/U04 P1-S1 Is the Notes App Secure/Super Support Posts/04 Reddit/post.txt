@@ -1,0 +1,17 @@
+Can Apple (or Google) read your notes? A checklist of 7 exposure paths that aren't 'someone hacked the app'
+
+A question I see a lot is "can Apple read my notes?" Short answer from Apple's own docs: with standard iCloud protection, Apple holds the keys for Notes. With Advanced Data Protection on, Notes are end-to-end encrypted and keys stay on your devices.
+
+But that's one of seven ways notes get exposed. The full list I check:
+
+1. Who holds the encryption keys
+2. Account takeover (reused passwords are still the top way in)
+3. Analytics SDKs and AI features
+4. Sync metadata (when and how much you write)
+5. Old shared links
+6. Old devices still signed in
+7. Backups and exports sitting around
+
+Disclosure: I build a notes app (Atomic Notes), and I scored it on the same list, including the parts that are on the user, like Google account security.
+
+What would you add? Full write-up if links are OK: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S1

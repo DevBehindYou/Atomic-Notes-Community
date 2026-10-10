@@ -1,0 +1,19 @@
+S2 · SECURITY · Main Blog
+Title: 5 Best End to End Encrypted Notes Apps in 2026
+Live URL: https://atomic-notes.devbehindyou.com/blog/best-end-to-end-encrypted-notes-apps
+Published: 2026-10-09 (Community PR #16)
+Words (visible prose, no code or sources): 1,920
+
+Primary keyword: best encrypted notes app
+Secondary keywords: end to end encrypted notes app; most secure notes app
+LSI terms: encrypted notes app; best secure notes app; E2EE notes app; Standard Notes; Notesnook; audited encryption; key ownership; recovery options; metadata; default encryption
+
+Interactive widgets on the site: recovery-check, guess-time
+Images: 6 (01-banner.png, 02-comparison.png, 03-key-ladder.png, 04-recovery.png, 05-metadata.png, 06-atomic-notes-card.png)
+
+Notes:
+- The source of truth is content/blog/best-end-to-end-encrypted-notes-apps.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py best-end-to-end-encrypted-notes-apps (module visuals/posts/best_end_to_end_encrypted_notes_apps.py).
+- Support Blogs for this page: S2-S1, S2-S2, S2-S3 (see keyword-registry.json).

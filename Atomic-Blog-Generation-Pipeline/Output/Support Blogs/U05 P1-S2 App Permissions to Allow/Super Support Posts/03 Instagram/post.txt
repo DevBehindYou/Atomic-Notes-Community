@@ -1,0 +1,7 @@
+What app permissions should you allow? 📲
+
+A notes app needs very little. Swipe for 5 permissions worth a second look, and the one that never shows a dialog.
+
+Full guide: link in bio.
+
+#android #androidtips #privacy #apppermissions #cybersecurity #techtips

@@ -1,0 +1,19 @@
+L1 · LOCAL FIRST · Main Blog
+Title: What Is a Local First Notes App and Why Does It Matter?
+Live URL: https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app
+Published: 2026-10-07 (Community PR #14)
+Words (visible prose, no code or sources): 2,027
+
+Primary keyword: local first notes app
+Secondary keywords: local-first software; local first meaning
+LSI terms: Ink & Switch; Martin Kleppmann; source of truth; on-device storage; sync engine; cloud dependency; CRDT; offline capability; user control; longevity
+
+Interactive widgets on the site: offline-simulator, local-first-scorecard
+Images: 6 (01-banner.png, 02-two-ways-to-save.png, 03-source-of-truth-spectrum.png, 04-seven-ideals.png, 05-atomic-notes-layers.png, 06-local-first-tradeoffs.png)
+
+Notes:
+- The source of truth is content/blog/what-is-a-local-first-notes-app.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py what-is-a-local-first-notes-app (module visuals/posts/what_is_a_local_first_notes_app.py).
+- Support Blogs for this page: L1-S1, L1-S2, L1-S3 (see keyword-registry.json).

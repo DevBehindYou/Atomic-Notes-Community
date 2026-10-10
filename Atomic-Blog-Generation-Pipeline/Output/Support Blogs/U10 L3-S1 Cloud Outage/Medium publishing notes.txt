@@ -1,0 +1,60 @@
+MEDIUM PUBLISHING NOTES · U10 L3-S1 Cloud Outage
+
+Title:
+What Happens to Your Notes When the Cloud Goes Down?
+
+Subtitle:
+Two 2025 cloud outages, three kinds of notes apps, and one airplane mode test. What you can still read, what you can still write, and what to do before the next one.
+
+SEO description:
+What a cloud outage does to your notes: what still opens, what still saves, and how Notion, Evernote, and local-first apps behave. Plus a 10-minute outage test.
+
+Tags (Medium allows 5):
+Cloud Computing, Productivity, Note Taking, Apps, Technology
+
+Keywords (from keyword-registry.json):
+  Primary: cloud outage
+  Secondary: notion outage, aws outage, evernote outage, google keep down
+  LSI: status page, outage timeline, cached notes, sync failure, single point of failure, resilience, local copy, read-only mode, incident report, downtime
+
+Keyword check (body only, exact phrase): words 1285
+  'cloud outage': 6
+  'notion outage': 2
+  'aws outage': 1
+  'evernote outage': 2
+  'google keep down': 2
+
+Links inside the article (each one points to a live page):
+  why your notes should work offline -> https://atomic-notes.devbehindyou.com/blog/why-notes-should-work-offline
+  Rule: link only to live Main Blogs and to Support Blogs uploaded before U10.
+
+Images, in order (upload each one where its caption sits):
+  01-banner.png  ->  What happens to your notes when the cloud goes down?
+  02-three-apps.png  ->  Three phones during a cloud outage. A web app shows an error. A cache-first app shows some notes, with others ...
+  03-outage-test.png  ->  A six-step airplane mode test: force-close, open an old note, write and edit, search, reconnect, and bookmark ...
+
+Cover image: 01-banner.png
+
+Sources (keep them at the end, under Sources):
+  Summary of the Amazon DynamoDB service disruption in the Northern Virginia (US-EAST-1) Region. AWS
+    https://aws.amazon.com/message/101925/
+  Google Cloud incident report, June 12, 2025. Google Cloud Service Health
+    https://status.cloud.google.com/incidents/ow5i3PPK96RduMcb1SsW
+  Notion 2.53: Offline mode. Notion releases
+    https://www.notion.com/releases/2025-08-19
+  Notion status page
+    https://www.notion-status.com/
+  Offline notebooks. Evernote Help and Learning
+    https://help.evernote.com/hc/en-us/articles/209005177
+  Atomic Notes source code. GitHub
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish on Medium:
+1. Open "Medium article.docx", select all, copy, and paste into a new story.
+2. Re-upload each image from this folder at its caption (Medium drops pasted Word images unreliably).
+3. Check that lists, bold text, and the links survived the paste.
+4. Story settings > SEO: paste the SEO description above. Add the 5 tags.
+5. Canonical link: leave it EMPTY. This is a unique article, not a copy of the site post.
+6. After publishing, copy the story URL into Output/README.md and into the social posts' {LINK}.
+
+Validated with: node scripts/validate.mjs and node scripts/cluster-check.mjs --draft (both PASSED).

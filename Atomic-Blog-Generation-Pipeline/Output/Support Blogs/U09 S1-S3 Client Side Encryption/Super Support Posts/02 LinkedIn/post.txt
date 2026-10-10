@@ -1,0 +1,9 @@
+Every cloud service encrypts your data. Very few encrypt it before it leaves your device.
+
+That's the difference between server-side and client-side encryption, and it's really a question of where the plaintext boundary sits. AWS offers the S3 Encryption Client for it. Google offers Workspace client-side encryption on certain editions. Both treat it as a separate, opt-in tier.
+
+I wrote a developer walkthrough with a complete Web Crypto example: PBKDF2 key derivation, AES-GCM with a random 12-byte IV, and the four mistakes I check for first, from logging plaintext to leaving titles unencrypted.
+
+{LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S3
+
+#WebDevelopment #JavaScript #Security

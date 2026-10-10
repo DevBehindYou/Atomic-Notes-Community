@@ -1,0 +1,9 @@
+Pinterest
+Image: pin.png in this folder (1000 x 1500).
+Alt text: Checklist pin titled Outage-Proof Your Notes with five checks for airplane mode, old notes, offline editing, search, and status pages.
+Suggested board: Productivity Tips
+Pin within 48 hours of the Support Blog launch.
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: cloud outage
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

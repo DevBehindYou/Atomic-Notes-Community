@@ -1,0 +1,9 @@
+🔑 Here's a simple privacy test anyone can do.
+
+Look up what happens if you forget your password for an app that stores private things.
+
+✅ "We can't recover your data": the company never had your key
+❌ "We'll restore it for you": the company holds a key
+
+Neither is wrong. But only the first one is "zero knowledge". Here's the plain-English version:
+{LINK}?utm_source=facebook&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S2

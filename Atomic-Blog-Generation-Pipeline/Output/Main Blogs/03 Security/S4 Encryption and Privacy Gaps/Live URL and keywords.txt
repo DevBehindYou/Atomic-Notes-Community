@@ -1,0 +1,19 @@
+S4 · SECURITY · Main Blog
+Title: How Does Encryption Protect Privacy? 5 Gaps in Your Notes
+Live URL: https://atomic-notes.devbehindyou.com/blog/encrypted-notes-privacy
+Published: 2026-10-09 (Community PR #17)
+Words (visible prose, no code or sources): 1,832
+
+Primary keyword: how does encryption protect privacy
+Secondary keywords: encryption and privacy; encrypted notes privacy
+LSI terms: transport encryption; provider held keys; metadata; analytics; account recovery; key custody; Advanced Data Protection; encryption marketing; server side keys; threat model
+
+Interactive widgets on the site: threat-matrix, key-custody
+Images: 6 (01-banner.png, 02-five-gaps.png, 03-key-custody.png, 04-metadata-stays.png, 05-five-questions.png, 06-atomic-answers.png)
+
+Notes:
+- The source of truth is content/blog/encrypted-notes-privacy.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py encrypted-notes-privacy (module visuals/posts/encrypted_notes_privacy.py).
+- Support Blogs for this page: S4-S1, S4-S2, S4-S3 (see keyword-registry.json).

@@ -1,0 +1,24 @@
+Upload order: U06 of 45 (campaign week 2, Main Blog P1)
+Link only to: the Main Blog P1 (live), other live Main Blogs, and Support Blogs uploaded before U06.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2
+
+P1-S3 · Support Blog for P1 (Notes App Privacy Red Flags) · READY TO UPLOAD
+Publish on: Substack
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-red-flags
+
+Working title: Is Open Source More Secure? 6 Things Public Source Code Lets You Verify
+Angle: What public source code does and doesn't prove, open source vs source-available, and how to verify an app's privacy claims. States plainly that Atomic Notes is source-available.
+Intent: informational / opinion
+Draft source: Atomic Notes Blogs/Blog List 01/Why Privacy Software Should Be Open Source
+
+Primary keyword: is open source more secure
+Secondary keywords: source available vs open source; why open source is more secure; open source privacy software; source available software
+LSI terms: software transparency; code review; reproducible builds; security through obscurity; Linus's law; license terms; independent audit; supply chain security; verifiable claims; public repository
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

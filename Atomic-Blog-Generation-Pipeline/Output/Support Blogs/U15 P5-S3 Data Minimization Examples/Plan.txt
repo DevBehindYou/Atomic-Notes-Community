@@ -1,0 +1,24 @@
+Upload order: U15 of 45 (campaign week 5, Main Blog P5)
+Link only to: the Main Blog P5 (live), other live Main Blogs, and Support Blogs uploaded before U15.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2, U09 S1-S3, U10 L3-S1, U11 L3-S2, U12 L3-S3, U13 P5-S1, U14 P5-S2
+
+P5-S3 · Support Blog for P5 (Notes App Metadata) · NOT STARTED
+Publish on: WordPress
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/notes-app-data-collection
+
+Working title: Data Minimization Examples: 5 Signs a Notes App Collects Less
+Angle: The legal principle turned into a user-facing checklist, with notes-app examples.
+Intent: informational
+Draft source: none
+
+Primary keyword: data minimization examples
+Secondary keywords: what is data minimization; data minimization principle; data minimization techniques; data minimization
+LSI terms: GDPR Article 5; purpose limitation; storage limitation; retention schedule; pseudonymization; collection limits; privacy notice; consent; local processing; deletion
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

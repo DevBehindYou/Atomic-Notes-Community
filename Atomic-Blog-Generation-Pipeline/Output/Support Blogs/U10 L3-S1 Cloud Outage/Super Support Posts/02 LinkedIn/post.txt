@@ -1,0 +1,11 @@
+Two big cloud outages in 2025 started deep inside the providers. AWS traced its October us-east-1 disruption to a race condition in DynamoDB's DNS management. Google traced its June outage to a policy check that crashed on a null pointer.
+
+Neither had anything to do with notes. But every app built on those services could stall at once.
+
+During a cloud outage, what happens to your notes depends on where the app keeps its main copy. Web-only apps go blank. Cache-first apps show what they cached. Local-first apps keep working and sync later.
+
+I wrote up a 10-minute airplane mode test anyone can run on the notes app they rely on.
+
+{LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=local-first-L3&utm_content=L3-S1
+
+#Productivity #CloudComputing #SoftwareEngineering

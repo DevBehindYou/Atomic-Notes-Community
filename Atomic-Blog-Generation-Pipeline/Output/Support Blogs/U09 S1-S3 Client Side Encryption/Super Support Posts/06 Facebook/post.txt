@@ -1,0 +1,6 @@
+🔒 Where does your data get locked?
+
+Most apps lock it after it reaches their servers, so the company can still read it. Client-side encryption locks it on your own phone or computer first, so the company only ever stores scrambled data.
+
+A short explainer, with a code example for the curious:
+{LINK}?utm_source=facebook&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S3

@@ -1,0 +1,15 @@
+Encryption in transit vs at rest vs E2EE: a table of where plaintext actually exists
+
+I keep explaining this to non-security folks, so I made the simplest version I could:
+
+| | Wire | Server memory | Disk |
+|---|---|---|---|
+| TLS only | Ciphertext | Plaintext | Plaintext |
+| TLS + at rest | Ciphertext | Plaintext | Ciphertext (provider key) |
+| End-to-end | Ciphertext | Ciphertext | Ciphertext (your key) |
+
+The middle column is the one marketing pages skip. And even with E2EE, metadata like IDs and timestamps usually stays readable.
+
+Disclosure: I build a notes app (Atomic Notes) that uses TLS by default and has an optional end-to-end vault, so I've had to document this for real.
+
+Anything you'd add, like confidential computing for data in use? Full post: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S1

@@ -1,0 +1,24 @@
+Upload order: U35 of 45 (campaign week 12, Main Blog P3)
+Link only to: the Main Blog P3 (live), other live Main Blogs, and Support Blogs uploaded before U35.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2, U09 S1-S3, U10 L3-S1, U11 L3-S2, U12 L3-S3, U13 P5-S1, U14 P5-S2, U15 P5-S3, U16 L5-S1, U17 L5-S2, U18 L5-S3, U19 P2-S1, U20 P2-S2, U21 P2-S3, U22 L2-S1, U23 L2-S2, U24 L2-S3, U25 S2-S1, U26 S2-S2, U27 S2-S3, U28 L4-S1, U29 L4-S2, U30 L4-S3, U31 P4-S1, U32 P4-S2, U33 P4-S3, U34 P3-S1
+
+P3-S2 · Support Blog for P3 (Notes App Privacy Mistakes) · NOT STARTED
+Publish on: WordPress
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-mistakes
+
+Working title: How to Back Up Notes on Android Without Creating Privacy Risks: 7 Mistakes to Avoid
+Angle: Backups done safely: encryption, where copies live, stale copies, restore tests.
+Intent: how-to
+Draft source: none
+
+Primary keyword: backup notes android
+Secondary keywords: how to backup notes; notes backup; backup android notes to google drive; encrypted vs unencrypted backup
+LSI terms: backup encryption; restore test; Android backup; Google One backup; 3-2-1 backup rule; export file; stale copies; shared folders; recovery material; version history
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

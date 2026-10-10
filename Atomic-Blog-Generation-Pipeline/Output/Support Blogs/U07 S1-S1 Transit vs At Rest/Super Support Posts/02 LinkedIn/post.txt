@@ -1,0 +1,11 @@
+Most security pages say data is "encrypted in transit and at rest". That's true, and it's also the baseline, not a privacy feature.
+
+Encryption in transit vs at rest comes down to which attacker each one stops. TLS stops someone on the network. At-rest encryption stops someone holding a stolen disk. In between, the server decrypts the data to use it, so it sits in memory as plaintext. Only end-to-end encryption keeps the provider out, and it costs you server-side search and easy recovery.
+
+I wrote it up for developers with a side-by-side of the record a server stores under each model, and an openssl one-liner to check the transit layer yourself.
+
+Where do you draw the line for user content in your own products?
+
+{LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S1
+
+#Security #SoftwareEngineering #Encryption

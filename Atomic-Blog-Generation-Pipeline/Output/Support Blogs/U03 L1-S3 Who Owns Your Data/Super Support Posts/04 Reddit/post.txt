@@ -1,0 +1,15 @@
+Do you actually own your notes? 5 questions I think matter more than the terms of service
+
+Pretty much every app's terms say "your content remains yours". Legally fine. Practically, I think ownership is these five questions:
+
+1. Is there a copy you can open without the company's servers?
+2. Does the license you grant stop at running the service, or does it cover things like "developing new technologies" or AI training?
+3. Can you export everything in an open format, yourself, without emailing support?
+4. If your account gets locked, do your notes go with it?
+5. If the company shuts down, is your data in a format anything else can read?
+
+Pocket's shutdown in 2025 is a good example of question 5. People who exported early were fine.
+
+Full disclosure, I build a notes app (Atomic Notes) and I scored it on the same five. It does well on file location and shutdown risk, and only partly on export, because there's no one-tap export button yet.
+
+Which of the five do your tools fail? Long version here if allowed: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S3

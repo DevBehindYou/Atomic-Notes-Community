@@ -1,0 +1,9 @@
+Reddit: first line is the title, the rest is the post body.
+Where: r/AskNetsec or r/cybersecurity (discussion), r/Bitwarden only if it's on topic. Check self-promotion rules first
+Read each subreddit's current self-promotion rules first. If links aren't allowed, delete the last sentence and post the discussion only.
+Keep the disclosure. Reply to comments for the first few hours.
+Avoid r/opensource, r/privacy, and r/degoogle for Atomic Notes posts.
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: zero knowledge encryption
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

@@ -1,0 +1,2064 @@
+{
+  "version": "2026-10-07",
+  "about": "Single source of truth for every URL in the Rank One cluster: one primary keyword per URL, no keyword owned twice. Edit this file, then run `node scripts/cluster-check.mjs` and `node scripts/cluster-docs.mjs` from Atomic-Blog-Generation-Pipeline.",
+  "rules": {
+    "main": {
+      "secondary": 2,
+      "lsiMax": 10
+    },
+    "support": {
+      "secondary": 4,
+      "lsiMax": 10
+    },
+    "hub": {
+      "secondary": 2,
+      "lsiMax": 10
+    },
+    "side": {
+      "secondary": 2,
+      "lsiMax": 10
+    }
+  },
+  "acceptedOverlaps": [
+    {
+      "pair": [
+        "P1",
+        "P3"
+      ],
+      "reason": "P1 owns the head term 'notes app privacy'. P3 keeps only the longer 'notes app privacy mistakes' as a title match. Don't use the bare head term in P3's title, H1 or meta description."
+    },
+    {
+      "pair": [
+        "L1",
+        "L2"
+      ],
+      "reason": "Definition vs listicle. L1 answers 'what is it' and L2 answers 'which apps'. L2 uses the plural 'apps' and 'best' in its title, L1 never does."
+    },
+    {
+      "pair": [
+        "S1",
+        "S2"
+      ],
+      "reason": "S1 is the 'encrypted notes' explainer. S2 owns the commercial 'best … app' and '… notes app' forms. S1 links to S2 for app picks instead of listing apps."
+    },
+    {
+      "pair": [
+        "S1",
+        "S2-S1"
+      ],
+      "reason": "S2-S1 targets a named 'vs' comparison, a different intent from S1's definition."
+    },
+    {
+      "pair": [
+        "S1",
+        "S2-S2"
+      ],
+      "reason": "S2-S2 answers yes/no questions about specific apps, a different intent from S1's definition."
+    },
+    {
+      "pair": [
+        "S1",
+        "S4"
+      ],
+      "reason": "S4 is about the limits of encryption claims, S1 defines encryption types. S4 links to S1 for definitions instead of re-explaining them."
+    },
+    {
+      "pair": [
+        "S5-S1",
+        "S5-S2"
+      ],
+      "reason": "False match. 'Standard Notes' is a brand name, and its word 'notes' overlaps S5-S1's generic keyword."
+    }
+  ],
+  "pages": [
+    {
+      "id": "HUB",
+      "pillar": "BRAND",
+      "role": "hub",
+      "status": "existing",
+      "work": "update",
+      "title": "Atomic Notes by DevBehindYou: Source-Available, Local First and Private by Design",
+      "previousTitle": "Atomic Notes: Local-First and Private by Design",
+      "source": "Atomic Notes Blogs/Blog List 01/Atomic Notes - Local-First and Private by Design",
+      "slug": "atomic-notes-by-devbehindyou",
+      "intent": "brand",
+      "primary": "atomic notes app",
+      "secondary": [
+        "atomic notes by devbehindyou",
+        "atomic notes android"
+      ],
+      "lsi": [
+        "local first notes app for Android",
+        "user owned Google Drive",
+        "optional end to end vault",
+        "source-available license",
+        "no AI features",
+        "no ads or trackers",
+        "Atomic Energy",
+        "GitHub releases",
+        "SHA-256 checksums",
+        "DevBehindYou"
+      ],
+      "change": "The plan's H1 said 'Open Source'. Atomic Notes has been source-available since September 28, 2026, so the H1 now says Source-Available. 'atomic notes' alone is owned by the Zettelkasten concept and by Atomic Blend's unrelated Atomic Notes app, so the hub targets the branded forms."
+    },
+    {
+      "id": "ECON",
+      "pillar": "BRAND",
+      "role": "side",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "Why Atomic Notes Uses Energy Instead of a Subscription",
+      "source": "Atomic Notes Blogs/Blog List 01/Why Atomic Notes Uses Energy Instead of a Subscription",
+      "slug": "why-atomic-notes-uses-energy",
+      "intent": "brand",
+      "primary": "notes app without subscription",
+      "secondary": [
+        "no subscription notes app",
+        "free notes app no subscription"
+      ],
+      "lsi": [
+        "Atomic Energy",
+        "Atomic Coins",
+        "sync cost",
+        "daily energy",
+        "free tier",
+        "server costs",
+        "Google Drive API",
+        "sustainable software",
+        "no ads",
+        "pay per sync"
+      ]
+    },
+    {
+      "id": "P1",
+      "pillar": "PRIVACY",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "9 Privacy Red Flags to Check Before Trusting Any Notes App in 2026",
+      "source": "Atomic Notes Blogs/Blog List 03/06 - 9 Privacy Red Flags Before Trusting Any Notes App",
+      "slug": "notes-app-privacy-red-flags",
+      "draftSlug": "9-notes-app-privacy-red-flags",
+      "intent": "informational + commercial investigation",
+      "angle": "A decision checklist: nine signs a notes app is not as private as it claims, and how to check each one.",
+      "primary": "notes app privacy",
+      "secondary": [
+        "is notes app private",
+        "privacy focused notes app"
+      ],
+      "lsi": [
+        "third party trackers",
+        "privacy policy",
+        "data safety section",
+        "notes app encryption",
+        "account deletion",
+        "data export options",
+        "cloud sync",
+        "privacy labels",
+        "source code transparency",
+        "business model"
+      ],
+      "change": "Primary moved from 'private notes app' (its SERP is app-store listings, a transactional intent) to 'notes app privacy' (mixed educational SERP). 'secure notes app' removed: it was also S5's primary.",
+      "why": "Broad decision-stage privacy checklist with strong internal-link potential across tracking, encryption, AI, permissions, portability, and storage."
+    },
+    {
+      "id": "P1-S1",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P1",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "7 Ways Your Notes App Could Expose More About You Than You Realize",
+      "slug": "is-the-notes-app-secure",
+      "source": "Atomic Notes Blogs/Blog List 03/07 - 7 Ways Your Notes App Could Expose You",
+      "platform": "Medium",
+      "intent": "informational",
+      "angle": "Exposure paths beyond reading notes: cloud keys, telemetry, SDKs, weak sign-in, backups, AI processing, permissions.",
+      "primary": "is the notes app secure",
+      "secondary": [
+        "can my notes app be hacked",
+        "can someone hack into my notes app",
+        "is the notes app safe",
+        "can apple read my notes"
+      ],
+      "lsi": [
+        "cloud backups",
+        "analytics SDK",
+        "usage tracking",
+        "AI processing",
+        "shared links",
+        "old devices",
+        "sync metadata",
+        "account security",
+        "personal data exposure",
+        "phone backups"
+      ],
+      "change": "Its old primary 'notes app privacy' now belongs to its Main Blog (P1), so a Medium post can't outrank the site for the head term."
+    },
+    {
+      "id": "P1-S2",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P1",
+      "status": "new",
+      "work": "new",
+      "title": "What App Permissions Should You Allow a Notes App? 5 to Question on Android",
+      "slug": "what-app-permissions-should-i-allow",
+      "previousTitle": "5 Android Permissions a Notes App Should Explain Before You Trust It",
+      "platform": "Medium",
+      "intent": "informational / how-to",
+      "angle": "A pre-install permissions checklist for notes apps, with what each permission can expose and how to check it.",
+      "primary": "what app permissions should i allow",
+      "secondary": [
+        "android app permissions explained",
+        "android permissions list",
+        "dangerous permissions android",
+        "notes app permissions"
+      ],
+      "lsi": [
+        "runtime permissions",
+        "INTERNET permission",
+        "storage access",
+        "contacts permission",
+        "microphone access",
+        "location permission",
+        "Exodus Privacy",
+        "AndroidManifest",
+        "permission manager",
+        "Google Play data safety"
+      ],
+      "change": "'notes app permissions' shows no autocomplete demand. The question form 'what app permissions should i allow' shows up in all three engines and fits the same article."
+    },
+    {
+      "id": "P1-S3",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P1",
+      "status": "existing",
+      "work": "rewrite",
+      "title": "Is Open Source More Secure? 6 Things Public Source Code Lets You Verify",
+      "slug": "is-open-source-more-secure",
+      "previousTitle": "Why Privacy Software Should Be Open Source",
+      "source": "Atomic Notes Blogs/Blog List 01/Why Privacy Software Should Be Open Source",
+      "platform": "Substack",
+      "intent": "informational / opinion",
+      "angle": "What public source code does and doesn't prove, open source vs source-available, and how to verify an app's privacy claims. States plainly that Atomic Notes is source-available.",
+      "primary": "is open source more secure",
+      "secondary": [
+        "source available vs open source",
+        "why open source is more secure",
+        "open source privacy software",
+        "source available software"
+      ],
+      "lsi": [
+        "software transparency",
+        "code review",
+        "reproducible builds",
+        "security through obscurity",
+        "Linus's law",
+        "license terms",
+        "independent audit",
+        "supply chain security",
+        "verifiable claims",
+        "public repository"
+      ]
+    },
+    {
+      "id": "P2",
+      "pillar": "PRIVACY",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "7 Best Privacy First Note Taking Apps for Android in 2026",
+      "source": "Atomic Notes Blogs/Blog List 02/02 - 7 Best Privacy First Note Taking Apps for Android in 2026",
+      "slug": "best-privacy-first-notes-apps-android",
+      "intent": "commercial investigation",
+      "angle": "Android listicle, Atomic Notes first, every app verified against its own store listing and source.",
+      "primary": "private notes app android",
+      "secondary": [
+        "best private notes app",
+        "secure notes app android"
+      ],
+      "lsi": [
+        "privacy first notes app",
+        "Notesnook",
+        "Standard Notes",
+        "Joplin",
+        "no ads",
+        "F-Droid",
+        "data safety section",
+        "encrypted sync",
+        "offline access",
+        "local storage"
+      ],
+      "why": "High-conversion comparison intent. Lets Atomic Notes compete in a category users already search before installing an app."
+    },
+    {
+      "id": "P2-S1",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P2",
+      "status": "existing",
+      "work": "rewrite",
+      "title": "Best Open Source Notes Apps for Privacy in 2026",
+      "previousTitle": "Best Private Notes Apps in 2026: 5 Picks Compared",
+      "source": "Atomic Notes Blogs/Blog List 01/Best Private Notes Apps in 2026",
+      "platform": "DEV Community",
+      "intent": "commercial investigation",
+      "angle": "Open source picks only, with license and audit status. Atomic Notes appears once as a clearly labeled source-available alternative, never in the ranked list. No app may repeat from P2's list.",
+      "primary": "best open source notes app",
+      "secondary": [
+        "open source notes app",
+        "open source note taking app",
+        "foss notes app",
+        "open source notes app android"
+      ],
+      "lsi": [
+        "GPL license",
+        "AGPL",
+        "GitHub releases",
+        "self hosted sync",
+        "end to end encryption",
+        "Markdown files",
+        "community audits",
+        "F-Droid builds",
+        "active maintenance",
+        "issue tracker"
+      ],
+      "change": "The current draft ('Best Private Notes Apps in 2026') targets the same query and apps as P2. Rewriting it as the open source list the plan intended removes the overlap."
+    },
+    {
+      "id": "P2-S2",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P2",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "7 Best Google Keep Alternatives for Privacy in 2026",
+      "source": "Atomic Notes Blogs/Blog List 02/03 - 7 Best Google Keep Alternatives for Privacy in 2026",
+      "platform": "Medium",
+      "intent": "commercial investigation",
+      "angle": "For people leaving Google Keep over privacy: what Keep collects, then private alternatives.",
+      "primary": "google keep alternatives",
+      "secondary": [
+        "google keep privacy",
+        "is google keep private",
+        "google keep alternative open source",
+        "google keep alternative android"
+      ],
+      "lsi": [
+        "Google Takeout",
+        "Google account",
+        "Gemini",
+        "labels",
+        "checklists",
+        "reminders",
+        "cross device sync",
+        "Notally",
+        "data safety section",
+        "ad profile"
+      ]
+    },
+    {
+      "id": "P2-S3",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P2",
+      "status": "new",
+      "work": "new",
+      "title": "5 F-Droid Notes Apps for Privacy-Conscious Android Users in 2026",
+      "platform": "DEV Community",
+      "intent": "commercial investigation",
+      "angle": "What F-Droid is, whether it's safe, and five notes apps worth installing from it. Atomic Notes is not on F-Droid, so it's mentioned only as a GitHub-release alternative.",
+      "primary": "best f droid notes app",
+      "secondary": [
+        "notes app f droid",
+        "f droid apps",
+        "is f droid safe",
+        "what is f droid"
+      ],
+      "lsi": [
+        "reproducible builds",
+        "anti-features",
+        "IzzyOnDroid",
+        "Droid-ify",
+        "APK signing",
+        "Markor",
+        "Material Notes",
+        "sideloading",
+        "open source repository",
+        "app updates"
+      ]
+    },
+    {
+      "id": "P3",
+      "pillar": "PRIVACY",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "10 Privacy Mistakes People Make With Notes Apps in 2026",
+      "source": "Atomic Notes Blogs/Blog List 03/01 - 10 Privacy Mistakes People Make With Notes Apps in 2026",
+      "slug": "notes-app-privacy-mistakes",
+      "draftSlug": "10-notes-app-privacy-mistakes-2026",
+      "intent": "informational / awareness",
+      "angle": "Problem-first: ten habits that weaken notes app security and privacy, each with a fix.",
+      "primary": "notes app security",
+      "secondary": [
+        "notes app privacy mistakes",
+        "note taking privacy"
+      ],
+      "lsi": [
+        "recovery phrase",
+        "screen lock",
+        "app lock",
+        "cloud backup",
+        "shared notes",
+        "APK security",
+        "password storage risk",
+        "end to end encryption",
+        "data ownership",
+        "cloud notes privacy"
+      ],
+      "change": "'notes app privacy mistakes' has no autocomplete demand, so it stays as an exact title-match secondary. 'notes app security' carries the demand. Slug loses the year so the URL stays evergreen.",
+      "why": "Highly shareable problem-first article that can attract broad privacy traffic and feed readers into security and product-selection content."
+    },
+    {
+      "id": "P3-S1",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P3",
+      "status": "new",
+      "work": "new",
+      "title": "What to Look For in a Private Journal App: 6 Privacy Checks Before You Write",
+      "previousTitle": "5 Sensitive Things You Should Think Twice Before Saving in Ordinary Notes",
+      "platform": "Medium",
+      "intent": "commercial investigation",
+      "angle": "Journaling is the most personal thing people type. Six checks: storage, encryption, lock, sync, exports, business model.",
+      "primary": "private journal app",
+      "secondary": [
+        "private journal app for android",
+        "private diary app",
+        "private journal app free",
+        "personal journal app"
+      ],
+      "lsi": [
+        "journaling privacy",
+        "biometric lock",
+        "encrypted journal",
+        "mood tracking",
+        "offline journal",
+        "cloud sync",
+        "data export",
+        "ads",
+        "on-device journal",
+        "journal backup"
+      ],
+      "change": "The original topic duplicated S3-S2 (secrets you shouldn't keep in notes). Replaced with a journaling angle that has strong demand in all three engines."
+    },
+    {
+      "id": "P3-S2",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P3",
+      "status": "new",
+      "work": "new",
+      "title": "How to Back Up Notes on Android Without Creating Privacy Risks: 7 Mistakes to Avoid",
+      "previousTitle": "7 Backup Mistakes That Can Put Private Notes at Risk",
+      "platform": "WordPress",
+      "intent": "how-to",
+      "angle": "Backups done safely: encryption, where copies live, stale copies, restore tests.",
+      "primary": "backup notes android",
+      "secondary": [
+        "how to backup notes",
+        "notes backup",
+        "backup android notes to google drive",
+        "encrypted vs unencrypted backup"
+      ],
+      "lsi": [
+        "backup encryption",
+        "restore test",
+        "Android backup",
+        "Google One backup",
+        "3-2-1 backup rule",
+        "export file",
+        "stale copies",
+        "shared folders",
+        "recovery material",
+        "version history"
+      ]
+    },
+    {
+      "id": "P3-S3",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P3",
+      "status": "new",
+      "work": "new",
+      "title": "Vendor Lock-In for Notes: 6 Ways Convenience Traps Your Data",
+      "previousTitle": "6 Ways Convenience Can Lock Your Notes Into One Platform",
+      "platform": "Substack",
+      "intent": "informational / opinion",
+      "angle": "Proprietary formats, weak exports, account dependency, closed APIs, and how to spot them before years of notes pile up.",
+      "primary": "vendor lock in",
+      "secondary": [
+        "proprietary file format",
+        "data lock in",
+        "vendor lock in examples",
+        "non proprietary file formats"
+      ],
+      "lsi": [
+        "export formats",
+        "Markdown",
+        "JSON export",
+        "switching costs",
+        "closed API",
+        "account dependency",
+        "migration friction",
+        "open formats",
+        "service shutdown",
+        "portability"
+      ]
+    },
+    {
+      "id": "P4",
+      "pillar": "PRIVACY",
+      "role": "main",
+      "status": "existing",
+      "work": "promote",
+      "title": "7 Best Note Taking Apps Without AI in 2026",
+      "source": "Atomic Notes Blogs/Blog List 02/01 - 7 Best Note Taking Apps Without AI in 2026",
+      "slug": "best-note-taking-apps-without-ai",
+      "intent": "commercial investigation",
+      "angle": "AI-free notes apps for people who want their thinking left alone. Atomic Notes first.",
+      "primary": "note taking app without ai",
+      "secondary": [
+        "notes app without ai",
+        "notion alternatives without ai"
+      ],
+      "lsi": [
+        "AI free note taking app",
+        "no AI notes app",
+        "AI training data",
+        "AI features toggle",
+        "Apple Intelligence",
+        "Gemini",
+        "Notion AI",
+        "plain notes",
+        "distraction free writing",
+        "offline writing"
+      ],
+      "change": "Swapped with P4-S1. The old Main primary 'AI notes app privacy' shows no autocomplete demand, and its SERP is about AI meeting note-takers. 'note taking app without ai' and 'notes app without ai' show demand in all three engines, with a weak SERP (an HN post, a Medium post, ClickUp).",
+      "why": "The clearest product differentiator Atomic Notes has, with demand in all three engines and a thin SERP (an HN post, a Medium post, a generic ClickUp list). It turns 'no AI' from a slogan into a comparison people already search for."
+    },
+    {
+      "id": "P4-S1",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P4",
+      "status": "existing",
+      "work": "demote",
+      "title": "6 Questions You Should Ask Before Giving an AI Notes App Your Private Thoughts",
+      "source": "Atomic Notes Blogs/Blog List 03/03 - 6 Questions Before Giving an AI Notes App Your Thoughts",
+      "platform": "Substack",
+      "intent": "informational",
+      "angle": "Six questions about AI processing, retention, training, providers, and off switches, for in-app AI and AI note-takers alike.",
+      "primary": "ai note taking privacy",
+      "secondary": [
+        "notion ai privacy",
+        "is notion ai safe",
+        "does notion ai train on my data",
+        "ai note taker privacy concerns"
+      ],
+      "lsi": [
+        "AI data processing",
+        "AI data retention",
+        "third party AI provider",
+        "AI training data opt out",
+        "zero data retention",
+        "model provider",
+        "enterprise AI terms",
+        "prompt data",
+        "consent",
+        "AI privacy settings"
+      ],
+      "change": "Was the Main Blog. Now a support post, and it absorbs the original P4-S3 (an AI-assistant checklist), which duplicated it."
+    },
+    {
+      "id": "P4-S2",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P4",
+      "status": "new",
+      "work": "new",
+      "title": "Local AI vs Cloud AI for Note Taking: 6 Privacy Differences",
+      "platform": "Hashnode",
+      "intent": "comparison",
+      "angle": "Where processing happens, what leaves the device, retention, offline use, model access, control.",
+      "primary": "local ai vs cloud ai",
+      "secondary": [
+        "on device ai",
+        "on device ai privacy",
+        "local ai note taking",
+        "local ai notes app"
+      ],
+      "lsi": [
+        "on-device model",
+        "Gemini Nano",
+        "Private Cloud Compute",
+        "Ollama",
+        "latency",
+        "offline inference",
+        "data transfer",
+        "retention",
+        "model access",
+        "NPU"
+      ]
+    },
+    {
+      "id": "P4-S3",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P4",
+      "status": "new",
+      "work": "new",
+      "title": "Does Google Use Your Data to Train AI? What It Means for Notes in Google Drive",
+      "previousTitle": "5 Things to Check Before Allowing an AI Assistant to Read Your Notes",
+      "platform": "Medium",
+      "intent": "informational",
+      "angle": "What Google's current terms say about Drive and Docs content and AI training, and how to check your settings. Atomic Notes stores synced notes in the user's Drive, so this is a real user question. Verify Google's policy on the day of writing.",
+      "primary": "does google use my data to train ai",
+      "secondary": [
+        "does google drive use your data to train ai",
+        "does google docs use your data to train ai",
+        "how to opt out of google using my data to train ai",
+        "google ai training data opt out"
+      ],
+      "lsi": [
+        "Google Workspace",
+        "Gemini",
+        "Drive privacy",
+        "Web & App Activity",
+        "personal account",
+        "terms of service",
+        "consent",
+        "data controls",
+        "user owned Google Drive",
+        "Google One"
+      ],
+      "change": "Replaced a checklist that duplicated P4-S1. This question has demand in Google autocomplete and directly affects how people judge a Drive-synced notes app."
+    },
+    {
+      "id": "P5",
+      "pillar": "PRIVACY",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "8 Pieces of Data a Notes App May Know About You Even Without Reading Your Notes",
+      "source": "Atomic Notes Blogs/Blog List 03/04 - 8 Pieces of Data a Notes App May Know About You",
+      "slug": "notes-app-data-collection",
+      "draftSlug": "8-types-of-data-notes-apps-may-collect",
+      "intent": "informational",
+      "angle": "Operational data versus note content: what a provider can learn without opening a single note.",
+      "primary": "notes app metadata",
+      "secondary": [
+        "notes app data collection",
+        "apps that don't collect data"
+      ],
+      "lsi": [
+        "IP address",
+        "device model",
+        "login timestamps",
+        "sync activity",
+        "usage analytics",
+        "account email",
+        "device fingerprinting",
+        "server logs",
+        "retention period",
+        "privacy policy"
+      ],
+      "change": "'notes app data collection' shows no autocomplete demand, so it stays as the title-match secondary. 'notes app metadata' carries the demand. Dropped 'notes app tracking' (its autocomplete is about change tracking). Slug loses the count so the URL survives edits.",
+      "why": "Builds topical authority around metadata, data minimization, telemetry, and the difference between note content and operational data."
+    },
+    {
+      "id": "P5-S1",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P5",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "Zero Telemetry: Why Your Notes App Should Know Less About You",
+      "source": "Atomic Notes Blogs/Blog List 01/Zero Telemetry - Why Your Notes App Should Know Less About You",
+      "platform": "Medium",
+      "intent": "informational",
+      "angle": "What telemetry is, why notes apps add it, and how to check an app for it.",
+      "primary": "zero telemetry",
+      "secondary": [
+        "what is telemetry",
+        "telemetry data",
+        "app telemetry",
+        "telemetry privacy"
+      ],
+      "lsi": [
+        "analytics SDK",
+        "crash reporting",
+        "Firebase Analytics",
+        "opt-in analytics",
+        "anonymous data",
+        "usage events",
+        "Exodus Privacy",
+        "network traffic",
+        "tracker SDKs",
+        "privacy friendly analytics"
+      ]
+    },
+    {
+      "id": "P5-S2",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P5",
+      "status": "new",
+      "work": "new",
+      "title": "What Does Metadata Reveal? 6 Examples From Apps You Use Every Day",
+      "previousTitle": "Metadata vs Note Content: 7 Things Encryption May Not Hide",
+      "platform": "Medium",
+      "intent": "informational",
+      "angle": "General metadata education with everyday examples (photos, calls, notes). Leaves the encryption angle to S4-S2.",
+      "primary": "what does metadata reveal",
+      "secondary": [
+        "metadata examples",
+        "what can metadata reveal",
+        "is metadata personal data",
+        "what is personal metadata"
+      ],
+      "lsi": [
+        "EFF",
+        "call records",
+        "timestamps",
+        "location data",
+        "EXIF",
+        "communication patterns",
+        "GDPR personal data",
+        "data aggregation",
+        "inference",
+        "social graph"
+      ],
+      "change": "The original topic duplicated S4-S2 (seven things E2EE can't hide). Re-angled to everyday metadata, which has its own demand."
+    },
+    {
+      "id": "P5-S3",
+      "pillar": "PRIVACY",
+      "role": "support",
+      "mainId": "P5",
+      "status": "new",
+      "work": "new",
+      "title": "Data Minimization Examples: 5 Signs a Notes App Collects Less",
+      "previousTitle": "Data Minimization for Notes Apps: 5 Signs a Product Collects Less",
+      "platform": "WordPress",
+      "intent": "informational",
+      "angle": "The legal principle turned into a user-facing checklist, with notes-app examples.",
+      "primary": "data minimization examples",
+      "secondary": [
+        "what is data minimization",
+        "data minimization principle",
+        "data minimization techniques",
+        "data minimization"
+      ],
+      "lsi": [
+        "GDPR Article 5",
+        "purpose limitation",
+        "storage limitation",
+        "retention schedule",
+        "pseudonymization",
+        "collection limits",
+        "privacy notice",
+        "consent",
+        "local processing",
+        "deletion"
+      ]
+    },
+    {
+      "id": "L1",
+      "pillar": "LOCAL FIRST",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "What Is a Local First Notes App and Why Does It Matter?",
+      "source": "Atomic Notes Blogs/Blog List 01/What Is a Local-First Notes App",
+      "slug": "what-is-a-local-first-notes-app",
+      "intent": "informational / definition",
+      "angle": "The category definition Atomic Notes wants to own, with the Ink & Switch ideals and honest limits.",
+      "primary": "local first notes app",
+      "secondary": [
+        "local-first software",
+        "local first meaning"
+      ],
+      "lsi": [
+        "Ink & Switch",
+        "Martin Kleppmann",
+        "source of truth",
+        "on-device storage",
+        "sync engine",
+        "cloud dependency",
+        "CRDT",
+        "offline capability",
+        "user control",
+        "longevity"
+      ],
+      "change": "'offline notes app' removed: it is now L4's secondary, and L3 targets the offline problem.",
+      "why": "Foundational pillar defining the category Atomic Notes wants to be associated with across SERPs and AI answer engines."
+    },
+    {
+      "id": "L1-S1",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L1",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "Local Storage vs Cloud Storage for Notes: 3 Places Your Notes Can Live",
+      "slug": "local-storage-vs-cloud-storage-notes",
+      "previousTitle": "3 Places Your Notes Can Live and Why the Difference Matters for Privacy",
+      "source": "Atomic Notes Blogs/Blog List 03/09 - 3 Places Your Notes Can Live",
+      "platform": "Medium",
+      "intent": "comparison",
+      "angle": "Device only vs company cloud vs your own cloud, compared on control, backups, shutdown risk, and keys.",
+      "primary": "local storage vs cloud storage",
+      "secondary": [
+        "where are notes stored on android",
+        "where are google keep notes stored",
+        "cloud storage vs local storage for personal use",
+        "local storage and cloud storage difference"
+      ],
+      "lsi": [
+        "device storage",
+        "company cloud",
+        "own cloud",
+        "Google Drive",
+        "iCloud",
+        "encryption keys",
+        "backups",
+        "account lock",
+        "shutdown risk",
+        "sync"
+      ],
+      "change": "The old primary 'where are notes stored' has a device-specific SERP ('…on mac', '…on android'). The conceptual comparison matches 'local storage vs cloud storage' (demand in all three engines). The Android location question becomes a secondary."
+    },
+    {
+      "id": "L1-S2",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L1",
+      "status": "new",
+      "work": "new",
+      "title": "Local First vs Offline First vs Cloud First: 7 Differences That Matter",
+      "slug": "local-first-vs-offline-first",
+      "platform": "DEV Community",
+      "intent": "comparison",
+      "angle": "Where the source of truth lives in each model, and why 'works offline' is not the same as 'local first'.",
+      "primary": "local first vs offline first",
+      "secondary": [
+        "offline first database",
+        "local first vs cloud first",
+        "offline first app",
+        "offline first architecture"
+      ],
+      "lsi": [
+        "source of truth",
+        "server authority",
+        "sync queue",
+        "conflict resolution",
+        "CRDTs",
+        "latency",
+        "cache",
+        "RxDB",
+        "eventual consistency",
+        "seven ideals"
+      ]
+    },
+    {
+      "id": "L1-S3",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L1",
+      "status": "new",
+      "work": "new",
+      "title": "Who Owns Your Data? 5 Questions About Notes, Portability, and Storage",
+      "slug": "who-owns-your-data",
+      "previousTitle": "Who Owns Your Notes? 5 Questions About Portability, Export, and Storage",
+      "platform": "Substack",
+      "intent": "informational / opinion",
+      "angle": "Ownership in practice: file location, export rights, account dependency, terms of service, service exit.",
+      "primary": "who owns your data",
+      "secondary": [
+        "data portability",
+        "user owned data",
+        "own your data",
+        "data portability gdpr"
+      ],
+      "lsi": [
+        "GDPR Article 20",
+        "export formats",
+        "terms of service",
+        "account deletion",
+        "service shutdown",
+        "file ownership",
+        "cloud control",
+        "interoperability",
+        "lock-in",
+        "takeout"
+      ]
+    },
+    {
+      "id": "L2",
+      "pillar": "LOCAL FIRST",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "6 Best Local First Note Taking Apps in 2026 That Keep Your Data Yours",
+      "source": "Atomic Notes Blogs/Blog List 02/04 - 6 Best Local First Note Taking Apps in 2026",
+      "slug": "best-local-first-note-taking-apps",
+      "intent": "commercial investigation",
+      "angle": "Listicle, Atomic Notes first, compared on storage model, sync, encryption, and file format.",
+      "primary": "local first note taking apps",
+      "secondary": [
+        "local first note taking",
+        "apps like obsidian"
+      ],
+      "lsi": [
+        "Logseq",
+        "Anytype",
+        "Joplin",
+        "Markdown files",
+        "plain text",
+        "sync options",
+        "encryption",
+        "offline access",
+        "data ownership",
+        "vault"
+      ],
+      "change": "The plan gave L2 the secondaries 'local first notes app' and 'local first note taking', which were L1's primary and secondary. L2 now targets 'local first note taking apps' (the form Google autocompletes) and 'apps like obsidian' (demand in all three engines). Use 'best' in the title, not in the keyword.",
+      "why": "Comparison query with strong discovery potential and natural coverage of storage models, offline behavior, synchronization, and portability."
+    },
+    {
+      "id": "L2-S1",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L2",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "3 Best Private Notion Alternatives for Local First Notes in 2026",
+      "source": "Atomic Notes Blogs/Blog List 02/07 - 3 Best Private Notion Alternatives in 2026",
+      "platform": "Medium",
+      "intent": "commercial investigation",
+      "angle": "Workspace users who want Notion's structure without a vendor holding their data.",
+      "primary": "local notion alternative",
+      "secondary": [
+        "private notion alternative",
+        "local first notion alternative",
+        "open source notion alternative",
+        "notion alternative local storage"
+      ],
+      "lsi": [
+        "AppFlowy",
+        "AFFiNE",
+        "offline workspace",
+        "databases",
+        "self hosting",
+        "encrypted workspace",
+        "Markdown export",
+        "block editor",
+        "data ownership",
+        "templates"
+      ]
+    },
+    {
+      "id": "L2-S2",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L2",
+      "status": "new",
+      "work": "new",
+      "title": "5 Notes Apps That Sync Through Your Own Cloud Storage",
+      "previousTitle": "5 Local First Notes Apps That Use Plain Files or User-Owned Storage",
+      "platform": "Medium",
+      "intent": "commercial investigation",
+      "angle": "Apps that sync through Google Drive, Dropbox, WebDAV, Nextcloud, or a folder you control. Atomic Notes is one honest entry (Google Drive, drive.file scope).",
+      "primary": "notes app that syncs with google drive",
+      "secondary": [
+        "google drive notes app",
+        "save notes to google drive",
+        "self hosted notes app",
+        "self hosted notes app with sync"
+      ],
+      "lsi": [
+        "Dropbox sync",
+        "WebDAV",
+        "Nextcloud",
+        "OneDrive",
+        "Syncthing",
+        "folder sync",
+        "user owned cloud storage",
+        "sync targets",
+        "file based notes",
+        "file sync apps"
+      ]
+    },
+    {
+      "id": "L2-S3",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L2",
+      "status": "new",
+      "work": "new",
+      "title": "Obsidian vs Logseq vs Anytype vs Atomic Notes: 8 Local First Differences",
+      "platform": "Hashnode",
+      "intent": "comparison",
+      "angle": "Four local-first apps with very different data, sync, and complexity models.",
+      "primary": "obsidian vs logseq vs anytype",
+      "secondary": [
+        "obsidian vs logseq",
+        "obsidian vs anytype",
+        "logseq vs anytype",
+        "local first comparison"
+      ],
+      "lsi": [
+        "Markdown vault",
+        "outliner",
+        "block references",
+        "any-sync",
+        "E2EE sync",
+        "plugins",
+        "mobile apps",
+        "Google Drive sync",
+        "Logseq DB version",
+        "file formats"
+      ]
+    },
+    {
+      "id": "L3",
+      "pillar": "LOCAL FIRST",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "Offline Notes Apps: Why Your Notes Should Work Without Internet",
+      "source": "Atomic Notes Blogs/Blog List 01/Offline Notes Apps - Why Notes Should Work Offline",
+      "slug": "why-notes-should-work-offline",
+      "draftSlug": "offline-notes-apps",
+      "intent": "informational / problem-solution",
+      "angle": "Why offline should be the default, what breaks without it, and how to test an app yourself.",
+      "primary": "notes app without internet",
+      "secondary": [
+        "notes app no internet",
+        "does notes app work without internet"
+      ],
+      "lsi": [
+        "airplane mode",
+        "local storage",
+        "sync later",
+        "cloud dependency",
+        "latency",
+        "dead zones",
+        "travel",
+        "outages",
+        "Hive storage",
+        "source of truth"
+      ],
+      "change": "'offline notes app' moved to L4 (its SERP is commercial). L3 takes the problem phrasing. The draft slug 'offline-notes-apps' would also have competed with L4, so the slug changes before first publish.",
+      "why": "Explains the user benefit of local-first architecture in a simple real-world way and supports resilience/outage queries."
+    },
+    {
+      "id": "L3-S1",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L3",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "What Happens to Your Notes When the Cloud Goes Down?",
+      "slug": "cloud-outage-notes",
+      "source": "Atomic Notes Blogs/Blog List 01/What Happens to Your Notes When the Cloud Goes Down",
+      "platform": "Medium",
+      "intent": "informational / news-driven",
+      "angle": "Dated, sourced outage examples as the real-world test of local-first behavior.",
+      "primary": "cloud outage",
+      "secondary": [
+        "notion outage",
+        "aws outage",
+        "evernote outage",
+        "google keep down"
+      ],
+      "lsi": [
+        "status page",
+        "outage timeline",
+        "cached notes",
+        "sync failure",
+        "single point of failure",
+        "resilience",
+        "local copy",
+        "read-only mode",
+        "incident report",
+        "downtime"
+      ]
+    },
+    {
+      "id": "L3-S2",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L3",
+      "status": "new",
+      "work": "new",
+      "title": "Offline Sync Explained: 6 Things a Notes App Should Do Without Internet",
+      "previousTitle": "6 Things a Notes App Should Let You Do Without Internet",
+      "platform": "Medium",
+      "intent": "informational / how-to",
+      "angle": "Six offline capabilities (create, edit, search, delete, queue, recover), how sync catches up, and how to test each one.",
+      "primary": "offline sync",
+      "secondary": [
+        "offline synchronization",
+        "offline mode app",
+        "how to know if an app works offline",
+        "offline sync google drive"
+      ],
+      "lsi": [
+        "sync queue",
+        "reconnect",
+        "airplane mode test",
+        "pending changes",
+        "retry",
+        "local database",
+        "search offline",
+        "media files",
+        "conflict",
+        "background sync"
+      ],
+      "change": "The original primary 'notes app without internet' now belongs to L3. 'offline sync' shows demand in all three engines."
+    },
+    {
+      "id": "L3-S3",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L3",
+      "status": "new",
+      "work": "new",
+      "title": "Offline Cache vs Local Storage: 5 Differences Users Should Know",
+      "platform": "DEV Community",
+      "intent": "comparison / technical",
+      "angle": "Why cached access is not local-first ownership: eviction, persistence, authority, sync.",
+      "primary": "cache vs local storage",
+      "secondary": [
+        "offline cache",
+        "cache vs storage",
+        "cache storage vs indexeddb",
+        "browser local storage vs cache"
+      ],
+      "lsi": [
+        "IndexedDB",
+        "Service Worker",
+        "Cache API",
+        "eviction",
+        "persistence",
+        "authoritative copy",
+        "Hive box",
+        "SQLite",
+        "quota",
+        "progressive web app"
+      ]
+    },
+    {
+      "id": "L4",
+      "pillar": "LOCAL FIRST",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "8 Best Offline Notes Apps for Android in 2026",
+      "source": "Atomic Notes Blogs/Blog List 02/06 - 8 Best Offline Notes Apps for Android in 2026",
+      "slug": "best-offline-notes-apps-android",
+      "intent": "commercial investigation",
+      "angle": "Android listicle, Atomic Notes first, each app tested in airplane mode.",
+      "primary": "best offline notes app android",
+      "secondary": [
+        "offline notes app",
+        "offline note taking app"
+      ],
+      "lsi": [
+        "offline notes app android",
+        "airplane mode",
+        "no account",
+        "local storage",
+        "Notally",
+        "Markor",
+        "Joplin",
+        "F-Droid",
+        "sync later",
+        "battery"
+      ],
+      "why": "Captures Android users with practical install intent while reinforcing Atomic Notes' offline/local-first positioning."
+    },
+    {
+      "id": "L4-S1",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L4",
+      "status": "new",
+      "work": "new",
+      "title": "5 Offline Notes Apps That Do Not Require an Account",
+      "platform": "Medium",
+      "intent": "commercial investigation",
+      "angle": "Account-free apps for privacy-conscious users. Be honest that Atomic Notes needs a Google account, so it isn't on this list.",
+      "primary": "notes app without account",
+      "secondary": [
+        "notes app without login",
+        "notes app no sign in",
+        "free notes app without login",
+        "notes app no sign up"
+      ],
+      "lsi": [
+        "no email required",
+        "local only",
+        "guest mode",
+        "optional sign in",
+        "Google account",
+        "device only storage",
+        "data export",
+        "backups",
+        "privacy",
+        "offline first"
+      ]
+    },
+    {
+      "id": "L4-S2",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L4",
+      "status": "new",
+      "work": "new",
+      "title": "Does Google Keep Work Offline? 6 Popular Notes Apps Tested Without Internet",
+      "previousTitle": "7 F-Droid Offline Notes Apps Worth Trying in 2026",
+      "platform": "Medium",
+      "intent": "informational / comparison",
+      "angle": "Hands-on airplane-mode tests of Google Keep, Notion, Obsidian, Apple Notes, OneNote, and Atomic Notes, with dates.",
+      "primary": "does google keep work offline",
+      "secondary": [
+        "does notion work offline",
+        "does obsidian work offline",
+        "does notion work without internet",
+        "does obsidian work without internet"
+      ],
+      "lsi": [
+        "offline mode",
+        "cached notes",
+        "sync on reconnect",
+        "Notion offline pages",
+        "Obsidian vault",
+        "Apple Notes offline",
+        "OneNote offline",
+        "airplane mode",
+        "conflict",
+        "local first"
+      ],
+      "change": "The original was a second F-Droid listicle that duplicated P2-S3. Replaced with three 'does X work offline' questions that each show demand in all three engines."
+    },
+    {
+      "id": "L4-S3",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L4",
+      "status": "new",
+      "work": "new",
+      "title": "5 Plain Text and Markdown Notes Apps for Android That Work Fully Offline",
+      "previousTitle": "How to Test Whether a Notes App Really Works Offline: 8 Checks",
+      "platform": "DEV Community",
+      "intent": "commercial investigation",
+      "angle": "File-based Android editors that never need a server. The offline-test checklist moves into L3 and L3-S2.",
+      "primary": "markdown notes app android",
+      "secondary": [
+        "plain text notes app",
+        "markdown notes app",
+        "plain text note taking",
+        "android plain text notes app"
+      ],
+      "lsi": [
+        "Markor",
+        "Obsidian mobile",
+        "txt files",
+        "folder sync",
+        "Syncthing",
+        "portability",
+        "offline editing",
+        "file manager",
+        "open formats",
+        "front matter"
+      ],
+      "change": "'test offline notes app' shows no demand in any engine. The test checklist now lives in L3 and L3-S2."
+    },
+    {
+      "id": "L5",
+      "pillar": "LOCAL FIRST",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "4 Layers Behind Atomic Notes: How a Local First Notes App Actually Works",
+      "source": "Atomic Notes Blogs/Blog List 03/05 - 4 Layers Behind Atomic Notes",
+      "slug": "atomic-notes-architecture",
+      "draftSlug": "4-layers-atomic-notes-architecture",
+      "intent": "technical informational + branded",
+      "angle": "The device, sync server, user's Drive, and optional vault, with what each layer can and can't see.",
+      "primary": "local first architecture",
+      "secondary": [
+        "local first app architecture",
+        "atomic notes architecture"
+      ],
+      "lsi": [
+        "Flutter",
+        "Hive CE",
+        "Hono",
+        "MongoDB metadata",
+        "Google Drive API",
+        "AES-256-GCM",
+        "Argon2id",
+        "sync engine",
+        "request id replay",
+        "user owned cloud storage"
+      ],
+      "change": "'local first notes architecture' shows no demand. 'local first architecture' shows demand in all three engines.",
+      "why": "Strong entity-building and trust article. Explains local Hive storage, optional client-side encryption, server/metadata responsibilities, and user-owned Google Drive storage."
+    },
+    {
+      "id": "L5-S1",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L5",
+      "status": "new",
+      "work": "new",
+      "title": "How Atomic Notes Sync Works in 6 Steps: From Local Hive to Your Google Drive",
+      "platform": "DEV Community",
+      "intent": "technical informational",
+      "angle": "The sync path in plain language, with a diagram and failure-state caveats.",
+      "primary": "local first sync",
+      "secondary": [
+        "local first sync engine",
+        "how does sync work",
+        "hive database flutter",
+        "flutter hive"
+      ],
+      "lsi": [
+        "dirty flag",
+        "push queue",
+        "retry backoff",
+        "idempotency",
+        "transaction",
+        "Drive write",
+        "pull pagination",
+        "per-user lock",
+        "base version",
+        "conflict copy"
+      ]
+    },
+    {
+      "id": "L5-S2",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L5",
+      "status": "new",
+      "work": "new",
+      "title": "Why Atomic Notes Uses Your Google Drive Instead of a Database for Note Content",
+      "previousTitle": "Why Atomic Notes Stores Note Content in Your Google Drive, Not Its Database",
+      "platform": "Hashnode",
+      "intent": "technical informational",
+      "angle": "Drive as the content store, MongoDB for metadata only, the drive.file scope, and the tradeoffs (rate limits, latency).",
+      "primary": "google drive as database",
+      "secondary": [
+        "use google drive as database",
+        "drive.file scope",
+        "google drive file scope",
+        "google drive database app"
+      ],
+      "lsi": [
+        "Google Drive API",
+        "OAuth scopes",
+        "appDataFolder",
+        ".atomic files",
+        "My-Atomic-Notes folder",
+        "metadata server",
+        "MongoDB Atlas",
+        "rate limits",
+        "file revisions",
+        "user ownership"
+      ]
+    },
+    {
+      "id": "L5-S3",
+      "pillar": "LOCAL FIRST",
+      "role": "support",
+      "mainId": "L5",
+      "status": "new",
+      "work": "new",
+      "title": "How Atomic Notes Handles Offline Edits, Retries, and Sync Conflicts",
+      "platform": "DEV Community",
+      "intent": "technical informational",
+      "angle": "Base versions, refused stale edits, conflict copies, replay-safe retries.",
+      "primary": "sync conflict",
+      "secondary": [
+        "sync conflict resolution",
+        "what is a conflicted copy",
+        "conflicted copy meaning",
+        "crdt local first"
+      ],
+      "lsi": [
+        "base version",
+        "note_conflict",
+        "last write wins",
+        "three-way merge",
+        "CRDT",
+        "vector clocks",
+        "tombstones",
+        "stale deletes",
+        "idempotency key",
+        "conflict copy UX"
+      ]
+    },
+    {
+      "id": "S1",
+      "pillar": "SECURITY",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "Encrypted Notes Explained: T2T vs End to End Encryption",
+      "source": "Atomic Notes Blogs/Blog List 01/Encrypted Notes Explained - T2T vs End-to-End",
+      "slug": "encrypted-notes-explained",
+      "draftSlug": "encrypted-notes-t2t-vs-end-to-end",
+      "intent": "informational / definition",
+      "angle": "What 'encrypted' means for a note, the T2T vs E2E split, and Atomic Notes' optional vault, labeled optional.",
+      "primary": "encrypted notes",
+      "secondary": [
+        "end to end encryption explained",
+        "what is end to end encryption"
+      ],
+      "lsi": [
+        "transport encryption vs end to end encryption",
+        "T2T",
+        "TLS",
+        "AES-256-GCM",
+        "Argon2id",
+        "recovery phrase",
+        "key derivation",
+        "ciphertext",
+        "optional vault",
+        "threat model"
+      ],
+      "change": "The plan gave 'end to end encrypted notes' to S1, S2, and S4, and 'encrypted notes app' to S1 and S4. Each now has one owner: S2 owns the commercial 'app' forms.",
+      "why": "Core security pillar that can define terminology clearly and establish Atomic Notes' precise use of optional E2E."
+    },
+    {
+      "id": "S1-S1",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S1",
+      "status": "new",
+      "work": "new",
+      "title": "HTTPS vs Encryption at Rest vs E2EE: 5 Differences You Should Know",
+      "slug": "encryption-in-transit-vs-at-rest",
+      "platform": "DEV Community",
+      "intent": "comparison",
+      "angle": "Transport, storage, and client-side encryption separated, with who can read the data at each point.",
+      "primary": "encryption in transit vs at rest",
+      "secondary": [
+        "https vs end to end encryption",
+        "tls vs end to end encryption",
+        "encryption at rest",
+        "encryption at rest vs end to end"
+      ],
+      "lsi": [
+        "TLS certificates",
+        "disk encryption",
+        "provider keys",
+        "server access",
+        "data in use",
+        "key management",
+        "ciphertext",
+        "plaintext exposure",
+        "threat model",
+        "compliance"
+      ]
+    },
+    {
+      "id": "S1-S2",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S1",
+      "status": "new",
+      "work": "new",
+      "title": "Who Holds the Encryption Key? Zero Knowledge Encryption Explained in 6 Questions",
+      "slug": "zero-knowledge-encryption",
+      "previousTitle": "Who Holds the Encryption Key? 6 Questions Before Trusting an Encrypted Notes App",
+      "platform": "Medium",
+      "intent": "informational",
+      "angle": "Key custody as the center of every encryption claim, and when 'zero knowledge' is accurate.",
+      "primary": "zero knowledge encryption",
+      "secondary": [
+        "zero knowledge vs end to end encryption",
+        "zero knowledge encryption meaning",
+        "zero knowledge encryption cloud storage",
+        "encryption key management"
+      ],
+      "lsi": [
+        "key custody",
+        "master password",
+        "key derivation function",
+        "recovery key",
+        "provider access",
+        "server verifier",
+        "password manager model",
+        "security audit",
+        "client side keys",
+        "key escrow"
+      ],
+      "change": "'encryption key ownership notes' shows no demand. 'zero knowledge encryption' shows demand in all three engines and asks the same question."
+    },
+    {
+      "id": "S1-S3",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S1",
+      "status": "new",
+      "work": "new",
+      "title": "Client-Side Encryption Explained: What Happens Before a Note Reaches the Cloud",
+      "slug": "client-side-encryption",
+      "platform": "DEV Community",
+      "intent": "technical informational",
+      "angle": "The encryption and decryption boundary in plain language, with the Atomic Notes vault as a worked example.",
+      "primary": "client side encryption",
+      "secondary": [
+        "what is client side encryption",
+        "client side vs server side encryption",
+        "client side encryption example",
+        "what is server side encryption"
+      ],
+      "lsi": [
+        "Web Crypto API",
+        "AES-GCM",
+        "nonce",
+        "key derivation",
+        "envelope encryption",
+        "ciphertext upload",
+        "Google Workspace CSE",
+        "S3 client side encryption",
+        "plaintext boundary",
+        "salt"
+      ]
+    },
+    {
+      "id": "S2",
+      "pillar": "SECURITY",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "5 Best End to End Encrypted Notes Apps in 2026 for Private Notes",
+      "source": "Atomic Notes Blogs/Blog List 02/05 - 5 Best End to End Encrypted Notes Apps in 2026",
+      "slug": "best-end-to-end-encrypted-notes-apps",
+      "intent": "commercial investigation",
+      "angle": "Listicle, Atomic Notes first with its vault labeled optional, compared on keys, recovery, metadata, and audits.",
+      "primary": "best encrypted notes app",
+      "secondary": [
+        "end to end encrypted notes app",
+        "most secure notes app"
+      ],
+      "lsi": [
+        "encrypted notes app",
+        "best secure notes app",
+        "E2EE notes app",
+        "Standard Notes",
+        "Notesnook",
+        "audited encryption",
+        "key ownership",
+        "recovery options",
+        "metadata",
+        "default encryption"
+      ],
+      "why": "High-intent comparison cluster where technical accuracy, key ownership, recovery, and metadata can differentiate Atomic Notes."
+    },
+    {
+      "id": "S2-S1",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S2",
+      "status": "new",
+      "work": "new",
+      "title": "Standard Notes vs Notesnook vs Joplin: How Their Encryption Models Differ",
+      "previousTitle": "5 Open Source Encrypted Notes Apps and How Their Security Models Differ",
+      "platform": "DEV Community",
+      "intent": "comparison",
+      "angle": "A threat-model comparison of three open source encrypted apps. Turning it into a 'vs' piece keeps it apart from P2-S1's open source list.",
+      "primary": "notesnook vs standard notes",
+      "secondary": [
+        "standard notes vs joplin",
+        "notesnook vs joplin",
+        "open source encrypted notes app",
+        "is joplin end to end encrypted"
+      ],
+      "lsi": [
+        "XChaCha20-Poly1305",
+        "AES-256",
+        "Argon2",
+        "security audit",
+        "self hosting",
+        "sync server",
+        "free tier",
+        "web clipper",
+        "Markdown",
+        "export"
+      ]
+    },
+    {
+      "id": "S2-S2",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S2",
+      "status": "new",
+      "work": "new",
+      "title": "Is Your Notes App Encrypted? Apple Notes, Google Keep, Samsung Notes, and Obsidian Checked",
+      "previousTitle": "7 Features to Compare Before Choosing an Encrypted Notes App",
+      "platform": "Medium",
+      "intent": "informational",
+      "angle": "Plain, sourced answers on default encryption for the apps people already use.",
+      "primary": "is the notes app encrypted",
+      "secondary": [
+        "is obsidian encrypted",
+        "is google keep encrypted",
+        "are samsung notes encrypted",
+        "is apple notes end to end encrypted"
+      ],
+      "lsi": [
+        "Advanced Data Protection",
+        "locked notes",
+        "Samsung Cloud",
+        "Google account encryption",
+        "Obsidian Sync",
+        "OneNote password sections",
+        "device encryption",
+        "iCloud",
+        "storage encryption",
+        "default settings"
+      ],
+      "change": "The original checklist duplicated S1-S2 (questions before trusting an encrypted app). Replaced with brand questions that each show demand."
+    },
+    {
+      "id": "S2-S3",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S2",
+      "status": "new",
+      "work": "new",
+      "title": "Notes App With Lock vs Encrypted Notes: 5 Differences Android Users Should Know",
+      "previousTitle": "Encrypted Notes on Android: 6 Questions to Ask Before You Sync",
+      "platform": "Medium",
+      "intent": "comparison",
+      "angle": "Many users think a PIN lock is encryption. What each protects against, with Atomic Notes' biometric lock and optional vault as honest examples.",
+      "primary": "notes app with lock",
+      "secondary": [
+        "notes app with lock android",
+        "best note taking app with lock",
+        "can you lock the notes app",
+        "notes app with lock feature"
+      ],
+      "lsi": [
+        "biometric lock",
+        "PIN lock",
+        "app lock vs encryption",
+        "FLAG_SECURE",
+        "screenshot blocking",
+        "encrypted vault",
+        "device encryption",
+        "Android Keystore",
+        "shoulder surfing",
+        "lock screen"
+      ],
+      "change": "'encrypted notes Android' has a commercial SERP that overlaps P2 and S2. 'notes app with lock' shows demand in all three engines and covers a common misunderstanding."
+    },
+    {
+      "id": "S3",
+      "pillar": "SECURITY",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "5 Dangerous Consequences of Storing Passwords in an Insecure Notes App",
+      "source": "Atomic Notes Blogs/Blog List 03/02 - 5 Dangers of Storing Passwords in a Notes App",
+      "slug": "storing-passwords-in-notes-app",
+      "draftSlug": "5-risks-storing-passwords-in-notes-app",
+      "intent": "informational / problem-solution",
+      "angle": "Why a notes app is not a password manager. Atomic Notes is never presented as one.",
+      "primary": "storing passwords in notes app",
+      "secondary": [
+        "is it safe to store passwords in notes",
+        "should i keep passwords in notes"
+      ],
+      "lsi": [
+        "password manager",
+        "credential theft",
+        "account takeover",
+        "identity theft",
+        "reused passwords",
+        "plaintext passwords",
+        "is it safe to store passwords in google keep",
+        "is samsung notes safe for passwords",
+        "recovery email compromise",
+        "financial account security"
+      ],
+      "change": "'secure password storage' was dropped. Its SERP is OWASP's developer cheat sheet on password hashing, a different intent.",
+      "why": "Clear high-stakes user problem with strong educational value. It can also distinguish notes apps from dedicated password managers without pretending Atomic Notes is one."
+    },
+    {
+      "id": "S3-S1",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S3",
+      "status": "new",
+      "work": "new",
+      "title": "Password Manager vs Notes App vs Paper: Where Should Your Passwords Live?",
+      "previousTitle": "Password Manager vs Notes App: 7 Security Differences",
+      "platform": "Medium",
+      "intent": "comparison",
+      "angle": "Three storage methods compared on theft, loss, phishing, sharing, and recovery.",
+      "primary": "is it safe to write passwords down",
+      "secondary": [
+        "password manager vs notes app",
+        "safest way to store passwords",
+        "is it ok to write down passwords",
+        "is writing down passwords bad"
+      ],
+      "lsi": [
+        "NIST guidance",
+        "physical security",
+        "password notebook",
+        "passkeys",
+        "master password",
+        "autofill",
+        "breach monitoring",
+        "encrypted vault",
+        "phishing resistance",
+        "family sharing"
+      ],
+      "change": "'password manager vs notes app' shows no autocomplete demand, so it stays as a secondary. The paper question shows demand and widens the comparison."
+    },
+    {
+      "id": "S3-S2",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S3",
+      "status": "new",
+      "work": "new",
+      "title": "Where to Store 2FA Backup Codes, Recovery Phrases, and Other Secrets",
+      "previousTitle": "5 Types of Secrets You Should Not Store in Ordinary Plaintext Notes",
+      "platform": "Medium",
+      "intent": "how-to",
+      "angle": "Five kinds of secrets (2FA codes, recovery phrases, API keys, IDs, financial details), where each belongs, and why plaintext notes aren't it.",
+      "primary": "where to store 2fa backup codes",
+      "secondary": [
+        "2fa backup codes",
+        "where to store seed phrase",
+        "where to store recovery phrase",
+        "where to store backup codes"
+      ],
+      "lsi": [
+        "API keys",
+        "recovery codes",
+        "crypto wallet",
+        "metal backup",
+        "password manager secure notes",
+        "offline storage",
+        "encrypted vault",
+        "identity documents",
+        "financial details",
+        "plaintext notes"
+      ]
+    },
+    {
+      "id": "S3-S3",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S3",
+      "status": "new",
+      "work": "new",
+      "title": "What Happens After One Password Is Leaked? 6 Steps in a Credential Chain",
+      "previousTitle": "What Happens After One Password Is Exposed? 6 Steps in a Credential Chain",
+      "platform": "WordPress",
+      "intent": "informational / how-to",
+      "angle": "Reuse, stuffing, recovery takeover, financial exposure, and the response steps that break the chain.",
+      "primary": "what happens if your password is leaked",
+      "secondary": [
+        "what to do if password is compromised",
+        "credential stuffing",
+        "password reuse",
+        "what to do if your password is in a data breach"
+      ],
+      "lsi": [
+        "Have I Been Pwned",
+        "account takeover chain",
+        "recovery email",
+        "SIM swap",
+        "two factor authentication",
+        "session revoke",
+        "breach notification",
+        "OWASP",
+        "lateral access",
+        "password manager"
+      ]
+    },
+    {
+      "id": "S4",
+      "pillar": "SECURITY",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "5 Reasons \"Your Data Is Encrypted\" Does Not Automatically Mean Your Notes Are Private",
+      "source": "Atomic Notes Blogs/Blog List 03/08 - 5 Reasons Encrypted Is Not Private",
+      "slug": "encrypted-notes-privacy",
+      "draftSlug": "5-reasons-encryption-does-not-guarantee-notes-privacy",
+      "intent": "informational",
+      "angle": "Decoding vague encryption marketing: transit only, provider keys, metadata, tracking, recovery.",
+      "primary": "how does encryption protect privacy",
+      "secondary": [
+        "encryption and privacy",
+        "encrypted notes privacy"
+      ],
+      "lsi": [
+        "transport encryption",
+        "provider held keys",
+        "metadata",
+        "analytics",
+        "account recovery",
+        "key custody",
+        "Advanced Data Protection",
+        "encryption marketing",
+        "server side keys",
+        "threat model"
+      ],
+      "change": "'encrypted notes privacy' shows no demand, so it stays as the title-match secondary. The question form carries the demand. 'encrypted notes app' and 'end to end encrypted notes' now belong to S2. Remove the FAQ 'Is an encrypted notes app automatically private?', which also appears in S4-S1.",
+      "why": "Corrects vague encryption marketing and creates strong internal links to E2EE, metadata, analytics, and recovery-model content."
+    },
+    {
+      "id": "S4-S1",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S4",
+      "status": "existing",
+      "work": "rewrite",
+      "title": "Privacy by Design for Notes Apps: 6 Layers Beyond Encryption",
+      "previousTitle": "Encryption Alone Does Not Make a Notes App Private",
+      "source": "Atomic Notes Blogs/Blog List 01/Encryption Alone Does Not Make a Notes App Private",
+      "platform": "Medium",
+      "intent": "informational / framework",
+      "angle": "Keeps the existing six-layer framework (storage, E2E, metadata, telemetry, AI, business model) and reframes it as privacy by design so it stops competing with S4's thesis.",
+      "primary": "privacy by design",
+      "secondary": [
+        "privacy by design principles",
+        "privacy by design meaning",
+        "privacy by design and by default",
+        "privacy by design framework"
+      ],
+      "lsi": [
+        "Ann Cavoukian",
+        "GDPR Article 25",
+        "storage location",
+        "telemetry",
+        "AI training",
+        "business model",
+        "defaults",
+        "collect less",
+        "transparency",
+        "full lifecycle protection"
+      ],
+      "change": "As planned, this support post argued the same thesis as its Main Blog and shared an FAQ with it, which is a duplicate-content risk. The privacy-by-design framing has demand in all three engines and a distinct intent."
+    },
+    {
+      "id": "S4-S2",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S4",
+      "status": "new",
+      "work": "new",
+      "title": "Metadata Privacy: 7 Things End-to-End Encryption Can and Cannot Hide",
+      "previousTitle": "Metadata Privacy: 7 Things E2EE Can and Cannot Hide",
+      "platform": "DEV Community",
+      "intent": "informational / technical",
+      "angle": "The boundary between content confidentiality and what servers still observe.",
+      "primary": "metadata privacy",
+      "secondary": [
+        "metadata leakage",
+        "e2ee metadata",
+        "traffic analysis",
+        "end to end encryption metadata"
+      ],
+      "lsi": [
+        "sealed sender",
+        "file sizes",
+        "timestamps",
+        "IP address",
+        "sync events",
+        "padding",
+        "access patterns",
+        "server logs",
+        "minimal metadata",
+        "encrypted filenames"
+      ]
+    },
+    {
+      "id": "S4-S3",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S4",
+      "status": "new",
+      "work": "new",
+      "title": "Account Recovery vs Zero Knowledge: 5 Security Tradeoffs",
+      "platform": "Substack",
+      "intent": "informational / opinion",
+      "angle": "Why recovery convenience changes who can read your data, and what a lost recovery key really costs.",
+      "primary": "zero knowledge account recovery",
+      "secondary": [
+        "lost recovery key",
+        "reset end to end encryption",
+        "recover end to end encryption",
+        "zero knowledge recovery"
+      ],
+      "lsi": [
+        "recovery phrase",
+        "Advanced Data Protection",
+        "recovery contact",
+        "key escrow",
+        "support reset",
+        "data loss",
+        "6-word phrase",
+        "trusted device",
+        "account takeover",
+        "social recovery"
+      ]
+    },
+    {
+      "id": "S5",
+      "pillar": "SECURITY",
+      "role": "main",
+      "status": "existing",
+      "work": "re-keyword",
+      "title": "7 Things to Check Before Moving Your Private Notes to a New App",
+      "source": "Atomic Notes Blogs/Blog List 03/10 - 7 Things to Check Before Moving Your Notes",
+      "slug": "switch-notes-app",
+      "draftSlug": "7-things-check-before-switching-notes-app",
+      "intent": "migration / decision-stage",
+      "angle": "Exports, backups, encryption, storage, offline access, recovery, and shutdown risk, checked before you move.",
+      "primary": "switch notes app",
+      "secondary": [
+        "migrate notes to a new app",
+        "move notes to another app"
+      ],
+      "lsi": [
+        "notes migration",
+        "data export",
+        "export format",
+        "attachments",
+        "note counts",
+        "rollback copy",
+        "account recovery",
+        "offline notes",
+        "cloud storage provider",
+        "secure data migration"
+      ],
+      "change": "The old primary 'secure notes app' has an app-store SERP, the wrong intent for a migration guide, and it was also P1's secondary. Autocomplete for migration phrases is weak, so expect low but well-matched traffic.",
+      "why": "Captures users at the moment of switching tools and combines backups, exports, encryption, cloud storage, recovery, offline access, and service-exit risk."
+    },
+    {
+      "id": "S5-S1",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S5",
+      "status": "new",
+      "work": "new",
+      "title": "7 Steps to Export and Verify Your Notes Before Switching Apps",
+      "platform": "Medium",
+      "intent": "how-to",
+      "angle": "Export to open formats, then verify counts, attachments, and links before anything is deleted.",
+      "primary": "export notes to markdown",
+      "secondary": [
+        "export google keep notes",
+        "export apple notes to markdown",
+        "convert notes to markdown",
+        "export google keep notes to markdown"
+      ],
+      "lsi": [
+        "Google Takeout",
+        "ENEX",
+        "JSON export",
+        "attachments",
+        "front matter",
+        "file names",
+        "note counts",
+        "internal links",
+        "Obsidian importer",
+        "checksum"
+      ]
+    },
+    {
+      "id": "S5-S2",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S5",
+      "status": "new",
+      "work": "new",
+      "title": "How to Export Encrypted Notes From Standard Notes, Notesnook, and Joplin Without Losing Access",
+      "previousTitle": "How to Migrate Encrypted Notes Without Losing Access: 6 Checks",
+      "platform": "Medium",
+      "intent": "how-to",
+      "angle": "Decrypted vs encrypted exports, recovery material, attachments, and rollback copies, using real export menus.",
+      "primary": "standard notes export",
+      "secondary": [
+        "joplin export",
+        "notesnook export",
+        "joplin export to markdown",
+        "standard notes export markdown"
+      ],
+      "lsi": [
+        "decrypted export",
+        "encrypted backup",
+        "recovery key",
+        "attachments",
+        "JEX format",
+        "re-encryption",
+        "import",
+        "verification",
+        "rollback copy",
+        "plaintext exposure"
+      ],
+      "change": "'migrate encrypted notes' shows no demand in any engine. The app-specific export questions show demand and cover the same task."
+    },
+    {
+      "id": "S5-S3",
+      "pillar": "SECURITY",
+      "role": "support",
+      "mainId": "S5",
+      "status": "new",
+      "work": "new",
+      "title": "Pocket, Omnivore, Evernote: What Happens to Your Notes When an App Shuts Down",
+      "previousTitle": "What Happens to Your Notes If an App Shuts Down? 6 Questions to Ask First",
+      "platform": "Substack",
+      "intent": "informational / news-driven",
+      "angle": "Real shutdowns as case studies (verify dates and export windows at writing time), then six questions to ask any app today.",
+      "primary": "pocket shutting down",
+      "secondary": [
+        "omnivore shutting down",
+        "is evernote shutting down",
+        "pocket shutting down alternative",
+        "evernote shutting down"
+      ],
+      "lsi": [
+        "export window",
+        "shutdown notice",
+        "data deletion date",
+        "account dependency",
+        "offline copy",
+        "open formats",
+        "service exit",
+        "acquisition",
+        "read-it-later",
+        "portability"
+      ],
+      "change": "'notes app shutdown data' shows no demand. Real shutdown events show demand and make the risk concrete."
+    }
+  ]
+}

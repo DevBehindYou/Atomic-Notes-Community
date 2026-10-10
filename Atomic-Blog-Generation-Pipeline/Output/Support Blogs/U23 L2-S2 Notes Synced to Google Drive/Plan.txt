@@ -1,0 +1,24 @@
+Upload order: U23 of 45 (campaign week 8, Main Blog L2)
+Link only to: the Main Blog L2 (live), other live Main Blogs, and Support Blogs uploaded before U23.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2, U09 S1-S3, U10 L3-S1, U11 L3-S2, U12 L3-S3, U13 P5-S1, U14 P5-S2, U15 P5-S3, U16 L5-S1, U17 L5-S2, U18 L5-S3, U19 P2-S1, U20 P2-S2, U21 P2-S3, U22 L2-S1
+
+L2-S2 · Support Blog for L2 (Best Local First Note Taking Apps) · NOT STARTED
+Publish on: Medium
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/best-local-first-note-taking-apps
+
+Working title: 5 Notes Apps That Sync Through Your Own Cloud Storage
+Angle: Apps that sync through Google Drive, Dropbox, WebDAV, Nextcloud, or a folder you control. Atomic Notes is one honest entry (Google Drive, drive.file scope).
+Intent: commercial investigation
+Draft source: none
+
+Primary keyword: notes app that syncs with google drive
+Secondary keywords: google drive notes app; save notes to google drive; self hosted notes app; self hosted notes app with sync
+LSI terms: Dropbox sync; WebDAV; Nextcloud; OneDrive; Syncthing; folder sync; user owned cloud storage; sync targets; file based notes; file sync apps
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

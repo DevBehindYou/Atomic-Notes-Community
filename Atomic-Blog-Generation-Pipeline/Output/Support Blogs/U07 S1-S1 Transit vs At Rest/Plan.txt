@@ -1,0 +1,24 @@
+Upload order: U07 of 45 (campaign week 3, Main Blog S1)
+Link only to: the Main Blog S1 (live), other live Main Blogs, and Support Blogs uploaded before U07.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3
+
+S1-S1 · Support Blog for S1 (Encrypted Notes Explained) · READY TO UPLOAD
+Publish on: DEV Community
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/encrypted-notes-explained
+
+Working title: HTTPS vs Encryption at Rest vs E2EE: 5 Differences You Should Know
+Angle: Transport, storage, and client-side encryption separated, with who can read the data at each point.
+Intent: comparison
+Draft source: none
+
+Primary keyword: encryption in transit vs at rest
+Secondary keywords: https vs end to end encryption; tls vs end to end encryption; encryption at rest; encryption at rest vs end to end
+LSI terms: TLS certificates; disk encryption; provider keys; server access; data in use; key management; ciphertext; plaintext exposure; threat model; compliance
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

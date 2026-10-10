@@ -1,0 +1,5 @@
+Title: Is It Really Zero Knowledge? 5 Questions to Ask
+
+Description: Zero knowledge encryption explained: the provider stores your data but never holds the key. Ask where the key is made, whether it leaves your device, whether only ciphertext is uploaded, and whether the company can restore your data.
+
+Link: {LINK}?utm_source=pinterest&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S2

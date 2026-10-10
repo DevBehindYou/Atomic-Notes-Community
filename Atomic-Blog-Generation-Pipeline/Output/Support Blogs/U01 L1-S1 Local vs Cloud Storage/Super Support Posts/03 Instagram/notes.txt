@@ -1,0 +1,17 @@
+Instagram carousel (1080 x 1350): slide-01.png to slide-07.png in this folder, in order.
+Put the Support Blog link in your bio or link sticker: {LINK}?utm_source=instagram&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S1
+Post within 48 hours of the Support Blog launch.
+
+Alt text (Advanced settings > Accessibility):
+slide-01.png: Cover slide reading Local vs Cloud Storage, where do your notes actually live, three answers compared.
+slide-02.png: Slide 1, Device only: notes never leave the phone, private and offline, but a lost phone takes them.
+slide-03.png: Slide 2, Company cloud: synced and convenient, the company holds the keys and sets the account rules.
+slide-04.png: Slide 3, Your own cloud: the app syncs into storage you control like Google Drive, your account is the weak point.
+slide-05.png: Slide 4, The bad days: lost phone, locked account, shutdown, breach, no signal, each model fails a different one.
+slide-06.png: Slide 5, The best mix: the real copy on your device and a second copy in storage you control.
+slide-07.png: Final slide reading One copy you hold, one copy elsewhere, with a Read the full guide, link in bio card.
+
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: local storage vs cloud storage
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

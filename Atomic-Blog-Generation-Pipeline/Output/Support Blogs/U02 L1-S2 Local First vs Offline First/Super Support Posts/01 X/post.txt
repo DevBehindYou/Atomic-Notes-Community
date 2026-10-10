@@ -1,0 +1,8 @@
+"It works offline, so it's local first."
+
+Not quite. The question is which copy wins when the device and the server disagree.
+
+Local first vs offline first vs cloud first, in 7 differences and 3 small code sketches:
+{LINK}?utm_source=x&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S2
+
+#localfirst #webdev

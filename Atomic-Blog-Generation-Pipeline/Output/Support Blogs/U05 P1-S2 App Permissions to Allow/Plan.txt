@@ -1,0 +1,24 @@
+Upload order: U05 of 45 (campaign week 2, Main Blog P1)
+Link only to: the Main Blog P1 (live), other live Main Blogs, and Support Blogs uploaded before U05.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1
+
+P1-S2 · Support Blog for P1 (Notes App Privacy Red Flags) · READY TO UPLOAD
+Publish on: Medium
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-red-flags
+
+Working title: What App Permissions Should You Allow a Notes App? 5 to Question on Android
+Angle: A pre-install permissions checklist for notes apps, with what each permission can expose and how to check it.
+Intent: informational / how-to
+Draft source: none
+
+Primary keyword: what app permissions should i allow
+Secondary keywords: android app permissions explained; android permissions list; dangerous permissions android; notes app permissions
+LSI terms: runtime permissions; INTERNET permission; storage access; contacts permission; microphone access; location permission; Exodus Privacy; AndroidManifest; permission manager; Google Play data safety
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

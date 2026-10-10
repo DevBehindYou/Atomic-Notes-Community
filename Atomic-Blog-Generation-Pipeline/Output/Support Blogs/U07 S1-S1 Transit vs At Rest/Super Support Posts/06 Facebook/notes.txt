@@ -1,0 +1,7 @@
+Facebook (page or group)
+Facebook builds the link preview from the blog's banner.
+Post 2 to 3 days after the Support Blog launch.
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: encryption in transit vs at rest
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

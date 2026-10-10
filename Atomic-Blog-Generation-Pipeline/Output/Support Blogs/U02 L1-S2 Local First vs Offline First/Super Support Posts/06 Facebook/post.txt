@@ -1,0 +1,8 @@
+Ever had a notes app "work offline" and then lose your changes when it reconnected? 😬
+
+That's the gap between offline first and local first. One treats the server as the boss. The other treats your device as the boss.
+
+I wrote a simple comparison of cloud first, offline first, and local first apps, with seven differences that decide whether your data survives a bad day:
+{LINK}?utm_source=facebook&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S2
+
+Which kind of app do you trust with your notes?

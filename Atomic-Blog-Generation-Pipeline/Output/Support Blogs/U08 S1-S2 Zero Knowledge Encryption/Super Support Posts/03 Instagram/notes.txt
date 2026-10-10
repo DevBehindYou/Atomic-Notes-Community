@@ -1,0 +1,17 @@
+Instagram carousel (1080 x 1350): slide-01.png to slide-07.png in this folder, in order.
+Put the Support Blog link in your bio or link sticker: {LINK}?utm_source=instagram&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S2
+Post within 48 hours of the Support Blog launch.
+
+Alt text (Advanced settings > Accessibility):
+slide-01.png: Cover slide reading Who Holds the Encryption Key, zero knowledge encryption explained in six questions.
+slide-02.png: Slide 1, What it means: the provider stores your data but never holds the key to read it.
+slide-03.png: Slide 2, Where the name comes from: zero-knowledge proofs, most apps borrow the name, not the protocol.
+slide-04.png: Slide 3, Vs end-to-end: same key rule, end-to-end comes from messaging, zero knowledge from storage.
+slide-05.png: Slide 4, The recovery test: if the company can restore your data after you forget your password, it holds a key.
+slide-06.png: Slide 5, The price: lose the password or phrase and nobody can recover the data, that's also the proof.
+slide-07.png: Final slide reading Ask who holds the key, then ask about recovery, six questions to test any zero knowledge claim.
+
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: zero knowledge encryption
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

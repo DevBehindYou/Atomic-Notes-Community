@@ -1,0 +1,61 @@
+SUBSTACK PUBLISHING NOTES · U06 P1-S3 Is Open Source More Secure
+
+Title:
+Is Open Source More Secure? 6 Things Public Source Code Lets You Verify
+
+Subtitle:
+Public code doesn't make software safe. It makes software checkable. Six things you can verify yourself, and the honest difference between open source and source-available.
+
+SEO description:
+Is open source more secure? Not automatically. Six things public source code lets you verify, what it can't prove, and source available vs open source.
+
+Tags or sections:
+Open Source, Cybersecurity, Privacy, Software Development, Technology
+
+Keywords (from keyword-registry.json):
+  Primary: is open source more secure
+  Secondary: source available vs open source, why open source is more secure, open source privacy software, source available software
+  LSI: software transparency, code review, reproducible builds, security through obscurity, Linus's law, license terms, independent audit, supply chain security, verifiable claims, public repository
+
+Keyword check (body only, exact phrase): words 1307
+  'is open source more secure': 5
+  'source available vs open source': 1
+  'why open source is more secure': 1
+  'open source privacy software': 1
+  'source available software': 2
+
+Links inside the article (each one points to a live page):
+  nine-point checklist of notes app privacy red flags -> https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-red-flags
+  Rule: link only to live Main Blogs and to Support Blogs uploaded before U06.
+
+Images, in order (upload each one where its caption sits):
+  01-banner.png  ->  Is open source more secure? Six things public source code lets you verify.
+  02-three-models.png  ->  A comparison of closed code, source-available code, and open source code across what you can read, verify, bui...
+  03-evidence-ladder.png  ->  A ladder of evidence from weakest to strongest: a privacy policy, a published permission list, public code, ma...
+
+Cover image: 01-banner.png
+
+Sources (keep them at the end, under Sources):
+  The Cathedral and the Bazaar, Linus's law. Eric S. Raymond
+    http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/ar01s04.html
+  The Heartbleed Bug. heartbleed.com
+    https://heartbleed.com/
+  CVE-2024-3094. National Vulnerability Database
+    https://nvd.nist.gov/vuln/detail/CVE-2024-3094
+  Definition of reproducible builds. Reproducible Builds
+    https://reproducible-builds.org/docs/definition/
+  The Open Source Definition. Open Source Initiative
+    https://opensource.org/osd
+  Inclusion policy. F-Droid
+    https://f-droid.org/en/docs/Inclusion_Policy/
+  Atomic Notes source code and license. GitHub
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish on Substack:
+1. Open "Substack article.docx", select all, copy, and paste into a new post.
+2. Re-upload each image at its caption. Set 01-banner.png as the post's social image.
+3. Paste the SEO description into the post settings.
+4. This is a unique article, so no canonical link to the site is needed.
+5. After publishing, copy the post URL into Output/README.md and into the social posts' {LINK}.
+
+Validated with: node scripts/validate.mjs and node scripts/cluster-check.mjs --draft (both PASSED).

@@ -1,0 +1,8 @@
+Every encryption claim comes down to one question: who holds the key?
+
+"Zero knowledge" means only you do. The fastest test is the forgot-password page.
+
+6 questions that explain it:
+{LINK}?utm_source=bluesky&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S2
+
+#infosec

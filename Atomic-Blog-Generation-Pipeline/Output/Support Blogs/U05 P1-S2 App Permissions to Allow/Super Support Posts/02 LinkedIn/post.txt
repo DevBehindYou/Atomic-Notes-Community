@@ -1,0 +1,11 @@
+A small Android detail that changes how you read permission lists: the INTERNET permission is install-time. Users never see a dialog for it.
+
+That makes the full permission list, not the runtime prompts, the thing worth checking before installing a notes app. For a typical notes app, network access for sync, notifications for reminders, and biometrics for an app lock are enough. Contacts, location, microphone, camera, and all files access each need a feature that explains them.
+
+Also worth knowing: Google says the Play data safety section is self-declared, and its review isn't designed to verify accuracy.
+
+If you ship Android apps, how do you justify each permission to users?
+
+{LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S2
+
+#Android #Privacy #MobileDevelopment

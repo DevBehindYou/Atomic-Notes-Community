@@ -1,0 +1,24 @@
+Upload order: U17 of 45 (campaign week 6, Main Blog L5)
+Link only to: the Main Blog L5 (live), other live Main Blogs, and Support Blogs uploaded before U17.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2, U09 S1-S3, U10 L3-S1, U11 L3-S2, U12 L3-S3, U13 P5-S1, U14 P5-S2, U15 P5-S3, U16 L5-S1
+
+L5-S2 · Support Blog for L5 (Local First Architecture) · NOT STARTED
+Publish on: Hashnode
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/atomic-notes-architecture
+
+Working title: Why Atomic Notes Uses Your Google Drive Instead of a Database for Note Content
+Angle: Drive as the content store, MongoDB for metadata only, the drive.file scope, and the tradeoffs (rate limits, latency).
+Intent: technical informational
+Draft source: none
+
+Primary keyword: google drive as database
+Secondary keywords: use google drive as database; drive.file scope; google drive file scope; google drive database app
+LSI terms: Google Drive API; OAuth scopes; appDataFolder; .atomic files; My-Atomic-Notes folder; metadata server; MongoDB Atlas; rate limits; file revisions; user ownership
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

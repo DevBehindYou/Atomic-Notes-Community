@@ -1,0 +1,19 @@
+P1 · PRIVACY · Main Blog
+Title: Notes App Privacy in 2026: 9 Red Flags to Check First
+Live URL: https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-red-flags
+Published: 2026-10-07 (Community PR #14)
+Words (visible prose, no code or sources): 2,046
+
+Primary keyword: notes app privacy
+Secondary keywords: is notes app private; privacy focused notes app
+LSI terms: third party trackers; privacy policy; data safety section; notes app encryption; account deletion; data export options; cloud sync; privacy labels; source code transparency; business model
+
+Interactive widgets on the site: red-flag-checker, policy-decoder
+Images: 6 (01-banner.png, 02-nine-red-flags.png, 03-where-notes-travel.png, 04-evidence-ladder.png, 05-permissions-check.png, 06-atomic-notes-scorecard.png)
+
+Notes:
+- The source of truth is content/blog/notes-app-privacy-red-flags.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py notes-app-privacy-red-flags (module visuals/posts/notes_app_privacy_red_flags.py).
+- Support Blogs for this page: P1-S1, P1-S2, P1-S3 (see keyword-registry.json).

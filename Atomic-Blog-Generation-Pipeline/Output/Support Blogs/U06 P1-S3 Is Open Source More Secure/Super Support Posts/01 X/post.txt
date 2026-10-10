@@ -1,0 +1,8 @@
+Is open source more secure?
+
+Not automatically. Heartbleed sat in public OpenSSL code for over two years before anyone caught it.
+
+Public code makes software checkable, not safe. 6 things it lets you verify, and 4 it can't:
+{LINK}?utm_source=x&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S3
+
+#infosec #privacy

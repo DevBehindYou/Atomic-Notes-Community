@@ -1,0 +1,8 @@
+Offline first and local first aren't the same thing.
+
+One defers to the server when it reconnects. The other treats the device as the source of truth.
+
+7 differences, with code sketches:
+{LINK}?utm_source=bluesky&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S2
+
+#localfirst

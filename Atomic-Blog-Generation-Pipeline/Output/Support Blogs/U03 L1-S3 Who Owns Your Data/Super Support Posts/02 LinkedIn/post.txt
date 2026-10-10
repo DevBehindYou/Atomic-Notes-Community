@@ -1,0 +1,19 @@
+"Your content remains yours." It's in almost every terms of service, and it's true. It's also the least useful sentence in the document.
+
+Ownership in practice comes down to five questions:
+
+1. Where does the file actually live?
+2. What does the license you granted allow?
+3. Can you export everything in a format other software reads?
+4. What happens to your data if your account is locked or deleted?
+5. What happens if the company shuts down?
+
+GDPR Article 20 sets a legal floor for data portability in the EU, but it doesn't cover everything, and a self-serve export button matters more day to day.
+
+I answered all five for my own app too, including the one where it only gets a partial score.
+
+If you build products, which of these five would your users struggle with?
+
+{LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S3
+
+#DataPortability #DataOwnership #Privacy

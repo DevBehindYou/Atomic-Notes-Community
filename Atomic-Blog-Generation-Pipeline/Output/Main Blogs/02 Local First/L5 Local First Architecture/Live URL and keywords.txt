@@ -1,0 +1,19 @@
+L5 · LOCAL FIRST · Main Blog
+Title: Local First Architecture: 4 Layers Behind Atomic Notes
+Live URL: https://atomic-notes.devbehindyou.com/blog/atomic-notes-architecture
+Published: 2026-10-07 (Community PR #15)
+Words (visible prose, no code or sources): 1,836
+
+Primary keyword: local first architecture
+Secondary keywords: local first app architecture; atomic notes architecture
+LSI terms: Flutter; Hive CE; Hono; MongoDB metadata; Google Drive API; AES-256-GCM; Argon2id; sync engine; request id replay; user owned cloud storage
+
+Interactive widgets on the site: sync-stepper
+Images: 6 (01-banner.png, 02-four-layers.png, 03-push-and-pull.png, 04-who-sees-what.png, 05-failure-modes.png, 06-the-stack.png)
+
+Notes:
+- The source of truth is content/blog/atomic-notes-architecture.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py atomic-notes-architecture (module visuals/posts/atomic_notes_architecture.py).
+- Support Blogs for this page: L5-S1, L5-S2, L5-S3 (see keyword-registry.json).

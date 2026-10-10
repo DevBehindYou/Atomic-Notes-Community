@@ -1,0 +1,19 @@
+P3 · PRIVACY · Main Blog
+Title: Notes App Security: 10 Privacy Mistakes to Fix in 2026
+Live URL: https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-mistakes
+Published: 2026-10-09 (Community PR #16)
+Words (visible prose, no code or sources): 1,966
+
+Primary keyword: notes app security
+Secondary keywords: notes app privacy mistakes; note taking privacy
+LSI terms: recovery phrase; screen lock; app lock; cloud backup; shared notes; APK security; password storage risk; end to end encryption; data ownership; cloud notes privacy
+
+Interactive widgets on the site: habit-audit, apk-checker
+Images: 6 (01-banner.png, 02-mistakes-map.png, 03-where-secrets-belong.png, 04-lock-layers.png, 05-apk-check.png, 06-routine.png)
+
+Notes:
+- The source of truth is content/blog/notes-app-privacy-mistakes.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py notes-app-privacy-mistakes (module visuals/posts/notes_app_privacy_mistakes.py).
+- Support Blogs for this page: P3-S1, P3-S2, P3-S3 (see keyword-registry.json).

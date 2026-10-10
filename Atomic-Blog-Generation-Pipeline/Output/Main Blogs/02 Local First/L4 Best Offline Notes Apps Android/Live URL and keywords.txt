@@ -1,0 +1,19 @@
+L4 · LOCAL FIRST · Main Blog
+Title: 8 Best Offline Notes Apps for Android in 2026
+Live URL: https://atomic-notes.devbehindyou.com/blog/best-offline-notes-apps-android
+Published: 2026-10-09 (Community PR #16)
+Words (visible prose, no code or sources): 2,063
+
+Primary keyword: best offline notes app android
+Secondary keywords: offline notes app; offline note taking app
+LSI terms: offline notes app android; airplane mode; no account; local storage; Notally; Markor; Joplin; F-Droid; sync later; battery
+
+Interactive widgets on the site: offline-finder, permission-reader
+Images: 6 (01-banner.png, 02-comparison.png, 03-internet-split.png, 04-pick-by-need.png, 05-backup-plan.png, 06-atomic-notes-card.png)
+
+Notes:
+- The source of truth is content/blog/best-offline-notes-apps-android.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py best-offline-notes-apps-android (module visuals/posts/best_offline_notes_apps_android.py).
+- Support Blogs for this page: L4-S1, L4-S2, L4-S3 (see keyword-registry.json).

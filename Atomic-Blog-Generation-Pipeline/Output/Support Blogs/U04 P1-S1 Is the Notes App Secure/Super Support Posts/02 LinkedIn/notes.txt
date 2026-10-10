@@ -1,0 +1,7 @@
+LinkedIn
+Attach: ../../01-banner.png, or post the Instagram slides as a document carousel (PDF).
+Post within 24 hours of the Support Blog launch.
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: is the notes app secure
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

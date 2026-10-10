@@ -1,0 +1,5 @@
+Title: Encryption in Transit vs at Rest vs End-to-End
+
+Description: Encryption in transit vs at rest, explained. TLS stops network snooping, encryption at rest stops disk theft, and only end-to-end encryption keeps the provider from reading your data. Five differences with real examples.
+
+Link: {LINK}?utm_source=pinterest&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S1

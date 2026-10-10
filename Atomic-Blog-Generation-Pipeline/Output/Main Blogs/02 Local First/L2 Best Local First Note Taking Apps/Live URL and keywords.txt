@@ -1,0 +1,19 @@
+L2 · LOCAL FIRST · Main Blog
+Title: 6 Best Local First Note Taking Apps in 2026
+Live URL: https://atomic-notes.devbehindyou.com/blog/best-local-first-note-taking-apps
+Published: 2026-10-09 (Community PR #16)
+Words (visible prose, no code or sources): 2,101
+
+Primary keyword: local first note taking apps
+Secondary keywords: local first note taking; apps like obsidian
+LSI terms: Logseq; Anytype; Joplin; Markdown files; plain text; sync options; encryption; offline access; data ownership; vault
+
+Interactive widgets on the site: local-first-matcher, shutdown-test
+Images: 6 (01-banner.png, 02-comparison.png, 03-primary-copy.png, 04-sync-spectrum.png, 05-shutdown-test.png, 06-atomic-notes-card.png)
+
+Notes:
+- The source of truth is content/blog/best-local-first-note-taking-apps.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py best-local-first-note-taking-apps (module visuals/posts/best_local_first_note_taking_apps.py).
+- Support Blogs for this page: L2-S1, L2-S2, L2-S3 (see keyword-registry.json).

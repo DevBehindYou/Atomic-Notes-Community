@@ -1,0 +1,11 @@
+"Zero knowledge" is a promise about key custody, not about the cipher.
+
+AES-256 is the same lock at a bank, a cloud drive, and a notes app. What changes is who holds the key. Zero knowledge encryption means the provider stores your data but never receives the secret that opens it.
+
+The quickest check is the recovery page. Bitwarden's help center says it has no way to access, retrieve, or reset your master password. Apple says the same for the iCloud categories it end-to-end encrypts. If a provider can restore your content after you forget your password, it has a key somewhere. That's key escrow, which is a fair choice. It just isn't zero knowledge.
+
+I wrote up six questions to ask about any zero knowledge claim, including my own app's.
+
+{LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S2
+
+#Cybersecurity #Encryption #Privacy

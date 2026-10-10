@@ -1,0 +1,19 @@
+S5 · SECURITY · Main Blog
+Title: Switch Notes App Safely: 7 Checks Before You Move
+Live URL: https://atomic-notes.devbehindyou.com/blog/switch-notes-app
+Published: 2026-10-09 (Community PR #17)
+Words (visible prose, no code or sources): 1,827
+
+Primary keyword: switch notes app
+Secondary keywords: migrate notes to a new app; move notes to another app
+LSI terms: notes migration; data export; export format; attachments; note counts; rollback copy; account recovery; offline notes; cloud storage provider; secure data migration
+
+Interactive widgets on the site: switch-check, count-check
+Images: 6 (01-banner.png, 02-seven-checks.png, 03-export-formats.png, 04-migration-plan.png, 05-timeline.png, 06-atomic-notes-card.png)
+
+Notes:
+- The source of truth is content/blog/switch-notes-app.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py switch-notes-app (module visuals/posts/switch_notes_app.py).
+- Support Blogs for this page: S5-S1, S5-S2, S5-S3 (see keyword-registry.json).

@@ -1,0 +1,10 @@
+When the cloud goes down, your notes app does one of three things:
+
+Shows an error.
+Shows some cached notes.
+Keeps working and syncs later.
+
+Find out which one you have in 10 minutes, with airplane mode:
+{LINK}?utm_source=x&utm_medium=social&utm_campaign=local-first-L3&utm_content=L3-S1
+
+#productivity #localfirst

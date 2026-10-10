@@ -1,0 +1,6 @@
+Server-side encryption: the cloud locks your data after it arrives.
+
+Client-side encryption: your device locks it before it leaves.
+
+Same cipher, very different privacy. Here's a runnable Web Crypto example and the 4 mistakes that quietly undo it:
+{LINK}?utm_source=threads&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S3

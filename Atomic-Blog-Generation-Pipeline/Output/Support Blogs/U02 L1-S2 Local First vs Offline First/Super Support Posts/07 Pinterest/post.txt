@@ -1,0 +1,5 @@
+Title: Local First vs Offline First: 5 Questions That Tell Them Apart
+
+Description: Local first vs offline first, explained for developers and curious users. Who holds the source of truth, where the first write goes, who settles conflicts, who owns the data, and what happens when the backend dies.
+
+Link: {LINK}?utm_source=pinterest&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S2

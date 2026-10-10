@@ -1,0 +1,8 @@
+The Android permission that matters most for a notes app's privacy has no dialog at all.
+
+INTERNET is granted at install. You never get asked.
+
+What app permissions should you actually allow, and 5 to question:
+{LINK}?utm_source=x&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S2
+
+#android #privacy

@@ -1,0 +1,15 @@
+The "forgot password" page is the best test of a zero knowledge claim. Change my mind
+
+Most "zero knowledge" products don't use zero-knowledge proofs. They use client-side encryption and borrow the name for the outcome: the provider learns nothing.
+
+So my test is boring: read the forgot-password help page.
+
+- If the provider can restore your data, it holds a key (key escrow, like standard iCloud).
+- If it says it has no way to recover your data, the claim is at least consistent.
+- Printed recovery keys or trusted contacts are fine, because the backup secret stays with you.
+
+Second test: does it offer server-side search or AI summaries over your content? Those need plaintext on the server.
+
+Disclosure: I build a notes app (Atomic Notes). Its optional vault works this way, and the default mode doesn't, which I say up front.
+
+What other tests do you use? Write-up: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S2

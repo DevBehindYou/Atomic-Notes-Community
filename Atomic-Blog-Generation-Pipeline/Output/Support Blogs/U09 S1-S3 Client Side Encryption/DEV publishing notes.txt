@@ -1,0 +1,61 @@
+DEV PUBLISHING NOTES · U09 S1-S3 Client Side Encryption
+
+Title:
+Client-Side Encryption Explained: What Happens Before a Note Reaches the Cloud
+
+Subtitle:
+Where the plaintext boundary sits decides who can read your data. Client-side vs server-side encryption, with a working Web Crypto example you can run in a browser.
+
+SEO description:
+Client side encryption explained with a working Web Crypto example: key derivation, AES-GCM, the IV, and how it compares with server side encryption in S3 and Workspace.
+
+DEV tags (max 4, letters and numbers only):
+security, javascript, encryption, webdev
+
+Keywords (from keyword-registry.json):
+  Primary: client side encryption
+  Secondary: what is client side encryption, client side vs server side encryption, client side encryption example, what is server side encryption
+  LSI: Web Crypto API, AES-GCM, nonce, key derivation, envelope encryption, ciphertext upload, Google Workspace CSE, S3 client side encryption, plaintext boundary, salt
+
+Keyword check (body only, exact phrase): words 1226
+  'client side encryption': 9
+  'what is client side encryption': 2
+  'client side vs server side encryption': 2
+  'client side encryption example': 1
+  'what is server side encryption': 1
+
+Links inside the article (each one points to a live page):
+  how encrypted notes work -> https://atomic-notes.devbehindyou.com/blog/encrypted-notes-explained
+  Rule: link only to live Main Blogs and to Support Blogs uploaded before U09.
+
+Images, in order (upload each one where its caption sits):
+  01-banner.png  ->  Client-side encryption explained.
+  02-plaintext-boundary.png  ->  A plaintext boundary diagram. With server-side encryption, the line sits inside the provider's data center. Wi...
+  03-sealed-note.png  ->  The four pieces of a sealed note laid out left to right: a 12-byte IV, the ciphertext, and a 16-byte auth tag,...
+
+Cover image: 01-banner.png
+
+Sources (keep them at the end, under Sources):
+  Protecting data by using client-side encryption. Amazon S3 User Guide
+    https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingClientSideEncryption.html
+  Protecting data with server-side encryption. Amazon S3 User Guide
+    https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html
+  About client-side encryption. Google Workspace Admin Help
+    https://support.google.com/a/answer/10741897
+  SubtleCrypto: deriveKey() method. MDN Web Docs
+    https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/deriveKey
+  AesGcmParams. MDN Web Docs
+    https://developer.mozilla.org/en-US/docs/Web/API/AesGcmParams
+  Password Storage Cheat Sheet. OWASP
+    https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
+  Atomic Notes source code. GitHub
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish on DEV Community:
+1. dev.to > Create Post > switch to the Markdown editor, then paste the whole of "DEV post.md".
+2. Upload 01-banner.png as the cover image (it fills cover_image).
+3. Upload each figure with DEV's image button and replace the file name in its ![...](...) line with the URL DEV gives you.
+4. Leave canonical_url empty. This is a unique article.
+5. Set published to true, or press Publish. Then copy the post URL into Output/README.md and into the social posts' {LINK}.
+
+Validated with: node scripts/validate.mjs and node scripts/cluster-check.mjs --draft (both PASSED).

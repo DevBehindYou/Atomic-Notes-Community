@@ -1,0 +1,19 @@
+L3 · LOCAL FIRST · Main Blog
+Title: Notes App Without Internet: Why Offline Should Be the Default
+Live URL: https://atomic-notes.devbehindyou.com/blog/why-notes-should-work-offline
+Published: 2026-10-07 (Community PR #15)
+Words (visible prose, no code or sources): 1,844
+
+Primary keyword: notes app without internet
+Secondary keywords: notes app no internet; does notes app work without internet
+LSI terms: airplane mode; local storage; sync later; cloud dependency; latency; dead zones; travel; outages; Hive storage; source of truth
+
+Interactive widgets on the site: airplane-test, wait-calculator
+Images: 6 (01-banner.png, 02-where-signal-drops.png, 03-offline-actions.png, 04-reconnect-timeline.png, 05-atomic-notes-offline.png, 06-offline-checklist.png)
+
+Notes:
+- The source of truth is content/blog/why-notes-should-work-offline.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py why-notes-should-work-offline (module visuals/posts/why_notes_should_work_offline.py).
+- Support Blogs for this page: L3-S1, L3-S2, L3-S3 (see keyword-registry.json).

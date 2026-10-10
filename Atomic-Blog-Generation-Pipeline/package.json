@@ -8,6 +8,9 @@
     "slug": "node scripts/slug.mjs",
     "metadata": "node scripts/metadata.mjs",
     "validate": "node scripts/validate.mjs",
-    "links": "node scripts/internal-links.mjs"
+    "links": "node scripts/internal-links.mjs",
+    "cluster:check": "node scripts/cluster-check.mjs",
+    "cluster:overlap": "node scripts/cluster-check.mjs --overlap",
+    "cluster:docs": "node scripts/cluster-docs.mjs"
   }
 }

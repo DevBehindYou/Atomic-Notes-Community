@@ -1,0 +1,24 @@
+Upload order: U03 of 45 (campaign week 1, Main Blog L1)
+Link only to: the Main Blog L1 (live), other live Main Blogs, and Support Blogs uploaded before U03.
+Uploaded before this one: U01 L1-S1, U02 L1-S2
+
+L1-S3 · Support Blog for L1 (What Is a Local First Notes App) · READY TO UPLOAD
+Publish on: Substack
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app
+
+Working title: Who Owns Your Data? 5 Questions About Notes, Portability, and Storage
+Angle: Ownership in practice: file location, export rights, account dependency, terms of service, service exit.
+Intent: informational / opinion
+Draft source: none
+
+Primary keyword: who owns your data
+Secondary keywords: data portability; user owned data; own your data; data portability gdpr
+LSI terms: GDPR Article 20; export formats; terms of service; account deletion; service shutdown; file ownership; cloud control; interoperability; lock-in; takeout
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

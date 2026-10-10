@@ -1,0 +1,8 @@
+Client-side encryption, in about 40 lines of Web Crypto.
+
+PBKDF2 for the key, AES-GCM with a fresh IV, and the server only ever sees ciphertext.
+
+Runnable example, plus the 4 mistakes that undo it:
+{LINK}?utm_source=bluesky&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S3
+
+#javascript

@@ -1,0 +1,5 @@
+Title: Local Storage vs Cloud Storage: Where Your Notes Should Live
+
+Description: Local storage vs cloud storage for notes, compared on control, backups, account locks, and shutdown risk. A simple rule: keep one copy on your device and one in storage you control. Read the full guide.
+
+Link: {LINK}?utm_source=pinterest&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S1

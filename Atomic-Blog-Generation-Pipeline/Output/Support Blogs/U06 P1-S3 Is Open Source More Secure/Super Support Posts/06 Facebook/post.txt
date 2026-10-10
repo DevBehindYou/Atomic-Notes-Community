@@ -1,0 +1,14 @@
+🔍 Is open source software safer?
+
+Not automatically. Public code means anyone can check how an app handles your data. It doesn't mean someone did.
+
+What you can verify:
+✅ What data leaves the app
+✅ How the encryption works
+✅ Which trackers are included
+
+What it can't prove on its own:
+❌ That the app on your phone was built from that code
+
+A plain-English guide:
+{LINK}?utm_source=facebook&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S3

@@ -1,0 +1,24 @@
+Upload order: U25 of 45 (campaign week 9, Main Blog S2)
+Link only to: the Main Blog S2 (live), other live Main Blogs, and Support Blogs uploaded before U25.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2, U09 S1-S3, U10 L3-S1, U11 L3-S2, U12 L3-S3, U13 P5-S1, U14 P5-S2, U15 P5-S3, U16 L5-S1, U17 L5-S2, U18 L5-S3, U19 P2-S1, U20 P2-S2, U21 P2-S3, U22 L2-S1, U23 L2-S2, U24 L2-S3
+
+S2-S1 · Support Blog for S2 (Best E2E Encrypted Notes Apps) · NOT STARTED
+Publish on: DEV Community
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/best-end-to-end-encrypted-notes-apps
+
+Working title: Standard Notes vs Notesnook vs Joplin: How Their Encryption Models Differ
+Angle: A threat-model comparison of three open source encrypted apps. Turning it into a 'vs' piece keeps it apart from P2-S1's open source list.
+Intent: comparison
+Draft source: none
+
+Primary keyword: notesnook vs standard notes
+Secondary keywords: standard notes vs joplin; notesnook vs joplin; open source encrypted notes app; is joplin end to end encrypted
+LSI terms: XChaCha20-Poly1305; AES-256; Argon2; security audit; self hosting; sync server; free tier; web clipper; Markdown; export
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

@@ -1,0 +1,17 @@
+Instagram carousel (1080 x 1350): slide-01.png to slide-07.png in this folder, in order.
+Put the Support Blog link in your bio or link sticker: {LINK}?utm_source=instagram&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S1
+Post within 48 hours of the Support Blog launch.
+
+Alt text (Advanced settings > Accessibility):
+slide-01.png: Cover slide reading HTTPS vs At Rest vs E2EE, encrypted in transit and at rest still means the provider can read it.
+slide-02.png: Slide 1, TLS in transit: stops someone on the network, the server decrypts the data on arrival.
+slide-03.png: Slide 2, Encryption at rest: stops someone with a stolen disk, the provider holds the key.
+slide-04.png: Slide 3, End-to-end: your device encrypts first, the server only ever stores ciphertext.
+slide-05.png: Slide 4, The gap: between the wire and the disk, data sits in server memory as plaintext.
+slide-06.png: Slide 5, The trade: end-to-end costs server search and easy recovery, lose the key and lose the data.
+slide-07.png: Final slide reading Ask who holds the key, five differences with the JSON a server actually stores.
+
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: encryption in transit vs at rest
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

@@ -1,0 +1,19 @@
+P5 · PRIVACY · Main Blog
+Title: Notes App Metadata: 8 Things It Knows Without Reading Notes
+Live URL: https://atomic-notes.devbehindyou.com/blog/notes-app-data-collection
+Published: 2026-10-07 (Community PR #15)
+Words (visible prose, no code or sources): 1,899
+
+Primary keyword: notes app metadata
+Secondary keywords: notes app data collection; apps that don't collect data
+LSI terms: IP address; device model; login timestamps; sync activity; usage analytics; account email; device fingerprinting; server logs; retention period; privacy policy
+
+Interactive widgets on the site: metadata-inference
+Images: 6 (01-banner.png, 02-content-vs-metadata.png, 03-eight-data-points.png, 04-week-of-sync-times.png, 05-needed-vs-extra.png, 06-what-atomic-notes-keeps.png)
+
+Notes:
+- The source of truth is content/blog/notes-app-data-collection.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py notes-app-data-collection (module visuals/posts/notes_app_data_collection.py).
+- Support Blogs for this page: P5-S1, P5-S2, P5-S3 (see keyword-registry.json).

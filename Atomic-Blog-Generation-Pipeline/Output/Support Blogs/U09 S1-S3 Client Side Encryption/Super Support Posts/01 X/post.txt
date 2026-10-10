@@ -1,0 +1,8 @@
+Client-side encryption in the browser takes about 40 lines of Web Crypto:
+
+PBKDF2 for the key, AES-GCM with a fresh 12-byte IV, ship the IV with the ciphertext.
+
+Runnable example, plus 4 mistakes that undo it:
+{LINK}?utm_source=x&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S3
+
+#javascript #webdev

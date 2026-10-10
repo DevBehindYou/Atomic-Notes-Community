@@ -1,0 +1,11 @@
+📱 Quick phone safety tip:
+
+Before you tap "Allow", ask what the feature is. A notes app usually needs only:
+✅ Internet, if it syncs
+✅ Notifications, for reminders
+✅ Fingerprint, for a lock
+
+Be careful with contacts, location, microphone, camera, and "all files" access. Here's a simple guide to which ones to question:
+{LINK}?utm_source=facebook&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S2
+
+Have you checked your app permissions lately?

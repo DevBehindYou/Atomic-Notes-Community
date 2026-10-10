@@ -1,0 +1,8 @@
+🔐 "Your data is encrypted" can mean three very different things.
+
+✅ In transit: safe from Wi-Fi snoops
+✅ At rest: safe if a disk is stolen
+✅ End-to-end: safe from the company itself
+
+Most apps do the first two. Only the third keeps the company from reading it. Here's the difference, explained simply:
+{LINK}?utm_source=facebook&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S1

@@ -1,0 +1,15 @@
+Most teams pick a storage model for their users on day one, and users only find out which one on the day something breaks.
+
+I compared the three places notes can live:
+
+1. Device only. Private and offline, but one lost phone and they're gone.
+2. A company cloud. Synced and convenient, under someone else's keys and account rules.
+3. Cloud storage the user already owns. Synced, with the user's own account as the weak point.
+
+Then I ran each through five bad days: a lost phone, a locked account, a service shutdown, a server breach, and no signal. No single model survives all five. A local-first mix, with the real copy on the device and a second copy in storage the user controls, comes closest.
+
+How do you decide where your product stores user data, and does the user get a say?
+
+Full comparison: {LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S1
+
+#LocalFirst #DataOwnership #ProductDesign

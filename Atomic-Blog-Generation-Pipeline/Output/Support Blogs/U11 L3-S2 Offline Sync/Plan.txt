@@ -1,0 +1,24 @@
+Upload order: U11 of 45 (campaign week 4, Main Blog L3)
+Link only to: the Main Blog L3 (live), other live Main Blogs, and Support Blogs uploaded before U11.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2, U09 S1-S3, U10 L3-S1
+
+L3-S2 · Support Blog for L3 (Notes App Without Internet) · NOT STARTED
+Publish on: Medium
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/why-notes-should-work-offline
+
+Working title: Offline Sync Explained: 6 Things a Notes App Should Do Without Internet
+Angle: Six offline capabilities (create, edit, search, delete, queue, recover), how sync catches up, and how to test each one.
+Intent: informational / how-to
+Draft source: none
+
+Primary keyword: offline sync
+Secondary keywords: offline synchronization; offline mode app; how to know if an app works offline; offline sync google drive
+LSI terms: sync queue; reconnect; airplane mode test; pending changes; retry; local database; search offline; media files; conflict; background sync
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

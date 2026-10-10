@@ -1,0 +1,7 @@
+Is open source more secure? 🔍
+
+Not automatically. Public code makes software checkable, not safe. Swipe for what you can verify, and what you can't.
+
+Full guide: link in bio.
+
+#cybersecurity #privacy #infosec #softwaredevelopment #techtips #programming

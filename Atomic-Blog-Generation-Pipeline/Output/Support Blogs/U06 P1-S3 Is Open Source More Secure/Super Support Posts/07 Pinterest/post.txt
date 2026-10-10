@@ -1,0 +1,5 @@
+Title: Is Open Source More Secure? 5 Things to Verify
+
+Description: Is open source more secure? Not automatically. Public source code lets you verify what data leaves an app, how encryption works, which trackers are bundled, which permissions it asks for, and whether your build matches the code.
+
+Link: {LINK}?utm_source=pinterest&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S3

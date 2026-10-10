@@ -1,0 +1,24 @@
+Upload order: U09 of 45 (campaign week 3, Main Blog S1)
+Link only to: the Main Blog S1 (live), other live Main Blogs, and Support Blogs uploaded before U09.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2
+
+S1-S3 · Support Blog for S1 (Encrypted Notes Explained) · READY TO UPLOAD
+Publish on: DEV Community
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/encrypted-notes-explained
+
+Working title: Client-Side Encryption Explained: What Happens Before a Note Reaches the Cloud
+Angle: The encryption and decryption boundary in plain language, with the Atomic Notes vault as a worked example.
+Intent: technical informational
+Draft source: none
+
+Primary keyword: client side encryption
+Secondary keywords: what is client side encryption; client side vs server side encryption; client side encryption example; what is server side encryption
+LSI terms: Web Crypto API; AES-GCM; nonce; key derivation; envelope encryption; ciphertext upload; Google Workspace CSE; S3 client side encryption; plaintext boundary; salt
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

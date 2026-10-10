@@ -1,0 +1,5 @@
+Hot take: most "local first" apps are offline first apps with good marketing.
+
+The test is simple. Turn the server off for a week. Does the app keep working, or slowly go stale?
+
+7 differences, with code: {LINK}?utm_source=threads&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S2

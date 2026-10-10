@@ -1,0 +1,24 @@
+Upload order: U31 of 45 (campaign week 11, Main Blog P4)
+Link only to: the Main Blog P4 (live), other live Main Blogs, and Support Blogs uploaded before U31.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2, U09 S1-S3, U10 L3-S1, U11 L3-S2, U12 L3-S3, U13 P5-S1, U14 P5-S2, U15 P5-S3, U16 L5-S1, U17 L5-S2, U18 L5-S3, U19 P2-S1, U20 P2-S2, U21 P2-S3, U22 L2-S1, U23 L2-S2, U24 L2-S3, U25 S2-S1, U26 S2-S2, U27 S2-S3, U28 L4-S1, U29 L4-S2, U30 L4-S3
+
+P4-S1 · Support Blog for P4 (Note Taking Apps Without AI) · NOT STARTED
+Publish on: Substack
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/best-note-taking-apps-without-ai
+
+Working title: 6 Questions You Should Ask Before Giving an AI Notes App Your Private Thoughts
+Angle: Six questions about AI processing, retention, training, providers, and off switches, for in-app AI and AI note-takers alike.
+Intent: informational
+Draft source: Atomic Notes Blogs/Blog List 03/03 - 6 Questions Before Giving an AI Notes App Your Thoughts
+
+Primary keyword: ai note taking privacy
+Secondary keywords: notion ai privacy; is notion ai safe; does notion ai train on my data; ai note taker privacy concerns
+LSI terms: AI data processing; AI data retention; third party AI provider; AI training data opt out; zero data retention; model provider; enterprise AI terms; prompt data; consent; AI privacy settings
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

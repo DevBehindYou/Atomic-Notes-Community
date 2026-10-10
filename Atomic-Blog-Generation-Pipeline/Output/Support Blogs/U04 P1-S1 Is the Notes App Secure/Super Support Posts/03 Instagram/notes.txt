@@ -1,0 +1,17 @@
+Instagram carousel (1080 x 1350): slide-01.png to slide-07.png in this folder, in order.
+Put the Support Blog link in your bio or link sticker: {LINK}?utm_source=instagram&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S1
+Post within 48 hours of the Support Blog launch.
+
+Alt text (Advanced settings > Accessibility):
+slide-01.png: Cover slide reading Is Your Notes App Secure, usually the app is fine, seven ways your notes leak around it.
+slide-02.png: Slide 1, Provider keys: if the company can decrypt your notes it can read them, look for end-to-end encryption.
+slide-03.png: Slide 2, Account takeover: most notes get exposed through a reused password, not a hacked app.
+slide-04.png: Slide 3, Trackers and AI: analytics report how you use the app, AI features may send your text elsewhere.
+slide-05.png: Slide 4, Metadata and links: the server sees when you write, old shared links still open your notes.
+slide-06.png: Slide 5, Devices and backups: old phones stay signed in, exports and backups hold full copies.
+slide-07.png: Final slide reading Fix the account and the keys first, with a Read the full guide, link in bio card.
+
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: is the notes app secure
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

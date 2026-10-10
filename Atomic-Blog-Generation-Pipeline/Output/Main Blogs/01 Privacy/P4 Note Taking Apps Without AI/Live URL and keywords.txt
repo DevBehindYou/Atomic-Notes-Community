@@ -1,0 +1,19 @@
+P4 · PRIVACY · Main Blog
+Title: 7 Best Note Taking Apps Without AI in 2026
+Live URL: https://atomic-notes.devbehindyou.com/blog/best-note-taking-apps-without-ai
+Published: 2026-10-09 (Community PR #16)
+Words (visible prose, no code or sources): 1,892
+
+Primary keyword: note taking app without ai
+Secondary keywords: notes app without ai; notion alternatives without ai
+LSI terms: AI free note taking app; no AI notes app; AI training data; AI features toggle; Apple Intelligence; Gemini; Notion AI; plain notes; distraction free writing; offline writing
+
+Interactive widgets on the site: ai-scanner, ai-path
+Images: 6 (01-banner.png, 02-comparison.png, 03-ai-path.png, 04-check-steps.png, 05-notion-alternatives.png, 06-atomic-notes-card.png)
+
+Notes:
+- The source of truth is content/blog/best-note-taking-apps-without-ai.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py best-note-taking-apps-without-ai (module visuals/posts/best_note_taking_apps_without_ai.py).
+- Support Blogs for this page: P4-S1, P4-S2, P4-S3 (see keyword-registry.json).

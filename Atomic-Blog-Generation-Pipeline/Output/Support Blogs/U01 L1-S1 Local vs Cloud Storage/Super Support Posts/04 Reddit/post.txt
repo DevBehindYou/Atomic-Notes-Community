@@ -1,0 +1,15 @@
+Where do your notes actually live? I compared device-only, company cloud, and own-cloud storage on 5 bad days
+
+I've been thinking about this because I build a notes app (Atomic Notes, Android, disclosure up front), and the storage question shaped almost every design decision.
+
+The three models:
+
+- **Device only.** Nothing leaves the phone. Great until the phone dies and you never exported.
+- **Company cloud** (Google Keep, most big apps). Syncs everywhere, survives a lost phone, but the company holds the keys and your notes are only as available as your account.
+- **Your own cloud.** The app keeps a local copy and syncs into storage you already have, like Google Drive, iCloud Drive, or Nextcloud.
+
+The bad days I checked: lost phone, account locked, service shuts down, server breach, no signal. Device-only only fails the first one, but it fails it completely. Company cloud fails the middle three.
+
+What I ended up believing: keep the primary copy on the device and a second copy somewhere you control.
+
+Curious what setups people here actually use, and whether anyone has lost notes to an account lock or a shutdown. I wrote up the full comparison here if links are allowed: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S1

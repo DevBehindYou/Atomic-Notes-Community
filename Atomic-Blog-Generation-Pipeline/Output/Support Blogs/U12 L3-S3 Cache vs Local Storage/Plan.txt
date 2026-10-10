@@ -1,0 +1,24 @@
+Upload order: U12 of 45 (campaign week 4, Main Blog L3)
+Link only to: the Main Blog L3 (live), other live Main Blogs, and Support Blogs uploaded before U12.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2, U09 S1-S3, U10 L3-S1, U11 L3-S2
+
+L3-S3 · Support Blog for L3 (Notes App Without Internet) · NOT STARTED
+Publish on: DEV Community
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/why-notes-should-work-offline
+
+Working title: Offline Cache vs Local Storage: 5 Differences Users Should Know
+Angle: Why cached access is not local-first ownership: eviction, persistence, authority, sync.
+Intent: comparison / technical
+Draft source: none
+
+Primary keyword: cache vs local storage
+Secondary keywords: offline cache; cache vs storage; cache storage vs indexeddb; browser local storage vs cache
+LSI terms: IndexedDB; Service Worker; Cache API; eviction; persistence; authoritative copy; Hive box; SQLite; quota; progressive web app
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

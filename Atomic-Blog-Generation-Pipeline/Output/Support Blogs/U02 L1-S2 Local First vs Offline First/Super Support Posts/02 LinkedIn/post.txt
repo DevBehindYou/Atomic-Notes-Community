@@ -1,0 +1,11 @@
+A useful test for any app that claims to be local first: switch the backend off for a week and watch what happens to the data.
+
+Cloud first apps stop. Offline first apps keep working, then slowly go stale, because the server is still the source of truth. Local first apps don't notice, because the device copy is the real one.
+
+I wrote up seven architectural differences between the three models: source of truth, write path, offline scope, conflict resolution, sync shape, data ownership, and what happens when the backend dies. Plus a short code sketch of each write path, because the save functions look almost identical and the difference hides in sync.
+
+Where does your team draw the line between offline first and local first?
+
+{LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S2
+
+#SoftwareArchitecture #LocalFirst #OfflineFirst

@@ -1,0 +1,5 @@
+Title: Client-Side Encryption Basics for Developers
+
+Description: Client side encryption explained for developers: derive the key on the device, use AES-GCM with a fresh 12-byte IV, store the salt but never the key, encrypt titles too, and never log plaintext. Includes a Web Crypto example.
+
+Link: {LINK}?utm_source=pinterest&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S3

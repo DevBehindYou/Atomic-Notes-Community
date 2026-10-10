@@ -1,0 +1,5 @@
+Title: Android Permissions Checklist for Notes Apps
+
+Description: What app permissions should I allow a notes app? Deny contacts, use Only this time for location and camera, allow the microphone only for voice notes, and avoid all files access. Android app permissions explained simply.
+
+Link: {LINK}?utm_source=pinterest&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S2

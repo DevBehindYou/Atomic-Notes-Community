@@ -1,0 +1,19 @@
+S3 · SECURITY · Main Blog
+Title: Storing Passwords in Notes App: 5 Real Dangers
+Live URL: https://atomic-notes.devbehindyou.com/blog/storing-passwords-in-notes-app
+Published: 2026-10-09 (Community PR #17)
+Words (visible prose, no code or sources): 1,840
+
+Primary keyword: storing passwords in notes app
+Secondary keywords: is it safe to store passwords in notes; should i keep passwords in notes
+LSI terms: password manager; credential theft; account takeover; identity theft; reused passwords; plaintext passwords; is it safe to store passwords in google keep; is samsung notes safe for passwords; recovery email compromise; financial account security
+
+Interactive widgets on the site: blast-radius, secret-scanner
+Images: 6 (01-banner.png, 02-blast-radius.png, 03-notes-vs-manager.png, 04-apps-compared.png, 05-move-out.png, 06-atomic-notes-card.png)
+
+Notes:
+- The source of truth is content/blog/storing-passwords-in-notes-app.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py storing-passwords-in-notes-app (module visuals/posts/storing_passwords_in_notes_app.py).
+- Support Blogs for this page: S3-S1, S3-S2, S3-S3 (see keyword-registry.json).

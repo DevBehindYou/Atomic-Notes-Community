@@ -1,0 +1,14 @@
+A minimal client-side encryption example with Web Crypto (PBKDF2 + AES-GCM), and 4 mistakes I see often
+
+I put together the smallest complete example I could for encrypting data in the browser before upload:
+
+- `importKey` the passphrase, then `deriveKey` with PBKDF2 (600,000 iterations, SHA-256, per OWASP's current guidance)
+- AES-GCM with a fresh random 12-byte IV per encryption
+- Prepend the IV to the ciphertext, base64 it, upload that
+- Decrypt throws `OperationError` on a wrong key or a changed byte
+
+Mistakes I'd watch for: logging plaintext before encryption, reusing IVs, syncing the derived key "for convenience", and encrypting the body but not the title.
+
+Disclosure: I build a notes app (Atomic Notes) that does the same thing in Dart with Argon2id for its optional vault.
+
+Feedback on the code welcome: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S3

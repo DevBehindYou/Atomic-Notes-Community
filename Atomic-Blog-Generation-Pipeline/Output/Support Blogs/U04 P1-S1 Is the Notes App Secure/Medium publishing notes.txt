@@ -1,0 +1,58 @@
+MEDIUM PUBLISHING NOTES · U04 P1-S1 Is the Notes App Secure
+
+Title:
+7 Ways Your Notes App Could Expose More About You Than You Realize
+
+Subtitle:
+Is the notes app secure? Usually the app is fine. The leaks happen around it: keys, accounts, trackers, metadata, links, old phones, and backups.
+
+SEO description:
+Is the notes app secure? Seven ways a notes app can expose you without anyone reading a note, from provider keys and hacked accounts to trackers and backups.
+
+Tags (Medium allows 5):
+Privacy, Cybersecurity, Android, iCloud, Note Taking
+
+Keywords (from keyword-registry.json):
+  Primary: is the notes app secure
+  Secondary: can my notes app be hacked, can someone hack into my notes app, is the notes app safe, can apple read my notes
+  LSI: cloud backups, analytics SDK, usage tracking, AI processing, shared links, old devices, sync metadata, account security, personal data exposure, phone backups
+
+Keyword check (body only, exact phrase): words 1277
+  'is the notes app secure': 6
+  'can my notes app be hacked': 2
+  'can someone hack into my notes app': 1
+  'is the notes app safe': 2
+  'can apple read my notes': 3
+
+Links inside the article (each one points to a live page):
+  checklist of nine privacy red flags -> https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-red-flags
+  Rule: link only to live Main Blogs and to Support Blogs uploaded before U04.
+
+Images, in order (upload each one where its caption sits):
+  01-banner.png  ->  7 ways your notes app could expose more about you than you realize.
+  02-seven-paths.png  ->  A diagram of seven exposure paths around a notes app: provider keys, account takeover, trackers and AI process...
+  03-fix-order.png  ->  A table ranking the seven exposure paths by risk and effort to fix: account takeover and provider keys first, ...
+
+Cover image: 01-banner.png
+
+Sources (keep them at the end, under Sources):
+  iCloud data security overview. Apple Support
+    https://support.apple.com/en-us/102651
+  2025 Data Breach Investigations Report. Verizon
+    https://www.verizon.com/about/news/2025-data-breach-investigations-report
+  What Exodus Privacy does. Exodus Privacy
+    https://exodus-privacy.eu.org/en/page/what/
+  Provide information for Google Play's data safety section. Play Console Help
+    https://support.google.com/googleplay/android-developer/answer/10787469?hl=en
+  Atomic Notes privacy policy
+    https://atomic-notes.devbehindyou.com/privacy
+
+How to publish on Medium:
+1. Open "Medium article.docx", select all, copy, and paste into a new story.
+2. Re-upload each image from this folder at its caption (Medium drops pasted Word images unreliably).
+3. Check that lists, bold text, and the links survived the paste.
+4. Story settings > SEO: paste the SEO description above. Add the 5 tags.
+5. Canonical link: leave it EMPTY. This is a unique article, not a copy of the site post.
+6. After publishing, copy the story URL into Output/README.md and into the social posts' {LINK}.
+
+Validated with: node scripts/validate.mjs and node scripts/cluster-check.mjs --draft (both PASSED).

@@ -1,0 +1,12 @@
+Can someone hack into your notes app? 📱
+
+Usually, they don't need to. Most notes get exposed through:
+🔑 A reused password
+📲 An old phone that's still signed in
+🔗 A link you shared years ago
+💾 A backup or export you forgot about
+
+I wrote a simple 7-point checklist to close the gaps in about an afternoon:
+{LINK}?utm_source=facebook&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S1
+
+Which one surprised you?

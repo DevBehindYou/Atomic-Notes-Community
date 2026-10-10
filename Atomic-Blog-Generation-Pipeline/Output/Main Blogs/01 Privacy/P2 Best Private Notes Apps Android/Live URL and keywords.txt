@@ -1,0 +1,19 @@
+P2 · PRIVACY · Main Blog
+Title: 7 Best Private Notes Apps for Android in 2026
+Live URL: https://atomic-notes.devbehindyou.com/blog/best-privacy-first-notes-apps-android
+Published: 2026-10-07 (Community PR #15)
+Words (visible prose, no code or sources): 1,907
+
+Primary keyword: private notes app android
+Secondary keywords: best private notes app; secure notes app android
+LSI terms: privacy first notes app; Notesnook; Standard Notes; Joplin; no ads; F-Droid; data safety section; encrypted sync; offline access; local storage
+
+Interactive widgets on the site: app-finder
+Images: 6 (01-banner.png, 02-comparison.png, 03-how-we-picked.png, 04-pick-by-need.png, 05-permissions.png, 06-atomic-notes-card.png)
+
+Notes:
+- The source of truth is content/blog/best-privacy-first-notes-apps-android.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py best-privacy-first-notes-apps-android (module visuals/posts/best_privacy_first_notes_apps_android.py).
+- Support Blogs for this page: P2-S1, P2-S2, P2-S3 (see keyword-registry.json).

@@ -1,0 +1,24 @@
+Upload order: U13 of 45 (campaign week 5, Main Blog P5)
+Link only to: the Main Blog P5 (live), other live Main Blogs, and Support Blogs uploaded before U13.
+Uploaded before this one: U01 L1-S1, U02 L1-S2, U03 L1-S3, U04 P1-S1, U05 P1-S2, U06 P1-S3, U07 S1-S1, U08 S1-S2, U09 S1-S3, U10 L3-S1, U11 L3-S2, U12 L3-S3
+
+P5-S1 · Support Blog for P5 (Notes App Metadata) · NOT STARTED
+Publish on: Medium
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/notes-app-data-collection
+
+Working title: Zero Telemetry: Why Your Notes App Should Know Less About You
+Angle: What telemetry is, why notes apps add it, and how to check an app for it.
+Intent: informational
+Draft source: Atomic Notes Blogs/Blog List 01/Zero Telemetry - Why Your Notes App Should Know Less About You
+
+Primary keyword: zero telemetry
+Secondary keywords: what is telemetry; telemetry data; app telemetry; telemetry privacy
+LSI terms: analytics SDK; crash reporting; Firebase Analytics; opt-in analytics; anonymous data; usage events; Exodus Privacy; network traffic; tracker SDKs; privacy friendly analytics
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

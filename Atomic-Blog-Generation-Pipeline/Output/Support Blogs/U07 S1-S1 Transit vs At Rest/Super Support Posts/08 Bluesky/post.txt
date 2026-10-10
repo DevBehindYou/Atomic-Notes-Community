@@ -1,0 +1,8 @@
+"Encrypted in transit and at rest" is the baseline, not a privacy feature.
+
+The server still decrypts your data to use it. Only end-to-end keeps it out.
+
+5 differences, with the JSON a server stores:
+{LINK}?utm_source=bluesky&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S1
+
+#infosec

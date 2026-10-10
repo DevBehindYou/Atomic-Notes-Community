@@ -1,0 +1,8 @@
+Open code makes bugs findable, not absent.
+
+Heartbleed sat in public OpenSSL code for over two years. The xz backdoor was caught by one curious engineer.
+
+What public source lets you verify, and what it can't:
+{LINK}?utm_source=bluesky&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S3
+
+#infosec

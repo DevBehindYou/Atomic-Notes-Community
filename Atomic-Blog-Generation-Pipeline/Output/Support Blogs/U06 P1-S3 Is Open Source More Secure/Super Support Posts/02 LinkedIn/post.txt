@@ -1,0 +1,11 @@
+"It's open source, so it's secure" is one of the most repeated lines in privacy discussions. I think it gets the logic backward.
+
+Public code makes bugs findable, not absent. Heartbleed was introduced to OpenSSL in December 2011 and disclosed in April 2014, in code anyone could read. The xz backdoor was caught in 2024 because one engineer noticed slow SSH logins and went digging.
+
+What public code does let you verify: what data leaves an app, how the encryption works, which SDKs ship, which permissions it asks for, and what changed between versions. What it can't prove: that anyone reviewed it, that the server matches, or that your build came from that code. Reproducible builds and independent audits close those gaps.
+
+Disclosure: I build Atomic Notes, which is source-available. You can read and verify the code, but not reuse it. I wrote up where that line sits and why.
+
+{LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S3
+
+#Security #SoftwareEngineering #Privacy

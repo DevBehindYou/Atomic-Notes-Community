@@ -1,0 +1,7 @@
+Bluesky
+Attach: ../../01-banner.png. Bluesky also builds a link card.
+Post near the Support Blog launch, same day as X.
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: cloud outage
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

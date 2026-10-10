@@ -1,0 +1,6 @@
+A notes app needs the network to sync, maybe notifications, maybe your fingerprint. That's about it.
+
+5 Android permissions worth questioning, and the one with no dialog:
+{LINK}?utm_source=bluesky&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S2
+
+#android

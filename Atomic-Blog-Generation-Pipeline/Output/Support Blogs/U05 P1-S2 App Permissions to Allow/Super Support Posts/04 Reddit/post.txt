@@ -1,0 +1,20 @@
+What permissions should a notes app actually need on Android? My shortlist and 5 red flags
+
+Genuine question for this sub, since everyone's line is different.
+
+My take for a plain text notes app:
+
+**Fine if the feature is on:** internet (for sync), network state, biometric (app lock), notifications (reminders).
+
+**Needs a reason:**
+- Contacts (sharing works without it)
+- Location (only for location reminders)
+- Microphone (voice notes only)
+- Camera (scanning or photo notes only)
+- All files access (only file-based Markdown apps really need it)
+
+The one people miss: INTERNET is an install-time permission, so there's no dialog. If you want an offline-only app, check its permission list on F-Droid or Exodus before installing.
+
+Disclosure: I build a notes app (Atomic Notes). It declares INTERNET, ACCESS_NETWORK_STATE, and USE_BIOMETRIC and nothing else.
+
+What would you add or remove? Longer version: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S2

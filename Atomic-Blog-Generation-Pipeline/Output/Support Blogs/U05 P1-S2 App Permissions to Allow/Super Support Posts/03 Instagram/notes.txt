@@ -1,0 +1,17 @@
+Instagram carousel (1080 x 1350): slide-01.png to slide-07.png in this folder, in order.
+Put the Support Blog link in your bio or link sticker: {LINK}?utm_source=instagram&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S2
+Post within 48 hours of the Support Blog launch.
+
+Alt text (Advanced settings > Accessibility):
+slide-01.png: Cover slide reading What Permissions Should You Allow, a notes app needs very little, five to question.
+slide-02.png: Slide 1, Contacts: a notes app almost never needs your address book.
+slide-03.png: Slide 2, Location: only for location reminders, pick Only this time.
+slide-04.png: Slide 3, Microphone: fair for voice notes, grant it when you record.
+slide-05.png: Slide 4, Camera: fair for scanning or photo notes, otherwise deny it.
+slide-06.png: Slide 5, All files access: opens every document, only file-based Markdown apps have a reason.
+slide-07.png: Final slide reading Internet has no dialog, check the full permission list before you install.
+
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: what app permissions should i allow
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

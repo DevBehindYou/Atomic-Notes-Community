@@ -1,0 +1,8 @@
+"Encrypted in transit and at rest" still means the provider can read your data.
+
+TLS stops the network. At-rest stops disk theft. Neither stops the server.
+
+5 differences, with the JSON a server actually stores:
+{LINK}?utm_source=x&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S1
+
+#security #webdev

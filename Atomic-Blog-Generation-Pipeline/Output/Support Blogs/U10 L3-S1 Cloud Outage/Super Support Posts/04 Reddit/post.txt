@@ -1,0 +1,18 @@
+Tried an "airplane mode outage test" on your notes app? Here's the 6-step version I use
+
+Every time a big cloud provider has a bad day, a lot of apps fail together. Notes apps are the ones that hurt most, because the agenda is always in there.
+
+The test I run on any notes app:
+
+1. Airplane mode on, force-close the app, reopen it
+2. Open an old note, not one from today
+3. Write a new note and edit an old one, then close and reopen
+4. Search for a word in an old note
+5. Turn airplane mode off and see if it syncs by itself
+6. Bookmark the service's status page
+
+If it fails 1 to 3, the next outage locks you out of your own notes.
+
+Disclosure: I build a local-first notes app (Atomic Notes), so I'm biased toward apps that pass all six.
+
+How does your app do? Full write-up: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=local-first-L3&utm_content=L3-S1

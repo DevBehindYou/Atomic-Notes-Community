@@ -1,0 +1,17 @@
+Instagram carousel (1080 x 1350): slide-01.png to slide-07.png in this folder, in order.
+Put the Support Blog link in your bio or link sticker: {LINK}?utm_source=instagram&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S2
+Post within 48 hours of the Support Blog launch.
+
+Alt text (Advanced settings > Accessibility):
+slide-01.png: Cover slide reading Local First vs Offline First, both work without a network but only one makes the device the source of truth.
+slide-02.png: Slide 1, Source of truth: cloud first and offline first trust the server, local first trusts the device.
+slide-03.png: Slide 2, Write path: cloud first waits for a round trip, the other two save locally in milliseconds.
+slide-04.png: Slide 3, Conflicts: offline first lets the server settle them, local first merges on the device or keeps both copies.
+slide-05.png: Slide 4, Ownership: if the server is the truth the provider owns the data in practice, local first hands it back.
+slide-06.png: Slide 5, The real test: switch the backend off for a week, offline first goes stale, local first doesn't notice.
+slide-07.png: Final slide reading Works offline is not local first, with a Read the full guide, link in bio card.
+
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: local first vs offline first
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

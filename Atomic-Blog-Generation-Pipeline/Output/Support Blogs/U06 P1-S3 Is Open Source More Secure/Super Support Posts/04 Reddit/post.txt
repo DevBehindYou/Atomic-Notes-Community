@@ -1,0 +1,19 @@
+Is open source actually more secure, or just easier to check? Where I've landed after building an app
+
+I keep seeing "it's open source, so it's secure" as a final answer, and I don't think it is one.
+
+My current view:
+
+**What public code lets you verify:** network calls, encryption and key handling, bundled SDKs, the permission list, and the change history.
+
+**What it can't prove:**
+- That anyone actually reviewed the part that matters (Heartbleed sat in OpenSSL for over two years)
+- That the server matches, when only the client is public
+- That the binary you installed was built from that code, unless builds are reproducible
+- That last year's review still applies after this week's update
+
+So I'd rank evidence roughly: privacy policy, then permission list, then public code, then matching checksums, then reproducible builds, then an independent audit.
+
+Disclosure: I build a notes app (Atomic Notes). It's source-available, so you can read and build it to verify but not redistribute it. That trade is probably the more interesting debate.
+
+Where would you put source-available on that ladder? Longer write-up: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S3

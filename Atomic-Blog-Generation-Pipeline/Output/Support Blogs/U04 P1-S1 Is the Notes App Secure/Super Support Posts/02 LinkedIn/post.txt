@@ -1,0 +1,17 @@
+When people ask whether a notes app is secure, they usually mean "can someone read my notes?" That's the right instinct, aimed at the wrong place.
+
+Most exposure happens around the app:
+
+• the provider holding the encryption keys
+• account takeover through reused passwords
+• analytics SDKs and AI features sending data elsewhere
+• sync metadata that reveals patterns
+• old shared links, old signed-in devices, and stray backups
+
+Verizon's 2025 DBIR put credential abuse at 22% of breaches as the leading initial access vector. That's the account, not the app.
+
+For product teams: which of these does your security page actually address?
+
+{LINK}?utm_source=linkedin&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S1
+
+#Privacy #Cybersecurity #ProductSecurity

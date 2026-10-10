@@ -1,0 +1,7 @@
+Where does your data stop being readable? 🔒
+
+That line decides who can read it. Swipe for client-side vs server-side encryption.
+
+Full guide with code: link in bio.
+
+#webdevelopment #javascript #cybersecurity #encryption #programming #coding

@@ -1,0 +1,24 @@
+Upload order: U02 of 45 (campaign week 1, Main Blog L1)
+Link only to: the Main Blog L1 (live), other live Main Blogs, and Support Blogs uploaded before U02.
+Uploaded before this one: U01 L1-S1
+
+L1-S2 · Support Blog for L1 (What Is a Local First Notes App) · READY TO UPLOAD
+Publish on: DEV Community
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app
+
+Working title: Local First vs Offline First vs Cloud First: 7 Differences That Matter
+Angle: Where the source of truth lives in each model, and why 'works offline' is not the same as 'local first'.
+Intent: comparison
+Draft source: none
+
+Primary keyword: local first vs offline first
+Secondary keywords: offline first database; local first vs cloud first; offline first app; offline first architecture
+LSI terms: source of truth; server authority; sync queue; conflict resolution; CRDTs; latency; cache; RxDB; eventual consistency; seven ideals
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

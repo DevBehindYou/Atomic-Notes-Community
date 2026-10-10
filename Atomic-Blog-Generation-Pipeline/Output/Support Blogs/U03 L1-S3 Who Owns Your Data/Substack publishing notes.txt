@@ -1,0 +1,57 @@
+SUBSTACK PUBLISHING NOTES · U03 L1-S3 Who Owns Your Data
+
+Title:
+Who Owns Your Data? 5 Questions About Notes, Portability, and Storage
+
+Subtitle:
+The terms say your content is yours. Whether you can actually take it and leave is a different question. Five ways to find out.
+
+SEO description:
+Who owns your data in a notes app? Five questions about where files live, terms of service, data portability under GDPR, account deletion, and service shutdowns.
+
+Tags or sections:
+Data Ownership, Privacy, GDPR, Digital Rights, Note Taking
+
+Keywords (from keyword-registry.json):
+  Primary: who owns your data
+  Secondary: data portability, user owned data, own your data, data portability gdpr
+  LSI: GDPR Article 20, export formats, terms of service, account deletion, service shutdown, file ownership, cloud control, interoperability, lock-in, takeout
+
+Keyword check (body only, exact phrase): words 1319
+  'who owns your data': 7
+  'data portability': 6
+  'user owned data': 2
+  'own your data': 2
+  'data portability gdpr': 1
+
+Links inside the article (each one points to a live page):
+  local first notes apps and why they matter -> https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app
+  Rule: link only to live Main Blogs and to Support Blogs uploaded before U03.
+
+Images, in order (upload each one where its caption sits):
+  01-banner.png  ->  Who owns your data? Five questions about notes, portability, and storage.
+  02-five-questions.png  ->  A five-question scorecard: where the file lives, what the license allows, whether export is usable, what happe...
+  03-atomic-scorecard.png  ->  A scorecard for Atomic Notes against the five questions: file location yes, license limited to running the ser...
+
+Cover image: 01-banner.png
+
+Sources (keep them at the end, under Sources):
+  Google Terms of Service. Google
+    https://policies.google.com/terms
+  Art. 20 GDPR, Right to data portability. GDPR text
+    https://gdpr-info.eu/art-20-gdpr/
+  How to download your Google data. Google Account Help
+    https://support.google.com/accounts/answer/3024190?hl=en
+  Pocket is saying goodbye. Mozilla Support
+    https://support.mozilla.org/en-US/kb/future-of-pocket
+  Atomic Notes privacy policy
+    https://atomic-notes.devbehindyou.com/privacy
+
+How to publish on Substack:
+1. Open "Substack article.docx", select all, copy, and paste into a new post.
+2. Re-upload each image at its caption. Set 01-banner.png as the post's social image.
+3. Paste the SEO description into the post settings.
+4. This is a unique article, so no canonical link to the site is needed.
+5. After publishing, copy the post URL into Output/README.md and into the social posts' {LINK}.
+
+Validated with: node scripts/validate.mjs and node scripts/cluster-check.mjs --draft (both PASSED).

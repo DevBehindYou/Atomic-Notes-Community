@@ -1,0 +1,5591 @@
+{
+ "meta": {
+  "method": "Autocomplete presence, not search volume. On October 7, 2026 every keyword was sent to Google (suggestqueries, en-US), Bing (osjson) and DuckDuckGo (ac), and each engine was marked when it suggested the exact phrase for any probe. Engines only autocomplete queries people actually type, so a mark means real demand. No mark means low or no demand, not proof of zero.",
+  "probes": 390,
+  "date": "2026-10-07"
+ },
+ "keywords": {
+  "2fa backup codes": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "2fa backup codes",
+    "2fa backup codes psn",
+    "2fa backup codes instagram",
+    "2fa backup codes discord",
+    "2fa backup codes google",
+    "ps5 2fa backup codes",
+    "2fa backup codes namecheap",
+    "2fa backup codes facebook"
+   ]
+  },
+  "account recovery end to end encryption": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "recover end to end encryption messenger",
+    "recover end to end encryption",
+    "restore end to end encryption messenger",
+    "what email is end to end encrypted",
+    "reset end to end encryption"
+   ]
+  },
+  "ai assistant privacy": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "ai assistant privacy",
+    "virtual assistant privacy policy",
+    "adobe ai assistant privacy",
+    "jetbrains ai assistant privacy",
+    "adobe ai assistant privacy policy",
+    "jetbrains ai assistant privacy policy",
+    "luma ai assistant privacy features",
+    "intellij ai assistant privacy"
+   ]
+  },
+  "ai note taker privacy concerns": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "ai note taker privacy concerns",
+    "ai privacy issues",
+    "how does ai affect privacy"
+   ]
+  },
+  "ai note taking privacy": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "ai note taking privacy",
+    "ai note taker privacy concerns",
+    "ai note taker privacy",
+    "ai note taking confidentiality",
+    "fireflies ai note taker privacy",
+    "ai meeting note taker privacy",
+    "pocket ai note taker privacy",
+    "fathom ai note taker privacy"
+   ]
+  },
+  "ai notes app privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "ai privacy settings": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "ai privacy settings",
+    "ai privacy settings instagram",
+    "ai privacy settings whatsapp",
+    "ai privacy settings iphone",
+    "ai privacy settings facebook",
+    "ai privacy policy",
+    "ai privacy policy generator",
+    "ai privacy policy analyzer"
+   ]
+  },
+  "ai training data opt out": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "google ai training data opt out",
+    "meta ai training data opt out",
+    "linkedin ai data training opt out",
+    "how to opt out on airtel",
+    "how to opt out of data auto renewal on airtel"
+   ]
+  },
+  "airplane mode notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "airplane mode test app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "android app permissions explained": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "android app permissions explained",
+    "what does permissions mean on android apps",
+    "what are permissions in android"
+   ]
+  },
+  "android notes app offline sync": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "android permissions list": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "android permissions list",
+    "android permissions list explained",
+    "android permissions list github",
+    "android dangerous permissions list",
+    "android app permissions list",
+    "android manifest permissions list",
+    "android runtime permissions list",
+    "android privileged permissions list"
+   ]
+  },
+  "android plain text notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "anytype vs obsidian privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "api keys in notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "api key notes",
+    "api keys explained",
+    "what does api keys mean",
+    "example of api keys",
+    "how do api keys work"
+   ]
+  },
+  "app permissions explained": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "app permissions explained",
+    "app permissions meaning",
+    "android app permissions explained",
+    "google app permissions explained",
+    "what does app permissions mean"
+   ]
+  },
+  "app permissions privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "app shuts down data": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "app shutting down": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "app shutting down",
+    "app to shut down phone at certain time",
+    "app to shut down kids phone",
+    "application shutting down",
+    "app to shut down ipad",
+    "app to shut down iphone",
+    "application shutting down 503",
+    "app shut down mac"
+   ]
+  },
+  "app telemetry": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "app telemetry",
+    "app telemetry databricks",
+    "app telemetry io",
+    "app telemetry fm",
+    "app telemetry meaning",
+    "app telemetry data",
+    "app telemetry page speed monitor",
+    "app telemetry service"
+   ]
+  },
+  "apps like obsidian": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "apps like obsidian",
+    "apps like obsidian but free",
+    "apps like obsidian reddit",
+    "apps like obsidian and notion",
+    "apps like obsidian with freesync",
+    "apps like obsidian notes",
+    "apps like obsidian for android",
+    "apps like obsidian with sync"
+   ]
+  },
+  "apps that don t collect data": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "apps that don't collect data",
+    "keyboard apps that don t collect data",
+    "game apps that don t collect data",
+    "ai apps that don't collect data",
+    "ios apps that don't collect data",
+    "calendar apps that don t collect data",
+    "messaging apps that don't collect data",
+    "period apps that don't collect data"
+   ]
+  },
+  "apps that don't collect data": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "apps that don't collect data",
+    "keyboard apps that don t collect data",
+    "game apps that don t collect data",
+    "ai apps that don't collect data",
+    "ios apps that don't collect data",
+    "calendar apps that don t collect data",
+    "messaging apps that don't collect data",
+    "period apps that don't collect data"
+   ]
+  },
+  "are google keep notes encrypted": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "are google keep notes encrypted",
+    "are google keep notes secure",
+    "is google keep encrypted",
+    "is google keep notes safe",
+    "is google keep notes private"
+   ]
+  },
+  "are samsung notes encrypted": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "are samsung notes encrypted",
+    "are samsung notes secure",
+    "are locked samsung notes encrypted",
+    "is samsung notes secure and private",
+    "is samsung notes secure reddit",
+    "are samsung notes end to end encrypted",
+    "are samsung phones encrypted",
+    "are samsung notes private"
+   ]
+  },
+  "atomic notes": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "atomic notes",
+    "atomic notes obsidian",
+    "atomic notes book",
+    "atomic notes example",
+    "atomic notes app",
+    "atomic notes capacities",
+    "atomic notes vs zettelkasten",
+    "atomic notes zettelkasten"
+   ]
+  },
+  "atomic notes android": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "atomic notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "atomic notes app",
+    "atomic notes netlify app index html"
+   ]
+  },
+  "atomic notes architecture": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "atomic notes by devbehindyou": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "aws outage": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "aws outage",
+    "aws outage today",
+    "aws outage status",
+    "aws outage history",
+    "aws outage 2025",
+    "aws outage map",
+    "aws outage right now",
+    "aws outage now"
+   ]
+  },
+  "backup android notes to google drive": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "backup notes android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "backup notes android",
+    "backup android notes to google drive",
+    "backup keep notes android",
+    "backup notes app android",
+    "backup samsung notes android",
+    "cara backup notes di android",
+    "google keep notes backup android",
+    "android backup notes to pc"
+   ]
+  },
+  "backup notes to google drive": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "backup notes to google drive",
+    "backup samsung notes to google drive",
+    "backup apple notes to google drive",
+    "backup iphone notes to google drive",
+    "backup android notes to google drive",
+    "backup oneplus notes to google drive",
+    "backup huawei notes to google drive",
+    "backup ios notes to google drive"
+   ]
+  },
+  "best encrypted notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best encrypted notes app",
+    "best encrypted notes app android",
+    "best encrypted notes app iphone",
+    "best encrypted notes app reddit",
+    "best secure notes app for android",
+    "best secure notes app",
+    "best secure notes app for iphone",
+    "best secure notes app reddit"
+   ]
+  },
+  "best encrypted notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best encrypted notes app android",
+    "best secure notes app android",
+    "best secure notepad app for android",
+    "is the notes app encrypted",
+    "is the notes app secure"
+   ]
+  },
+  "best end to end encrypted notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best end to end encrypted notes app",
+    "is apple notes end to end encrypted"
+   ]
+  },
+  "best f droid notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best f droid notes app",
+    "does android have a notes app",
+    "what is the best free note taking app for android",
+    "is there a goodnotes app for android",
+    "do androids have a notes app",
+    "what is samsung notes app on android"
+   ]
+  },
+  "best fdroid apps": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best fdroid apps",
+    "best fdroid apps reddit",
+    "best fdroid apps 2026",
+    "best fdroid apps 2025",
+    "best f droid apps for android",
+    "top f droid apps",
+    "good f droid apps",
+    "top f droid apps reddit"
+   ]
+  },
+  "best local first note taking apps": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "best note taking app with lock": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best note taking app with lock",
+    "most reliable note taking app",
+    "apps to help with note taking",
+    "what is the best free note taking app"
+   ]
+  },
+  "best notes app android": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "best notes app android",
+    "best notes app android reddit",
+    "best notes app android free",
+    "best notes app android tablet",
+    "best notes app android phone",
+    "best notes app android and windows",
+    "best notes app android 2025",
+    "best notes app android open source"
+   ]
+  },
+  "best notes app for privacy": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best notes app for privacy",
+    "best notes app for privacy reddit",
+    "is notes app private",
+    "what is the best app to keep notes",
+    "which is the best app for notes",
+    "is the notes app secure"
+   ]
+  },
+  "best offline notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best offline notes app android",
+    "best offline notes app for android reddit",
+    "best free offline notes app for android",
+    "what is the best free note taking app for android",
+    "how to use keep notes app in mobile"
+   ]
+  },
+  "best open source notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "best open source notes app",
+    "best open source notes app android",
+    "best open source notes app reddit",
+    "best open source notes app for windows",
+    "good open source notes app",
+    "best free open source notes app",
+    "best open source notes taking app",
+    "koreader best open source self hosted notes app"
+   ]
+  },
+  "best privacy notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best privacy notes app",
+    "best private notes app android",
+    "best private notes app reddit",
+    "best private notes app ios",
+    "best privacy focused notes app",
+    "best free private notes app",
+    "best notes app for privacy reddit",
+    "is notes app private"
+   ]
+  },
+  "best private notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best private notes app",
+    "best private notes app android",
+    "best private notes app reddit",
+    "best private notes app ios",
+    "best secure notes app for android",
+    "best secure notes app",
+    "best secure notes app for iphone",
+    "best secure notes app reddit"
+   ]
+  },
+  "best private notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best private notes app android",
+    "best secure notes app android",
+    "what is the best free note taking app for android",
+    "what is the best app to keep notes",
+    "is notes app private",
+    "which is the best app for notes",
+    "does android have a note app"
+   ]
+  },
+  "best secure notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best secure notes app",
+    "best secure notes app for android",
+    "best secure notes app for iphone",
+    "best secure notes app reddit",
+    "best secure notes app free",
+    "best secure notes app ios",
+    "best safe notes app",
+    "best safe notes app android"
+   ]
+  },
+  "best secure notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "best secure notes app android",
+    "best encrypted notes app android",
+    "best safe notes app android",
+    "best free secure notes app for android",
+    "is the notes app secure"
+   ]
+  },
+  "browser local storage vs cache": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "cache storage vs indexeddb": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "cache vs local storage": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "cache vs storage": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "cache vs storage",
+    "cache vs storage android",
+    "cache storage vs indexeddb",
+    "cache and storage",
+    "cache and storage difference",
+    "cache vs store",
+    "cache vs hard drive",
+    "cache vs local storage"
+   ]
+  },
+  "can apple read my notes": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "can apple read my notes",
+    "can apple read my notes app",
+    "can apple read my notes out loud",
+    "can claude read my apple notes",
+    "can apple see your notes",
+    "does apple have access to my notes"
+   ]
+  },
+  "can apps read my notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what apps can read my notes to me",
+    "can apple read my notes",
+    "can my notes app be hacked"
+   ]
+  },
+  "can my notes app be hacked": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "can my notes app be hacked",
+    "can the notes app on iphone be hacked",
+    "can your notes app get hacked",
+    "can someone hack into my notes app"
+   ]
+  },
+  "can someone hack into my notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "can you lock the notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "client side encryption": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "client side encryption",
+    "client side encryption google",
+    "client side encryption s3",
+    "client side encryption google com meaning",
+    "client side encryption google workspace",
+    "client side encryption aws",
+    "client side encryption example",
+    "client side encryption cse"
+   ]
+  },
+  "client side encryption example": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "client side encryption example",
+    "aws s3 client side encryption example",
+    "what is client side encryption",
+    "client side vs server side encryption"
+   ]
+  },
+  "client side encryption vs server side": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "client side encryption vs server side encryption",
+    "client side encryption vs server side encryption snowflake",
+    "client side encryption and server side encryption",
+    "client side vs server side encryption aws",
+    "s3 client side encryption vs server side encryption",
+    "client side vs server side encryption"
+   ]
+  },
+  "client side vs server side encryption": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "client side vs server side encryption",
+    "client side encryption vs server side encryption snowflake",
+    "s3 client side vs server side encryption"
+   ]
+  },
+  "cloud first vs local first": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first vs cloud first",
+    "cloud smart vs cloud first"
+   ]
+  },
+  "cloud outage": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "cloud outage",
+    "cloud outages today",
+    "cloud outage right now",
+    "cloud outage yesterday",
+    "cloud outage map",
+    "cloud outage news",
+    "cloud outage insurance",
+    "cloud problems today"
+   ]
+  },
+  "cloud outage notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "aws outage notes",
+    "cloud problems today",
+    "cloud issues today",
+    "cloud conditions today"
+   ]
+  },
+  "cloud storage vs local storage for personal use": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "cloud storage vs local storage for personal use",
+    "cloud storage vs local storage",
+    "is cloud storage better than local storage",
+    "is cloud storage cheaper than local storage",
+    "is cloud storage safer than local storage"
+   ]
+  },
+  "conflict copy": {
+   "google": false,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "what is a conflicted copy",
+    "conflict copy egnyte",
+    "conflict copypasta",
+    "conflicted copy dropbox",
+    "conflicted copy meaning",
+    "conflicted copy excel",
+    "conflicted copy sam riviere",
+    "copyright conflict"
+   ]
+  },
+  "conflict resolution local first": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "conflicted copy meaning": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "convert notes to markdown": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "crdt": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "crdt",
+    "crdt first",
+    "crdts dental hygiene",
+    "crdt svc intl corp",
+    "crdt first on credit report",
+    "crdts exam",
+    "crdt meaning",
+    "crdt first card"
+   ]
+  },
+  "crdt local first": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "crdt local first"
+   ]
+  },
+  "credential stuffing": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "credential stuffing",
+    "credential stuffing meaning",
+    "credential stuffing attack",
+    "credential stuffing in cyber security",
+    "credential stuffing vs password spraying",
+    "credential stuffing vs brute force",
+    "credential stuffing vs spraying",
+    "credential stuffing attack definition"
+   ]
+  },
+  "dangerous permissions android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "dangerous permissions android",
+    "dangerous permissions android list",
+    "normal and dangerous permissions android",
+    "what is phone permission on android"
+   ]
+  },
+  "data lock in": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "data lock in",
+    "data lock in excel",
+    "data lock in cloud computing",
+    "data lock in clinical trials",
+    "data lock in meaning",
+    "data lock in cohesity",
+    "database lock in clinical trials",
+    "data locking in sac"
+   ]
+  },
+  "data minimization": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "data minimization",
+    "data minimization meaning",
+    "data minimization principle",
+    "data minimization definition",
+    "data minimization refers to",
+    "data minimization and purpose limitation",
+    "data minimization gdpr",
+    "data minimization policy"
+   ]
+  },
+  "data minimization examples": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "data minimization examples",
+    "data optimization examples",
+    "data minimization techniques",
+    "data minimization principle"
+   ]
+  },
+  "data minimization principle": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "data minimization principle",
+    "data minimization principle gdpr",
+    "data minimization principle means",
+    "data minimization principle of the eu gdpr entail",
+    "data minimization principle for ai models",
+    "data minimisation principle",
+    "data minimisation principle gdpr",
+    "data minimisation principle meaning"
+   ]
+  },
+  "data minimization techniques": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "data ownership": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "data ownership",
+    "data ownership vs data stewardship",
+    "data ownership vs data rights",
+    "data ownership protocol",
+    "data ownership definition",
+    "data ownership model",
+    "data ownership and stewardship",
+    "data ownership in collaboration"
+   ]
+  },
+  "data ownership notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "data portability": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "data portability",
+    "data portability meaning",
+    "data portability request",
+    "data portability api",
+    "data portability is the right to",
+    "data portability gdpr",
+    "data portability obligation",
+    "data portability obligation pdpa"
+   ]
+  },
+  "data portability gdpr": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "disable telemetry": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "disable telemetry windows 11",
+    "disable telemetry",
+    "disable telemetry windows 10",
+    "disable telemetry claude code",
+    "disable telemetry windows 11 regedit",
+    "disable telemetry palo alto",
+    "disable telemetry vscode",
+    "disable telemetry powershell 7"
+   ]
+  },
+  "does encryption protect privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "does encryption protect confidentiality",
+    "how does encryption protect privacy",
+    "does iphone protect your privacy"
+   ]
+  },
+  "does google docs use your data to train ai": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "does google drive use your data to train ai": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "does google keep work offline": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "does google keep work offline",
+    "can google keep work offline",
+    "does google keep notes work offline",
+    "google keep work offline",
+    "can i use google keep offline",
+    "is google keep offline",
+    "is google docs offline safe"
+   ]
+  },
+  "does google use my data to train ai": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "does google use my data to train ai",
+    "is google using my data to train ai",
+    "does google drive use your data to train ai",
+    "does google docs use your data to train ai",
+    "does google use drive data to train ai",
+    "does google use gmail data to train ai",
+    "how to opt out of google using my data to train ai",
+    "how much mobile data does google use"
+   ]
+  },
+  "does my notes app track me": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "does notes app work without internet": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "does notion ai train on my data": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "does notion ai train on my data",
+    "notion where is data stored"
+   ]
+  },
+  "does notion work offline": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "does notion work offline",
+    "does notion work offline now",
+    "does notion work offline for free",
+    "can notion work offline",
+    "is notion work offline",
+    "does notion work without internet",
+    "does notion desktop work offline",
+    "does notion calendar work offline"
+   ]
+  },
+  "does notion work without internet": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "does obsidian work offline": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "does obsidian work offline",
+    "can obsidian work offline",
+    "does obsidian work without internet",
+    "does obsidian notes work offline",
+    "does obsidian sync work offline",
+    "what game is obsidian working on",
+    "how to use obsidian",
+    "how to use obsidian app"
+   ]
+  },
+  "does obsidian work without internet": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "drive file scope": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "drive.file scope",
+    "google drive file scope",
+    "auth drive file scope",
+    "can you drive after a scope"
+   ]
+  },
+  "drive.file scope": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "drive.file scope",
+    "google drive file scope",
+    "auth drive file scope",
+    "can you drive after a scope"
+   ]
+  },
+  "duplicate notes after sync": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "e2ee metadata": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "e2ee metadata",
+    "what is metadata"
+   ]
+  },
+  "e2ee notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "e2ee notes app",
+    "best e2ee notes app",
+    "is the notes app encrypted",
+    "how to recover notes from notes app",
+    "is notes app safe",
+    "notes app uses"
+   ]
+  },
+  "encrypted notes": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "encrypted notes app",
+    "encrypted notes",
+    "encrypted notes app iphone",
+    "encrypted notes app android",
+    "encrypted notes tibia",
+    "encrypted notes online",
+    "encrypted notes android",
+    "encrypted notes iphone"
+   ]
+  },
+  "encrypted notes android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "encrypted notes android",
+    "secure notes android",
+    "secure notes android app",
+    "encrypted notepad android",
+    "encrypted notes app android",
+    "best encrypted notes app android",
+    "secure notes android content provider challenge",
+    "is samsung notes encrypted"
+   ]
+  },
+  "encrypted notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "encrypted notes app",
+    "encrypted notes app iphone",
+    "encrypted notes app android",
+    "encrypted notes app ios",
+    "encrypted notes app windows",
+    "encrypted notes app reddit",
+    "encrypted notes app free",
+    "encrypted notes app open source"
+   ]
+  },
+  "encrypted notes app android": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "encrypted notes app android",
+    "secure notes app android",
+    "secure notes app android free",
+    "secure notes app android reddit",
+    "best encrypted notes app android",
+    "best secure notes app android",
+    "most secure notes app android",
+    "is the notes app encrypted"
+   ]
+  },
+  "encrypted notes app open source": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "encrypted notes app open source",
+    "is the notes app encrypted",
+    "is the notes app secure",
+    "is samsung notes encrypted"
+   ]
+  },
+  "encrypted notes privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "encrypted vs unencrypted backup": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "encryption and privacy": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "encryption and privacy",
+    "data encryption and privacy",
+    "homomorphic encryption and differential privacy",
+    "end to end encryption and privacy",
+    "what is privacy and app encryption",
+    "are iphones encrypted"
+   ]
+  },
+  "encryption at rest": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "encryption at rest",
+    "encryption at rest vs in transit",
+    "encryption at rest and in transit",
+    "encryption at rest meaning",
+    "encryption at rest and in transit meaning",
+    "encryption at rest postgres",
+    "encryption at rest azure",
+    "encryption at rest mongodb"
+   ]
+  },
+  "encryption at rest vs end to end": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "encryption at rest vs end to end"
+   ]
+  },
+  "encryption at rest vs in transit vs in use": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "encryption at rest vs in transit vs in use",
+    "encryption at rest vs in transit",
+    "data at rest encryption vs data in transit",
+    "encryption at rest and in transit meaning"
+   ]
+  },
+  "encryption in transit vs at rest": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "encryption in transit vs at rest",
+    "data encryption in transit vs at rest",
+    "encryption converts data in transit or at rest to an unreadable format",
+    "encryption converts data in transit or at rest",
+    "encryption in transit at rest",
+    "encryption at rest vs in transit vs in use",
+    "encryption at rest vs in transit aws",
+    "end to end encryption vs encryption in transit and at rest"
+   ]
+  },
+  "encryption in transit vs end to end": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "encryption in transit vs end to end",
+    "end to end encryption vs encryption in transit and at rest"
+   ]
+  },
+  "encryption key management": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "encryption key management",
+    "encryption key management system",
+    "encryption key management software",
+    "encryption key management best practices",
+    "encryption key management policy",
+    "encryption key management lifecycle",
+    "encryption key management solution",
+    "encryption key management service"
+   ]
+  },
+  "encryption vs privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "encryption and privacy",
+    "homomorphic encryption vs differential privacy",
+    "most secure encryption",
+    "is pgp encryption secure"
+   ]
+  },
+  "end to end encrypted notes": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "end to end encrypted notes app",
+    "end to end encrypted notes",
+    "end to end encrypted note taking app",
+    "end to.end encrypted note taking",
+    "end to end encrypted notepad",
+    "best end to end encrypted notes app",
+    "is notesnook end to end encrypted",
+    "apple notes end to end encrypted"
+   ]
+  },
+  "end to end encrypted notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "end to end encryption explained": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "end to end encryption explained",
+    "end to end encryption meaning",
+    "end to end encryption meaning in hindi",
+    "end to end encryption example",
+    "end to end encryption meaning in malayalam",
+    "end to end encryption meaning in tamil",
+    "end to end encryption meaning in bengali",
+    "end to end encryption meaning in urdu"
+   ]
+  },
+  "end to end encryption metadata": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "end to end encryption metadata leakage": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "evernote alternatives": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "evernote alternatives",
+    "evernote alternatives 2026",
+    "evernote alternatives reddit",
+    "evernote alternatives free",
+    "evernote alternatives 2025",
+    "evernote alternatives open source",
+    "evernote alternatives for mac",
+    "evernote alternatives for linux"
+   ]
+  },
+  "evernote outage": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "evernote outage",
+    "evernote not working",
+    "evernote web not working",
+    "is evernote no longer free"
+   ]
+  },
+  "evernote shutting down": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "evernote shutting down",
+    "did evernote shut down"
+   ]
+  },
+  "export apple notes to markdown": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "export encrypted notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "export secure notes from 1password",
+    "export secure notes from keychain",
+    "how to export notes from iphone"
+   ]
+  },
+  "export google keep notes": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "export google keep notes",
+    "export google keep notes to obsidian",
+    "export google keep notes to another account",
+    "export google keep notes to pdf",
+    "export google keep notes to onenote",
+    "export google keep notes to markdown",
+    "export google keep notes to notion",
+    "transfer google keep notes to another account"
+   ]
+  },
+  "export google keep notes to markdown": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "export notes": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "export notes to pdf",
+    "export notes from iphone",
+    "export notes from mac",
+    "export notes from powerpoint",
+    "export notes from evernote",
+    "export notes",
+    "export notes scan as pdf",
+    "export notes from one mac to another"
+   ]
+  },
+  "export notes before switching": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "export notes to markdown": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "export notes to markdown",
+    "convert notes to markdown",
+    "export apple notes to markdown",
+    "export obsidian notes to markdown",
+    "export mac notes to markdown",
+    "export onenote notes to markdown",
+    "export all apple notes to markdown",
+    "export google keep notes to markdown"
+   ]
+  },
+  "f droid apps": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "f droid apps",
+    "f droid apps reddit",
+    "f droid apps list",
+    "f droid apps better play store",
+    "f droid apps best",
+    "f droid apps safe",
+    "f droid apps download",
+    "f droid apps for android"
+   ]
+  },
+  "f droid notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app f droid",
+    "best f droid notes app",
+    "what is f droid app",
+    "what is f droid"
+   ]
+  },
+  "fdroid notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app fdroid",
+    "android notes app",
+    "android notes app free",
+    "android notes app without ads",
+    "android notes app with password protection",
+    "android notes app reddit",
+    "android notes app with pen",
+    "android notes app like iphone"
+   ]
+  },
+  "fdroid offline notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "android offline notes app",
+    "android offline notes",
+    "can i use notability offline"
+   ]
+  },
+  "flutter hive": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "flutter hive",
+    "flutter hive ce",
+    "flutter hive package",
+    "flutter hive_ce",
+    "flutter hive database",
+    "flutter hive generator",
+    "flutter hive alternative",
+    "flutter hive tutorial"
+   ]
+  },
+  "flutter hive database": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "flutter hive database",
+    "flutter hive database tutorial",
+    "flutter hive db",
+    "flutter local database hive",
+    "hive database flutter documentation",
+    "hive database flutter example"
+   ]
+  },
+  "foss notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "foss notes app",
+    "foss notes app android",
+    "foss notes app reddit",
+    "foss notes app ios",
+    "foss application notes",
+    "caips notes apply",
+    "caips notes apply online",
+    "caips notes apply online from india"
+   ]
+  },
+  "free notes app no subscription": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "free notes app no subscription",
+    "free notes app no sign up",
+    "what is the best free notes app",
+    "is notes app free",
+    "what is the best free note taking app"
+   ]
+  },
+  "free notes app without login": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "google ai training data opt out": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "google drive as database": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "google drive as database",
+    "use google drive as database",
+    "google drive database app",
+    "google drive database design",
+    "google drive database schema",
+    "google drive sql database",
+    "google drive access database",
+    "google drive relational database"
+   ]
+  },
+  "google drive database app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "google drive file scope": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "google drive file scope",
+    "files to google drive",
+    "google drive can't retrieve file information",
+    "how to public file in google drive",
+    "how save file in google drive",
+    "how do i put a file in google drive"
+   ]
+  },
+  "google drive notes": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "google drive notes",
+    "google drive notes app",
+    "google drive notes template",
+    "google drive notes pdf",
+    "google drive notes pdf in hindi",
+    "google drive notes pdf free download",
+    "google drive notes download",
+    "google docs notes"
+   ]
+  },
+  "google drive notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "google drive notes app",
+    "google docs notes app",
+    "apple notes vs google drive",
+    "does google drive have a notes app",
+    "apple notes google drive",
+    "how to save apple notes to google drive",
+    "does google have a notes app",
+    "how to save notes in google drive"
+   ]
+  },
+  "google keep alternative": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "google keep alternative",
+    "google keep alternative reddit",
+    "google keep alternative free",
+    "google keep alternative open source",
+    "google keep alternative self hosted",
+    "google keep alternative for android",
+    "google keep alternative microsoft",
+    "google keep alternative ios"
+   ]
+  },
+  "google keep alternative android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "google keep alternative android",
+    "alternative of google keep",
+    "alternatives to google storage",
+    "microsoft alternative to google keep"
+   ]
+  },
+  "google keep alternative open source": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "google keep alternative open source",
+    "alternative of google keep",
+    "microsoft alternative to google keep",
+    "open source alternative to google assistant"
+   ]
+  },
+  "google keep alternative privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "google keep alternatives": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "google keep alternatives",
+    "google keep alternatives reddit",
+    "google keep alternatives free",
+    "google keep alternatives self hosted",
+    "google keep alternatives android",
+    "google keep alternatives ios",
+    "google keep alternatives open source",
+    "google keep alternative microsoft"
+   ]
+  },
+  "google keep down": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "google keep download",
+    "google keep download pc",
+    "google keep download mac",
+    "google keep download windows",
+    "google keep down",
+    "google keep download for windows 11",
+    "google keep download android",
+    "google keep download apk"
+   ]
+  },
+  "google keep privacy": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "google keep privacy",
+    "google keep privacy reddit",
+    "google keep privacy policy",
+    "google keep notes privacy",
+    "google keep data privacy",
+    "google keeps saying privacy error",
+    "is google keep private",
+    "how do i protect my privacy on google"
+   ]
+  },
+  "google keep shutting down": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "google keep shutting down",
+    "google keeps shutting down by itself",
+    "google keeps shutting down on my phone",
+    "google keeps shutting down on laptop",
+    "google keeps shutting off",
+    "google chrome keep shutting down",
+    "google messages keep shutting down",
+    "google pixel keeps shutting down"
+   ]
+  },
+  "hive database flutter": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "hive database flutter",
+    "hive database flutter documentation",
+    "hive database flutter example",
+    "hive local database flutter",
+    "flutter hive database tutorial"
+   ]
+  },
+  "hive vs sqlite flutter": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "hive vs sqlite flutter",
+    "flutter sqlite example",
+    "what is better than flutter"
+   ]
+  },
+  "how does encryption protect privacy": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "how does encryption protect privacy",
+    "how does encryption protect data"
+   ]
+  },
+  "how does sync work": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "how does sync work",
+    "how does sync work in ford",
+    "how does sync work on ninja air fryer",
+    "how does sync work on android",
+    "how does sync work throne and liberty",
+    "how does sync work in sharepoint",
+    "how does sync work in chrome",
+    "how does sync work in onedrive"
+   ]
+  },
+  "how to backup notes": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "how to backup notes on iphone",
+    "how to backup notes on iphone without icloud",
+    "how to backup notes to icloud",
+    "how to backup notes on mac",
+    "how to backup notes",
+    "how to backup notes on iphone to icloud",
+    "how to backup notes on samsung",
+    "how to backup notes on notability"
+   ]
+  },
+  "how to choose a notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "how to set a reminder on notes app",
+    "how to set a password on notes app",
+    "how to set a lock on notes app",
+    "how to select all notes app",
+    "how to select in notes app",
+    "how to set up notes app",
+    "how to select all notes app iphone",
+    "how to set a reminder in apple notes"
+   ]
+  },
+  "how to choose encrypted notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "how to know if an app works offline": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "how to know if an app works offline",
+    "how to know if an app will work offline",
+    "does find my app work without internet",
+    "how do i know if my phone is offline",
+    "can you use an app without internet"
+   ]
+  },
+  "how to migrate notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "how to migrate notes from one mac to another",
+    "how to convert notes into pdf",
+    "how to move notes in fl studio",
+    "how to convert notes into pdf in iphone",
+    "how to move notes up an octave in fl studio",
+    "how to move notes in musescore",
+    "how to move notes down an octave in musescore",
+    "how to convert notes into word document"
+   ]
+  },
+  "how to opt out of google using my data to train ai": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "how to switch note taking apps": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "how to test if app works offline": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "how to know if an app works offline",
+    "does find my app work without internet",
+    "how do i know if my phone is offline"
+   ]
+  },
+  "how to test offline mode": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "how to check offline mode in outlook",
+    "how to check offline mode on spotify",
+    "how to check offline mode in gmail",
+    "how to check offline mode",
+    "how to check offline mode in new outlook",
+    "how to check work offline mode in outlook",
+    "how to turn off offline testing mode vrchat",
+    "how to appear offline without it saying offline"
+   ]
+  },
+  "https vs end to end encryption": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "https vs end to end encryption",
+    "https end to end encryption",
+    "tls vs end to end encryption"
+   ]
+  },
+  "is apple notes end to end encrypted": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is apple notes end to end encrypted",
+    "are icloud notes end to end encrypted",
+    "does apple notes have end to end encryption",
+    "are apple notes encrypted"
+   ]
+  },
+  "is encryption enough for privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "is evernote shutting down": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is evernote shutting down",
+    "is evernote no longer free"
+   ]
+  },
+  "is f droid safe": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "is f droid safe",
+    "is f droid safe to download",
+    "is f droid safe reddit",
+    "is f droid safe to install",
+    "is f android safe",
+    "is f droid secure",
+    "is f droid reliable",
+    "is f droid apk safe"
+   ]
+  },
+  "is google keep encrypted": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "is google keep encrypted",
+    "is google keep secure",
+    "is google keep secure reddit",
+    "is google keep notes encrypted",
+    "is google keep data encrypted",
+    "is google keep notes secure",
+    "is google keep secure for passwords",
+    "is google keep end to end encrypted"
+   ]
+  },
+  "is google keep private": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "is google keep private",
+    "is google keep private reddit",
+    "is google keep notes private",
+    "is my google keep private",
+    "is google keep secure"
+   ]
+  },
+  "is it ok to write down passwords": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "is it safe to store passwords in google keep": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is it safe to store passwords in google keep",
+    "can you password protect google keep",
+    "is google safe to store passwords"
+   ]
+  },
+  "is it safe to store passwords in notes": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is it safe to store passwords in notes app",
+    "is it safe to store passwords in notes",
+    "is it safe to store passwords in notes on iphone",
+    "is it safe to keep passwords in notes",
+    "is it safe to put passwords in notes",
+    "is it safe to store passwords in apple notes",
+    "is it safe to store passwords in samsung notes",
+    "is it bad to store passwords in notes app"
+   ]
+  },
+  "is it safe to use ai note taker": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "is it safe to write passwords down": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is it safe to write passwords down",
+    "is it ok to write down passwords",
+    "is it safe to write down your passwords",
+    "is it good to write down passwords",
+    "is writing down passwords bad"
+   ]
+  },
+  "is joplin end to end encrypted": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is joplin end to end encrypted",
+    "is end to end encryption safe",
+    "end to end encryption ending"
+   ]
+  },
+  "is metadata personal data": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "is notes app private": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is notes app private",
+    "is apple notes app private",
+    "is samsung notes app private",
+    "is the iphone notes app private",
+    "is the notes app completely private",
+    "is there a private notes app",
+    "are my notes private",
+    "is the notes app secure"
+   ]
+  },
+  "is notes app private reddit": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "is notion ai safe": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "is notion ai safe",
+    "is notion ai secure",
+    "is notion ai reliable",
+    "are ai apps safe",
+    "is ai safe",
+    "notion app reviews"
+   ]
+  },
+  "is obsidian encrypted": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "is obsidian encrypted",
+    "is obsidian encrypted reddit",
+    "is obsidian secure",
+    "is obsidian secure and private",
+    "is obsidian secure reddit",
+    "is obsidian sync encrypted",
+    "is obsidian vault encrypted",
+    "is obsidian notes encrypted"
+   ]
+  },
+  "is open source more secure": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "is open source more secure than proprietary",
+    "is open source more secure",
+    "is open source more secure than commercial software",
+    "is open source more safe",
+    "is open source software more secure than proprietary software",
+    "is open source software more secure",
+    "is open source really more secure",
+    "is open source code more secure"
+   ]
+  },
+  "is samsung notes safe for passwords": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is samsung notes safe for passwords",
+    "is samsung notes safe to store passwords",
+    "can i password protect samsung notes",
+    "password protect samsung notes",
+    "is samsung notes secure",
+    "can samsung notes be hacked"
+   ]
+  },
+  "is the notes app encrypted": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is the notes app encrypted",
+    "is the notes app secure",
+    "is the notes app secure for passwords",
+    "is the notes app secure on iphone",
+    "is the apple notes app encrypted",
+    "is the iphone notes app encrypted",
+    "is the samsung notes app encrypted",
+    "is the apple notes app secure"
+   ]
+  },
+  "is the notes app safe": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "is the notes app safe",
+    "is the notes app safe to store passwords",
+    "is the notes app safe for passwords",
+    "is the notes app secure",
+    "is the notes app secure on iphone",
+    "is the apple notes app safe",
+    "is the iphone notes app safe",
+    "is keep notes app safe"
+   ]
+  },
+  "is the notes app secure": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "is the notes app secure",
+    "is the notes app secure for passwords",
+    "is the notes app secure on iphone",
+    "is the notes app safe",
+    "is the notes app safe to store passwords",
+    "is the apple notes app secure",
+    "is the samsung notes app secure",
+    "is the ios notes app secure"
+   ]
+  },
+  "is writing down passwords bad": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "joplin export": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "joplin export",
+    "joplin export to pdf",
+    "joplin export to markdown",
+    "joplin export all notes",
+    "joplin export to obsidian",
+    "joplin export notes",
+    "joplin export to word",
+    "joplin export to onenote"
+   ]
+  },
+  "joplin export to markdown": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "local ai": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "local ai",
+    "local ai models",
+    "local ai image generator",
+    "local airport",
+    "local airports near me",
+    "local air quality",
+    "local ai video generator",
+    "local ai agents"
+   ]
+  },
+  "local ai note taking": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local ai note taking",
+    "local ai note taking app",
+    "local ai note taker",
+    "local ai note taker mac",
+    "local ai meeting note taker",
+    "best local ai. note taker",
+    "free local ai note taker",
+    "how to learn note taking"
+   ]
+  },
+  "local ai notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local ai notes app",
+    "is the notes app free",
+    "what is the best free notes app",
+    "where are apple notes stored locally"
+   ]
+  },
+  "local ai vs cloud ai": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "local ai vs cloud ai",
+    "local ai vs cloud ai reddit",
+    "local ai vs cloud ai cost",
+    "local ai or cloud ai",
+    "local ai vs cloud based ai",
+    "cloud ai meaning",
+    "cloud ai examples",
+    "cloud ai definition"
+   ]
+  },
+  "local first app architecture": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "local first app meaning": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first app meaning",
+    "what are local apps"
+   ]
+  },
+  "local first apps": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "local first apps",
+    "local first apps reddit",
+    "local first app architecture",
+    "local first app react native",
+    "local first app expo",
+    "local first app meaning",
+    "local first app development",
+    "local first app ideas"
+   ]
+  },
+  "local first apps examples": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "local first architecture": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "local first architecture",
+    "local first architecture expo",
+    "local first app architecture",
+    "local first software architecture",
+    "javascript local first architecture",
+    "why does local first architecture matter for javascript",
+    "local first web apps architecture",
+    "adam wiggins local first architecture"
+   ]
+  },
+  "local first comparison": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first comparison",
+    "local vs locally"
+   ]
+  },
+  "local first database": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first database",
+    "local first database sync",
+    "local first db",
+    "local first db react native",
+    "best local first database",
+    "flutter local first database",
+    "local first vector database",
+    "expo local first database"
+   ]
+  },
+  "local first meaning": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "local first meaning",
+    "local first name meaning",
+    "local first name meaning in hindi",
+    "local first name meaning in telugu",
+    "local first app meaning",
+    "local first name meaning in marathi",
+    "local first software meaning",
+    "local first definition"
+   ]
+  },
+  "local first note taking": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first note taking apps",
+    "local first note taking",
+    "notebooks to take notes",
+    "how to take notes for beginners",
+    "is it take note or take notes"
+   ]
+  },
+  "local first note taking apps": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first note taking apps",
+    "what is the best free note taking app",
+    "what are good apps for taking notes",
+    "is the notes app free"
+   ]
+  },
+  "local first notes": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first notes app",
+    "local first notes",
+    "is standard notes free"
+   ]
+  },
+  "local first notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first notes app",
+    "is the notes app free",
+    "what is the best free notes app",
+    "what is the notes app for"
+   ]
+  },
+  "local first notion alternative": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "local first software": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "local-first software you own your data in spite of the cloud",
+    "local-first software",
+    "local first software movement",
+    "local first software development",
+    "local first software martin kleppmann",
+    "local first software architecture",
+    "local first software ink and switch",
+    "local first software reddit"
+   ]
+  },
+  "local first sync": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first sync engine",
+    "local first sync",
+    "local first database sync",
+    "sqlite local first sync",
+    "convex local first sync",
+    "local first zero sync",
+    "local first data sync",
+    "sync issues local failures"
+   ]
+  },
+  "local first sync engine": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first sync engine"
+   ]
+  },
+  "local first vs cloud first": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "local first vs offline first": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local first vs offline first",
+    "local first offline first",
+    "first vs first or default",
+    "first to file vs first to use",
+    "first come first served basis alternative"
+   ]
+  },
+  "local notion alternative": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "local notion alternative",
+    "local notion alternative reddit",
+    "local first notion alternative",
+    "local hosted notion alternative",
+    "best local notion alternative",
+    "open source local notion alternative",
+    "notion alternative local storage",
+    "alternative for notion"
+   ]
+  },
+  "local storage and cloud storage difference": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "local storage vs cache": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "local storage vs cache storage",
+    "browser local storage vs cache",
+    "local storage vs cache vs cookies",
+    "local storage vs session storage vs cache",
+    "cache vs local storage"
+   ]
+  },
+  "local storage vs cloud storage": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "local storage vs cloud storage",
+    "local storage and cloud storage",
+    "local storage and cloud storage difference",
+    "local storage vs online storage",
+    "local storage and cloud storage in business",
+    "tapo local storage vs cloud storage",
+    "compare local storage and cloud storage",
+    "cloud storage vs local storage for personal use"
+   ]
+  },
+  "local-first software": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "local-first software you own your data in spite of the cloud",
+    "local-first software",
+    "local first software movement",
+    "local first software development",
+    "local first software martin kleppmann",
+    "local first software architecture",
+    "local first software ink and switch",
+    "local first software reddit"
+   ]
+  },
+  "locked in to an app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "locked in app",
+    "locked in apparel",
+    "locked in apple",
+    "locked in application",
+    "locked in application footasylum",
+    "locked in app store",
+    "locked in apple tv",
+    "locked in app iphone"
+   ]
+  },
+  "logseq vs anytype": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "logseq vs anytype",
+    "logseq vs anytype reddit",
+    "logseq anytype",
+    "obsidian vs logseq vs anytype",
+    "beam188 vs beam189"
+   ]
+  },
+  "lost recovery key": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "lost recovery key apple",
+    "lost recovery key",
+    "lost recovery key mac",
+    "lost recovery key apple account",
+    "lost recovery key iphone",
+    "lost recovery key microsoft",
+    "lost recovery key bitlocker",
+    "lost recovery key windows"
+   ]
+  },
+  "markdown notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "markdown notes app",
+    "markdown notes app mac",
+    "markdown notes app android",
+    "markdown notes app ios",
+    "markdown notes app windows",
+    "markdown notes apple",
+    "markdown notes app free",
+    "markdown notes app linux"
+   ]
+  },
+  "markdown notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "markdown notes app android",
+    "best markdown notes app android",
+    "can you get apple notes on android",
+    "what is the notes app for",
+    "what is the notes app on android",
+    "why has my notes app disappeared"
+   ]
+  },
+  "metadata examples": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "metadata examples",
+    "metadata examples in real life",
+    "meta examples",
+    "meta examples in movies",
+    "meta examples sentences",
+    "metadata schema examples",
+    "sharepoint metadata examples",
+    "metadata standards examples"
+   ]
+  },
+  "metadata leakage": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "metadata leakage",
+    "metadata date",
+    "metadata explained"
+   ]
+  },
+  "metadata privacy": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "metadata privacy",
+    "metadata privacy concerns",
+    "privacyguides metadata",
+    "jellyfin metadata privacy",
+    "whatsapp metadata privacy",
+    "spotlight metadata privacy",
+    "visitor_privacy_metadata",
+    "visitor_privacy_metadata cookie"
+   ]
+  },
+  "migrate encrypted notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "migrate notes to a new app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "transfer notes to new apple id",
+    "can you transfer notes to a new apple account",
+    "transfer notes to another apple id",
+    "how do i transfer my notes to a new phone",
+    "how to transfer notes from one icloud to another"
+   ]
+  },
+  "migrate notes to new app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "transfer notes to new apple id",
+    "transfer notes to another apple id",
+    "migrate apple notes to new mac",
+    "how to transfer notes to new apple id on same device",
+    "transfer icloud notes to another apple id",
+    "export samsung notes to another app",
+    "transfer samsung notes to another app",
+    "how to transfer notes from one icloud to another"
+   ]
+  },
+  "most private notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "most private notes app",
+    "most secure notes app",
+    "most secure notes app for android",
+    "most secure notes app ios",
+    "most secure notes app reddit",
+    "most secure notes app for iphone",
+    "is notes app private",
+    "are my notes private"
+   ]
+  },
+  "most secure notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "most secure notes app",
+    "most secure notes app for android",
+    "most secure notes app ios",
+    "most secure notes app reddit",
+    "most secure notes app for iphone",
+    "most encrypted notes app",
+    "is the notes app secure",
+    "best secure notes app for android"
+   ]
+  },
+  "most secure notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "most secure notes app android",
+    "best secure notes app for android",
+    "is the notes app secure"
+   ]
+  },
+  "move notes to another app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "move notes to another apple id",
+    "transfer notes to different apple id",
+    "transfer icloud notes to another apple id",
+    "transfer samsung notes to another app",
+    "move apple notes to another account",
+    "move notes from one apple id to another",
+    "how do i move my notes from an android to another",
+    "can i move notes from one account to another"
+   ]
+  },
+  "no subscription notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "no subscription notes app",
+    "best non subscription notes app",
+    "why does my notes app not have checklist",
+    "notes app doesn't have checklist"
+   ]
+  },
+  "non proprietary file formats": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "note app no ai": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "note app no ai",
+    "note app without ai",
+    "note taking app no ai",
+    "ipad notes app no ai",
+    "best notes app no ai",
+    "note taking app without ai",
+    "note taking app not ai",
+    "ipad notes app without ai"
+   ]
+  },
+  "note app no sign up": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "note taking app lock in": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "note taking app with lock",
+    "best note taking app with lock",
+    "can you lock the notes app",
+    "how to lock note app"
+   ]
+  },
+  "note taking app without ai": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "note taking app without ai",
+    "note taking app no ai",
+    "best note taking app without ai",
+    "ipad note taking app without ai",
+    "best note taking app no ai",
+    "note taking app ai",
+    "note taking app ai free",
+    "note taking app ai reddit"
+   ]
+  },
+  "note taking privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "notes app backup encryption": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app data": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app data recovery",
+    "notes app database",
+    "notes app data",
+    "sticky notes app data location",
+    "sticky notes app data",
+    "notes app transfer data",
+    "samsung notes app data recovery",
+    "notes app lost data"
+   ]
+  },
+  "notes app data collection": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app export markdown": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app export as markdown",
+    "how to export notes from notes app",
+    "how to export notes from iphone"
+   ]
+  },
+  "notes app f droid": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app f droid",
+    "best notes app f droid",
+    "what is the notes app on android",
+    "does android have a notes app",
+    "what is samsung notes app on android",
+    "do androids have a notes app"
+   ]
+  },
+  "notes app google drive sync": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app that syncs with google drive",
+    "how to sync samsung notes with google drive",
+    "can goodnotes sync with google drive",
+    "how to sync goodnotes to google drive",
+    "why are my notes not syncing between devices"
+   ]
+  },
+  "notes app lock in": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app with lock",
+    "notes app with lock feature",
+    "notes app on lock screen",
+    "notes app on lock screen iphone",
+    "notes app with lock android",
+    "notes app with lock for pc",
+    "notes app not locking with passcode",
+    "lock notes app in iphone"
+   ]
+  },
+  "notes app metadata": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app metadata",
+    "notes app meta quest",
+    "notes app uses",
+    "where does notes app store data",
+    "what is the notes app for"
+   ]
+  },
+  "notes app migration": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "lotus notes application migration to sharepoint",
+    "lotus notes application migration",
+    "how to migrate from evernote to apple notes",
+    "why is my notes app frozen",
+    "can't find my notes app",
+    "notes app not syncing"
+   ]
+  },
+  "notes app no account": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app no sign in",
+    "notes app no login",
+    "notes app no sign up",
+    "notes app website no sign up",
+    "free notes app no sign in",
+    "online notes app no sign up",
+    "free notes app no login",
+    "why does my notes app not have checklist"
+   ]
+  },
+  "notes app no internet": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app no internet connection",
+    "notes app no internet",
+    "notes app not connecting to internet",
+    "notes app without internet",
+    "notes app says no internet",
+    "notes app says no internet connection iphone",
+    "iphone notes app no internet",
+    "apple notes app no internet"
+   ]
+  },
+  "notes app no internet connection": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app no internet connection",
+    "notes app says no internet connection iphone",
+    "why does my notes app say no internet connection",
+    "notes app not working",
+    "notes app not loading",
+    "why do my apps say no internet connection",
+    "some apps showing no internet connection"
+   ]
+  },
+  "notes app no sign in": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "notes app no sign in android": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app no sign up": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "notes app no tracking": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app not syncing": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app not syncing",
+    "notes app not syncing between iphone and mac",
+    "notes app not syncing between iphone and ipad",
+    "notes app not syncing on mac",
+    "notes app not syncing to icloud",
+    "notes app not syncing shared",
+    "notes app not syncing on ipad",
+    "notes app not syncing from mac to iphone"
+   ]
+  },
+  "notes app offline mode": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app offline sync": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app permissions": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app permissions android": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app privacy": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app privacy",
+    "notes app privacy reddit",
+    "notes app security",
+    "best notes app privacy",
+    "samsung notes app privacy",
+    "iphone notes app privacy",
+    "apple notes app privacy",
+    "android notes app privacy"
+   ]
+  },
+  "notes app privacy mistakes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app privacy risks": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app red flags": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app security": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app security",
+    "apple notes app security",
+    "keep notes app security",
+    "iphone notes app security",
+    "best notes app for security",
+    "can my notes app be hacked",
+    "why does my notes app not have checklist"
+   ]
+  },
+  "notes app sync conflict": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app sync google drive android": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app that respects privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app that saves to google drive": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app that syncs to google drive",
+    "how to save notes to google drive",
+    "how to save apple notes to google drive",
+    "how to save iphone notes to google drive",
+    "can you save goodnotes to google drive"
+   ]
+  },
+  "notes app that syncs with google drive": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app that syncs with google drive",
+    "can goodnotes sync with google drive",
+    "does goodnotes sync with google drive",
+    "how to sync goodnotes to google drive"
+   ]
+  },
+  "notes app tracking": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes tracking app",
+    "notes app track changes",
+    "toppers notes tracking app",
+    "what is the notes app for",
+    "can't find my notes app",
+    "how do i use the notes app"
+   ]
+  },
+  "notes app user owned storage": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app vs password manager": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app with google drive backup": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes app with lock": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app with lock feature",
+    "notes app with lock",
+    "notes app with lock android",
+    "notes app with lock for pc",
+    "best notes app with lock",
+    "notes app with fingerprint lock",
+    "free notes app with lock",
+    "best notes app with lock for free"
+   ]
+  },
+  "notes app with lock android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app with lock android",
+    "best notes app for android with lock",
+    "can you lock the notes app",
+    "what is keep notes app on android",
+    "notes app not working android"
+   ]
+  },
+  "notes app with lock feature": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "notes app without account": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app without account",
+    "notes app without sign in",
+    "notes app no sign in",
+    "notes app no login",
+    "free notes app without login",
+    "what is the best free notes app",
+    "notes app doesn't have checklist",
+    "why does my notes app not have checklist"
+   ]
+  },
+  "notes app without ai": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app without ai",
+    "notes app no ai",
+    "ipad notes app without ai",
+    "best notes app without ai",
+    "ipad notes app no ai",
+    "notes app doesn't have checklist",
+    "why does my notes app not have checklist",
+    "alternative to notes app"
+   ]
+  },
+  "notes app without google account": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app google account",
+    "is google keep notes free",
+    "why does my notes app not have checklist",
+    "what is the best free notes app",
+    "can i download app without google account"
+   ]
+  },
+  "notes app without internet": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app without internet",
+    "notes app no internet connection",
+    "notes app no internet",
+    "notes app without wifi",
+    "notes app says no internet connection iphone",
+    "iphone notes app no internet",
+    "apple notes app no internet",
+    "does notes app work without internet"
+   ]
+  },
+  "notes app without login": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app without login",
+    "notes app no login",
+    "notes app without account",
+    "free notes app without login",
+    "notes app no sign in",
+    "notes app no sign up",
+    "free notes app no login",
+    "notes app online no login"
+   ]
+  },
+  "notes app without subscription": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes app without subscription",
+    "ipad notes app without subscription",
+    "best notes app no subscription",
+    "free notes app no subscription",
+    "best ipad notes app without subscription",
+    "what is the best free notes app",
+    "is notes app free",
+    "what is the best free note taking app"
+   ]
+  },
+  "notes app without tracking": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "notes backup": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "notes backup",
+    "notes backup iphone",
+    "notes backup android",
+    "notes backup icloud",
+    "notes backup mac",
+    "notes backup oneplus",
+    "notes backup samsung",
+    "notes backup google"
+   ]
+  },
+  "notes metadata": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notes metadata",
+    "note metadata obsidian",
+    "apple notes metadata",
+    "iphone notes metadata",
+    "notes app metadata",
+    "define metadata",
+    "what is metadata"
+   ]
+  },
+  "notesnook export": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notesnook export",
+    "notesnook export markdown",
+    "notesnook export to pdf",
+    "notesnook export notes"
+   ]
+  },
+  "notesnook vs joplin": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notesnook vs joplin",
+    "notesnook vs joplin reddit",
+    "joplin vs obsidian vs notesnook",
+    "standard notes vs notesnook vs joplin"
+   ]
+  },
+  "notesnook vs standard notes": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "notesnook vs standard notes",
+    "notesnook vs standard notes reddit",
+    "notesnook vs standard notes vs joplin",
+    "standart vs standard",
+    "is standard notes secure"
+   ]
+  },
+  "notion ai privacy": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "notion ai privacy",
+    "notion ai privacy policy",
+    "notion ai privacy reddit",
+    "notion ai data privacy",
+    "notion ai meeting notes privacy",
+    "notion app reviews",
+    "notion app vs web",
+    "notion similar apps"
+   ]
+  },
+  "notion ai train on data": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "notion ai training data",
+    "does notion ai train on my data",
+    "notion study schedule",
+    "notion daily schedule",
+    "notion database formula",
+    "notion usage example"
+   ]
+  },
+  "notion alternative": {
+   "google": false,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "notion alternatives",
+    "notion alternatives without ai",
+    "notion alternatives free",
+    "notion alternative reddit",
+    "notion alternative open source",
+    "notion alternatives for personal use",
+    "notion alternative no ai",
+    "notion alternative self hosted"
+   ]
+  },
+  "notion alternative local storage": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "notion alternatives without ai": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "notion outage": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "notion outage",
+    "notion outage today",
+    "notion outage status",
+    "notion ai outage",
+    "notion service outage",
+    "notion aws outage",
+    "why is my notion not working",
+    "why is my notion offline"
+   ]
+  },
+  "obsidian alternative android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "obsidian alternative android",
+    "obsidian sync alternative android",
+    "open source obsidian alternative android",
+    "alternative to obsidian",
+    "obsidian notion alternative",
+    "opposite of obsidian",
+    "other names for obsidian"
+   ]
+  },
+  "obsidian alternatives": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "obsidian alternatives",
+    "obsidian alternatives open source",
+    "obsidian alternatives reddit",
+    "obsidian alternatives free",
+    "obsidian alternatives with sync",
+    "obsidian alternatives 2026",
+    "obsidian alternatives github",
+    "obsidian alternatives with free sync"
+   ]
+  },
+  "obsidian vs anytype": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "obsidian vs anytype",
+    "obsidian vs anytype reddit",
+    "obsidian vs anytype 2025",
+    "obsidian vs anytype 2026",
+    "obsidian or anytype",
+    "obsidian vs anytype vs notion",
+    "obsidian vs logseq vs anytype",
+    "obsidian vs capacities vs anytype"
+   ]
+  },
+  "obsidian vs anytype vs logseq": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "obsidian vs logseq vs anytype"
+   ]
+  },
+  "obsidian vs joplin": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "obsidian vs joplin",
+    "obsidian vs joplin reddit",
+    "obsidian vs joplin vs notion",
+    "obsidian vs joplin vs logseq",
+    "obsidian vs joplin which is better",
+    "obsidian vs joplin 2026",
+    "obsidian vs joplin 2025",
+    "obsidian vs joplin notes"
+   ]
+  },
+  "obsidian vs logseq": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "obsidian vs logseq",
+    "obsidian vs logseq 2026",
+    "obsidian vs logseq reddit",
+    "obsidian vs logseq vs notion",
+    "obsidian vs logseq vs joplin",
+    "obsidian vs logseq 2025",
+    "obsidian vs logseq db",
+    "obsidian vs logseq performance"
+   ]
+  },
+  "obsidian vs logseq vs anytype": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "obsidian vs logseq vs anytype"
+   ]
+  },
+  "obsidian vs logseq vs joplin": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "obsidian vs logseq vs joplin",
+    "joplin vs obsidian vs logseq reddit",
+    "notable vs obsidian",
+    "what is the difference between obsidian and crying obsidian"
+   ]
+  },
+  "offline cache": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "offline cached content will be deleted",
+    "offline cache",
+    "offline cached content will be deleted meaning",
+    "offline cache outlook",
+    "offline cache fusion 360",
+    "offline cache reset",
+    "offline cache meaning",
+    "offline cache is full"
+   ]
+  },
+  "offline cache vs local storage": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "offline first": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "offline first architecture",
+    "offline first",
+    "offline first person shooter games",
+    "offline first database",
+    "offline first aid app",
+    "offline first app",
+    "offline first architecture android",
+    "offline first design"
+   ]
+  },
+  "offline first app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "offline first app",
+    "offline first application",
+    "offline first approach",
+    "offline first app architecture",
+    "offline first apps recommendations",
+    "offline first app android",
+    "offline first app react native",
+    "offline first app flutter"
+   ]
+  },
+  "offline first architecture": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "offline first database": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "offline first notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "offline first notes app"
+   ]
+  },
+  "offline first vs local first": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "offline first vs local first",
+    "first vs first or default",
+    "first come first served basis alternative",
+    "first to file vs first to use"
+   ]
+  },
+  "offline mode app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "offline mode apple music",
+    "offline mode apple news",
+    "offline mode app",
+    "offline mode apple maps",
+    "offline mode application",
+    "offline mode apple",
+    "offline mode apple tv",
+    "offline mode app ui"
+   ]
+  },
+  "offline note taking app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "offline note taking app",
+    "offline note taking app android",
+    "offline note taking app for pc",
+    "offline note taking app for mac",
+    "offline note taking app for chromebook",
+    "offline note taking app like notion",
+    "offline note taking app for laptop",
+    "offline note taking app linux"
+   ]
+  },
+  "offline notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "offline notes app",
+    "offline notes app android",
+    "offline notes app for windows",
+    "offline notes app for chromebook",
+    "offline notes app ios",
+    "offline notes app iphone",
+    "offline notes app for pc",
+    "offline notes app download"
+   ]
+  },
+  "offline notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "offline notes app android",
+    "offline notes app android reddit",
+    "best offline notes app android",
+    "best offline notes app for android reddit",
+    "best free offline notes app for android",
+    "how to use keep notes app in mobile",
+    "what is keep notes app on android",
+    "what is the best free note taking app for android"
+   ]
+  },
+  "offline notes app no account": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "offline notes app no ads": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "offline notes app no login": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "offline sync": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "offline sync",
+    "offline sync google docs",
+    "offline sync is disabled by your administrator",
+    "offline sync is enabled for another user",
+    "offline synchronization",
+    "offline sync windows 11",
+    "offline sync windows",
+    "offline sync google drive"
+   ]
+  },
+  "offline sync google drive": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "offline synchronization": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "omnivore shutting down": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "omnivore shutting down",
+    "omnivore app shutting down",
+    "did omnivore shut down",
+    "do vegans live longer than omnivores",
+    "vegan vs omnivore life expectancy",
+    "why does my chromebook shut down when i close it",
+    "why does my chromebook keep shutting down when i close it"
+   ]
+  },
+  "on device ai": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "on device ai",
+    "on device ai google chrome",
+    "on device ai models",
+    "on device ai android",
+    "on device ai apple",
+    "on device ai iphone",
+    "on device ai google",
+    "on device ai image generator"
+   ]
+  },
+  "on device ai privacy": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "on device ai privacy",
+    "ai privacy issues",
+    "how does ai invade privacy"
+   ]
+  },
+  "open source alternative to google keep": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "open source alternative to google keep",
+    "free alternative to google keep",
+    "alternative of google keep",
+    "open source alternative to google assistant",
+    "microsoft alternative to google keep"
+   ]
+  },
+  "open source encrypted notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "open source encrypted notes app",
+    "open-source secure notes app",
+    "is the notes app encrypted",
+    "open source information"
+   ]
+  },
+  "open source note taking app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "open source note taking app",
+    "open source note taking app android",
+    "open source note taking app windows",
+    "open source note taking app ipad",
+    "open source note taking app github",
+    "open source note taking app for tablet",
+    "open source note taking app with pen support",
+    "open source note taking app linux"
+   ]
+  },
+  "open source notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "open source notes app",
+    "open source notes app android",
+    "open source notes app with sync",
+    "open source notes app android github",
+    "open source notes app windows",
+    "open source notes app reddit",
+    "open source notes app github",
+    "open source notes app linux"
+   ]
+  },
+  "open source notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "open source notes app android",
+    "open source notes app android github",
+    "open source notes app android reddit",
+    "best open source notes app android",
+    "open source handwriting notes app android",
+    "free open source notes app android",
+    "what is the best free notes app",
+    "does android have a note app"
+   ]
+  },
+  "open source notion alternative": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "open source notion alternative",
+    "open source notion alternative self hosted",
+    "open source notion alternative github",
+    "open source notion alternative 2026",
+    "open source local notion alternative",
+    "best free open source notion alternative",
+    "notion open source alternative docker",
+    "notion ai open source alternative"
+   ]
+  },
+  "open source offline notes app android": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "open source privacy software": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "open source privacy software",
+    "open source security software",
+    "open source security software for windows",
+    "open source software security risks",
+    "open source software security risks and best practices",
+    "open source software security best practices",
+    "open source software security principles and practices",
+    "open source software security tools"
+   ]
+  },
+  "own cloud notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "own your data": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "own your data",
+    "own your data foundation",
+    "own your data campaign",
+    "own your data brittany kaiser",
+    "own a data center",
+    "my.own data",
+    "own the data",
+    "own your body's data ted talk"
+   ]
+  },
+  "password manager vs apple notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "password manager vs notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "password manager vs notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "password reuse": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "password reuse",
+    "password reuse is a security risk",
+    "password reuse policy",
+    "password reuse time in oracle",
+    "password reuse max in oracle",
+    "password reuse statistics",
+    "password reuse max",
+    "password reuse time"
+   ]
+  },
+  "personal journal app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "plain text note taking": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "plain text notes": {
+   "google": true,
+   "bing": true,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "plain text notes app",
+    "plain text notes",
+    "plain text notes mac",
+    "simple text notes",
+    "plain text note taking",
+    "plain text note taking app",
+    "plain text note taking system",
+    "plain text note online"
+   ]
+  },
+  "plain text notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "plain text notes app",
+    "android plain text notes app",
+    "paste plain text apple notes",
+    "apple notes plain text",
+    "plain text code",
+    "can you text notes from iphone"
+   ]
+  },
+  "pocket shutting down": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "pocket shutting down",
+    "pocket shutting down reddit",
+    "pocket shutting down alternative",
+    "pocket shutting down kobo",
+    "pocket shut down date",
+    "pocket closed down",
+    "pocket mortys shutting down",
+    "pocket app shutting down"
+   ]
+  },
+  "pocket shutting down alternative": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "privacy by design": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "privacy by design",
+    "privacy by design principles",
+    "privacy by design meaning",
+    "privacy by design and by default principle",
+    "privacy by design is a way to think about privacy",
+    "privacy by design and by default",
+    "privacy by design framework",
+    "privacy by design the 7 foundational principles"
+   ]
+  },
+  "privacy by design and by default": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "privacy by design and by default principle",
+    "privacy by design and by default",
+    "privacy by design and by default gdpr",
+    "privacy by design and by default mean",
+    "privacy by design and by default edpb",
+    "privacy by design and default definition",
+    "data privacy by design and by default",
+    "privacy by design and privacy by default examples"
+   ]
+  },
+  "privacy by design framework": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "privacy by design framework",
+    "privacy by design framework advocates implementation of zero",
+    "privacy by design framework advocates",
+    "privacy by design framework advocates implementation",
+    "privacy by design framework objective",
+    "privacy by design pbd framework",
+    "ann cavoukian privacy by design framework",
+    "privacy by design examples"
+   ]
+  },
+  "privacy by design meaning": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "privacy by design meaning",
+    "privacy by design meaning gdpr",
+    "privacy by design principles meaning",
+    "privacy by design and default meaning",
+    "data privacy by design means",
+    "privacy by design strategy means",
+    "what is privacy-by-design"
+   ]
+  },
+  "privacy by design principles": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "privacy by design principles",
+    "privacy by design principles gdpr",
+    "privacy by design principles examples",
+    "privacy by design principles ann cavoukian",
+    "privacy by design principles pdf",
+    "privacy by design principles meaning",
+    "privacy by design principles iapp",
+    "privacy by design principles cissp"
+   ]
+  },
+  "privacy first notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "privacy focused notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "privacy focused notes app",
+    "best privacy focused notes app",
+    "is notes app private",
+    "privacy focused phones",
+    "is the notes app secure",
+    "what are focused notes",
+    "what is the best app to keep notes"
+   ]
+  },
+  "privacy notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "privacy notes app",
+    "privacy notes app reddit",
+    "privacy notes app android",
+    "privacy apple notes",
+    "best privacy notes app",
+    "privacy focused notes app",
+    "privacy based notes app",
+    "best privacy focused notes app"
+   ]
+  },
+  "privacy respecting notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "private ai": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "private airports near me",
+    "private ai",
+    "private airlines",
+    "private airport",
+    "private airplane",
+    "private airplanes for sale",
+    "private airline companies",
+    "private ai chat"
+   ]
+  },
+  "private diary app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "private google keep alternative": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "google keep private alternative",
+    "alternative of google keep",
+    "other alternatives to google"
+   ]
+  },
+  "private journal app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "private journal app",
+    "private journal app free",
+    "private journal app iphone",
+    "private journal app reddit",
+    "private journal app for android",
+    "private journal app on ios",
+    "private diary app",
+    "personal journal app"
+   ]
+  },
+  "private journal app for android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "private journal app free": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "private notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "private notes app",
+    "private notes app android",
+    "private notes app iphone",
+    "private notes apple",
+    "private notes app reddit",
+    "private notes app for windows",
+    "private notes app free",
+    "private notes app ios"
+   ]
+  },
+  "private notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "private notes app android",
+    "secure notes app android",
+    "secure notes app android free",
+    "secure notes app android reddit",
+    "best private notes app android",
+    "best secure notes app android",
+    "most secure notes app android",
+    "how to find private notes app in android phone"
+   ]
+  },
+  "private notion alternative": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "private notion alternative",
+    "personal notion alternative",
+    "alternative of notion",
+    "offline alternative to notion",
+    "open source alternatives to notion",
+    "is notion private"
+   ]
+  },
+  "proprietary file format": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "proprietary file format",
+    "proprietary file format examples",
+    "proprietary file format meaning",
+    "proprietary file type",
+    "proprietary file extension",
+    "proprietary file type meaning",
+    "non-proprietary file format and two examples",
+    "non proprietary file formats"
+   ]
+  },
+  "recover end to end encryption": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "recover end to end encryption messenger",
+    "recover end to end encryption",
+    "restore end to end encryption messenger",
+    "restore end to end encryption",
+    "retrieve end to end encryption messenger",
+    "restore end to end encryption messenger forgot pin",
+    "restore end to end encryption whatsapp",
+    "restore end to end encryption messenger android"
+   ]
+  },
+  "reset end to end encryption": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "reset end to end encryption",
+    "reset end to end encryption iphone",
+    "reset end to end encryption icloud",
+    "reset end to end encryption apple",
+    "reset end to end encryption data",
+    "reset end to end encryption messenger",
+    "restore end to end encryption messenger",
+    "restore end to end encryption"
+   ]
+  },
+  "safest way to store passwords": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "safest way to store passwords",
+    "safest way to store passwords on iphone",
+    "safest way to store passwords reddit",
+    "safest way to store passwords offline",
+    "safest way to store passwords on phone",
+    "safest way to store passwords on pc",
+    "safest way to store passwords online",
+    "safest way to store passwords on android"
+   ]
+  },
+  "save notes to google drive": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "save notes to google drive",
+    "save samsung notes to google drive",
+    "save apple notes to google drive",
+    "save iphone notes to google drive",
+    "save remarkable notes to google drive",
+    "save ipad notes to google drive",
+    "can you save notes to google drive",
+    "how to save notability notes to google drive"
+   ]
+  },
+  "secure notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "secure notes app",
+    "secure notes app for android",
+    "secure notes app iphone",
+    "secure notes apple passwords",
+    "secure notes apple",
+    "secure notes app reddit",
+    "secure notes app free",
+    "secure notes app for windows"
+   ]
+  },
+  "secure notes app android": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "secure notes app android",
+    "secure notes app android free",
+    "secure notes app android reddit",
+    "safe notes app android",
+    "encrypted notes app android",
+    "best secure notes app android",
+    "most secure notes app android",
+    "best encrypted notes app android"
+   ]
+  },
+  "self hosted notes app": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "self hosted notes app",
+    "self hosted notes app with android app",
+    "self hosted notes application",
+    "self hosted notes app reddit",
+    "self hosted notes app docker",
+    "self hosted notes app markdown",
+    "self hosted notes app with sync",
+    "self hosted notes app ios"
+   ]
+  },
+  "self hosted notes app with sync": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "sensitive data in notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "sensitive information in notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "service shutting down data": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "shutting down data sharing service",
+    "shutting down service tile data model server",
+    "windows shutting down data sharing service",
+    "shutting down service dsm sa data manager",
+    "why does my service keep turning off",
+    "why does my service keep going out",
+    "what does a service outage mean",
+    "service outage meaning"
+   ]
+  },
+  "should i keep passwords in notes": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "should i keep passwords in notes",
+    "can i keep passwords in notes app",
+    "should i keep my passwords in my notes app",
+    "can i store passwords in apple notes",
+    "is it safe to keep my passwords in notes",
+    "is it safe to store passwords on iphone notes"
+   ]
+  },
+  "should i store passwords in notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "should i keep passwords in notes",
+    "can i keep passwords in notes app",
+    "should you store passwords in notes app",
+    "can i store passwords in apple notes",
+    "can you store passwords in notes",
+    "safe to store passwords in notes",
+    "is it safe to keep my passwords in notes",
+    "is it safe to store passwords on iphone notes"
+   ]
+  },
+  "source available software": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "source available software",
+    "source available software license",
+    "open source software available"
+   ]
+  },
+  "source available vs open source": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "source available vs open source",
+    "open source vs open-source",
+    "is source 2 open source",
+    "shared source vs open source",
+    "open source vs closed source"
+   ]
+  },
+  "standard notes export": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "standard notes export",
+    "standard notes export markdown",
+    "standard notes export to pdf",
+    "standard notes export all notes",
+    "export standard notes to obsidian",
+    "what is standard notes",
+    "how to export microsoft notes",
+    "standard notes price"
+   ]
+  },
+  "standard notes export markdown": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "standard notes vs joplin": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "standard notes vs joplin",
+    "standard notes vs joplin reddit",
+    "standard notes or joplin",
+    "standard notes vs joplin vs obsidian",
+    "standard notes vs joplin vs notesnook",
+    "standard notes vs apple notes",
+    "is standard notes secure",
+    "standard notes price"
+   ]
+  },
+  "standard notes vs notesnook": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "standard notes vs notesnook",
+    "standard notes vs notesnook reddit",
+    "standard notes or notesnook",
+    "standard notes vs notesnook vs joplin",
+    "standart vs standard",
+    "standard vs non standard",
+    "standard notes vs apple notes"
+   ]
+  },
+  "store notes in google drive": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "keep notes in google drive",
+    "how to save notes in google drive",
+    "keep notes backup google drive",
+    "how to store obsidian notes in google drive",
+    "how to store in google drive",
+    "how to save google keep notes to google drive"
+   ]
+  },
+  "store passwords in notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "storing passwords in notes app",
+    "storing passwords in apple notes",
+    "should you store passwords in notes app",
+    "is storing passwords in apple notes safe",
+    "can i store passwords in apple notes",
+    "can you keep passwords in notes apps",
+    "is it safe to store passwords in notes app",
+    "why shouldn't you store passwords in notes app"
+   ]
+  },
+  "storing passwords in notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "storing passwords in notes app",
+    "storing passwords in apple notes",
+    "keeping passwords in notes app reddit",
+    "is storing passwords in apple notes safe",
+    "is keeping passwords in notes app safe",
+    "should you store passwords in notes app",
+    "can you keep passwords in notes apps",
+    "can i store passwords in apple notes"
+   ]
+  },
+  "switch notes app": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "switch notes app",
+    "change notes app color",
+    "change notes app password",
+    "transfer notes app from iphone to android",
+    "transfer notes app to new phone",
+    "change notes app to light mode",
+    "turn notes app into pdf",
+    "change notes app to dark mode"
+   ]
+  },
+  "switching note taking apps": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "sync conflict": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "sync conflict",
+    "sync conflict syncthing",
+    "sync conflict folder in outlook",
+    "sync conflicts outlook",
+    "sync conflict razer synapse",
+    "sync conflict file",
+    "sync conflict dropbox",
+    "sync conflicts onedrive"
+   ]
+  },
+  "sync conflict resolution": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "obsidian sync conflict resolution",
+    "onedrive sync conflict resolution",
+    "azure file sync conflict resolution"
+   ]
+  },
+  "sync conflicts": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "sync conflicts",
+    "sync conflicts outlook",
+    "sync conflicts onedrive",
+    "sync conflicts syncthing",
+    "sync conflicts endnote",
+    "synchronization conflicts",
+    "sync issues conflicts folder outlook",
+    "sync issues conflicts outlook"
+   ]
+  },
+  "telemetry data": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "telemetry data",
+    "telemetry data meaning",
+    "telemetry data examples",
+    "telemetry data collection",
+    "telemetry data f1",
+    "telemetry data minecraft",
+    "telemetry data base file",
+    "telemetry database"
+   ]
+  },
+  "telemetry privacy": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "telemetry privacy",
+    "telemetry privacy policy",
+    "windows telemetry privacy",
+    "dead island telemetry privacy",
+    "telemetry requirements"
+   ]
+  },
+  "test offline app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "offline test app",
+    "quiz offline app",
+    "typing test offline app",
+    "typing test offline app free download",
+    "typing test offline app download",
+    "typing test offline app for pc",
+    "offline quiz app for students",
+    "offline quiz app for pc"
+   ]
+  },
+  "tls vs end to end encryption": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "tls vs end to end encryption",
+    "tls end to end encryption",
+    "tls 1.3 end to end encryption"
+   ]
+  },
+  "traffic analysis": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "traffic analysis",
+    "traffic analysis zones",
+    "traffic analysis software",
+    "traffic analysis tools",
+    "traffic analysis essentials tryhackme",
+    "traffic analysis toolbox volume iii",
+    "traffic analysis website",
+    "traffic analysis essentials"
+   ]
+  },
+  "transfer notes between apps": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "transport encryption vs end to end encryption": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "transport encryption vs end to end encryption",
+    "encryption in transit vs end to end encryption"
+   ]
+  },
+  "unencrypted backup": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "unencrypted backup",
+    "itunes encrypted backup",
+    "whatsapp unencrypted backup",
+    "unencrypted iphone backup",
+    "restic unencrypted backup",
+    "encrypted vs unencrypted backup",
+    "home assistant unencrypted backup",
+    "encrypted vs unencrypted iphone backup"
+   ]
+  },
+  "use google drive as database": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "user owned data": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "user owned data",
+    "user owned data change",
+    "user data ownership",
+    "user owns data vs app owns data",
+    "what is user data"
+   ]
+  },
+  "vendor lock in": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "vendor lock in",
+    "vendor lock in meaning",
+    "vendor lock in cloud computing",
+    "vendor lock in risk",
+    "vendor lock in examples",
+    "vendor lock in meaning in cloud computing",
+    "vendor lock in adalah",
+    "vendor lock in synonyms"
+   ]
+  },
+  "vendor lock in examples": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "what app permissions should i allow": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "what app permissions should i allow",
+    "whatsapp permissions should i allow",
+    "whatsapp permissions should i allow android",
+    "what app permissions should i allow samsung",
+    "what app permissions should i allow on my phone",
+    "what app permissions should i not allowed",
+    "what app permissions should i not allow on my phone",
+    "what app permissions should i not allow on android"
+   ]
+  },
+  "what can metadata reveal": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "what does metadata reveal": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what does metadata reveal",
+    "what can metadata reveal",
+    "what does metadata show in word",
+    "what does pdf metadata show",
+    "what does snapchat metadata show",
+    "what does video metadata show",
+    "what does image metadata show",
+    "what does photo metadata show"
+   ]
+  },
+  "what happens if icloud goes down": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what happens if icloud storage is downgraded",
+    "what happens if icloud photos is off",
+    "if i reset my iphone what happens to icloud",
+    "has icloud gone down"
+   ]
+  },
+  "what happens if note app shuts down": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "what happens if your password is leaked": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what happens if your password is leaked",
+    "what to do if your password is leaked",
+    "is my password leaked",
+    "what happens when your password is in a data leak"
+   ]
+  },
+  "what happens to notes if app shuts down": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "what happens when an app shuts down": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what happens if groww app shuts down",
+    "why does an app keep closing out",
+    "what happens when an app keeps stopping"
+   ]
+  },
+  "what happens when your password is in a data breach": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what happens when your password is in a data leak",
+    "what happens if your password is in a data breach",
+    "what to do if your password is in a data breach",
+    "what to do if your password is in a data leak",
+    "what does password data breach mean",
+    "has my password been in a data breach",
+    "what does it mean if password is found in data breach"
+   ]
+  },
+  "what is a conflicted copy": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "what is a conflicted copy in dropbox",
+    "what is a conflicted copy in excel",
+    "what is a conflicted copy",
+    "what causes a conflicted copy in dropbox",
+    "what does a conflicted copy mean",
+    "what does conflicted copy mean in dropbox",
+    "conflicted copy meaning",
+    "what is conflicted"
+   ]
+  },
+  "what is analytics sdk": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what is analytics sdk",
+    "what is google analytics sdk",
+    "what is analytics api",
+    "what is sdk data"
+   ]
+  },
+  "what is client side encryption": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "what is client side encryption",
+    "what is client side encryption google com",
+    "what is client side encryption in aws",
+    "what is client side encryption in s3",
+    "what is server side encryption",
+    "what is server side encryption in s3",
+    "what is server side encryption in aws",
+    "what is aurora client side encryption"
+   ]
+  },
+  "what is data minimization": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "what is data minimization",
+    "what is data minimization (answer required)",
+    "what is data minimization in ai",
+    "what is data minimization in the context of banking",
+    "what is data minimization in data privacy",
+    "what is data minimization in ai privacy protection",
+    "what is data minimization principle",
+    "what is data minimization under gdpr"
+   ]
+  },
+  "what is end to end encryption": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "what is end to end encryption",
+    "what is end to end encryption on messenger",
+    "what is end to end encryption mean",
+    "what is end to end encryption messages",
+    "what is end to end encryption on facebook messenger",
+    "what is end to end encryption on iphone",
+    "what is end to end encryption on whatsapp",
+    "what is end to end encryption how to remove"
+   ]
+  },
+  "what is f droid": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "what is f droid",
+    "what is f droid app",
+    "what is f droid used for",
+    "what is f droid and is it safe",
+    "what is f droid apk",
+    "what is f droid reddit",
+    "what is f droid client",
+    "what is f droid version"
+   ]
+  },
+  "what is local first": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what is local first",
+    "what is local first arizona",
+    "what is local first name",
+    "what is local first software",
+    "what is local first architecture",
+    "what is local first development",
+    "what is local first ai",
+    "what is local first app"
+   ]
+  },
+  "what is local first software": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what is local first software",
+    "what is the first software"
+   ]
+  },
+  "what is metadata privacy": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what is meta privacy policy",
+    "what is meta privacy",
+    "what is meta privacy policy in instagram",
+    "what is meta new privacy policy",
+    "what is meta's mandated privacy program",
+    "is metadata personal data",
+    "what is personal metadata",
+    "is metadata considered personal data"
+   ]
+  },
+  "what is personal metadata": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what is personal metadata",
+    "what is personal metadata in outlook",
+    "what is my personal metadata",
+    "what is considered metadata",
+    "is metadata personal data",
+    "is metadata considered personal data"
+   ]
+  },
+  "what is server side encryption": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "what is telemetry": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "what is telemetry",
+    "what is telemetry in a hospital",
+    "what is telemetry data",
+    "what is telemetry nursing",
+    "what is telemetry monitoring",
+    "what is telemetry unit in a hospital",
+    "what is telemetry unit",
+    "what is telemetry in healthcare"
+   ]
+  },
+  "what metadata does end to end encryption reveal": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "what not to store in notes app": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "what permissions does a notes app need": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "what to do if password is compromised": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "what to do if password is compromised",
+    "what to do if google password is compromised",
+    "what to do if email password is compromised",
+    "what to do if gmail password is compromised",
+    "what to do if password is hacked",
+    "what to do if your apple password is compromised",
+    "what to do if wifi password is hacked",
+    "what does it mean when password is compromised"
+   ]
+  },
+  "what to do if your password is in a data breach": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "what to do if your password is in a data breach",
+    "what is a data breach password",
+    "what does password data breach mean"
+   ]
+  },
+  "where are google keep notes stored": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "where are google keep notes stored",
+    "are google keep notes stored in the cloud",
+    "where does google keep storage notes",
+    "where are google notes stored",
+    "where are my google keep notes",
+    "where is google keep data stored"
+   ]
+  },
+  "where are notes stored": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "where are notes stored on mac",
+    "where are notes stored on android",
+    "where are notes stored on iphone",
+    "where are notes stored on samsung phone",
+    "where are notes stored",
+    "where are notes stored on windows 11",
+    "where are notes stored in outlook",
+    "where are notes stored on samsung galaxy"
+   ]
+  },
+  "where are notes stored on android": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "where are notes stored on android",
+    "where are notes stored on android samsung",
+    "where are memos stored on android",
+    "where are voice notes stored on android",
+    "where are notes files stored on android",
+    "where are samsung notes stored on android phone",
+    "where are notepad notes stored on android",
+    "where are whatsapp voice notes stored on android"
+   ]
+  },
+  "where to store 2fa backup codes": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "where to store 2fa backup codes",
+    "reddit where to store 2fa backup codes",
+    "where to put 2fa backup codes",
+    "2fa backup codes",
+    "where to store backup codes"
+   ]
+  },
+  "where to store backup codes": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "where to store recovery phrase": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "where to store recovery phrase",
+    "where to store ledger recovery phrase",
+    "where to store proton recovery phrase",
+    "where to store crypto recovery phrase",
+    "where to store recovery codes"
+   ]
+  },
+  "where to store seed phrase": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "where to store seed phrase",
+    "where to store seed phrase reddit",
+    "where to store seed phrase safely",
+    "where to keep seed phrase",
+    "where to keep seed phrase reddit",
+    "where to put seed phrase",
+    "how to store seed phrase on metal",
+    "where to store crypto seed phrase"
+   ]
+  },
+  "which app permissions are dangerous": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "who holds the encryption key": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "who owns my data in the cloud": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": []
+  },
+  "who owns my notes": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "who own notes app",
+    "who owns the note",
+    "who owns the water notes of lesson",
+    "who owns the death notes",
+    "can anyone see my notes"
+   ]
+  },
+  "who owns your data": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "who owns your data",
+    "who owns your data in cyber security",
+    "who owns.your data(gdpr)",
+    "who owns the data centers",
+    "who owns the data centers being built",
+    "who owns the data centres in australia",
+    "who owns the datai langkawi",
+    "who owns the data"
+   ]
+  },
+  "why open source is more secure": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "why open source is more secure",
+    "why open source software is more secure",
+    "is open source secure"
+   ]
+  },
+  "zero knowledge account recovery": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "zero knowledge encryption": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "zero knowledge encryption",
+    "zero knowledge encryption cloud storage",
+    "zero knowledge encryption meaning",
+    "zero knowledge encryption password manager",
+    "zero knowledge encryption cloud",
+    "zero-knowledge encryption services",
+    "zero knowledge encryption model",
+    "zero knowledge encryption cloud storage free"
+   ]
+  },
+  "zero knowledge encryption cloud storage": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": false,
+   "googleSuggestions": []
+  },
+  "zero knowledge encryption meaning": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "zero knowledge encryption meaning",
+    "what is zero knowledge encryption",
+    "what is zero access encryption",
+    "what is zero knowledge",
+    "zero knowledge proof explained"
+   ]
+  },
+  "zero knowledge recovery": {
+   "google": false,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "zero knowledge account recovery",
+    "zero knowledge account recovery teamviewer",
+    "zero knowledge analysis data recovery"
+   ]
+  },
+  "zero knowledge vs end to end encryption": {
+   "google": true,
+   "bing": false,
+   "ddg": false,
+   "probed": true,
+   "googleSuggestions": [
+    "zero knowledge vs end to end encryption",
+    "zero knowledge end to end encryption"
+   ]
+  },
+  "zero telemetry": {
+   "google": true,
+   "bing": true,
+   "ddg": true,
+   "probed": true,
+   "googleSuggestions": [
+    "zero telemetry",
+    "zero telemetry browser",
+    "zero telemetry meaning",
+    "zero trust telemetry",
+    "zero trust telemetry forticlient",
+    "zero trust telemetry meaning",
+    "zero trust telemetry connection key ######################",
+    "zero trust telemetry fortinet"
+   ]
+  }
+ }
+}

@@ -1,0 +1,56 @@
+MEDIUM PUBLISHING NOTES · U08 S1-S2 Zero Knowledge Encryption
+
+Title:
+Who Holds the Encryption Key? Zero Knowledge Encryption Explained in 6 Questions
+
+Subtitle:
+Every encryption claim comes down to one question: who holds the key? Six questions that explain zero knowledge encryption, how it differs from end-to-end, and how to test the claim.
+
+SEO description:
+Zero knowledge encryption explained in six questions: what it means, how it differs from end-to-end encryption, who holds the key, and how to test the claim.
+
+Tags (Medium allows 5):
+Encryption, Cybersecurity, Privacy, Cryptography, Data Security
+
+Keywords (from keyword-registry.json):
+  Primary: zero knowledge encryption
+  Secondary: zero knowledge vs end to end encryption, zero knowledge encryption meaning, zero knowledge encryption cloud storage, encryption key management
+  LSI: key custody, master password, key derivation function, recovery key, provider access, server verifier, password manager model, security audit, client side keys, key escrow
+
+Keyword check (body only, exact phrase): words 1314
+  'zero knowledge encryption': 7
+  'zero knowledge vs end to end encryption': 2
+  'zero knowledge encryption meaning': 1
+  'zero knowledge encryption cloud storage': 1
+  'encryption key management': 1
+
+Links inside the article (each one points to a live page):
+  encrypted notes and who can read them -> https://atomic-notes.devbehindyou.com/blog/encrypted-notes-explained
+  Rule: link only to live Main Blogs and to Support Blogs uploaded before U08.
+
+Images, in order (upload each one where its caption sits):
+  01-banner.png  ->  Who holds the encryption key? Zero knowledge encryption explained.
+  02-three-conditions.png  ->  Three conditions for a zero knowledge claim: the key is made on the device, the key never leaves the device, a...
+  03-recovery-test.png  ->  A decision path: forgot your password, can the company restore your data? If yes, the company holds a key. If ...
+
+Cover image: 01-banner.png
+
+Sources (keep them at the end, under Sources):
+  What is zero-knowledge encryption? Bitwarden
+    https://bitwarden.com/resources/zero-knowledge-encryption/
+  Forgot my master password. Bitwarden Help Center
+    https://bitwarden.com/help/forgot-master-password/
+  iCloud data security overview. Apple Support
+    https://support.apple.com/en-us/102651
+  Atomic Notes source code. GitHub
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish on Medium:
+1. Open "Medium article.docx", select all, copy, and paste into a new story.
+2. Re-upload each image from this folder at its caption (Medium drops pasted Word images unreliably).
+3. Check that lists, bold text, and the links survived the paste.
+4. Story settings > SEO: paste the SEO description above. Add the 5 tags.
+5. Canonical link: leave it EMPTY. This is a unique article, not a copy of the site post.
+6. After publishing, copy the story URL into Output/README.md and into the social posts' {LINK}.
+
+Validated with: node scripts/validate.mjs and node scripts/cluster-check.mjs --draft (both PASSED).

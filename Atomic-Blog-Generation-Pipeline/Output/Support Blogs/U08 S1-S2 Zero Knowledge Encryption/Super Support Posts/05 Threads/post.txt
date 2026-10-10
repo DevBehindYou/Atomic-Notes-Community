@@ -1,0 +1,6 @@
+Quick way to check if an app is really "zero knowledge":
+
+Read its forgot-password page.
+
+If the company can restore your data, it holds a key. If it can't, that's the price and the proof. 6 questions that explain the rest:
+{LINK}?utm_source=threads&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S2

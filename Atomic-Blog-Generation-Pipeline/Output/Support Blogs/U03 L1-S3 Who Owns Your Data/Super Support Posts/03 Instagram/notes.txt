@@ -1,0 +1,17 @@
+Instagram carousel (1080 x 1350): slide-01.png to slide-07.png in this folder, in order.
+Put the Support Blog link in your bio or link sticker: {LINK}?utm_source=instagram&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S3
+Post within 48 hours of the Support Blog launch.
+
+Alt text (Advanced settings > Accessibility):
+slide-01.png: Cover slide reading Who Owns Your Data, the terms say it's yours, five questions show whether you can actually keep it.
+slide-02.png: Slide 1, Where does the file live: a copy you can open without the app's servers.
+slide-03.png: Slide 2, What does the license say: scope, duration, and AI training.
+slide-04.png: Slide 3, Can you take it out: a complete, readable, self-serve export.
+slide-05.png: Slide 4, If the account goes: a copy that doesn't need you to sign in.
+slide-06.png: Slide 5, If the company goes: open formats and a recent export.
+slide-07.png: Final slide reading Keep it, move it, leave with it, with a Read the full guide, link in bio card.
+
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: who owns your data
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.

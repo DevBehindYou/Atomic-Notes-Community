@@ -1,0 +1,6 @@
+HTTPS: stops someone on the network.
+Encryption at rest: stops a stolen disk.
+End-to-end: stops the provider.
+
+Only one of those keeps your data unreadable on the server. 5 differences, explained with real JSON:
+{LINK}?utm_source=threads&utm_medium=social&utm_campaign=security-S1&utm_content=S1-S1

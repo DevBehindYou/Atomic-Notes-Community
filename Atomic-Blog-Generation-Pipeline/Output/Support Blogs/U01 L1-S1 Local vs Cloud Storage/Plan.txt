@@ -1,0 +1,24 @@
+Upload order: U01 of 45 (campaign week 1, Main Blog L1)
+Link only to: the Main Blog L1 (live), other live Main Blogs, and Support Blogs uploaded before U01.
+Uploaded before this one: none, this is the first.
+
+L1-S1 · Support Blog for L1 (What Is a Local First Notes App) · READY TO UPLOAD
+Publish on: Medium
+Main Blog to link: https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app
+
+Working title: Local Storage vs Cloud Storage for Notes: 3 Places Your Notes Can Live
+Angle: Device only vs company cloud vs your own cloud, compared on control, backups, shutdown risk, and keys.
+Intent: comparison
+Draft source: Atomic Notes Blogs/Blog List 03/09 - 3 Places Your Notes Can Live
+
+Primary keyword: local storage vs cloud storage
+Secondary keywords: where are notes stored on android; where are google keep notes stored; cloud storage vs local storage for personal use; local storage and cloud storage difference
+LSI terms: device storage; company cloud; own cloud; Google Drive; iCloud; encryption keys; backups; account lock; shutdown risk; sync
+
+When written, this folder holds:
+- <slug>.md, plus Medium article.docx when the platform takes a Word upload
+- 01-banner.png and the figures
+- Publishing notes.txt (canonical, tags, link to the Main Blog)
+- Super Support Posts/: 8 social posts, one folder per platform, each linking to this Support Blog
+
+Before publishing: node scripts/cluster-check.mjs --draft <md> must pass.

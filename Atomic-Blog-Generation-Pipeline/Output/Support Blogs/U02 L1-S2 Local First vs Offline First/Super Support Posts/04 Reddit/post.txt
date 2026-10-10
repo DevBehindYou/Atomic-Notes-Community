@@ -1,0 +1,15 @@
+Local first vs offline first: is the real difference just who wins a conflict?
+
+I keep seeing "offline first" and "local first" used as synonyms, and I don't think they are.
+
+My working definitions:
+
+- **Cloud first:** server is the truth, client is a view.
+- **Offline first:** client has a local DB and a sync queue, works offline, but the server stays authoritative when they reconnect.
+- **Local first:** the device copy is the primary copy, servers only help move data between devices. If the backend disappears, the app keeps working.
+
+Tools blur this. RxDB describes offline first as making the local database "the gateway for all persistent changes", which sounds pretty local first to me. So maybe the line is less about the database and more about ownership and server authority.
+
+Disclosure: I build a local first notes app (Atomic Notes). It keeps both versions as a "conflict copy" instead of using CRDTs, which is a deliberate shortcut for personal notes.
+
+How do you draw the line in your own projects? Longer write-up with code sketches, if that's allowed here: {LINK}?utm_source=reddit&utm_medium=social&utm_campaign=local-first-L1&utm_content=L1-S2

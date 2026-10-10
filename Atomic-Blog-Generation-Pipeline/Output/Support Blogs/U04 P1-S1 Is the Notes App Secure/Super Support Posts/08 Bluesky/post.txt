@@ -1,0 +1,6 @@
+Most notes don't leak through the app. They leak through keys the provider holds, reused passwords, trackers, old links, and forgotten backups.
+
+7 paths, and which 2 to fix first:
+{LINK}?utm_source=bluesky&utm_medium=social&utm_campaign=privacy-P1&utm_content=P1-S1
+
+#privacy

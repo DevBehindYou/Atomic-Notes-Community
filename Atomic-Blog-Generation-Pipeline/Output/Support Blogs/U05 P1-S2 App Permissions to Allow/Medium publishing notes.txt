@@ -1,0 +1,60 @@
+MEDIUM PUBLISHING NOTES · U05 P1-S2 App Permissions to Allow
+
+Title:
+What App Permissions Should You Allow a Notes App? 5 to Question
+
+Subtitle:
+A notes app needs very little from your phone. Android app permissions explained, the five worth questioning, and how to check before you install.
+
+SEO description:
+What app permissions should I allow a notes app? Android app permissions explained, the dangerous permissions Android asks about, and five to question first.
+
+Tags (Medium allows 5):
+Android, Privacy, App Permissions, Cybersecurity, Note Taking
+
+Keywords (from keyword-registry.json):
+  Primary: what app permissions should i allow
+  Secondary: android app permissions explained, android permissions list, dangerous permissions android, notes app permissions
+  LSI: runtime permissions, INTERNET permission, storage access, contacts permission, microphone access, location permission, Exodus Privacy, AndroidManifest, permission manager, Google Play data safety
+
+Keyword check (body only, exact phrase): words 1303
+  'what app permissions should i allow': 4
+  'android app permissions explained': 2
+  'android permissions list': 2
+  'dangerous permissions android': 1
+  'notes app permissions': 2
+
+Links inside the article (each one points to a live page):
+  nine-point notes app privacy checklist -> https://atomic-notes.devbehindyou.com/blog/notes-app-privacy-red-flags
+  Rule: link only to live Main Blogs and to Support Blogs uploaded before U05.
+
+Images, in order (upload each one where its caption sits):
+  01-banner.png  ->  What app permissions should you allow a notes app? Five to question on Android.
+  02-permission-groups.png  ->  A two-column chart of Android permissions for a notes app. Usually fine: internet for sync, network state, fin...
+  03-five-to-question.png  ->  A five-row table: contacts, location, microphone, camera, and all files access. For each, the feature that jus...
+
+Cover image: 01-banner.png
+
+Sources (keep them at the end, under Sources):
+  Permissions on Android. Android Developers
+    https://developer.android.com/guide/topics/permissions/overview
+  Request runtime permissions. Android Developers
+    https://developer.android.com/training/permissions/requesting
+  Manifest.permission reference. Android Developers
+    https://developer.android.com/reference/android/Manifest.permission
+  Provide information for Google Play's data safety section. Play Console Help
+    https://support.google.com/googleplay/android-developer/answer/10787469?hl=en
+  What Exodus Privacy does. Exodus Privacy
+    https://exodus-privacy.eu.org/en/page/what/
+  Atomic Notes source code. GitHub
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish on Medium:
+1. Open "Medium article.docx", select all, copy, and paste into a new story.
+2. Re-upload each image from this folder at its caption (Medium drops pasted Word images unreliably).
+3. Check that lists, bold text, and the links survived the paste.
+4. Story settings > SEO: paste the SEO description above. Add the 5 tags.
+5. Canonical link: leave it EMPTY. This is a unique article, not a copy of the site post.
+6. After publishing, copy the story URL into Output/README.md and into the social posts' {LINK}.
+
+Validated with: node scripts/validate.mjs and node scripts/cluster-check.mjs --draft (both PASSED).

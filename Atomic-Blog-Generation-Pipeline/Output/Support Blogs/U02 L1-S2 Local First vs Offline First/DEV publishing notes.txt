@@ -1,0 +1,54 @@
+DEV PUBLISHING NOTES · U02 L1-S2 Local First vs Offline First
+
+Title:
+Local First vs Offline First vs Cloud First: 7 Differences That Matter
+
+Subtitle:
+All three can show your data without a network. Only one makes the device the source of truth. Seven differences, with code.
+
+SEO description:
+Local first vs offline first vs cloud first, compared on source of truth, write path, conflicts, sync, and ownership. With code and an offline first database example.
+
+DEV tags (max 4, letters and numbers only):
+localfirst, offlinefirst, architecture, webdev
+
+Keywords (from keyword-registry.json):
+  Primary: local first vs offline first
+  Secondary: offline first database, local first vs cloud first, offline first app, offline first architecture
+  LSI: source of truth, server authority, sync queue, conflict resolution, CRDTs, latency, cache, RxDB, eventual consistency, seven ideals
+
+Keyword check (body only, exact phrase): words 1381
+  'local first vs offline first': 6
+  'offline first database': 3
+  'local first vs cloud first': 3
+  'offline first app': 4
+  'offline first architecture': 2
+
+Links inside the article (each one points to a live page):
+  what a local first notes app actually is -> https://atomic-notes.devbehindyou.com/blog/what-is-a-local-first-notes-app
+  Rule: link only to live Main Blogs and to Support Blogs uploaded before U02.
+
+Images, in order (upload each one where its caption sits):
+  01-banner.png  ->  Local first vs offline first vs cloud first.
+  02-seven-differences.png  ->  A table comparing cloud first, offline first, and local first across seven rows: source of truth, write path, ...
+
+Cover image: 01-banner.png
+
+Sources (keep them at the end, under Sources):
+  Local-first software: you own your data, in spite of the cloud. Ink & Switch
+    https://www.inkandswitch.com/essay/local-first/
+  Offline First. RxDB
+    https://rxdb.info/offline-first.html
+  Automerge documentation
+    https://automerge.org/docs/hello/
+  Atomic Notes source code. GitHub
+    https://github.com/DevBehindYou/Atomic-Notes-App-V0.2
+
+How to publish on DEV Community:
+1. dev.to > Create Post > switch to the Markdown editor, then paste the whole of "DEV post.md".
+2. Upload 01-banner.png as the cover image (it fills cover_image).
+3. Upload each figure with DEV's image button and replace the file name in its ![...](...) line with the URL DEV gives you.
+4. Leave canonical_url empty. This is a unique article.
+5. Set published to true, or press Publish. Then copy the post URL into Output/README.md and into the social posts' {LINK}.
+
+Validated with: node scripts/validate.mjs and node scripts/cluster-check.mjs --draft (both PASSED).

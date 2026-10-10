@@ -1,0 +1,19 @@
+S1 · SECURITY · Main Blog
+Title: Encrypted Notes Explained: T2T vs End to End Encryption
+Live URL: https://atomic-notes.devbehindyou.com/blog/encrypted-notes-explained
+Published: 2026-10-07 (Community PR #15)
+Words (visible prose, no code or sources): 1,894
+
+Primary keyword: encrypted notes
+Secondary keywords: end to end encryption explained; what is end to end encryption
+LSI terms: transport encryption vs end to end encryption; T2T; TLS; AES-256-GCM; Argon2id; recovery phrase; key derivation; ciphertext; optional vault; threat model
+
+Interactive widgets on the site: who-can-read, encryption-playground
+Images: 6 (01-banner.png, 02-three-meanings.png, 03-vault-key-flow.png, 04-t2t-vs-vault.png, 05-what-e2e-hides.png, 06-recovery-tradeoff.png)
+
+Notes:
+- The source of truth is content/blog/encrypted-notes-explained.md in the Community repository. This folder is a copy for reference.
+- Image paths in the .md here point to the files in this folder, so the post previews offline.
+- Lines that start with :::widget are interactive components that only render on the website.
+- Figures are rendered by visuals/render.py encrypted-notes-explained (module visuals/posts/encrypted_notes_explained.py).
+- Support Blogs for this page: S1-S1, S1-S2, S1-S3 (see keyword-registry.json).

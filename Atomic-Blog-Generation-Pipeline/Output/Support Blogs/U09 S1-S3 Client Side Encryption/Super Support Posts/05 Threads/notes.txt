@@ -1,0 +1,7 @@
+Threads
+Attach: ../../01-banner.png or slide-01.png from 03 Instagram.
+Post within 24 hours of the Support Blog launch.
+Replace {LINK} with the published Support Blog URL (keep the UTM part after it).
+Primary keyword of the blog: client side encryption
+Post only after the Support Blog is live. Do not link to blogs that aren't uploaded yet.
+Never write 'open source' about Atomic Notes. It's source-available.
