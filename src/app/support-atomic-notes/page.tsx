@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SupportReactor } from "@/components/SupportReactor";
-import { KOFI_URL, PATREON_URL } from "@/lib/content";
+import { KOFI_URL, PATREON_JOIN_URL } from "@/lib/content";
 import { MEMBERSHIPS, formatUsd } from "@/lib/supportPricing";
 import { pageMetadata } from "@/lib/seo";
 
@@ -209,7 +209,7 @@ export default function SupportPage() {
                         <li key={b}>{b}</li>
                       ))}
                     </ul>
-                    <a href={PATREON_URL} className="btn-signal" target="_blank" rel="noreferrer">
+                    <a href={PATREON_JOIN_URL} className="btn-signal" target="_blank" rel="noreferrer">
                       {m.cta}
                     </a>
                   </div>
@@ -334,7 +334,7 @@ export default function SupportPage() {
               <a href="#reactor" className="btn-signal">
                 Open the reactor
               </a>
-              <a href={PATREON_URL} className="btn-ghost" target="_blank" rel="noreferrer">
+              <a href={PATREON_JOIN_URL} className="btn-ghost" target="_blank" rel="noreferrer">
                 Join on Patreon
               </a>
               <a href={KOFI_URL} className="btn-ghost" target="_blank" rel="noreferrer">

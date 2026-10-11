@@ -56,6 +56,8 @@ export const REPO_URL = "https://github.com/DevBehindYou/Atomic-Notes-App-V0.2";
 
 /** Where supporters go. Early supporters get Atomic Coins by hand (see /support-atomic-notes). */
 export const PATREON_URL = "https://www.patreon.com/cw/DevBehindYou";
+/** Patreon's membership page, where a supporter picks a tier. */
+export const PATREON_JOIN_URL = "https://www.patreon.com/16654968/join";
 export const KOFI_URL = "https://ko-fi.com/devbehindyou";
 
 /** The answer-first definition, used in the page and in structured data. */

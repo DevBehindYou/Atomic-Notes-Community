@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { KOFI_URL, PATREON_URL } from "@/lib/content";
+import { KOFI_URL, PATREON_JOIN_URL } from "@/lib/content";
 import {
   DEFAULT_CENTS,
   MAX_CENTS,
@@ -261,7 +261,7 @@ export function SupportReactor() {
           </>
         ) : monthly ? (
           <>
-            <a href={PATREON_URL} className="reactor-go" target="_blank" rel="noreferrer">
+            <a href={PATREON_JOIN_URL} className="reactor-go" target="_blank" rel="noreferrer">
               Join {q.membership?.name} on Patreon
             </a>
             <button type="button" className="reactor-copy" onClick={copyMessage}>
