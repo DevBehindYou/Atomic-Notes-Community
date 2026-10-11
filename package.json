@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:smoke": "node --test tests/runtime.test.mjs"
+    "test:smoke": "node --test tests/runtime.test.mjs",
+    "test:pricing": "node --experimental-strip-types --no-warnings --test tests/support-pricing.test.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
