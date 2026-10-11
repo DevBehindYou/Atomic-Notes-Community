@@ -3679,3 +3679,9 @@ section h2 {
   }
 }
 
+/* A phone on its side is too short to keep the dial pinned above the controls. */
+@media (max-width: 980px) and (max-height: 600px) {
+  .reactor-visual {
+    position: static;
+  }
+}
