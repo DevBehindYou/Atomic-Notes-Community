@@ -36,3 +36,5 @@ jobs:
         run: npm run build
       - name: Verify production routes and admin sessions
         run: npm run test:smoke
+      - name: Verify support reward table
+        run: npm run test:pricing
