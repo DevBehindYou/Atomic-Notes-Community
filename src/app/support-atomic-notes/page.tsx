@@ -144,34 +144,36 @@ export default function SupportPage() {
                   {GOES_TO.map((g, i) => (
                     <li key={g.t}>
                       <span className="rx-goes-num">{String(i + 1).padStart(2, "0")}</span>
-                      <div>
-                        <h3>{g.t}</h3>
-                        <p>{g.d}</p>
-                      </div>
+                      <h3>{g.t}</h3>
+                      <p>{g.d}</p>
                     </li>
                   ))}
                 </ol>
 
-                <p className="rx-side-label">MONTHLY ON PATREON</p>
-                <ul className="rx-tiers">
-                  {MEMBERSHIPS.map((m) => (
-                    <li key={m.id} className={`rx-tier rx-tier-${m.id}`}>
-                      <span className="rx-tier-name">{m.name.replace("Atomic ", "")}</span>
-                      <span className="rx-tier-price">{formatUsd(m.cents).replace(".00", "")}</span>
-                      <span className="rx-tier-coins">{m.coins} / MONTH</span>
-                    </li>
-                  ))}
-                </ul>
-                <a href="#monthly" className="rx-side-link">
-                  Compare memberships
-                </a>
+                <div className="rx-side-row">
+                  <div>
+                    <p className="rx-side-label">MONTHLY ON PATREON</p>
+                    <ul className="rx-tiers">
+                      {MEMBERSHIPS.map((m) => (
+                        <li key={m.id} className={`rx-tier rx-tier-${m.id}`}>
+                          <span className="rx-tier-name">{m.name.replace("Atomic ", "")}</span>
+                          <span className="rx-tier-price">{formatUsd(m.cents).replace(".00", "")}</span>
+                          <span className="rx-tier-coins">{m.coins} / MONTH</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <a href="#monthly" className="rx-side-link">
+                      Compare memberships
+                    </a>
+                  </div>
 
-                <div className="rx-promise">
-                  <p className="rx-side-label">YOUR NOTES STAY YOURS</p>
-                  <p>
-                    No subscription is required to write, keep, or open your notes. Coins only add sync energy and room
-                    for more notes.
-                  </p>
+                  <div className="rx-promise">
+                    <p className="rx-side-label">YOUR NOTES STAY YOURS</p>
+                    <p>
+                      No subscription is required to write, keep, or open your notes. Coins only add sync energy and
+                      room for more notes.
+                    </p>
+                  </div>
                 </div>
               </aside>
             </div>

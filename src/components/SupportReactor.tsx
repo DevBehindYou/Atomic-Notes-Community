@@ -120,174 +120,180 @@ export function SupportReactor() {
         <p className="reactor-tag">{full ? "FULL POWER" : `STEP ${String(steps).padStart(2, "0")} / 10`}</p>
       </div>
 
-      <div className="reactor-dial">
-        <svg viewBox="0 0 400 400" role="img" aria-label={`Reactor gauge at ${steps} of 10 steps`}>
-          <defs>
-            <radialGradient id="rx-core" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#ffffff" />
-              <stop offset="45%" stopColor="#b3abff" stopOpacity="0.9" />
-              <stop offset="100%" stopColor="#3a2ff0" stopOpacity="0" />
-            </radialGradient>
-            <radialGradient id="rx-core-full" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#ffffff" />
-              <stop offset="40%" stopColor="#ffb040" stopOpacity="0.95" />
-              <stop offset="100%" stopColor="#ff8a00" stopOpacity="0" />
-            </radialGradient>
-          </defs>
+      <div className="reactor-body">
+        <div className="reactor-visual">
+          <div className="reactor-dial">
+            <svg viewBox="0 0 400 400" role="img" aria-label={`Reactor gauge at ${steps} of 10 steps`}>
+              <defs>
+                <radialGradient id="rx-core" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#ffffff" />
+                  <stop offset="45%" stopColor="#b3abff" stopOpacity="0.9" />
+                  <stop offset="100%" stopColor="#3a2ff0" stopOpacity="0" />
+                </radialGradient>
+                <radialGradient id="rx-core-full" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stopColor="#ffffff" />
+                  <stop offset="40%" stopColor="#ffb040" stopOpacity="0.95" />
+                  <stop offset="100%" stopColor="#ff8a00" stopOpacity="0" />
+                </radialGradient>
+              </defs>
 
-          {REWARD_STEPS.map((s, i) => (
-            <path
-              key={s.cents}
-              d={segmentPath(i)}
-              className={`rx-seg${i < steps ? " on" : ""}${s.membership ? " member" : ""}`}
-            />
-          ))}
+              {REWARD_STEPS.map((s, i) => (
+                <path
+                  key={s.cents}
+                  d={segmentPath(i)}
+                  className={`rx-seg${i < steps ? " on" : ""}${s.membership ? " member" : ""}`}
+                />
+              ))}
 
-          <circle cx={CX} cy={CY} r="158" className="rx-ring" />
+              <circle cx={CX} cy={CY} r="158" className="rx-ring" />
 
-          <circle
-            key={`glow-${pulse}`}
-            cx={CX}
-            cy={CY}
-            r="118"
-            fill={full ? "url(#rx-core-full)" : "url(#rx-core)"}
-            className="rx-core"
-          />
+              <circle
+                key={`glow-${pulse}`}
+                cx={CX}
+                cy={CY}
+                r="118"
+                fill={full ? "url(#rx-core-full)" : "url(#rx-core)"}
+                className="rx-core"
+              />
 
-          <g className="rx-atom">
-            {[0, 60, 120].map((deg) => (
-              <g key={deg} transform={`rotate(${deg} ${CX} ${CY})`}>
-                <ellipse cx={CX} cy={CY} rx="124" ry="44" className="rx-orbit" />
-                <circle cx={CX + 124} cy={CY} r="6.5" className="rx-electron" />
+              <g className="rx-atom">
+                {[0, 60, 120].map((deg) => (
+                  <g key={deg} transform={`rotate(${deg} ${CX} ${CY})`}>
+                    <ellipse cx={CX} cy={CY} rx="124" ry="44" className="rx-orbit" />
+                    <circle cx={CX + 124} cy={CY} r="6.5" className="rx-electron" />
+                  </g>
+                ))}
               </g>
-            ))}
-          </g>
 
-          <circle cx={CX} cy={CY} r="64" className="rx-disc" />
-        </svg>
+              <circle cx={CX} cy={CY} r="64" className="rx-disc" />
+            </svg>
 
-        <span
-          key={`spark-${pulse}`}
-          className="rx-spark"
-          style={{ "--a": `${sparkAngle}deg` } as React.CSSProperties}
-          aria-hidden="true"
-        />
+            <span
+              key={`spark-${pulse}`}
+              className="rx-spark"
+              style={{ "--a": `${sparkAngle}deg` } as React.CSSProperties}
+              aria-hidden="true"
+            />
 
-        <div className="reactor-count" aria-hidden="true">
-          <span className="reactor-num">{supportOnly ? `$${cents / 100}` : coinsShown}</span>
-          <span className="reactor-unit">{supportOnly ? "SUPPORT ONLY" : monthly ? "COINS A MONTH" : "ATOMIC COINS"}</span>
+            <div className="reactor-count" aria-hidden="true">
+              <span className="reactor-num">{supportOnly ? `$${cents / 100}` : coinsShown}</span>
+              <span className="reactor-unit">{supportOnly ? "SUPPORT ONLY" : monthly ? "COINS A MONTH" : "ATOMIC COINS"}</span>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <p className="sr-only" aria-live="polite">
-        {supportOnly
-          ? `${usd} one-time support on Ko-fi, no coins`
-          : monthly
-            ? `${usd} a month on Patreon, ${q.membership?.name}: ${q.coins} Atomic Coins each paid month`
-            : `${usd} one-time on Ko-fi: ${q.coins} Atomic Coins`}
-      </p>
+        <div className="reactor-controls">
+          <p className="sr-only" aria-live="polite">
+            {supportOnly
+              ? `${usd} one-time support on Ko-fi, no coins`
+              : monthly
+                ? `${usd} a month on Patreon, ${q.membership?.name}: ${q.coins} Atomic Coins each paid month`
+                : `${usd} one-time on Ko-fi: ${q.coins} Atomic Coins`}
+          </p>
 
-      <div className="reactor-slider">
-        <label htmlFor="reactor-amount" className="sr-only">
-          Support amount in US dollars
-        </label>
-        <input
-          id="reactor-amount"
-          type="range"
-          min={MIN_CENTS / 100}
-          max={MAX_CENTS / 100}
-          step={1}
-          value={cents / 100}
-          onChange={(e) => choose(Number(e.target.value) * 100)}
-          aria-valuetext={`${usd}, ${q.coins} Atomic Coins`}
-          style={{ "--fill": `${((steps - 1) / 9) * 100}%` } as React.CSSProperties}
-        />
-        <div className="reactor-scale" aria-hidden="true">
-          <span>$1 MIN</span>
-          <span>$10 MAX</span>
-        </div>
-      </div>
+          <div className="reactor-slider">
+            <label htmlFor="reactor-amount" className="sr-only">
+              Support amount in US dollars
+            </label>
+            <input
+              id="reactor-amount"
+              type="range"
+              min={MIN_CENTS / 100}
+              max={MAX_CENTS / 100}
+              step={1}
+              value={cents / 100}
+              onChange={(e) => choose(Number(e.target.value) * 100)}
+              aria-valuetext={`${usd}, ${q.coins} Atomic Coins`}
+              style={{ "--fill": `${((steps - 1) / 9) * 100}%` } as React.CSSProperties}
+            />
+            <div className="reactor-scale" aria-hidden="true">
+              <span>$1 MIN</span>
+              <span>$10 MAX</span>
+            </div>
+          </div>
 
-      <div className="reactor-presets" role="group" aria-label="Monthly memberships">
-        {PRESET_CENTS.map((p) => {
-          const m = quote(p).membership;
-          return (
-            <button key={p} type="button" aria-pressed={cents === p} onClick={() => choose(p)}>
-              <span className="rp-price">${p / 100}</span>
-              <span className="rp-name">{m ? m.name.replace("Atomic ", "") : ""}</span>
+          <div className="reactor-presets" role="group" aria-label="Monthly memberships">
+            {PRESET_CENTS.map((p) => {
+              const m = quote(p).membership;
+              return (
+                <button key={p} type="button" aria-pressed={cents === p} onClick={() => choose(p)}>
+                  <span className="rp-price">${p / 100}</span>
+                  <span className="rp-name">{m ? m.name.replace("Atomic ", "") : ""}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="reactor-mode" role="radiogroup" aria-label="Reward">
+            <button type="button" role="radio" aria-checked={!supportOnly} onClick={() => setSupportOnly(false)}>
+              With Atomic Coins
             </button>
-          );
-        })}
-      </div>
-
-      <div className="reactor-mode" role="radiogroup" aria-label="Reward">
-        <button type="button" role="radio" aria-checked={!supportOnly} onClick={() => setSupportOnly(false)}>
-          With Atomic Coins
-        </button>
-        <button type="button" role="radio" aria-checked={supportOnly} onClick={() => setSupportOnly(true)}>
-          Support only
-        </button>
-      </div>
-
-      <dl className="reactor-data">
-        <div>
-          <dt>{monthly ? "MONTHLY ON PATREON" : "ONE-TIME ON KO-FI"}</dt>
-          <dd>
-            {usd}
-            {monthly ? <span className="reactor-per"> / MO</span> : null}
-          </dd>
-          {monthly ? <p className="reactor-route">{q.membership?.name.toUpperCase()}</p> : null}
-        </div>
-        <div>
-          <dt>{monthly ? "EACH PAID MONTH" : "YOU RECEIVE"}</dt>
-          <dd>{supportOnly ? "OUR THANKS" : `${q.coins} COINS`}</dd>
-          {!supportOnly && q.bonusCoins > 0 ? (
-            <p key={`bonus-${cents}`} className="reactor-bonus">
-              +{q.bonusCoins} BONUS COINS
-            </p>
-          ) : null}
-        </div>
-      </dl>
-
-      <div className="reactor-cta">
-        {supportOnly ? (
-          <>
-            <a href={KOFI_URL} className="reactor-go" target="_blank" rel="noreferrer">
-              Support {usd} on Ko-fi
-            </a>
-            <p className="reactor-fine">
-              No coins and no account email needed. Enter {usd} on Ko-fi, where the payment happens.
-            </p>
-          </>
-        ) : monthly ? (
-          <>
-            <a href={PATREON_JOIN_URL} className="reactor-go" target="_blank" rel="noreferrer">
-              Join {q.membership?.name} on Patreon
-            </a>
-            <button type="button" className="reactor-copy" onClick={copyMessage}>
-              {copied ? "Copied. Send it to the developer on Patreon" : "Copy the Patreon message"}
+            <button type="button" role="radio" aria-checked={supportOnly} onClick={() => setSupportOnly(true)}>
+              Support only
             </button>
-            <p className="reactor-fine">
-              A monthly membership: {usd} a month and {q.coins} Atomic Coins each paid month. Cancel any time on
-              Patreon. After joining, send the message with your Atomic Notes account email. Coins are added by hand
-              after the developer checks the payment.
-            </p>
-          </>
-        ) : (
-          <>
-            <a href={KOFI_URL} className="reactor-go" target="_blank" rel="noreferrer">
-              Support {usd} on Ko-fi &amp; get {q.coins} coins
-            </a>
-            <button type="button" className="reactor-copy" onClick={copyMessage}>
-              {copied ? "Copied. Paste it in the Ko-fi message" : "Copy the Ko-fi message"}
-            </button>
-            <p className="reactor-fine">
-              A one-time payment. On Ko-fi, enter {usd}, paste the message, add your Atomic Notes account email, and
-              mark it private. Coins are added by hand after the developer checks the payment.
-            </p>
-          </>
-        )}
-        <p className="reactor-where">PAYMENT ON {where.toUpperCase()} · THIS PAGE ONLY PREVIEWS THE REWARD</p>
+          </div>
+
+          <dl className="reactor-data">
+            <div>
+              <dt>{monthly ? "MONTHLY ON PATREON" : "ONE-TIME ON KO-FI"}</dt>
+              <dd>
+                {usd}
+                {monthly ? <span className="reactor-per"> / MO</span> : null}
+              </dd>
+              {monthly ? <p className="reactor-route">{q.membership?.name.toUpperCase()}</p> : null}
+            </div>
+            <div>
+              <dt>{monthly ? "EACH PAID MONTH" : "YOU RECEIVE"}</dt>
+              <dd>{supportOnly ? "OUR THANKS" : `${q.coins} COINS`}</dd>
+              {!supportOnly && q.bonusCoins > 0 ? (
+                <p key={`bonus-${cents}`} className="reactor-bonus">
+                  +{q.bonusCoins} BONUS COINS
+                </p>
+              ) : null}
+            </div>
+          </dl>
+
+          <div className="reactor-cta">
+            {supportOnly ? (
+              <>
+                <a href={KOFI_URL} className="reactor-go" target="_blank" rel="noreferrer">
+                  Support {usd} on Ko-fi
+                </a>
+                <p className="reactor-fine">
+                  No coins and no account email needed. Enter {usd} on Ko-fi, where the payment happens.
+                </p>
+              </>
+            ) : monthly ? (
+              <>
+                <a href={PATREON_JOIN_URL} className="reactor-go" target="_blank" rel="noreferrer">
+                  Join {q.membership?.name} on Patreon
+                </a>
+                <button type="button" className="reactor-copy" onClick={copyMessage}>
+                  {copied ? "Copied. Send it to the developer on Patreon" : "Copy the Patreon message"}
+                </button>
+                <p className="reactor-fine">
+                  A monthly membership: {usd} a month and {q.coins} Atomic Coins each paid month. Cancel any time on
+                  Patreon. After joining, send the message with your Atomic Notes account email. Coins are added by hand
+                  after the developer checks the payment.
+                </p>
+              </>
+            ) : (
+              <>
+                <a href={KOFI_URL} className="reactor-go" target="_blank" rel="noreferrer">
+                  Support {usd} on Ko-fi &amp; get {q.coins} coins
+                </a>
+                <button type="button" className="reactor-copy" onClick={copyMessage}>
+                  {copied ? "Copied. Paste it in the Ko-fi message" : "Copy the Ko-fi message"}
+                </button>
+                <p className="reactor-fine">
+                  A one-time payment. On Ko-fi, enter {usd}, paste the message, add your Atomic Notes account email, and
+                  mark it private. Coins are added by hand after the developer checks the payment.
+                </p>
+              </>
+            )}
+            <p className="reactor-where">PAYMENT ON {where.toUpperCase()} · THIS PAGE ONLY PREVIEWS THE REWARD</p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -3615,3 +3615,67 @@ section h2 {
     transition: none;
   }
 }
+
+/* reactor in a row: dial beside the controls, support details below */
+.rx-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+.reactor {
+  border-right: none;
+  border-bottom: 1px solid rgba(244, 245, 241, 0.16);
+}
+.reactor-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+.reactor-dial {
+  margin: 10px auto 0;
+}
+.rx-goes {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+.rx-goes li {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rx-side-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.rx-promise {
+  margin-top: 0;
+}
+@media (max-width: 980px) {
+  .reactor-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .reactor-visual {
+    position: sticky;
+    top: 64px;
+    z-index: 2;
+    background: #15171b;
+    padding-bottom: 6px;
+  }
+  .reactor-dial {
+    width: min(100%, 250px);
+  }
+  .rx-goes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .rx-side-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .rx-goes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
