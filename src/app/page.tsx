@@ -24,25 +24,32 @@ import { APK_URL, DEVELOPER_URL, SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 
+// Screens from earlier builds (notes, editors, coins, notifications) that have no 2.03.5 mockup yet.
 const M = (n: string) => `/mockups/atomic-notes-mockup-image-${n}.png`;
+// Release 2.03.5 screens, cut from the iPhone 18 Pro mockups without the device frame (the app is Android-only).
+const A = (name: string) => `/mockups/app-${name}.png`;
+const A_H = 2199;
 
-// The screen tour. Image 17 (a recovery phrase) is left out on purpose.
+// The screen tour. The recovery phrase screen is left out on purpose.
 const SHOTS: Shot[] = [
   { src: M("03"), label: "Notes" },
   { src: M("05"), label: "Editor · Note" },
   { src: M("04"), label: "Editor · Checklist" },
   { src: M("06"), label: "Select & Delete" },
-  { src: M("12"), label: "Encryption vault" },
-  { src: M("14"), label: "Atomic Energy" },
+  { src: A("settings"), label: "Settings" },
+  { src: A("profile"), label: "Profile" },
+  { src: A("avatar-picker"), label: "Choose an avatar" },
+  { src: A("encryption"), label: "Encryption vault" },
+  { src: A("security"), label: "Lock and no screenshots" },
+  { src: A("atomic-energy"), label: "Atomic Energy" },
+  { src: A("energy-activity"), label: "Energy activity" },
+  { src: A("settings-energy-popup"), label: "Energy popup" },
   { src: M("15"), label: "Convert Coins" },
-  { src: M("13"), label: "Energy popup" },
+  { src: A("cloud-sync"), label: "Cloud Sync" },
+  { src: A("cloud-notes"), label: "Device and cloud" },
   { src: M("18"), label: "Notifications" },
-  { src: M("09"), label: "Biometric lock" },
-  { src: M("08"), label: "Cloud Sync" },
-  { src: M("07"), label: "Device and cloud" },
-  { src: M("02"), label: "Settings" },
-  { src: M("01"), label: "Profile" },
-  { src: M("10"), label: "Danger Zone" },
+  { src: A("danger-zone"), label: "Danger Zone" },
+  { src: A("settings-about"), label: "About" },
 ];
 
 async function latestUpdates(): Promise<NotificationRow[]> {
@@ -74,7 +81,7 @@ function jsonLd() {
         isAccessibleForFree: true,
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
         image: `${SITE_URL}/og-banner.png`,
-        screenshot: [`${SITE_URL}${M("03")}`, `${SITE_URL}${M("12")}`, `${SITE_URL}${M("14")}`],
+        screenshot: [`${SITE_URL}${M("03")}`, `${SITE_URL}${A("encryption")}`, `${SITE_URL}${A("atomic-energy")}`],
         featureList: [
           "Local-first notes and checklists that work offline",
           "Sync to a folder in your own Google Drive",
@@ -268,9 +275,9 @@ export default async function Home() {
               </ul>
             </div>
             <div className="lp-stack" aria-hidden="true">
-              <Phone src={M("12")} alt="" shadow="ink" className="lp-p1" eager />
+              <Phone src={A("encryption")} alt="" shadow="ink" className="lp-p1" height={A_H} eager />
               <Phone src={M("03")} alt="" className="lp-p2" eager />
-              <Phone src={M("14")} alt="" shadow="ink" className="lp-p3" eager />
+              <Phone src={A("atomic-energy")} alt="" shadow="ink" className="lp-p3" height={A_H} eager />
             </div>
           </div>
         </section>
@@ -449,8 +456,13 @@ export default async function Home() {
                 </p>
               </div>
               <div className="lp-showcase-phones">
-                <Phone src={M("12")} alt="Atomic Notes encryption screen showing the vault is on" />
-                <Phone src={M("09")} alt="Atomic Notes security screen with the biometric lock switch" shadow="ink" />
+                <Phone src={A("encryption")} alt="Atomic Notes encryption screen showing the vault is on" height={A_H} />
+                <Phone
+                  src={A("security")}
+                  alt="Atomic Notes security screen with biometric unlock and no-screenshots mode both on"
+                  shadow="ink"
+                  height={A_H}
+                />
               </div>
             </Reveal>
 
@@ -618,7 +630,37 @@ export default async function Home() {
               </h2>
               <p className="lp-lead">
                 The Technical Editorial design system: ink #15171B on paper #F4F5F1 with one accent, Signal #3A2FF0.
-                Tap any screen to zoom. Some screens are from the August 2026 build.
+                Tap any screen to zoom. Settings, vault, energy, sync, and Danger Zone screens are from release 2.03.5.
+                The notes, editor, coin, and notification screens are from the August 2026 build.
+              </p>
+            </Reveal>
+            <Reveal className="lp-demo">
+              <video
+                className="lp-demo-wide"
+                controls
+                playsInline
+                preload="none"
+                poster="/video/atomic-notes-demo-poster-1280x720.jpg"
+                width={1280}
+                height={720}
+              >
+                <source src="/video/atomic-notes-demo-1280x720.mp4" type="video/mp4" />
+              </video>
+              <video
+                className="lp-demo-tall"
+                controls
+                playsInline
+                preload="none"
+                poster="/video/atomic-notes-demo-poster-720x1280.jpg"
+                width={720}
+                height={1280}
+              >
+                <source src="/video/atomic-notes-demo-720x1280.mp4" type="video/mp4" />
+              </video>
+              <p className="lp-small">
+                A 30-second tour in a phone mockup. The home and editor screens in it preview the redesign in progress,
+                with search, tags, and text formatting that aren&apos;t in release 2.03.5 yet. Everything else matches
+                the current app.
               </p>
             </Reveal>
             <Gallery shots={SHOTS} />

@@ -56,7 +56,7 @@ def build():
     out["05-move-out"] = figure("FIG 4 · MOVING OUT", 'TWENTY MINUTES, <span class="s">IN THIS ORDER</span>', body,
                                 "Highest blast radius first. A deleted note often stays in the trash for 30 days.", h=620)
 
-    body = phone(12, 64, 190, 260, crop=470, shadow="ink")
+    body = phone("encryption", 64, 190, 260, crop=470, shadow="ink")
     facts = [("GOOD FOR", "Journals, health notes, plans, drafts"), ("PROTECTION", "App lock and an optional end-to-end vault"),
              ("NO AUTOFILL", "Can't stop you pasting into a fake site"), ("NO BREACH ALERTS", "Won't tell you a password leaked"),
              ("NO GENERATOR", "Can't create unique passwords"), ("VERDICT", "Not a password manager. Use one.")]

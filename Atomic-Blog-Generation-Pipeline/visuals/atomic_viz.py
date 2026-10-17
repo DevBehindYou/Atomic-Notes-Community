@@ -28,7 +28,9 @@ def file_url(path):
 
 
 def mockup(n):
-    return file_url(os.path.join(PUBLIC, "mockups", f"atomic-notes-mockup-image-{n:02d}.png"))
+    """An app screen from public/mockups: a name like "encryption" (release 2.03.5) or a legacy number."""
+    name = f"app-{n}.png" if isinstance(n, str) else f"atomic-notes-mockup-image-{n:02d}.png"
+    return file_url(os.path.join(PUBLIC, "mockups", name))
 
 
 ATOM = file_url(os.path.join(PUBLIC, "icons", "atom.svg"))

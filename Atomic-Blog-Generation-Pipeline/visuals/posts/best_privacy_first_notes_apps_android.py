@@ -71,7 +71,7 @@ def build():
     out["05-permissions"] = figure("FIG 4 · PERMISSIONS", 'WHO CAN EVEN <span class="s">REACH THE INTERNET?</span>', body,
                                    "From each app's AndroidManifest.xml or F-Droid listing. No internet permission means notes can't leave by the app itself.", h=790)
 
-    body = phone(12, 64, 190, 260, crop=470, shadow="ink")
+    body = phone("encryption", 64, 190, 260, crop=470, shadow="ink")
     facts = [("WHERE NOTES LIVE", "Your phone first, then your own Google Drive"), ("ENCRYPTION", "Optional end-to-end vault, off by default"),
              ("SERVER", "Metadata only, never note titles or text"), ("NO", "Ads, trackers, or AI"),
              ("PRICE", "Free, 30 notes, daily sync energy"), ("HONEST LIMITS", "Google sign-in required. No export button yet")]

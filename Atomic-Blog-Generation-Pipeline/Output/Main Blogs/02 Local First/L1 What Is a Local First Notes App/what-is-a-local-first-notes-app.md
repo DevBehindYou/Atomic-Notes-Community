@@ -109,7 +109,7 @@ Here's how Atomic Notes splits those jobs:
 2. **A sync server coordinates, and keeps metadata only.** It tracks note IDs, timestamps, flags, and versions so your devices agree. It never stores your note titles or text.
 3. **Your own Google Drive holds the cloud copy.** Every note lands in a My-Atomic-Notes folder as its own `.atomic` file. The app uses Google's narrow `drive.file` scope, so it can only see files it created.
 
-![A phone showing the Atomic Notes storage report, beside three cards: your phone holds the real copy, the sync server keeps metadata only, and your Google Drive holds one file per note. An optional vault keeps cloud copies as ciphertext.](05-atomic-notes-layers.png "Fig 4. Atomic Notes: phone first, Google Drive second, a metadata-only server in between.")
+![A phone showing the Atomic Notes Cloud Notes screen, beside three cards: your phone holds the real copy, the sync server keeps metadata only, and your Google Drive holds one file per note. An optional vault keeps cloud copies as ciphertext.](05-atomic-notes-layers.png "Fig 4. Atomic Notes: phone first, Google Drive second, a metadata-only server in between.")
 
 One honest detail. Unless you turn on the optional vault, note text is plain JSON in your Drive and passes through the sync server on its way there, without being stored. Turn the vault on and your phone encrypts every note with AES-256-GCM before upload, so the server and Google only ever hold ciphertext.
 

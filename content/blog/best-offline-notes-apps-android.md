@@ -70,7 +70,7 @@ To find the best offline notes app Android owners will actually keep, every entr
 - **Latest:** 2.03.5, September 28, 2026
 - **Weak spot:** the first sign-in needs internet, the free plan holds 30 notes, and there's no export button yet
 
-![The Atomic Notes notes database screen on a phone showing 8 notes on device and 8 in cloud, beside a fact card about offline saving, sync later, conflict copies, and honest limits.](/blog/best-offline-notes-apps-android/06-atomic-notes-card.png "Fig 3. Atomic Notes, disclosed: it's my app, and the offline behavior is in its public code.")
+![The Atomic Notes Cloud Notes screen on a phone showing 23 notes on the device and 23 in the cloud, beside a fact card about offline saving, sync later, conflict copies, and honest limits.](/blog/best-offline-notes-apps-android/06-atomic-notes-card.png "Fig 3. Atomic Notes, disclosed: it's my app, and the offline behavior is in its public code.")
 
 When the network comes back, Atomic Notes retries a failed sync after 5, 15, and 45 seconds, then waits for the next trigger instead of draining the battery. If an offline edit collides with one from another device, the app keeps both and names one "(conflict copy)". That's why it's my pick for the best offline notes app Android users can run on two phones.
 
