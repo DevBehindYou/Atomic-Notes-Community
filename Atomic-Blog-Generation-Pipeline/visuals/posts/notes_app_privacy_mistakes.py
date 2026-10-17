@@ -68,7 +68,7 @@ def build():
     routine = [("LOCKS", "Screen lock, app lock, and no-screenshots still on"), ("SHARES", "Revoke links you no longer need"),
                ("EXPORTS", "Delete or encrypt stray copies"), ("ACCOUNT", "Unique password and two-step verification"),
                ("UPDATES", "Read release notes for new sharing or AI features")]
-    body = phone(9, 64, 190, 260, crop=470, shadow="ink")
+    body = phone("security", 64, 190, 260, crop=470, shadow="ink")
     rws = "".join(f'<div style="display:grid;grid-template-columns:44px 170px 1fr;gap:10px;padding:12px 0;border-top:1.5px solid #C6C6CB">'
                   f'<span class="lbl" style="font-size:18px">{i + 1:02d}</span><span class="lbl" style="font-size:18px;color:#15171B">{a}</span><span style="font-size:22px">{b}</span></div>'
                   for i, (a, b) in enumerate(routine))

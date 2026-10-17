@@ -70,7 +70,7 @@ def build():
     out["05-backup-plan"] = figure("FIG 4 · BACKUPS", 'THE PHONE MAY HOLD <span class="s">THE ONLY COPY</span>', body,
                                    "Ten minutes a month. Apps with sync cover a lost phone, not a deleted note.", lines=lines, h=680)
 
-    body = phone(7, 64, 190, 260, crop=470, shadow="ink")
+    body = phone("cloud-notes", 64, 190, 260, crop=470, shadow="ink")
     facts = [("OFFLINE", "Write, edit, search, delete. No connection needed"), ("SAVES", "To the phone as you type"),
              ("SYNC LATER", "To your own Google Drive, on its own"), ("RETRIES", "After 5, 15, and 45 seconds, then waits"),
              ("CONFLICTS", "Both versions kept, one marked conflict copy"), ("HONEST LIMITS", "Sign-in needs internet once. 30 free notes")]

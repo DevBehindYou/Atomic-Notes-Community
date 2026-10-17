@@ -59,7 +59,7 @@ def build():
     out["05-five-questions"] = figure("FIG 4 · THE CHECK", 'FIVE QUESTIONS <span class="s">FOR ANY APP</span>', body,
                                       "Vague answers usually mean the gap is real.", h=700)
 
-    body = phone(12, 64, 190, 260, crop=470, shadow="ink")
+    body = phone("encryption", 64, 190, 260, crop=470, shadow="ink")
     facts = [("WHERE", "HTTPS always. On the phone too, with the vault"), ("WHOSE KEY", "Vault: yours, from six words"),
              ("VISIBLE", "IDs, type, flags, times, rough size"), ("ALSO SENT", "Nothing. No analytics or trackers"),
              ("RECOVERY", "Your phrase only. No reset path"), ("HONEST LIMITS", "Vault off by default. No audit yet")]

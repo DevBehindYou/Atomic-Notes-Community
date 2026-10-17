@@ -85,7 +85,7 @@ def build():
                                     "Source: \"Local-first software\", Ink & Switch, 2019.", h=740)
 
     # How Atomic Notes applies it.
-    body = phone(7, 64, 196, 250, crop=470, shadow="ink")
+    body = phone("cloud-notes", 64, 196, 250, crop=470, shadow="ink")
     body += box(390, 190, 360, 196,
                 '<div class="lbl">1 · YOUR PHONE</div><div class="ttl">THE REAL COPY</div><div class="txt" style="font-size:21px">Hive storage on the device. Every note saves as you type, online or not.</div>',
                 cls="sigshadow")
