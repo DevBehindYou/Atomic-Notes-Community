@@ -21,12 +21,12 @@ const mono = JetBrains_Mono({
 });
 
 const DESCRIPTION =
-  "Atomic Notes is a free, local-first notes app for Android. Notes sync to your own Google Drive, with an optional AES-256-GCM vault. No AI, no ads, no trackers.";
+  "Atomic Notes is a free offline notes app for Android. Notes sync to your own Google Drive, with an optional end-to-end encrypted vault. No AI, no ads.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Atomic Notes: local-first notes that sync to your own Google Drive",
+    default: "Atomic Notes: Offline, E2E Vault & Google Drive Sync",
     template: "%s | Atomic Notes",
   },
   description: DESCRIPTION,

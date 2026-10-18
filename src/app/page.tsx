@@ -109,8 +109,9 @@ function jsonLd() {
       {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
-        url: SITE_URL,
+        url: `${SITE_URL}/`,
         name: "Atomic Notes",
+        alternateName: ["Atomic Notes app", "Atomic Notes for Android", "Atomic Notes by DevBehindYou"],
         inLanguage: "en-US",
         publisher: { "@id": `${SITE_URL}/#author` },
       },
@@ -244,7 +245,7 @@ export default async function Home() {
           <div className="wrap lp-hero-grid">
             <div className="lp-hero-copy">
               <p className="eyebrow">
-                LOCAL-FIRST NOTES FOR ANDROID · v{RELEASE.version}
+                OFFLINE NOTES APP FOR ANDROID · v{RELEASE.version}
               </p>
               <h1>
                 <span className="offset" data-text="ATOMIC NOTES">
@@ -255,8 +256,8 @@ export default async function Home() {
                 Your Notes, Your Drive, <span className="sig">Always Yours.</span>
               </p>
               <p className="lp-lead">
-                Notes live on your phone first. Sync goes to a folder in your own Google Drive. Turn on the vault
-                and every note is sealed on the device before it leaves it.
+                Notes live on your phone first. Sync goes to a folder in your own Google Drive. Turn on the
+                end-to-end encrypted vault and every note is sealed on the device before it leaves it.
               </p>
               <div className="hero-actions">
                 <a href={APK_URL} className="btn-signal">
