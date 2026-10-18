@@ -109,8 +109,9 @@ function jsonLd() {
       {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
-        url: SITE_URL,
+        url: `${SITE_URL}/`,
         name: "Atomic Notes",
+        alternateName: ["Atomic Notes app", "Atomic Notes for Android", "Atomic Notes by DevBehindYou"],
         inLanguage: "en-US",
         publisher: { "@id": `${SITE_URL}/#author` },
       },
@@ -187,30 +188,30 @@ const FEATURES: { icon: IconName; k: string; t: string; d: string; points: strin
   {
     icon: "device",
     k: "LOCAL-FIRST",
-    t: "Notes that save as you type",
-    d: "Text notes and checklists are one kind of object, saved to your phone on every keystroke. No spinner, no lost work, no waiting on the network.",
-    points: ["Pin, filter, and multi-select", "Recycle Bin for deleted notes", "Works the same offline"],
+    t: "Notes that save as you type, even offline",
+    d: "Text notes and checklists save to your phone on every keystroke. No spinner, no lost work, and no waiting on a weak signal.",
+    points: ["Pin, filter, and multi-select", "Recycle Bin for deleted notes", "Works offline, the same as online"],
   },
   {
     icon: "drive",
     k: "YOUR DRIVE",
-    t: "Sync to your own Google Drive",
-    d: "Each note becomes one .atomic file in a My-Atomic-Notes folder in your Drive. The server keeps IDs, flags, and timestamps, never your titles or text.",
-    points: ["drive.file scope: sees only its own files", "Syncs after you stop typing", "Conflict copies instead of overwrites"],
+    t: "Google Drive notes sync",
+    d: "Each note becomes one .atomic file in a My-Atomic-Notes folder in your own Google Drive. The server keeps IDs, flags, and timestamps, never your titles or text.",
+    points: ["drive.file scope: sees only its own files", "Syncs after you stop typing", "A conflict copy instead of an overwrite"],
   },
   {
     icon: "lock",
     k: "END-TO-END",
-    t: "A vault, if you want one",
+    t: "An encrypted note taking app, when you want one",
     d: "Six words you write down become a key on your phone through Argon2id. AES-256-GCM seals every note before it leaves the device.",
     points: ["Drive and server see ciphertext", "Lock it on one device any time", "The key never leaves your phone"],
   },
   {
     icon: "shield",
     k: "DEVICE LOCKS",
-    t: "Guards for the phone in your hand",
-    d: "Fingerprint or face unlock at launch, a 6-digit code from any authenticator app, and blocked screenshots and screen recording.",
-    points: ["Biometric lock", "Two-step verification (TOTP)", "Android secure storage for secrets"],
+    t: "A notes app with password protection",
+    d: "A biometric app lock asks for your fingerprint or face at launch, with your phone's PIN, pattern, or password as the backup. Screenshots and screen recording stay blocked.",
+    points: ["Biometric app lock", "Two-step verification (TOTP)", "Android secure storage for secrets"],
   },
   {
     icon: "bell",
@@ -244,7 +245,7 @@ export default async function Home() {
           <div className="wrap lp-hero-grid">
             <div className="lp-hero-copy">
               <p className="eyebrow">
-                LOCAL-FIRST NOTES FOR ANDROID · v{RELEASE.version}
+                NOTES APP FOR ANDROID · v{RELEASE.version}
               </p>
               <h1>
                 <span className="offset" data-text="ATOMIC NOTES">
@@ -255,8 +256,9 @@ export default async function Home() {
                 Your Notes, Your Drive, <span className="sig">Always Yours.</span>
               </p>
               <p className="lp-lead">
-                Notes live on your phone first. Sync goes to a folder in your own Google Drive. Turn on the vault
-                and every note is sealed on the device before it leaves it.
+                The Atomic Notes app keeps your notes on your phone first, works offline, and syncs to a folder in
+                your own Google Drive. Turn on the optional end-to-end encrypted vault, and every note is sealed on
+                the device before it leaves.
               </p>
               <div className="hero-actions">
                 <a href={APK_URL} className="btn-signal">
@@ -286,7 +288,7 @@ export default async function Home() {
         <section id="what" className="lp-what">
           <div className="wrap lp-what-grid">
             <Reveal>
-              <p className="eyebrow">WHAT IS ATOMIC NOTES?</p>
+              <p className="eyebrow">WHAT IS THE ATOMIC NOTES APP?</p>
               <h2>
                 A notes app that <span className="sig">answers to you.</span>
               </h2>
@@ -353,11 +355,14 @@ export default async function Home() {
             <Reveal>
               <p className="eyebrow">THE PROBLEM</p>
               <h2>
-                Your notes became <span className="sig-light">training data.</span>
+                Most notes apps ask <span className="sig-light">too much of you.</span>
               </h2>
               <p className="lp-lead lp-lead-dark">
-                Across mainstream productivity apps, &ldquo;free&rdquo; now tends to mean your content is the product.
-                The terms can change after you&apos;ve written your notes. In August 2023, Zoom faced a backlash over
+                Ask around for a good notes app for Android, and you hear the same complaints. The free ones are
+                covered in ads or lock basic features behind a paywall. Others won&apos;t open without a signal, or
+                keep your notes in their own cloud, so getting them into Google Drive means sharing them one at a
+                time. And &ldquo;free&rdquo; often means your content is the product, under terms that can change
+                after you&apos;ve written your notes. In August 2023, Zoom faced a backlash over
                 terms that appeared to allow AI training on customer data (
                 <a href="https://techcrunch.com/2023/08/08/zoom-data-mining-for-ai-terms-gdpr-eprivacy/" target="_blank" rel="noreferrer">
                   TechCrunch
@@ -417,8 +422,8 @@ export default async function Home() {
                 <h3>Write first. The network can wait.</h3>
                 <p>
                   Every change lands in on-device storage as you type. Closing the app or losing signal can&apos;t
-                  lose your work, and the app opens just as fast in airplane mode. A checklist is a note, so both
-                  share one editor, one list, and one limit.
+                  lose your work, and the Atomic Notes app opens just as fast in airplane mode. A checklist is a
+                  note, so both share one editor, one list, and one limit.
                 </p>
               </div>
               <div className="lp-showcase-phones">
@@ -450,9 +455,10 @@ export default async function Home() {
                 <p className="num">02 · THE VAULT</p>
                 <h3>Sealed on your phone. Ciphertext everywhere else.</h3>
                 <p>
-                  Turn the vault on and write down six words. Argon2id (64 MiB of memory, 3 passes) turns them into a
-                  key on the device, and AES-256-GCM seals each note before it syncs. A new phone asks for the words
-                  once. Lose them, and no one can decrypt your vault notes, including us. That&apos;s the point.
+                  Turn the vault on and write down your six-word recovery phrase. Argon2id (64 MiB of memory, 3
+                  passes) turns it into a key on the device, and AES-256-GCM seals each note before it syncs. A new
+                  phone asks for the words once. Lose them, and no one can decrypt your vault notes, including us.
+                  That&apos;s what makes it a real encrypted note taking app, not just a password screen.
                 </p>
               </div>
               <div className="lp-showcase-phones">
@@ -572,8 +578,8 @@ export default async function Home() {
                 Writing is free. <span className="sig">Energy powers sync.</span>
               </h2>
               <p className="lp-lead">
-                Energy refills on its own every day. Atomic Coins top it up or buy more room for notes. No
-                subscriptions, and nothing that touches your content.
+                Ads don&apos;t pay for the Atomic Notes app. Energy does. It refills on its own every day, and Atomic
+                Coins top it up or buy more room for notes. No subscriptions, and nothing that touches your content.
               </p>
             </Reveal>
             <div className="lp-energy-grid">
@@ -745,12 +751,12 @@ export default async function Home() {
         <section id="get" className="lp-dark lp-get">
           <div className="wrap lp-get-grid">
             <Reveal>
-              <p className="eyebrow">GET ATOMIC NOTES</p>
+              <p className="eyebrow">GET THE ATOMIC NOTES APP</p>
               <h2>
                 Sideload it. <span className="sig-light">Keep control.</span>
               </h2>
               <p className="lp-lead lp-lead-dark">
-                Download the signed APK from GitHub Releases. Most phones need the file ending in{" "}
+                Download the signed Atomic Notes app APK from GitHub Releases. Most phones need the file ending in{" "}
                 <span className="mono">arm64-v8a.apk</span>. Version {RELEASE.version} installs over earlier versions and
                 keeps your notes. Needs {RELEASE.minAndroid} or newer.
               </p>

@@ -62,7 +62,7 @@ export const KOFI_URL = "https://ko-fi.com/devbehindyou";
 
 /** The answer-first definition, used in the page and in structured data. */
 export const DEFINITION =
-  "Atomic Notes is a free, source-available notes app for Android that keeps your notes on your phone first and syncs them to a private folder in your own Google Drive. It has no AI features, no ads, and no analytics. An optional vault encrypts every note on the device with AES-256-GCM, so the sync server and Google only ever store ciphertext.";
+  "The Atomic Notes app is a free, source-available notes app for Android that keeps your notes on your phone first and syncs them to a private folder in your own Google Drive. It's a notes app without ads, AI, or analytics. Turn on the optional vault and it becomes an encrypted note taking app: AES-256-GCM seals every note on the device, so the sync server and Google only ever store ciphertext.";
 
 export const FACTS: { k: string; v: string }[] = [
   { k: "Platform", v: "Android 9 or newer" },
@@ -72,15 +72,16 @@ export const FACTS: { k: string; v: string }[] = [
   { k: "Price", v: "Free. 30 notes and daily sync energy" },
   { k: "Tracking", v: "None. No analytics, crash, or ad SDKs" },
   { k: "Source", v: "Public to read and verify. All rights reserved" },
+  { k: "Made by", v: "DevBehindYou (Ashutosh Sharma)" },
 ];
 
 export const COMPARISON: { them: string; us: string }[] = [
-  { them: "Content used to \"improve services\" and train AI", us: "No AI in the app. Your notes are never used for training." },
+  { them: "Banner ads, pop-ups, and features locked behind a paywall", us: "A notes app without ads. Every feature is on the free plan, and coins only add space and energy." },
+  { them: "Content used to \"improve services\" and train AI", us: "No AI in the Atomic Notes app. Your notes are never used for training." },
   { them: "Analytics and crash SDKs profiling behavior", us: "Zero telemetry. No analytics, no crash reporters." },
-  { them: "Ad SDKs reading context to target you", us: "No ad SDKs in the app." },
-  { them: "Cloud-first, so your data lives on their servers by default", us: "Local-first. Your phone holds the main copy, and sync goes to your own Google Drive." },
-  { them: "Your words sit readable on someone else's disk", us: "Turn on the vault and the server and Google only ever see ciphertext." },
-  { them: "Content monetized to fund \"free\"", us: "Funded by optional Atomic Coins that buy sync speed and note capacity, never access to your notes." },
+  { them: "Cloud-first, so a weak signal means a spinner", us: "Local-first. Your phone holds the main copy, and the app works offline." },
+  { them: "Notes stuck inside the app, exported one at a time", us: "Google Drive notes sync: every note is a file in your own Drive." },
+  { them: "A password screen that hides notes but doesn't encrypt them", us: "An optional vault seals notes with AES-256-GCM before they leave the phone." },
 ];
 
 /** What each party can see, with the vault off and on. */
@@ -128,31 +129,39 @@ export const ROADMAP: { phase: string; title: string; state: "done" | "now" | "n
 
 export const FAQ: { q: string; a: string }[] = [
   {
-    q: "Is Atomic Notes free?",
+    q: "Is the Atomic Notes app free?",
     a: "Yes. Writing and keeping notes on your phone is free, and every account holds 30 notes at no cost. Cloud sync uses Atomic Energy, which refills by 20 every 24 hours. That covers four standard syncs a day. Atomic Coins add more energy or note capacity. There are no subscriptions.",
   },
   {
-    q: "Where does Atomic Notes store my notes?",
-    a: "On your phone first, in on-device storage. When you sync, each note is saved as its own .atomic file in a My-Atomic-Notes folder in your Google Drive. The Atomic Notes server stores only metadata such as note IDs, timestamps, and flags. It never stores your note titles or text.",
+    q: "Is this the same as the atomic notes method or other apps called Atomic Notes?",
+    a: "No. The Atomic Notes app on this site is an Android notes app made by DevBehindYou. It isn't related to the atomic notes method, where you keep one idea per note, or to other apps with a similar name. You can still use it for one-idea notes if you like that style.",
   },
   {
-    q: "Can the developer read my notes?",
-    a: "Not with the vault on. The vault encrypts each note on your phone with AES-256-GCM before it is uploaded, so your Drive and the server hold only ciphertext, and the key never leaves your device. With the vault off, notes are plain text in your own Drive, and they pass through the server on the way there.",
+    q: "Is there a notes app for Android that syncs with Google Drive?",
+    a: "Yes. The Atomic Notes app syncs each note as its own .atomic file in a My-Atomic-Notes folder in your Google Drive. That Google Drive notes sync uses the narrow drive.file permission, so the app sees only the files it created. The Atomic Notes server stores only metadata such as note IDs, timestamps, and flags, never your note titles or text.",
   },
   {
-    q: "Does Atomic Notes use AI or train models on my notes?",
-    a: "No. Atomic Notes has no AI features, and your notes are never sent to a model or used as training data. The app ships no analytics, crash-reporting, or advertising SDKs. You can check this in the public source code, where pubspec.yaml lists every library the app uses.",
-  },
-  {
-    q: "Does Atomic Notes work offline?",
+    q: "Does the Atomic Notes app work offline?",
     a: "Yes. The app opens and saves notes the same way with or without a connection, because the phone holds the main copy. Changes made offline sync on their own when the network comes back. You need a connection only for the first Google sign-in and for syncing to Drive.",
   },
   {
-    q: "What happens if I lose my 6-word recovery phrase?",
-    a: "Notes on a phone that is still unlocked stay readable there. But no one, including the developer, can decrypt your vault notes on a new device without the six words, because the key is derived from them on your phone and never uploaded. Write the phrase down on paper and keep it safe.",
+    q: "Can I password protect my notes on Android?",
+    a: "Yes. Turn on the biometric app lock, and the app asks for your fingerprint or face before it opens, with your phone's own PIN, pattern, or password as the backup. For real encryption, turn on the vault too. A lock hides the screen, and the vault scrambles the stored notes.",
   },
   {
-    q: "Is Atomic Notes on Google Play or iOS?",
+    q: "Is Atomic Notes an encrypted note taking app?",
+    a: "It is once you turn on the vault, which is optional and off by default. The vault derives a key from a six-word recovery phrase with Argon2id and seals each note with AES-256-GCM on your phone, so your Drive and the server hold only ciphertext. With the vault off, notes are plain text in your own Drive, and they pass through the server on the way there.",
+  },
+  {
+    q: "Does Atomic Notes have ads, AI, or analytics?",
+    a: "No. It's a notes app without ads, AI features, or analytics. Your notes are never sent to a model or used as training data, and the app ships no crash-reporting or advertising SDKs. You can check this in the public source code, where pubspec.yaml lists every library the app uses.",
+  },
+  {
+    q: "What happens if I lose my six-word recovery phrase?",
+    a: "Any phone where the vault is already open keeps showing your notes. A new phone is different: it needs the six words to rebuild the key, and that key only ever exists on your devices. So nobody, including the developer, can open your vault notes without them. Keep the phrase on paper, somewhere safe and away from the phone.",
+  },
+  {
+    q: "Is the Atomic Notes app on Google Play or iOS?",
     a: "Not yet. Atomic Notes for Android ships as signed APKs on GitHub Releases, and you can check each file's certificate and SHA-256 before you install it. An iOS build is on the roadmap.",
   },
 ];
